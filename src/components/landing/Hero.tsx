@@ -136,7 +136,7 @@ export const Hero = () => {
               <div>
                 <p className="text-xs md:text-sm font-bold mb-2 text-primary">REAL TALK:</p>
                 <p className="text-xs md:text-sm text-foreground/80">
-                  The platform isn't built yet. We're raising $850K to make this real. Your signup = proof to VCs that producers actually want this. 
+                  We've been bootstrapping this project, investing $20K+ of our own money, but need Venture Capital to truly realize BAGЯ's potential for the hip hop creator community and scale quickly. Your signup = proof to VCs that producers actually want this. 
                   <span className="font-bold text-primary"> First 1,200 = founder pricing (33% off for life).</span>
                 </p>
               </div>
