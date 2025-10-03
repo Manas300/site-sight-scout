@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Hero } from "@/components/landing/Hero";
 import { WhyBagr } from "@/components/landing/WhyBagr";
+import { ProductVision } from "@/components/landing/ProductVision";
 import { BuildInPublic } from "@/components/landing/BuildInPublic";
 import { FinalCTA } from "@/components/landing/FinalCTA";
 import { Check } from "lucide-react";
@@ -34,6 +35,8 @@ const Index = () => {
       <div id="why-bagr">
         <WhyBagr />
       </div>
+
+      <ProductVision />
 
       <div id="build-public">
         <BuildInPublic />

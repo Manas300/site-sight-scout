@@ -85,6 +85,58 @@ export const BuildInPublic = () => {
             ))}
           </div>
         </div>
+
+        {/* Founders Section */}
+        <div className="mt-16 p-8 bg-gradient-to-br from-card via-background to-card border-2 border-primary/20 rounded-2xl">
+          <h3 className="text-3xl font-black mb-2 text-center">Who's Building This? 🎯</h3>
+          <p className="text-center text-muted-foreground font-medium mb-8">
+            Not some random tech bros. Real operators with skin in the game.
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Ken - Founder */}
+            <div className="text-center">
+              <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-105">
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
+                  alt="Ken - Founder"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-2xl font-black text-primary mb-1">Ken</h4>
+              <p className="text-sm font-bold text-secondary mb-2">Founder</p>
+              <div className="text-sm font-medium text-muted-foreground space-y-1">
+                <p>Creative-Tech Operator</p>
+                <p>Product Architect</p>
+                <p>GTM Execution</p>
+              </div>
+            </div>
+
+            {/* EbonOnTheTrack - Partner */}
+            <div className="text-center">
+              <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-secondary/30 hover:border-secondary transition-all duration-300 hover:scale-105">
+                <img 
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop" 
+                  alt="EbonOnTheTrack - Partner"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="text-2xl font-black text-secondary mb-1">EbonOnTheTrack</h4>
+              <p className="text-sm font-bold text-primary mb-2">Partner</p>
+              <div className="text-sm font-medium text-muted-foreground space-y-1">
+                <p>Platinum Producer</p>
+                <p>Major Artist Plug</p>
+                <p>Creator Acquisition</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl border border-primary/20">
+            <p className="text-center font-bold text-foreground/90">
+              💡 <span className="text-primary">Ken</span> builds tech that doesn't suck. <span className="text-secondary">Ebon</span> knows what producers actually need. Together? Unstoppable.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
