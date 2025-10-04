@@ -129,7 +129,7 @@ export const Hero = () => {
                 <span key={i}>{letter}</span>
               ))}
               {['W','A','R','S','.'].map((letter, i) => (
-                <span key={i} style={{ letterSpacing: i === 0 ? '-0.10em' : undefined }}>{letter}</span>
+                <span key={i} style={{ letterSpacing: i === 0 ? '-0.8em' : undefined }}>{letter}</span>
               ))}
             </span>
             <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse tracking-normal" style={{ animationDelay: '0.6s' }}>
