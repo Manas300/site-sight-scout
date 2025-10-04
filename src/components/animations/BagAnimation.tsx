@@ -18,14 +18,19 @@ export const BagAnimation = ({ className = '' }: BagAnimationProps) => {
     // Create coin particles
     const createCoinParticle = (x: number, y: number, delay: number = 0) => {
       const coin = document.createElement('div');
-      coin.innerHTML = '💰';
+      coin.innerHTML = '◉';
       coin.style.position = 'absolute';
-      coin.style.fontSize = '20px';
+      coin.style.fontSize = '28px';
       coin.style.pointerEvents = 'none';
-      coin.style.zIndex = '10';
+      coin.style.zIndex = '1002';
       coin.style.left = `${x}px`;
       coin.style.top = `${y}px`;
       coin.style.transform = 'translate(-50%, -50%)';
+      coin.style.filter = 'drop-shadow(0 4px 8px rgba(0,0,0,0.5)) drop-shadow(0 0 12px rgba(255,215,0,0.6))';
+      coin.style.textShadow = '0 0 15px rgba(255,215,0,0.8)';
+      coin.style.WebkitTextStroke = '1px rgba(0,0,0,0.2)';
+      coin.style.color = '#FFD700';
+      coin.style.fontWeight = 'bold';
       
       container.appendChild(coin);
 
@@ -43,19 +48,19 @@ export const BagAnimation = ({ className = '' }: BagAnimationProps) => {
         duration: 0.3,
         ease: 'back.out(1.7)'
       })
-      .to(coin, {
-        x: gsap.utils.random(-100, 100),
-        y: gsap.utils.random(-80, -120),
-        rotation: gsap.utils.random(-180, 180),
-        duration: gsap.utils.random(1.5, 2.5),
-        ease: 'power2.out'
-      }, 0.2)
+       .to(coin, {
+         x: gsap.utils.random(-80, 80),
+         y: gsap.utils.random(-40, -60),
+         rotation: gsap.utils.random(-180, 180),
+         duration: gsap.utils.random(1.2, 1.8),
+         ease: 'power2.out'
+       }, 0.2)
       .to(coin, {
         scale: 0.3,
         opacity: 0,
-        duration: 0.5,
+        duration: 0.8,
         ease: 'power2.in'
-      }, '-=0.5')
+      }, '-=0.2')
       .call(() => {
         coin.remove();
       });
@@ -80,16 +85,16 @@ export const BagAnimation = ({ className = '' }: BagAnimationProps) => {
         duration: 0.8,
         ease: 'bounce.out'
       })
-      .call(() => {
-        // Spawn coins on first bounce
-        for (let i = 0; i < 8; i++) {
-          createCoinParticle(
-            gsap.utils.random(20, 80),
-            gsap.utils.random(20, 60),
-            i * 0.1
-          );
-        }
-      })
+       .call(() => {
+         // Spawn coins on first bounce - bursting from top of bag
+         for (let i = 0; i < 8; i++) {
+           createCoinParticle(
+             gsap.utils.random(35, 65), // Wider horizontal spread
+             gsap.utils.random(5, 20), // Start from top of bag with more spread
+             i * 0.1
+           );
+         }
+       })
       .to(bag, {
         scale: 1.1,
         duration: 0.1,
@@ -110,16 +115,16 @@ export const BagAnimation = ({ className = '' }: BagAnimationProps) => {
         duration: 0.4,
         ease: 'bounce.out'
       })
-      .call(() => {
-        // Spawn more coins on second bounce
-        for (let i = 0; i < 5; i++) {
-          createCoinParticle(
-            gsap.utils.random(30, 70),
-            gsap.utils.random(30, 50),
-            i * 0.05
-          );
-        }
-      })
+       .call(() => {
+         // Spawn more coins on second bounce - also from top of bag
+         for (let i = 0; i < 5; i++) {
+           createCoinParticle(
+             gsap.utils.random(35, 65), // Wider horizontal spread
+             gsap.utils.random(5, 20), // Start from top of bag with more spread
+             i * 0.05
+           );
+         }
+       })
       .to(bag, {
         scale: 1.05,
         duration: 0.1,
@@ -139,6 +144,15 @@ export const BagAnimation = ({ className = '' }: BagAnimationProps) => {
         yoyo: true,
         repeat: -1
       });
+
+      // Add pulsing glow effect
+      gsap.to(bag, {
+        filter: 'drop-shadow(0 8px 16px rgba(0,0,0,0.6)) drop-shadow(0 0 30px rgba(255,215,0,1))',
+        duration: 1.5,
+        ease: 'power2.inOut',
+        yoyo: true,
+        repeat: -1
+      });
     };
 
     // Start animation after a short delay
@@ -153,17 +167,25 @@ export const BagAnimation = ({ className = '' }: BagAnimationProps) => {
     <div 
       ref={containerRef}
       className={`relative inline-block ${className}`}
-      style={{ width: '100px', height: '100px' }}
+      style={{ 
+        width: '120px', 
+        height: '120px',
+        zIndex: 1000,
+        position: 'relative'
+      }}
     >
       <div
         ref={bagRef}
-        className="text-6xl select-none"
+        className="text-8xl select-none"
         style={{ 
           position: 'absolute',
-          top: '50%',
+          top: '64%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))'
+          filter: 'drop-shadow(0 8px 16px rgba(0,0,0,0.6)) drop-shadow(0 0 20px rgba(255,215,0,0.8))',
+          zIndex: 1001,
+          textShadow: '0 0 30px rgba(255,215,0,0.9)',
+          WebkitTextStroke: '2px rgba(0,0,0,0.3)'
         }}
       >
         💰

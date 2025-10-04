@@ -211,7 +211,7 @@ export const Hero = () => {
                   }}>{letter}</span>
                 );
               })}
-              <BagAnimation className="inline-block" />
+              <BagAnimation className="inline-block relative z-50" />
             </span>
           </h1>
           
