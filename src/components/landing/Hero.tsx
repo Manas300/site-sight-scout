@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
+import { subscribeToNewsletter } from "@/lib/emailService";
+import { useSignupCount } from "@/hooks/useSignupCount";
 import { Zap, TrendingUp, Flame } from "lucide-react";
 import { z } from "zod";
 import { BagAnimation } from "@/components/animations/BagAnimation";
@@ -14,41 +15,9 @@ const emailSchema = z.object({
 export const Hero = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [signupCount, setSignupCount] = useState(847);
+  const { signupCount } = useSignupCount();
   const { toast } = useToast();
 
-  useEffect(() => {
-    // Fetch real signup count
-    const fetchCount = async () => {
-      const { count } = await supabase
-        .from('waitlist_signups')
-        .select('*', { count: 'exact', head: true });
-      if (count !== null) {
-        setSignupCount(count);
-      }
-    };
-    fetchCount();
-
-    // Subscribe to realtime updates
-    const channel = supabase
-      .channel('waitlist-changes')
-      .on(
-        'postgres_changes',
-        {
-          event: 'INSERT',
-          schema: 'public',
-          table: 'waitlist_signups'
-        },
-        () => {
-          fetchCount();
-        }
-      )
-      .subscribe();
-
-    return () => {
-      supabase.removeChannel(channel);
-    };
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -67,27 +36,27 @@ export const Hero = () => {
     setIsSubmitting(true);
     
     try {
-      const { error } = await supabase
-        .from('waitlist_signups')
-        .insert([{ email: validation.data.email }]);
-
-      if (error) {
-        if (error.code === '23505') {
+      const result = await subscribeToNewsletter(validation.data.email, 'hero');
+      
+      if (result.success) {
+        toast({
+          title: "YOU'RE IN 🔥",
+          description: "Check your email for founder club access.",
+        });
+        setEmail("");
+      } else {
+        // Handle specific error cases
+        if (result.error?.includes('already') || result.error?.includes('duplicate')) {
           toast({
             title: "Already signed up! 🎉",
             description: "You're already on the list, founder.",
           });
         } else {
-          throw error;
+          throw new Error(result.error || 'Failed to subscribe');
         }
-      } else {
-        toast({
-          title: "YOU'RE IN 🔥",
-          description: "Check your email for founder club access.",
-        });
       }
-      setEmail("");
     } catch (error) {
+      console.error('Newsletter signup error:', error);
       toast({
         title: "Something went wrong",
         description: "Try again or DM us on Twitter.",

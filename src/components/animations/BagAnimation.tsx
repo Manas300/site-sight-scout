@@ -28,7 +28,7 @@ export const BagAnimation = ({ className = '' }: BagAnimationProps) => {
       coin.style.transform = 'translate(-50%, -50%)';
       coin.style.filter = 'drop-shadow(0 4px 8px rgba(0,0,0,0.5)) drop-shadow(0 0 12px rgba(255,215,0,0.6))';
       coin.style.textShadow = '0 0 15px rgba(255,215,0,0.8)';
-      coin.style.WebkitTextStroke = '1px rgba(0,0,0,0.2)';
+      coin.style.webkitTextStroke = '1px rgba(0,0,0,0.2)';
       coin.style.color = '#FFD700';
       coin.style.fontWeight = 'bold';
       

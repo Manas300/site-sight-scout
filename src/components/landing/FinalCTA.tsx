@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
+import { subscribeToNewsletter } from "@/lib/emailService";
+import { useSignupCount } from "@/hooks/useSignupCount";
 import { Flame, Share2, Twitter, Facebook, MessageCircle } from "lucide-react";
 import { z } from "zod";
 
@@ -14,21 +15,9 @@ export const FinalCTA = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
-  const [signupCount, setSignupCount] = useState(847);
+  const { signupCount } = useSignupCount();
   const { toast } = useToast();
 
-  useEffect(() => {
-    // Fetch real signup count
-    const fetchCount = async () => {
-      const { count } = await supabase
-        .from('waitlist_signups')
-        .select('*', { count: 'exact', head: true });
-      if (count !== null) {
-        setSignupCount(count);
-      }
-    };
-    fetchCount();
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -47,29 +36,28 @@ export const FinalCTA = () => {
     setIsSubmitting(true);
     
     try {
-      const { error } = await supabase
-        .from('waitlist_signups')
-        .insert([{ email: validation.data.email }]);
-
-      if (error) {
-        if (error.code === '23505') {
+      const result = await subscribeToNewsletter(validation.data.email, 'final_cta');
+      
+      if (result.success) {
+        toast({
+          title: "WELCOME TO THE MOVEMENT 🚀",
+          description: "You're officially a BAGЯ founder.",
+        });
+        setShowShareModal(true);
+        setEmail("");
+      } else {
+        // Handle specific error cases
+        if (result.error?.includes('already') || result.error?.includes('duplicate')) {
           toast({
             title: "Already signed up! 🎉",
             description: "You're already on the list, founder.",
           });
         } else {
-          throw error;
+          throw new Error(result.error || 'Failed to subscribe');
         }
-      } else {
-        toast({
-          title: "WELCOME TO THE MOVEMENT 🚀",
-          description: "You're officially a BAGЯ founder.",
-        });
-        setSignupCount(prev => prev + 1);
-        setShowShareModal(true);
       }
-      setEmail("");
     } catch (error) {
+      console.error('Newsletter signup error:', error);
       toast({
         title: "Something went wrong",
         description: "Try again or DM us on Twitter.",
@@ -95,12 +83,12 @@ export const FinalCTA = () => {
 
     window.open(urls[platform], '_blank', 'width=600,height=400');
     
-    // Track that they shared
-    supabase
-      .from('waitlist_signups')
-      .update({ shared_on_social: true })
-      .eq('email', email)
-      .then(() => {});
+    // TODO: Track social sharing if needed
+    // supabase
+    //   .from('waitlist_signups')
+    //   .update({ shared_on_social: true })
+    //   .eq('email', email)
+    //   .then(() => {});
   };
 
   const spotsLeft = Math.max(0, 1200 - signupCount);
