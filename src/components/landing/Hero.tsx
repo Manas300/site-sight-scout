@@ -124,7 +124,7 @@ export const Hero = () => {
             <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse" style={{ animationDelay: '0.6s' }}>GET THE BAG💰</span>
           </h1>
           
-          <p className="text-lg md:text-3xl mb-8 text-foreground/90 font-bold max-w-3xl mx-auto">
+          <p className="text-lg md:text-3xl mb-8 text-foreground/90 font-bold max-w-3xl mx-auto text-center">
             The TikTok Shop for hip hop beats.<br/>
             <span className="whitespace-nowrap"><span className="text-primary">Live streaming</span> × <span className="text-secondary">Real-time bidding</span> × <span className="text-primary">Instant payouts</span></span>
           </p>
