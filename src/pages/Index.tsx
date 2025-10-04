@@ -12,7 +12,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-xl border-b border-primary/20">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-4xl font-black tracking-widest text-white">
+          <h1 className="text-4xl font-black tracking-widest text-white font-montserrat">
             BAGЯ
           </h1>
           <div className="hidden md:flex gap-8 text-sm font-bold">
