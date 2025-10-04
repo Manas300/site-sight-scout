@@ -62,7 +62,7 @@ export const ProductVision = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                   <div>
-                    <h3 className="text-xl font-black text-primary mb-2">{mockup.title}</h3>
+                    <h3 className="text-xl font-black text-primary mb-2 tracking-wider">{mockup.title}</h3>
                     <p className="text-sm font-medium text-foreground/90">{mockup.desc}</p>
                   </div>
                 </div>
