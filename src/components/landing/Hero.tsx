@@ -126,7 +126,7 @@ export const Hero = () => {
           
           <p className="text-lg md:text-3xl mb-8 text-foreground/90 font-bold max-w-3xl mx-auto">
             The TikTok Shop for hip hop beats.<br/>
-            <span className="text-primary">Live streaming</span> × <span className="text-secondary">Real-time bidding</span> × <span className="text-primary">Instant payouts</span>
+            <span className="whitespace-nowrap"><span className="text-primary">Live streaming</span> × <span className="text-secondary">Real-time bidding</span> × <span className="text-primary">Instant payouts</span></span>
           </p>
 
           {/* Radical Transparency Box */}
