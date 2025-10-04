@@ -120,7 +120,7 @@ export const Hero = () => {
           
           <h1 className="text-4xl md:text-8xl font-black tracking-tighter mb-6 leading-none">
             <span className="block text-primary animate-pulse">DROP BEATS.</span>
-            <span className="block text-secondary animate-pulse tracking-normal" style={{ animationDelay: '0.3s' }}>START BIDDING <span style={{ letterSpacing: '-0.10em' }}>WA</span>RS.</span>
+            <span className="block text-secondary animate-pulse tracking-normal" style={{ animationDelay: '0.3s' }}>START BIDDING <span style={{ letterSpacing: '-0.08em' }}>WAR</span>S.</span>
             <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse tracking-normal" style={{ animationDelay: '0.6s' }}>GET THE BAG <span className="inline-block">💰</span></span>
           </h1>
           
