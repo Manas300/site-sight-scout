@@ -119,9 +119,25 @@ export const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-8xl font-black tracking-tighter mb-6 leading-none">
-            <span className="block text-primary animate-pulse">DROP BEATS.</span>
-            <span className="block text-secondary animate-pulse tracking-normal" style={{ animationDelay: '0.3s' }}>START BIDDING <span style={{ letterSpacing: '-0.10em' }}>WA</span>RS.</span>
-            <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse tracking-normal" style={{ animationDelay: '0.6s' }}>GET THE BAG <span className="inline-block">💰</span></span>
+            <span className="block text-primary animate-pulse">
+              {['D','R','O','P',' ','B','E','A','T','S','.'].map((letter, i) => (
+                <span key={i} style={{ letterSpacing: i === 3 ? '0em' : undefined }}>{letter}</span>
+              ))}
+            </span>
+            <span className="block text-secondary animate-pulse tracking-normal" style={{ animationDelay: '0.3s' }}>
+              {['S','T','A','R','T',' ','B','I','D','D','I','N','G',' '].map((letter, i) => (
+                <span key={i}>{letter}</span>
+              ))}
+              {['W','A','R','S','.'].map((letter, i) => (
+                <span key={i} style={{ letterSpacing: i === 0 ? '-0.10em' : undefined }}>{letter}</span>
+              ))}
+            </span>
+            <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse tracking-normal" style={{ animationDelay: '0.6s' }}>
+              {['G','E','T',' ','T','H','E',' ','B','A','G',' '].map((letter, i) => (
+                <span key={i}>{letter}</span>
+              ))}
+              <span className="inline-block">💰</span>
+            </span>
           </h1>
           
           <p className="text-lg md:text-3xl mb-8 text-foreground/90 font-bold max-w-3xl mx-auto text-center">
