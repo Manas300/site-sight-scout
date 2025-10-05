@@ -99,7 +99,7 @@ export const ProductVision = () => {
               title: "Fan Tipping 🐝",
               desc: (
                 <>
-                  Fans drop tips as you cook. <br/> Stream your grind and get paid mid-flow.
+                  Fans drop tips as you cook. <br/> Stream your heat and get paid mid-flow.
                 </>
               ),
              
