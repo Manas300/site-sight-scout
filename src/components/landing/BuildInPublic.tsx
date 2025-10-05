@@ -76,10 +76,10 @@ export const BuildInPublic = () => {
           </div>
 
           {/* Gamified Tracker */}
-          <div className="space-y-4 max-w-2xl mx-auto">
+          <div className="space-y-4">
             {/* Stage 1 - Active/Complete */}
-            <div className="relative group">
-              <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl border-2 border-primary shadow-[0_0_30px_rgba(0,255,0,0.3)] hover:shadow-[0_0_40px_rgba(0,255,0,0.5)] transition-all duration-300">
+            <div className="relative group flex justify-center">
+              <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl border-2 border-primary shadow-[0_0_30px_rgba(0,255,0,0.3)] hover:shadow-[0_0_40px_rgba(0,255,0,0.5)] transition-all duration-300 w-fit">
                 <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-[0_0_20px_rgba(0,255,0,0.6)] animate-pulse flex-shrink-0">
                   <CheckSquare className="w-6 h-6 text-background" />
                 </div>
@@ -90,9 +90,9 @@ export const BuildInPublic = () => {
             </div>
 
             {/* Stage 2 - Locked */}
-            <div className="relative group">
-              <div className="flex items-center gap-4 p-6 bg-card/30 rounded-2xl border-2 border-border/50 hover:border-primary/50 transition-all duration-300">
-                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center">
+            <div className="relative group flex justify-center">
+              <div className="flex items-center gap-4 p-6 bg-card/30 rounded-2xl border-2 border-border/50 hover:border-primary/50 transition-all duration-300 w-fit">
+                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
                   <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
                 <div className="font-black text-2xl text-muted-foreground">2. Q3 2025</div>
@@ -100,9 +100,9 @@ export const BuildInPublic = () => {
             </div>
 
             {/* Stage 3 - Locked */}
-            <div className="relative group">
-              <div className="flex items-center gap-4 p-6 bg-card/30 rounded-2xl border-2 border-border/50 hover:border-primary/50 transition-all duration-300">
-                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center">
+            <div className="relative group flex justify-center">
+              <div className="flex items-center gap-4 p-6 bg-card/30 rounded-2xl border-2 border-border/50 hover:border-primary/50 transition-all duration-300 w-fit">
+                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
                   <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
                 <div className="font-black text-2xl text-muted-foreground">3. Q4 2025</div>
@@ -110,9 +110,9 @@ export const BuildInPublic = () => {
             </div>
 
             {/* Stage 4 - Locked */}
-            <div className="relative group">
-              <div className="flex items-center gap-4 p-6 bg-card/30 rounded-2xl border-2 border-border/50 hover:border-primary/50 transition-all duration-300">
-                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center">
+            <div className="relative group flex justify-center">
+              <div className="flex items-center gap-4 p-6 bg-card/30 rounded-2xl border-2 border-border/50 hover:border-primary/50 transition-all duration-300 w-fit">
+                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
                   <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
                 <div className="font-black text-2xl text-muted-foreground">4. 2026</div>
