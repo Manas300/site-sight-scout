@@ -320,7 +320,7 @@ export const Hero = () => {
           {/* LOI Goal Box */}
           <div className="max-w-2xl mx-auto mb-8 px-4 md:px-6 py-4 bg-gradient-to-r from-warning/20 via-primary/20 to-secondary/20 border-4 border-warning rounded-xl text-center animate-pulse">
             <p className="text-xl sm:text-2xl md:text-4xl font-black text-warning whitespace-nowrap">
-              🎯 NEXT LOI GOAL: 500 🚀
+              🎯 NEXT LOI GOAL: 500
             </p>
           </div>
 
