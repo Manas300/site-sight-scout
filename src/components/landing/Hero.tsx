@@ -126,7 +126,7 @@ export const Hero = () => {
               <div>
                 <p className="text-sm md:text-lg font-bold mb-2 text-primary">REAL TALK:</p>
                 <p className="text-sm md:text-lg text-foreground/80">
-                  We've been bootstrapping this project, investing $20K+ of our own money, but need Venture Capital to truly realize BAGЯ's potential for the hip hop creator community and scale quickly. Your signup = proof to VCs that producers actually want this.
+                  We've been bootstrapping this project, investing $20K+ of our own money, but need Venture Capital to scale BAGЯ and realize its full potential for the hip hop creator community. Your signup = proof to VCs that producers actually want this.
                 </p>
               </div>
             </div>
