@@ -73,7 +73,7 @@ export const WhyBagr = () => {
                   {feature.icon}
                 </div>
                 <h3 className="font-black text-lg mb-2 text-foreground">{feature.title}</h3>
-                <p className="text-muted-foreground font-medium">{feature.desc}</p>
+                <p className="text-muted-foreground font-medium font-poppins">{feature.desc}</p>
               </div>
             </div>
           ))}
