@@ -58,7 +58,7 @@ export const WhyBagr = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground font-medium">
-            BeatStars = Craigslist. Airbit = eBay from 2005. BAGЯ = TikTok Shop energy.
+            BeatStars = Craigslist. Airbit = eBay from 2005. BAGЯ = TikTok Shop meets Whatnot energy.
           </p>
         </div>
 
