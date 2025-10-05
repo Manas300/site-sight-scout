@@ -83,7 +83,7 @@ export const BuildInPublic = () => {
                 <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-[0_0_20px_rgba(0,255,0,0.6)] animate-pulse flex-shrink-0">
                   <CheckSquare className="w-6 h-6 text-background" />
                 </div>
-                <div className="text-xl md:text-2xl whitespace-nowrap">
+                <div className="text-xl md:text-2xl">
                   <span className="font-black">Phase I:</span> Gather 1,200 LOIs + Close $850K from Pre-Seed Investors
                 </div>
               </div>
@@ -95,7 +95,7 @@ export const BuildInPublic = () => {
                 <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
                   <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
-                <div className="text-xl md:text-2xl text-muted-foreground whitespace-nowrap">
+                <div className="text-xl md:text-2xl text-muted-foreground">
                   <span className="font-black">Phase II:</span> First 1,200 producers get dibs on BAGR beta + feedback loop
                 </div>
               </div>
@@ -107,7 +107,7 @@ export const BuildInPublic = () => {
                 <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
                   <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
-                <div className="font-black text-2xl text-muted-foreground whitespace-nowrap">3. Q4 2025</div>
+                <div className="font-black text-2xl text-muted-foreground">3. Q4 2025</div>
               </div>
             </div>
 
@@ -117,7 +117,7 @@ export const BuildInPublic = () => {
                 <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
                   <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
-                <div className="font-black text-2xl text-muted-foreground whitespace-nowrap">4. 2026</div>
+                <div className="font-black text-2xl text-muted-foreground">4. 2026</div>
               </div>
             </div>
           </div>
