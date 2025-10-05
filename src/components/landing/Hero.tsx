@@ -115,9 +115,8 @@ export const Hero = () => {
               />
             </div>
             
-            <p className="text-lg md:text-3xl mb-8 text-foreground/90 font-bold max-w-3xl mx-auto text-center">
-            Go Live. Drop a Beat. Get Paid.<br/>
-              <span className="whitespace-nowrap block"><span className="text-primary">Live streaming</span> × <span className="text-secondary">Live bidding wars</span> × <span className="text-primary">Instant payouts</span></span>
+          <p className="text-lg md:text-3xl mb-8 text-foreground/90 font-bold max-w-3xl mx-auto text-center">
+            <span className="whitespace-nowrap block"><span className="text-primary">Live streaming</span> × <span className="text-secondary">Live bidding wars</span> × <span className="text-primary">Instant payouts</span></span>
           </p>
 
           {/* Radical Transparency Box */}
