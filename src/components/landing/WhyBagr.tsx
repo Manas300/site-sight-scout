@@ -84,7 +84,7 @@ export const WhyBagr = () => {
         </div>
 
         {/* Comparison Table */}
-        <div className="mt-16 max-w-3xl mx-auto">
+        <div className="mt-16 max-w-5xl mx-auto">
           <div className="bg-card border-2 border-border rounded-2xl overflow-hidden">
             <div className="grid grid-cols-2 gap-4 p-6 bg-muted/30 border-b-2 border-border">
               <div className="font-black text-base md:text-lg text-destructive text-center">😭 Old Platforms</div>
