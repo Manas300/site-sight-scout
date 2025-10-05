@@ -33,7 +33,7 @@ export const ProductVision = () => {
         </div>
 
         {/* Top Row - Main Features */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 mb-24">
           {[
             {
               img: mockupLiveAuction,
