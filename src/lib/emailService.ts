@@ -1,4 +1,4 @@
-import { supabase } from './supabase';
+import { supabase } from '@/integrations/supabase/client';
 
 const EMAIL_SERVICE_URL = 'https://bagr-email-service-production.up.railway.app/api/v1/email/newsletter';
 

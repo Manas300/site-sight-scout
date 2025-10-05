@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase';
+import { supabase } from '@/integrations/supabase/client';
 
 export const useSignupCount = () => {
   const [signupCount, setSignupCount] = useState(847); // Default fallback
@@ -12,7 +12,7 @@ export const useSignupCount = () => {
     const fetchCount = async () => {
       try {
         const { count, error } = await supabase
-          .from('newsletter_signups')
+          .from('waitlist_signups')
           .select('*', { count: 'exact', head: true });
 
         if (error) {
@@ -39,7 +39,7 @@ export const useSignupCount = () => {
         {
           event: 'INSERT',
           schema: 'public',
-          table: 'newsletter_signups'
+          table: 'waitlist_signups'
         },
         (payload) => {
           console.log('New signup detected:', payload);
