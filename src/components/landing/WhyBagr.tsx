@@ -98,7 +98,7 @@ export const WhyBagr = () => {
               { feature: "Insight-driven analytics", old: "No data, just impressions.", bagr: "Behavior-first insights — see what's working NOW." },
               { feature: "Mobile-first", old: "Desktop dinosaurs only.", bagr: "Born for the phone. Built for your thumb." },
               { feature: "Instant payouts", old: "5-7 business days 😴", bagr: "Instant bag. Cash hits before the encore." },
-              { feature: "Platform fee", old: "💸 30%+ 'tax' for nothing.", bagr: "💰 15% flat. Keep your profits, not their pockets." }
+              { feature: "Platform fee", old: "💸 30%+ 'tax' for nothing.", bagr: "💰 15% flat or LESS." }
             ].map((row, i) => (
               <div key={i} className="grid grid-cols-3 gap-4 p-6 border-b border-border last:border-0 hover:bg-muted/20 transition-colors">
                 <div className="font-medium">{row.feature}</div>
