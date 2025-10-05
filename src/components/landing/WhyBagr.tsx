@@ -7,7 +7,7 @@ export const WhyBagr = () => {
       title: "go live anywhere.",
       desc: (
         <>
-          no studio needed. <br/> just your phone + WAV files.
+          Drop heat from anywhere. Studio? nah. <br/> you + your phone + WAV files = all you need.
         </>
       ),
       gradient: "from-primary/20 to-primary/5"
