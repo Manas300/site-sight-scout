@@ -119,12 +119,24 @@ export const Hero = () => {
               <Zap className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-1 animate-pulse" />
               <div>
                 <p className="text-sm md:text-lg font-bold mb-2 text-primary font-sans">REAL TALK:</p>
-                <p className="text-sm md:text-lg text-foreground/80 font-sans mb-3">
-                  We've been bootstrapping <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> for 6 months, dropped twenty-thousand dollars ($20K) of our own money on Figma designs and early-stage coding, but now seek pre-seed investors to scale <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> to what it should be: the Bloomberg Terminal of Hip Hop. Your sign-up = a pledge to use <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> once we're funded and v1 is live. We're raising $850K now — and your LOI helps prove real demand to investors. The more we grow, the faster we build.
+                <p className="text-sm md:text-lg text-foreground/80 font-sans mb-6">
+                  We've been bootstrapping <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> for 6 months, dropped twenty-thousand dollars ($20K) of our own money on Figma designs and early-stage coding, but now seek pre-seed investors to scale <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> to what it should be: the Bloomberg Terminal of Hip Hop.
                 </p>
-                <p className="text-sm md:text-lg text-foreground/80 font-sans font-bold">
-                  First 1,200 LOIs get beta access + exclusive early feature voting rights.
-                </p>
+                
+                <div className="space-y-3 p-4 bg-primary/10 border-l-4 border-primary rounded-r-lg">
+                  <p className="text-sm md:text-lg font-black text-primary leading-relaxed">
+                    Your sign-up = a pledge to use <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> once we're funded and v1 is live.
+                  </p>
+                  <p className="text-sm md:text-lg font-black text-secondary leading-relaxed">
+                    We're raising $850K now — and your LOI helps prove real demand to investors.
+                  </p>
+                  <p className="text-sm md:text-lg font-black text-primary leading-relaxed">
+                    The more we grow, the faster we build.
+                  </p>
+                  <p className="text-sm md:text-lg font-black text-destructive leading-relaxed animate-pulse">
+                    First 1,200 LOIs get beta access + exclusive early feature voting rights.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
