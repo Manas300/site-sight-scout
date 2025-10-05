@@ -21,21 +21,21 @@ export const BuildInPublic = () => {
             <p className="text-foreground/80 font-medium mb-4">
               We've bootstrapped BAGЯ with $20K of our own money — proof we're all-in. Now we need your co-signs to convince VCs to back us and:
             </p>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-start gap-2">
-                <CheckSquare className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+            <ul className="space-y-3 text-base">
+              <li className="flex items-start gap-3">
+                <CheckSquare className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span>Build real-time auction pipelines</span>
               </li>
-              <li className="flex items-start gap-2">
-                <CheckSquare className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+              <li className="flex items-start gap-3">
+                <CheckSquare className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span>Launch on iOS + Android</span>
               </li>
-              <li className="flex items-start gap-2">
-                <CheckSquare className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+              <li className="flex items-start gap-3">
+                <CheckSquare className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span>Create behavior-driven analytics suite with your own personal AI store assistant</span>
               </li>
-              <li className="flex items-start gap-2">
-                <CheckSquare className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+              <li className="flex items-start gap-3">
+                <CheckSquare className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span>Raise 18 months of cash runway for a team of 6</span>
               </li>
             </ul>
