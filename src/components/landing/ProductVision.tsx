@@ -45,7 +45,7 @@ export const ProductVision = () => {
               title: "Live Shopping",
               desc: (
                 <>
-                  Close beat and sound pack sales FAST. <br/> Creators cop in seconds.
+                  Close your beat and sound pack sales FAST. <br/> Creators cop in seconds.
                 </>
               ),
               
