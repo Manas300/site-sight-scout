@@ -6,7 +6,8 @@ export const BuildInPublic = () => {
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-black mb-6">
-            <span className="text-primary">Building In Public</span>{" "}
+            <span className="text-primary">Building In Public</span>
+            <br />
             <span className="text-secondary">Like It Should Be</span>
           </h2>
         </div>
