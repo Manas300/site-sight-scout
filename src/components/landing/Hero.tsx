@@ -130,9 +130,6 @@ export const Hero = () => {
                   <p className="text-sm md:text-lg font-black text-secondary leading-relaxed">
                     We're raising $850K now — and your LOI helps prove real demand to investors.
                   </p>
-                  <p className="text-sm md:text-lg font-medium text-primary leading-relaxed">
-                    The more we grow, the faster we build.
-                  </p>
                   <div className="space-y-2 mt-4">
                     <p className="text-sm md:text-lg font-black text-destructive leading-relaxed">
                       First 1,200 LOIs get:
