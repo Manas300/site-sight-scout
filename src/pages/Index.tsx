@@ -98,19 +98,19 @@ const Index = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {[
               {
-                title: "🎧 Producers",
+                title: "Producers",
                 emoji: "😤",
                 pain: "Tired of uploading to YouTube for $3 CPM",
                 solution: ["Go live", "Watch bids climb", "Get paid instantly"]
               },
               {
-                title: "🎤 Artists",
+                title: "Artists",
                 emoji: <span className="text-red-500">🔥</span>,
                 pain: "Done scrolling dead beat stores for hours",
                 solution: ["Join live sessions", "Bid on heat", "Lock in exclusives"]
               },
               {
-                title: "🙌 Fans",
+                title: "Fans",
                 emoji: "👀",
                 pain: "Want to support producers you fw",
                 solution: ["Watch live", "Tip your favorites", "See hits get made"]
@@ -118,7 +118,7 @@ const Index = () => {
             ].map((group, i) => (
               <div key={i} className="p-6 sm:p-8 bg-card border-2 border-border rounded-2xl hover:border-primary transition-all hover:scale-105">
                 <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 text-center">{group.emoji}</div>
-                <h3 className="text-xl sm:text-2xl font-black mb-2 sm:mb-3">{group.title}</h3>
+                <h3 className="text-xl sm:text-2xl font-black mb-2 sm:mb-3 text-center">{group.title}</h3>
                 <p className="text-xs sm:text-sm text-destructive font-bold mb-3 sm:mb-4 italic">"{group.pain}"</p>
                 <ul className="space-y-2 sm:space-y-3">
                   {group.solution.map((item, j) => (
