@@ -56,7 +56,7 @@ export const ProductVision = () => {
               desc: (
                 <>
                   $120 in 90 seconds.<br/>
-                  Hundreds watched. Then the reposts started.
+                  Hundreds watched. Reposts followed.
                 </>
               ),
               
