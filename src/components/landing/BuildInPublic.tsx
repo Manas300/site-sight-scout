@@ -52,10 +52,6 @@ export const BuildInPublic = () => {
             <ul className="space-y-4 text-lg">
               <li className="flex items-start gap-3">
                 <CheckSquare className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
-                <span>We've de-risked the idea (designs + stress-tested business model)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckSquare className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <span>Your LOI = market demand investors can't ignore</span>
               </li>
               <li className="flex items-start gap-3">
