@@ -8,32 +8,32 @@ import { Sparkles } from "lucide-react";
 
 export const ProductVision = () => {
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
+    <section className="py-12 sm:py-14 md:py-16 px-3 sm:px-4 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-20 left-5 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-primary/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-5 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-secondary/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
           {/* <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-secondary text-background px-6 py-2 rounded-full font-black mb-6 animate-pulse">
             <Sparkles className="w-5 h-5" />
             NOT BUILT YET. THIS IS THE VISION.
           </div> */}
-          <h2 className="text-5xl md:text-7xl font-black mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-4 sm:mb-6 px-2">
             <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-fade-in">
                What Your $850K <span className="whitespace-nowrap">Is Building</span>
               {/* Is Building <span className="text-red-500" style={{ fontSize: '60px' }}>🔥</span> */}
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground font-bold max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-bold max-w-2xl mx-auto px-4">
             {/* These are the REAL Figma designs. Once we close the raise, this becomes reality in 6 months. */}
           </p>
         </div>
 
         {/* Top Row - Main Features */}
-        <div className="grid md:grid-cols-3 gap-10 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 mb-10 sm:mb-12 md:mb-16">
           {[
             {
               img: mockupLiveAuction,
@@ -71,18 +71,18 @@ export const ProductVision = () => {
               <img 
                 src={mockup.img} 
                 alt={mockup.title}
-                className="w-full h-auto rounded-2xl hover:scale-105 transition-transform duration-300"
+                className="w-full h-auto rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg"
               />
-              <div className="mt-4 text-center">
-                <h3 className="text-xl font-black text-primary mb-2 tracking-wide">{mockup.title}</h3>
-                <p className="text-sm font-medium text-foreground/90">{mockup.desc}</p>
+              <div className="mt-3 sm:mt-4 text-center px-2">
+                <h3 className="text-lg sm:text-xl font-black text-primary mb-1.5 sm:mb-2 tracking-wide">{mockup.title}</h3>
+                <p className="text-xs sm:text-sm font-medium text-foreground/90 leading-relaxed">{mockup.desc}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* Bottom Row - Additional Features */}
-        <div className="grid md:grid-cols-3 gap-10 mb-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 mb-8 sm:mb-10">
           {[
             {
               img: mockupArtistWin,
@@ -114,22 +114,22 @@ export const ProductVision = () => {
               <img 
                 src={mockup.img} 
                 alt={mockup.title}
-                className="w-full h-auto rounded-2xl hover:scale-105 transition-transform duration-300"
+                className="w-full h-auto rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg"
               />
-              <div className="mt-4 text-center">
-                <h3 className="text-xl font-black text-primary mb-2 tracking-wide">{mockup.title}</h3>
-                <p className="text-sm font-medium text-foreground/90">{mockup.desc}</p>
+              <div className="mt-3 sm:mt-4 text-center px-2">
+                <h3 className="text-lg sm:text-xl font-black text-primary mb-1.5 sm:mb-2 tracking-wide">{mockup.title}</h3>
+                <p className="text-xs sm:text-sm font-medium text-foreground/90 leading-relaxed">{mockup.desc}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* Reality Check */}
-        <div className="bg-gradient-to-r from-destructive/20 via-destructive/10 to-destructive/20 border-2 border-destructive/50 rounded-2xl p-8 text-center">
-          <p className="text-2xl font-black mb-3">
+        <div className="bg-gradient-to-r from-destructive/20 via-destructive/10 to-destructive/20 border-2 border-destructive/50 rounded-2xl p-4 sm:p-6 md:p-8 text-center">
+          <p className="text-lg sm:text-xl md:text-2xl font-black mb-2 sm:mb-3">
             ⚠️ REAL TALK: This Doesn't Exist Yet
           </p>
-          <p className="text-xl font-medium text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             But it can with your help.<br/>
             Your LOI = proof to investors that producers want this built.<br/>
             <span className="text-primary font-black">Don't just wait for the next big thing. Help us build it.</span>

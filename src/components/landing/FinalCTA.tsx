@@ -94,65 +94,65 @@ export const FinalCTA = () => {
   const spotsLeft = Math.max(0, 1200 - signupCount);
 
   return (
-    <section className="py-16 md:py-24 px-4 relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-3 sm:px-4 relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/10 animate-pulse" />
       
       <div className="container mx-auto max-w-4xl text-center relative z-10">
-        <div className="p-8 md:p-16 bg-gradient-to-br from-card/90 to-muted/90 backdrop-blur-xl rounded-3xl border-4 border-primary/50 shadow-2xl">
-          <Flame className="w-12 h-12 md:w-16 md:h-16 text-primary mx-auto mb-6 animate-pulse" />
+        <div className="p-6 sm:p-8 md:p-12 lg:p-16 bg-gradient-to-br from-card/90 to-muted/90 backdrop-blur-xl rounded-3xl border-2 sm:border-4 border-primary/50 shadow-2xl">
+          <Flame className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 text-primary mx-auto mb-4 sm:mb-6 animate-pulse" />
           
-          <h2 className="text-3xl md:text-6xl font-black mb-4 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 leading-tight">
             <span className="text-primary">Don't Get</span> Left Behind
           </h2>
           
-          <p className="text-lg md:text-2xl mb-3 font-bold">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 font-bold">
             While everyone else sleeps on YouTube beats for pennies...
           </p>
           
-          <p className="text-xl md:text-3xl mb-8 text-secondary font-black">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 text-secondary font-black">
             The first 1,200 will OWN the platform
           </p>
           
-          <form onSubmit={handleSubmit} className="max-w-lg mx-auto mb-6">
-            <div className="flex flex-col sm:flex-row gap-3">
+          <form onSubmit={handleSubmit} className="max-w-lg mx-auto mb-4 sm:mb-6">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
               <Input
                 type="email"
                 placeholder="your@email.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 h-12 md:h-14 bg-background border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-base md:text-lg font-medium focus:border-primary"
+                className="flex-1 h-11 sm:h-12 md:h-14 bg-background border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base md:text-lg font-medium focus:border-primary"
                 required
               />
               <Button 
                 type="submit"
                 size="lg"
                 disabled={isSubmitting}
-                className="h-12 md:h-14 px-8 md:px-10 bg-gradient-to-r from-primary via-secondary to-primary hover:opacity-90 text-background font-black text-base md:text-lg animate-glow-pulse border-2 border-primary whitespace-nowrap"
+                className="h-11 sm:h-12 md:h-14 px-6 sm:px-8 md:px-10 bg-gradient-to-r from-primary via-secondary to-primary hover:opacity-90 active:scale-95 text-background font-black text-sm sm:text-base md:text-lg animate-glow-pulse border-2 border-primary whitespace-nowrap touch-manipulation"
               >
                 {isSubmitting ? "⚡" : "CLAIM MY SPOT →"}
               </Button>
             </div>
           </form>
           
-          <div className="flex items-center justify-center gap-3 md:gap-4 flex-wrap text-xs md:text-sm font-medium">
-            <div className="px-3 md:px-4 py-2 bg-primary/20 border border-primary rounded-lg">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 flex-wrap text-[10px] sm:text-xs md:text-sm font-medium px-2">
+            <div className="px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 bg-primary/20 border border-primary rounded-lg">
               <span className="text-primary font-black">✓</span> 33% off forever
             </div>
-            <div className="px-3 md:px-4 py-2 bg-secondary/20 border border-secondary rounded-lg">
+            <div className="px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 bg-secondary/20 border border-secondary rounded-lg">
               <span className="text-secondary font-black">✓</span> Beta access Q3 2025
             </div>
-            <div className="px-3 md:px-4 py-2 bg-destructive/20 border border-destructive rounded-lg animate-pulse">
+            <div className="px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 bg-destructive/20 border border-destructive rounded-lg animate-pulse">
               <span className="text-destructive font-black">{spotsLeft}</span> spots left
             </div>
           </div>
         </div>
 
-        <div className="mt-8 p-6 md:p-8 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl border-2 border-primary/20">
-          <p className="text-sm md:text-base text-foreground font-bold mb-4">
+        <div className="mt-6 sm:mt-8 p-4 sm:p-6 md:p-8 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl border-2 border-primary/20">
+          <p className="text-xs sm:text-sm md:text-base text-foreground font-bold mb-3 sm:mb-4 leading-relaxed">
             💡 Your signup = proof to VCs that producers NEED this. We can't build BAGЯ alone—help us will this into existence.
           </p>
-          <p className="text-xs md:text-sm text-muted-foreground font-medium">
+          <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground font-medium leading-relaxed">
             Share this with your producer friends. The more LOIs we collect, the faster we close the $850K and start building.
           </p>
         </div>

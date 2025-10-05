@@ -49,47 +49,47 @@ export const WhyBagr = () => {
   ];
 
   return (
-    <section id="why-bagr" className="py-20 px-4 relative overflow-hidden">
+    <section id="why-bagr" className="py-12 sm:py-16 md:py-20 px-3 sm:px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/10 to-background" />
       
       <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-black mb-6 leading-tight">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight px-2">
             Why Old Platforms Are <span className="text-destructive line-through">Dead</span>
             <br/>
             <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
               And BAGЯ Is The Future
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground font-medium">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground font-medium px-4">
             BeatStars = Craigslist. Airbit = eBay from 2005. <strong>BAGЯ</strong> = TikTok Shop meets Whatnot energy.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {features.map((feature, i) => (
             <div 
               key={i} 
-              className={`group p-6 md:p-8 bg-gradient-to-br ${feature.gradient} border-2 border-border hover:border-primary rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 cursor-pointer flex flex-col justify-between min-h-[200px]`}
+              className={`group p-4 sm:p-6 md:p-8 bg-gradient-to-br ${feature.gradient} border-2 border-border hover:border-primary rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 cursor-pointer flex flex-col justify-between min-h-[180px] sm:min-h-[200px]`}
             >
               <div className="flex flex-col h-full">
-                <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-4 text-background group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-3 sm:mb-4 text-background group-hover:scale-110 transition-transform">
                   {feature.icon}
                 </div>
-                <h3 className="font-black text-lg mb-2 text-foreground whitespace-nowrap">{feature.title}</h3>
-                <p className="text-muted-foreground font-medium font-poppins">{feature.desc}</p>
+                <h3 className="font-black text-base sm:text-lg mb-1.5 sm:mb-2 text-foreground">{feature.title}</h3>
+                <p className="text-sm sm:text-base text-muted-foreground font-medium font-poppins leading-relaxed">{feature.desc}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* Comparison Table */}
-        <div className="mt-16 max-w-6xl mx-auto">
-          <div className="bg-card border-2 border-border rounded-2xl overflow-hidden">
-            <div className="grid grid-cols-3 gap-4 p-6 bg-muted/30 border-b-2 border-border items-center">
-              <div className="font-black text-base md:text-lg text-destructive text-center">😭 Old Platforms</div>
-              <div className="font-black text-2xl md:text-3xl text-foreground text-center">VS.</div>
-              <div className="font-black text-base md:text-lg text-primary text-center">🚀 BAGЯ</div>
+        <div className="mt-10 sm:mt-12 md:mt-16 max-w-6xl mx-auto overflow-x-auto">
+          <div className="bg-card border-2 border-border rounded-2xl overflow-hidden min-w-[600px]">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 p-3 sm:p-4 md:p-6 bg-muted/30 border-b-2 border-border items-center">
+              <div className="font-black text-sm sm:text-base md:text-lg text-destructive text-center">😭 Old Platforms</div>
+              <div className="font-black text-lg sm:text-xl md:text-2xl lg:text-3xl text-foreground text-center">VS.</div>
+              <div className="font-black text-sm sm:text-base md:text-lg text-primary text-center">🚀 BAGЯ</div>
             </div>
             {[
               { feature: "Live streaming", old: "Upload. Wait. Pray.", bagr: "Go live now, go viral faster." },
@@ -100,18 +100,18 @@ export const WhyBagr = () => {
               { feature: "Instant payouts", old: "5-7 business days", bagr: "Instant bag. Cash hits before the encore." },
               { feature: "Platform fee", old: "30%+ 'tax' for nothing.", bagr: "15% flat or LESS." }
             ].map((row, i) => (
-              <div key={i} className="grid grid-cols-[1fr_auto_1fr] gap-8 p-6 border-b border-border last:border-0 hover:bg-muted/20 transition-colors items-center">
-                <div className="text-center text-muted-foreground whitespace-nowrap">{row.old}</div>
-                <div className="text-center text-muted-foreground/30 font-bold whitespace-nowrap">VS</div>
-                <div className="text-center font-bold italic font-poppins whitespace-nowrap">{row.bagr}</div>
+              <div key={i} className="grid grid-cols-[1fr_auto_1fr] gap-2 sm:gap-4 md:gap-8 p-3 sm:p-4 md:p-6 border-b border-border last:border-0 hover:bg-muted/20 transition-colors items-center">
+                <div className="text-center text-muted-foreground text-xs sm:text-sm md:text-base">{row.old}</div>
+                <div className="text-center text-muted-foreground/30 font-bold text-xs sm:text-sm">VS</div>
+                <div className="text-center font-bold italic font-poppins text-xs sm:text-sm md:text-base">{row.bagr}</div>
               </div>
             ))}
           </div>
         </div>
 
         {/* Emotional Closing */}
-        <div className="mt-8 text-center max-w-3xl mx-auto">
-          <p className="text-xl md:text-2xl font-black text-destructive">
+        <div className="mt-6 sm:mt-8 text-center max-w-3xl mx-auto px-4">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-black text-destructive leading-tight">
             Why settle for dial-up when you could build with BAGЯ at fiber-optic speed?
           </p>
         </div>
