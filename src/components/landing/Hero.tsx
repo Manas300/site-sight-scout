@@ -200,12 +200,9 @@ export const Hero = () => {
                 {isSubmitting ? "⚡" : "I'M IN →"}
               </Button>
             </form>
-            <div className="mt-6 flex items-center justify-center gap-3 flex-wrap">
-              <div className="px-4 py-2 bg-gradient-to-r from-destructive to-destructive/80 border-2 border-destructive rounded-lg animate-pulse">
-                <p className="text-xl md:text-2xl font-black text-background">👥 2</p>
-              </div>
-              <p className="text-sm md:text-lg font-black text-destructive animate-pulse">
-                people already signed their LOI to use BAGR once we're funded
+            <div className="mt-6 px-6 py-4 bg-warning/20 border-2 border-warning rounded-lg animate-pulse">
+              <p className="text-base md:text-xl font-black text-warning">
+                👥 2 people already signed their LOI to use BAGR once we're funded
               </p>
             </div>
           </div>
