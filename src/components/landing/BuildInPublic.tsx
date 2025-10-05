@@ -90,28 +90,28 @@ export const BuildInPublic = () => {
               <div className="space-y-6">
                 {/* Now (Q2 2025) - Active */}
                 <div className="grid grid-cols-3 gap-4 p-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl border-2 border-primary">
-                  <div className="font-black text-xl">Now (Q2 2025)</div>
+                  <div className="font-black text-xl">1. Now (Q2 2025)</div>
                   <div className="font-medium">1,200 LOIs + Close $850K</div>
                   <div className="font-medium">Funding complete → build sprint begins</div>
                 </div>
 
                 {/* Q3 2025 */}
                 <div className="grid grid-cols-3 gap-4 p-4 bg-card/50 rounded-xl border border-border">
-                  <div className="font-black text-xl">Q3 2025</div>
+                  <div className="font-black text-xl">2. Q3 2025</div>
                   <div className="font-medium">Beta with data infrastructure</div>
                   <div className="font-medium">Early testers get first look + feedback loop</div>
                 </div>
 
                 {/* Q4 2025 */}
                 <div className="grid grid-cols-3 gap-4 p-4 bg-card/50 rounded-xl border border-border">
-                  <div className="font-black text-xl">Q4 2025</div>
+                  <div className="font-black text-xl">3. Q4 2025</div>
                   <div className="font-medium">Full launch + analytics suite</div>
                   <div className="font-medium">BAGЯ goes live for founding producers</div>
                 </div>
 
                 {/* 2026 */}
                 <div className="grid grid-cols-3 gap-4 p-4 bg-card/50 rounded-xl border border-border">
-                  <div className="font-black text-xl">2026</div>
+                  <div className="font-black text-xl">4. 2026</div>
                   <div className="font-medium">Series A ready</div>
                   <div className="font-medium">Scale globally + creator tools expansion</div>
                 </div>
