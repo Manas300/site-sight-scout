@@ -90,18 +90,18 @@ export const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-8xl font-black mb-6 font-space-grotesk text-center" style={{ letterSpacing: '0.1em', wordSpacing: '-0.05em', lineHeight: '1.2' }}>
-            <span className="block text-primary animate-pulse" style={{ letterSpacing: '0.1em' }}>
+            <span className="block text-primary" style={{ letterSpacing: '0.1em' }}>
               GO LIVE.
             </span>
-            <span className="block text-secondary animate-pulse" style={{ animationDelay: '0.3s', marginTop: '20px', letterSpacing: '0.1em' }}>
+            <span className="block text-secondary" style={{ marginTop: '20px', letterSpacing: '0.1em' }}>
               DROP A BEAT.
             </span>
-            <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse" style={{ animationDelay: '0.6s', marginTop: '20px', letterSpacing: '0.1em' }}>
+            <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent" style={{ marginTop: '20px', letterSpacing: '0.1em' }}>
               GET PAID. 
               <img 
                 src={moneyBagImage} 
                 alt="money bag" 
-                className="inline-block w-24 h-24 md:w-32 md:h-32 ml-2 -mt-2"
+                className="inline-block w-24 h-24 md:w-32 md:h-32 ml-2 -mt-2 animate-pulse"
                 style={{
                   filter: 'drop-shadow(0 8px 16px rgba(0,0,0,0.6)) drop-shadow(0 0 20px rgba(255,215,0,0.8))',
                 }}
