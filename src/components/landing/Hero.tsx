@@ -120,7 +120,7 @@ export const Hero = () => {
               <div>
                 <p className="text-sm md:text-lg font-bold mb-2 text-primary font-sans">REAL TALK:</p>
                 <p className="text-sm md:text-lg text-foreground/80 font-sans mb-3">
-                  We've been bootstrapping <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> for 6 months, dropped $20K+ of our own money on Figma designs and beta-stage coding, but now need pre-seed investors to scale this to what it should be: the Bloomberg Terminal of Hip Hop.
+                  We've been bootstrapping <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> for 6 months, dropped $20K+ of our own money on Figma designs and early-stage coding, but now need pre-seed investors to scale this to what it should be: the Bloomberg Terminal of Hip Hop.
                 </p>
                 <p className="text-sm md:text-lg text-foreground/80 font-sans font-bold">
                   Your signup = proof that producers actually want this.
