@@ -49,7 +49,7 @@ export const ProductVision = () => {
               title: "Live Shopping",
               desc: (
                 <>
-                  Drop beats or sound packs live. Close sales fast. <br/> Creators cop in seconds. No waiting No gatekeepers.
+                  Close beat and sound pack sales fast. <br/> Creators cop in seconds. No waiting No gatekeepers.
                 </>
               ),
               
