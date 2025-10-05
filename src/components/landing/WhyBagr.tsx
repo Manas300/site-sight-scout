@@ -7,7 +7,7 @@ export const WhyBagr = () => {
       title: "Drop heat from anywhere.",
       desc: (
         <>
-          Studio? nah. <br/> you, your phone + WAV files = <br/> all you need.
+          you, your phone + WAV files = <br/> all you need.
         </>
       ),
       gradient: "from-primary/20 to-primary/5"
