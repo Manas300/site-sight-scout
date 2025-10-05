@@ -119,8 +119,8 @@ export const BuildInPublic = () => {
           </div>
 
           {/* Bottom Tagline */}
-          <div className="mt-12 p-6 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-xl border border-primary/20">
-            <p className="text-center font-medium text-lg italic">
+          <div className="mt-12 p-6 bg-background/50 rounded-xl border-3 border-[#D4AF37]">
+            <p className="text-center font-bold text-xl md:text-2xl italic text-[#D4AF37]">
               Watch us build the future you asked for in real-time.
             </p>
           </div>
