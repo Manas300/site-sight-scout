@@ -88,7 +88,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight">
-              Who This Is <span className="text-primary">Actually</span> For
+              Who <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> Is <span className="text-primary">For</span>
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-medium px-4">
               If you relate to any of these, you're in the right place
