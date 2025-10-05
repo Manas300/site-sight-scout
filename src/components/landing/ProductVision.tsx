@@ -86,11 +86,7 @@ export const ProductVision = () => {
             {
               img: mockupArtistWin,
               title: "Artists Win",
-              desc: (
-                <>
-                  Outbid 'em live. <br/> Snag exclusive rights before bro does and win full creative control — in real-time.
-                </>
-              ),
+              desc: "Snag exclusive rights to beats before bro does and win full creative control.",
               
             },
             {
