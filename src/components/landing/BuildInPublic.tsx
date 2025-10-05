@@ -87,7 +87,7 @@ export const BuildInPublic = () => {
                   <CheckSquare className="w-6 h-6 text-background" />
                 </div>
                 <div className="text-xl md:text-2xl">
-                  <div className="font-black">Phase I. We're Building Proof Together 🔥</div>
+                  <div className="font-black">Phase I. We're Building Proof Together</div>
                   <div className="text-lg md:text-xl mt-1">1,200 LOIs + $850K = Go Time. Every signup counts.</div>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export const BuildInPublic = () => {
                   <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
                 <div className="text-xl md:text-2xl text-muted-foreground">
-                  <div className="font-black">Phase II. Early Access Unlocked 🔓</div>
+                  <div className="font-black">Phase II. Early Access Unlocked</div>
                   <div className="text-lg md:text-xl mt-1">First 1,200 Producers get BETA + direct feature input.</div>
                 </div>
               </div>
@@ -113,7 +113,7 @@ export const BuildInPublic = () => {
                   <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
                 <div className="text-xl md:text-2xl text-muted-foreground">
-                  <div className="font-black">Phase III. The Big Drop 🎯</div>
+                  <div className="font-black">Phase III. The Big Drop</div>
                   <div className="text-lg md:text-xl mt-1">BAGЯ goes live with real-time auctions + analytics.</div>
                 </div>
               </div>
@@ -126,7 +126,7 @@ export const BuildInPublic = () => {
                   <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
                 <div className="text-xl md:text-2xl text-muted-foreground">
-                  <div className="font-black">Phase IV. Culture Goes Global 🌍</div>
+                  <div className="font-black">Phase IV. Culture Goes Global</div>
                   <div className="text-lg md:text-xl mt-1">Scaling to Series A and beyond.</div>
                 </div>
               </div>
