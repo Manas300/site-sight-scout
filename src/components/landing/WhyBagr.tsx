@@ -72,7 +72,7 @@ export const WhyBagr = () => {
                 <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-4 text-background group-hover:scale-110 transition-transform">
                   {feature.icon}
                 </div>
-                <h3 className="font-black text-xl mb-2 text-foreground">{feature.title}</h3>
+                <h3 className="font-black text-lg mb-2 text-foreground">{feature.title}</h3>
                 <p className="text-muted-foreground font-medium">{feature.desc}</p>
               </div>
             </div>
