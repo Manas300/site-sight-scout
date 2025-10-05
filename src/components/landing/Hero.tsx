@@ -91,13 +91,13 @@ export const Hero = () => {
           
           <h1 className="text-4xl md:text-8xl font-black mb-6 font-space-grotesk text-center" style={{ letterSpacing: '0.1em', wordSpacing: '-0.05em', lineHeight: '1.2' }}>
             <span className="block text-primary animate-pulse" style={{ letterSpacing: '0.1em' }}>
-              DROP BEATS.
+              GO LIVE.
             </span>
             <span className="block text-secondary animate-pulse" style={{ animationDelay: '0.3s', marginTop: '20px', letterSpacing: '0.1em' }}>
-              START BIDDING WARS.
+              DROP A BEAT.
             </span>
             <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse" style={{ animationDelay: '0.6s', marginTop: '20px', letterSpacing: '0.1em' }}>
-              GET THE BAG. <BagAnimation className="inline-block relative z-50" />
+              GET PAID. <BagAnimation className="inline-block relative z-50" />
             </span>
           </h1>
             
