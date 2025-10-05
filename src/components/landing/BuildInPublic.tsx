@@ -79,8 +79,8 @@ export const BuildInPublic = () => {
           <div className="space-y-4">
             {/* Stage 1 - Active/Complete */}
             <div className="relative group flex justify-center">
-              <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl border-2 border-primary shadow-[0_0_30px_rgba(0,255,0,0.3)] hover:shadow-[0_0_40px_rgba(0,255,0,0.5)] transition-all duration-300 w-full max-w-7xl">
-                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-[0_0_20px_rgba(0,255,0,0.6)] animate-pulse flex-shrink-0">
+              <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-destructive/20 to-destructive/10 rounded-2xl border-2 border-destructive shadow-[0_0_30px_rgba(255,0,0,0.3)] hover:shadow-[0_0_40px_rgba(255,0,0,0.5)] transition-all duration-300 w-full max-w-7xl">
+                <div className="w-12 h-12 rounded-full bg-destructive flex items-center justify-center shadow-[0_0_20px_rgba(255,0,0,0.6)] animate-pulse flex-shrink-0">
                   <CheckSquare className="w-6 h-6 text-background" />
                 </div>
                 <div className="text-xl md:text-2xl">
