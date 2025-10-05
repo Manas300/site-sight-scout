@@ -15,30 +15,68 @@ const Index = () => {
           <h1 className="text-4xl font-black tracking-widest text-white font-montserrat">
             BAGЯ
           </h1>
-          <div className="hidden md:flex gap-8 text-sm font-bold">
-            <a href="#why-bagr" className="hover:text-primary transition-colors">Why BAGЯ</a>
-            <a href="#build-public" className="hover:text-primary transition-colors">The Raise</a>
-            <a href="#join" className="hover:text-primary transition-colors">Join</a>
+          <div className="hidden md:flex gap-8 text-base font-bold font-montserrat absolute left-1/2 transform -translate-x-1/2">
+            <a 
+              href="#why-bagr" 
+              className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('why-bagr')?.scrollIntoView({ 
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }}
+            >
+              Why BAGЯ
+            </a>
+            <a 
+              href="#build-public" 
+              className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('build-public')?.scrollIntoView({ 
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }}
+            >
+              The Raise
+            </a>
+            <a 
+              href="#join" 
+              className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('join')?.scrollIntoView({ 
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }}
+            >
+              Join
+            </a>
           </div>
-          <Button 
+          {/* <Button 
             variant="outline" 
             size="sm" 
             className="hidden md:inline-flex border-2 border-primary text-primary hover:bg-primary hover:text-background font-bold"
           >
             Sign In
-          </Button>
+          </Button> */}
         </div>
       </nav>
 
       <Hero />
       
-      <div id="why-bagr">
+      <div id="why-bagr" className="animate-slide-up">
         <WhyBagr />
       </div>
 
-      <ProductVision />
+      <div className="animate-slide-in-left">
+        <ProductVision />
+      </div>
 
-      <div id="build-public">
+      <div id="build-public" className="animate-slide-in-right">
         <BuildInPublic />
       </div>
 
@@ -64,7 +102,7 @@ const Index = () => {
               },
               {
                 title: "🎤 Artists",
-                emoji: "🔥",
+                emoji: <span className="text-red-500">🔥</span>,
                 pain: "Done scrolling dead beat stores for hours",
                 solution: ["Join live sessions", "Bid on heat", "Lock in exclusives"]
               },
@@ -93,7 +131,7 @@ const Index = () => {
         </div>
       </section>
 
-      <div id="join">
+      <div id="join" className="animate-fade-in">
         <FinalCTA />
       </div>
 

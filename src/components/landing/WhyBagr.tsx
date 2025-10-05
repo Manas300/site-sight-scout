@@ -5,37 +5,41 @@ export const WhyBagr = () => {
     {
       icon: <Play className="w-7 h-7" />,
       title: "go live from your phone",
-      desc: "no studio needed. just your phone + beats",
+      desc: (
+        <>
+          no studio needed.  <br/> <strong>just your phone + files.</strong>
+        </>
+      ),
       gradient: "from-primary/20 to-primary/5"
     },
     {
       icon: <TrendingUp className="w-7 h-7" />,
       title: "artists bid in real-time",
-      desc: "watch the price climb as they compete",
+      desc: "watch prices climb as they compete.",
       gradient: "from-secondary/20 to-secondary/5"
     },
     {
       icon: <Zap className="w-7 h-7" />,
       title: "instant payouts",
-      desc: "money hits your account immediately",
+      desc: "money hits your account ASAP.",
       gradient: "from-primary/20 to-primary/5"
     },
     {
       icon: <Users className="w-7 h-7" />,
       title: "build your fanbase",
-      desc: "fans tip, comment, share your streams",
+      desc: "fans tip, comment, share streams.",
       gradient: "from-secondary/20 to-secondary/5"
     },
     {
       icon: <DollarSign className="w-7 h-7" />,
-      title: "no middlemen",
-      desc: "you set prices. you keep most of it.",
+      title: "no limits",
+      desc: "more live. more hype. more bank.",
       gradient: "from-primary/20 to-primary/5"
     },
     {
       icon: <Target className="w-7 h-7" />,
       title: "algorithm loves you",
-      desc: "go viral with our discovery engine",
+      desc: "go viral with our discovery engine.",
       gradient: "from-secondary/20 to-secondary/5"
     }
   ];
@@ -62,13 +66,15 @@ export const WhyBagr = () => {
           {features.map((feature, i) => (
             <div 
               key={i} 
-              className={`group p-8 bg-gradient-to-br ${feature.gradient} border-2 border-border hover:border-primary rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 cursor-pointer`}
+              className={`group p-6 md:p-8 bg-gradient-to-br ${feature.gradient} border-2 border-border hover:border-primary rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 cursor-pointer flex flex-col justify-between min-h-[200px]`}
             >
-              <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-4 text-background group-hover:scale-110 transition-transform">
-                {feature.icon}
+              <div className="flex flex-col h-full">
+                <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-4 text-background group-hover:scale-110 transition-transform">
+                  {feature.icon}
+                </div>
+                <h3 className="font-black text-xl mb-2 text-foreground">{feature.title}</h3>
+                <p className="text-muted-foreground font-medium whitespace-nowrap">{feature.desc}</p>
               </div>
-              <h3 className="font-black text-xl mb-2 text-foreground">{feature.title}</h3>
-              <p className="text-muted-foreground font-medium">{feature.desc}</p>
             </div>
           ))}
         </div>
@@ -83,7 +89,10 @@ export const WhyBagr = () => {
             </div>
             {[
               { feature: "Live streaming", old: "❌", bagr: "✅" },
-              { feature: "Real-time bidding", old: "❌", bagr: "✅" },
+              { feature: "Live shopping", old: "❌", bagr: "✅" }, 
+              { feature: "Live auctions", old: "❌", bagr: "✅" },
+              { feature: "Insight-driven analytics", old: "❌", bagr: "✅" },
+             
               { feature: "Mobile-first", old: "❌", bagr: "✅" },
               { feature: "Instant payouts", old: "🐌 5-7 days", bagr: "⚡ Instant" },
               { feature: "Platform fee", old: "30%+", bagr: "15%" }

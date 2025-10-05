@@ -7,6 +7,7 @@ import { useSignupCount } from "@/hooks/useSignupCount";
 import { Zap, TrendingUp, Flame } from "lucide-react";
 import { z } from "zod";
 import { BagAnimation } from "@/components/animations/BagAnimation";
+import moneyBagImage from "@/assets/money-bag.png";
 
 const emailSchema = z.object({
   email: z.string().trim().email({ message: "Enter a valid email" }).max(255)
@@ -88,7 +89,7 @@ export const Hero = () => {
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-8xl font-black tracking-tighter mb-6 leading-none">
+          <h1 className="text-4xl md:text-8xl font-black tracking-tighter mb-6 font-montserrat" style={{ lineHeight: '0.9' }}>
             <span className="block text-primary animate-pulse">
               {['D','R','O','P',' ','B','E','A','T','S','.'].map((letter, i) => {
                 // Custom spacing for each letter position
@@ -97,11 +98,11 @@ export const Hero = () => {
                   1: '0.05em', // After R  
                   2: '0.05em', // After O
                   3: '0.2em',  // After P
-                  4: '0.1em',  // After space
+                  4: '-0.2em',  // After space
                   5: '0.05em', // After B
-                  6: '0.08em', // After E
+                  6: '0.13em', // After E
                   7: '0.001em',  // After A
-                  8: '0.07em', // After T
+                  8: '0.11em', // After T
                   9: '0.05em', // After S
                   10: '0em'    // After period (no spacing)
                 };
@@ -113,23 +114,23 @@ export const Hero = () => {
                 );
               })}
             </span>
-            <span className="block text-secondary animate-pulse tracking-normal" style={{ animationDelay: '0.3s' }}>
+            <span className="block text-secondary animate-pulse tracking-normal" style={{ animationDelay: '0.3s', marginTop: '20px' }}>
               {['S','T','A','R','T',' ','B','I','D','D','I','N','G',' '].map((letter, i) => {
                 // Custom spacing for each letter position in "START BIDDING "
                 const spacing = {
-                  0: '0.02em',  // After S
-                  1: '0.0001em',  // After T
-                  2: '0.07em', // After A
-                  3: '0.08em',  // After R
+                  0: '0.075em',  // After S
+                  1: '-0.03em',  // After T
+                  2: '0.05em', // After A
+                  3: '0.05em',  // After R
                   4: '0.2em',   // After T
-                  5: '0.1em',   // After space
-                  6: '0.05em',  // After B
-                  7: '0.05em',  // After I
-                  8: '0.05em',  // After D
-                  9: '0.05em',  // After D
-                  10: '0.08em', // After I
-                  11: '0.05em', // After N
-                  12: '0.05em', // After G
+                  5: '-0.250em',   // After space
+                  6: '0.005em',  // After B
+                  7: '0.005em',  // After I
+                  8: '0.005em',  // After D
+                  9: '0.005em',  // After D
+                  10: '0.0008em', // After I
+                  11: '0.0005em', // After N
+                  12: '0.0005em', // After G
                   13: '0em'     // After space (no spacing)
                 };
                 
@@ -156,18 +157,18 @@ export const Hero = () => {
                 );
               })}
             </span>
-            <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse tracking-normal" style={{ animationDelay: '0.6s' }}>
-              {['G','E','T',' ','T','H','E',' ','B','A','G',' '].map((letter, i) => {
+            <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse tracking-normal text-center" style={{ animationDelay: '0.6s', lineHeight: '0.8', marginTop: '30px' }}>
+              {['G','E','T',' ','T','H','E',' ','B','A','G','.'].map((letter, i) => {
                 // Custom spacing for each letter position in "GET THE BAG "
                 const spacing = {
-                  0: '0.02em',  // After G
-                  1: '0.05em',   // After E
+                  0: '0.001em',  // After G
+                  1: '0.04em',   // After E
                   2: '0.05em',   // After T
-                  3: '0.1em',    // After space
-                  4: '0.05em',   // After T
-                  5: '0.02em',   // After H
+                  3: '-0.05em',    // After space
+                  4: '0.04em',   // After T
+                  5: '0.002em',   // After H
                   6: '0.05em',   // After E
-                  7: '0.1em',    // After space
+                  7: '-0.15em',    // After space
                   8: '0.03em',   // After B
                   9: '-0.03em',   // After A
                   10: '0.03em',  // After G
@@ -182,38 +183,66 @@ export const Hero = () => {
               })}
               <BagAnimation className="inline-block relative z-50" />
             </span>
-          </h1>
-          
-          <p className="text-lg md:text-3xl mb-8 text-foreground/90 font-bold max-w-3xl mx-auto text-center">
+            </h1>
+            
+            {/* Static Bag Image */}
+            <div className="flex justify-center mb-8 -mt-40">
+              <img 
+                src={moneyBagImage} 
+                alt="money bag" 
+                className="w-35 h-35 md:w-35 md:h-40"
+                style={{
+                  filter: 'drop-shadow(0 8px 16px rgba(0,0,0,0.6)) drop-shadow(0 0 20px rgba(255,215,0,0.8))',
+                  textShadow: '0 0 30px rgba(255,215,0,0.9)',
+                  WebkitTextStroke: '2px rgba(0,0,0,0.3)'
+                }}
+              />
+            </div>
+            
+            <p className="text-lg md:text-3xl mb-8 text-foreground/90 font-bold max-w-3xl mx-auto text-center">
             The TikTok Shop for hip hop beats.<br/>
-            <span className="whitespace-nowrap"><span className="text-primary">Live streaming</span> × <span className="text-secondary">Real-time bidding</span> × <span className="text-primary">Instant payouts</span></span>
+              <span className="whitespace-nowrap block -ml-5"><span className="text-primary">Live streaming</span> × <span className="text-secondary">Real-time bidding</span> × <span className="text-primary">Instant payouts</span></span>
           </p>
 
           {/* Radical Transparency Box */}
-          <div className="mb-12 p-4 md:p-6 bg-card/50 backdrop-blur-sm border-2 border-primary/30 rounded-xl max-w-2xl mx-auto">
+          <div className="mb-12 p-4 md:p-6 bg-card/50 backdrop-blur-sm border-2 border-primary/30 rounded-xl max-w-4xl mx-auto">
             <div className="flex items-start gap-3 text-left">
               <Zap className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-1 animate-pulse" />
               <div>
-                <p className="text-xs md:text-sm font-bold mb-2 text-primary">REAL TALK:</p>
-                <p className="text-xs md:text-sm text-foreground/80">
-                  We've been bootstrapping this project, investing $20K+ of our own money, but need Venture Capital to truly realize BAGЯ's potential for the hip hop creator community and scale quickly. Your signup = proof to VCs that producers actually want this. 
-                  <span className="font-bold text-primary"> First 1,200 = founder pricing (33% off for life).</span>
+                <p className="text-sm md:text-lg font-bold mb-2 text-primary">REAL TALK:</p>
+                <p className="text-sm md:text-lg text-foreground/80">
+                  We've been bootstrapping this project, investing $20K+ of our own money, but need Venture Capital to truly realize BAGЯ's potential for the hip hop creator community and scale quickly. Your signup = proof to VCs that producers actually want this.
                 </p>
               </div>
             </div>
           </div>
 
+          {/* Founder Pricing Highlight */}
+          <div className="mb-8 px-6 md:px-8 py-4 bg-gradient-to-r from-primary/20 to-secondary/20 border-2 border-primary rounded-lg max-w-lg mx-auto text-center animate-pulse">
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <div className="w-2 h-2 bg-primary rounded-full animate-ping"></div>
+              <p className="text-sm font-bold text-primary">LIMITED TIME OFFER</p>
+              <div className="w-2 h-2 bg-primary rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+            </div>
+            <p className="text-lg md:text-xl font-black text-primary">
+              First 1,200 = <span className="text-secondary">Founder Pricing</span>
+            </p>
+            <p className="text-2xl md:text-3xl font-black text-secondary">
+              33% OFF FOR LIFE
+            </p>
+          </div>
+
           {/* FOMO Counter */}
-          <div className="mb-12 flex items-center justify-center gap-3 md:gap-6 flex-wrap">
-            <div className="px-4 md:px-6 py-3 bg-destructive/20 border-2 border-destructive rounded-lg animate-pulse">
+          <div className="mb-12 flex items-center justify-center gap-4 md:gap-8 flex-wrap">
+            <div className="px-6 md:px-8 py-4 bg-destructive/20 border-2 border-destructive rounded-lg animate-pulse">
               <p className="text-2xl md:text-3xl font-black text-destructive">{spotsLeft}</p>
               <p className="text-xs text-destructive/80 font-bold">SPOTS LEFT</p>
             </div>
-            <div className="px-4 md:px-6 py-3 bg-primary/20 border-2 border-primary rounded-lg">
+            <div className="px-6 md:px-8 py-4 bg-primary/20 border-2 border-primary rounded-lg">
               <p className="text-2xl md:text-3xl font-black text-primary">{signupCount}</p>
               <p className="text-xs text-primary/80 font-bold">ALREADY IN</p>
             </div>
-            <div className="px-4 md:px-6 py-3 bg-secondary/20 border-2 border-secondary rounded-lg animate-pulse" style={{ animationDelay: '0.5s' }}>
+            <div className="px-6 md:px-8 py-4 bg-secondary/20 border-2 border-secondary rounded-lg animate-pulse" style={{ animationDelay: '0.5s' }}>
               <p className="text-2xl md:text-3xl font-black text-secondary">18</p>
               <p className="text-xs text-secondary/80 font-bold">MONTHS RUNWAY</p>
             </div>
@@ -246,7 +275,7 @@ export const Hero = () => {
 
           {/* Social Proof Ticker */}
           <div className="flex items-center justify-center gap-2 text-xs md:text-sm">
-            <div className="flex -space-x-3">
+            {/* <div className="flex -space-x-3">
               {[1, 2, 3, 4, 5].map((i) => (
                 <div 
                   key={i} 
@@ -254,10 +283,10 @@ export const Hero = () => {
                   style={{ animationDelay: `${i * 0.2}s` }}
                 />
               ))}
-            </div>
-            <p className="text-foreground/70">
+            </div> */}
+            {/* <p className="text-foreground/70">
               <span className="font-black text-primary">23 producers</span> joined recently
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

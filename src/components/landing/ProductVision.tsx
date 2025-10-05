@@ -1,6 +1,9 @@
+import marketPlace from "@/assets/market_place.jpg";
+import producerWin from "@/assets/producer-win.jpg";
+import mockupLiveAuction from "@/assets/mockup-live-auction.jpg";
 import mockupArtistWin from "@/assets/mockup-artist-win.jpg";
 import mockupCosign from "@/assets/mockup-cosign.jpg";
-import mockupLiveAuction from "@/assets/mockup-live-auction.jpg";
+import tipping from "@/assets/tipping.jpg";
 import { Sparkles } from "lucide-react";
 
 export const ProductVision = () => {
@@ -14,58 +17,116 @@ export const ProductVision = () => {
 
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-secondary text-background px-6 py-2 rounded-full font-black mb-6 animate-pulse">
+          {/* <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-secondary text-background px-6 py-2 rounded-full font-black mb-6 animate-pulse">
             <Sparkles className="w-5 h-5" />
             NOT BUILT YET. THIS IS THE VISION.
-          </div>
+          </div> */}
           <h2 className="text-5xl md:text-7xl font-black mb-6">
             <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-fade-in">
-              See What Your $850K
+               What Your $850K Is Building
               <br />
-              Is Building 🔥
+              {/* Is Building <span className="text-red-500" style={{ fontSize: '60px' }}>🔥</span> */}
             </span>
           </h2>
           <p className="text-xl text-muted-foreground font-bold max-w-2xl mx-auto">
-            These are the REAL Figma designs. Once we close the raise, this becomes reality in 6 months.
+            {/* These are the REAL Figma designs. Once we close the raise, this becomes reality in 6 months. */}
           </p>
         </div>
 
-        {/* Mockup Grid */}
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        {/* Top Row - Main Features */}
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
           {[
             {
               img: mockupLiveAuction,
-              title: "Live Bidding Wars 💰",
-              desc: "Watch artists throw money at your beats in REAL-TIME. Highest bid wins."
+              title: "Live Auctions 🔥",
+               desc: (
+                 <>
+                   Real-time bidding creates FOMO. <br/> higher demand = higher prices
+                 </>
+               ),
             },
             {
+              img: marketPlace,
+              title: "Live Shopping  💰",
+              desc: (
+                <>
+                  Shop beats live. <br/> Instant checkout
+                </>
+              ),
+              
+            },
+            {
+              img: producerWin,
+              title: "Producers Win💸",
+              desc: (
+                <>
+                  $120 in 90 seconds. <br/> 389 people watched you WIN.
+                </>
+              ),
+              
+            }
+            
+          ].map((mockup, i) => (
+            <div 
+              key={i}
+              className="animate-fade-in"
+              style={{ animationDelay: `${i * 0.2}s` }}
+            >
+              <img 
+                src={mockup.img} 
+                alt={mockup.title}
+                className="w-full h-auto rounded-2xl hover:scale-105 transition-transform duration-300"
+              />
+              <div className="mt-4 text-center">
+                <h3 className="text-xl font-black text-primary mb-2 tracking-wide">{mockup.title}</h3>
+                <p className="text-sm font-medium text-foreground/90">{mockup.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom Row - Additional Features */}
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {[
+            {
               img: mockupArtistWin,
-              title: "Instant Payouts 💸",
-              desc: "$120 in 90 seconds. Exclusive rights. 389 people watched you WIN."
+              title: "Artists Win 🏆",
+              desc: (
+                <>
+                  Artists compete for  exclusive beats. <br/> Watch the bidding wars unfold live.
+                </>
+              ),
+              
             },
             {
               img: mockupCosign,
               title: "Co-Sign Culture 🤝",
               desc: "Artists stamp their approval on your sound. Clout that lives forever."
+            },
+            {
+              img: tipping,
+              title: "Fan Tipping 💸",
+              desc: (
+                <>
+                  Fans  tip during streams. <br/> Extra income while you cook.
+                </>
+              ),
+             
             }
           ].map((mockup, i) => (
             <div 
-              key={i}
-              className="group relative animate-fade-in"
-              style={{ animationDelay: `${i * 0.2}s` }}
+              key={i + 3}
+              className="animate-fade-in"
+              style={{ animationDelay: `${(i + 3) * 0.2}s` }}
             >
-              <div className="relative overflow-hidden rounded-2xl border-2 border-primary/30 bg-card hover:border-primary transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/50">
-                <img 
-                  src={mockup.img} 
-                  alt={mockup.title}
-                  className="w-full h-auto"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <div>
-                    <h3 className="text-xl font-black text-primary mb-2 tracking-wide">{mockup.title}</h3>
-                    <p className="text-sm font-medium text-foreground/90">{mockup.desc}</p>
-                  </div>
-                </div>
+              <img 
+                src={mockup.img} 
+                alt={mockup.title}
+                className="w-full h-auto rounded-2xl hover:scale-105 transition-transform duration-300"
+              />
+              <div className="mt-4 text-center">
+                <h3 className="text-xl font-black text-primary mb-2 tracking-wide">{mockup.title}</h3>
+                <p className="text-sm font-medium text-foreground/90">{mockup.desc}</p>
               </div>
             </div>
           ))}

@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import moneyBagImage from '@/assets/money-bag.png';
 
 interface BagAnimationProps {
   className?: string;
@@ -89,8 +90,8 @@ export const BagAnimation = ({ className = '' }: BagAnimationProps) => {
          // Spawn coins on first bounce - bursting from top of bag
          for (let i = 0; i < 8; i++) {
            createCoinParticle(
-             gsap.utils.random(35, 65), // Wider horizontal spread
-             gsap.utils.random(5, 20), // Start from top of bag with more spread
+             gsap.utils.random(60, 90), // Adjusted for larger bag (was 35-65)
+             gsap.utils.random(10, 30), // Start from top of bag (was 5-20)
              i * 0.1
            );
          }
@@ -119,8 +120,8 @@ export const BagAnimation = ({ className = '' }: BagAnimationProps) => {
          // Spawn more coins on second bounce - also from top of bag
          for (let i = 0; i < 5; i++) {
            createCoinParticle(
-             gsap.utils.random(35, 65), // Wider horizontal spread
-             gsap.utils.random(5, 20), // Start from top of bag with more spread
+             gsap.utils.random(60, 90), // Adjusted for larger bag (was 35-65)
+             gsap.utils.random(10, 30), // Start from top of bag (was 5-20)
              i * 0.05
            );
          }
@@ -165,31 +166,45 @@ export const BagAnimation = ({ className = '' }: BagAnimationProps) => {
 
   return (
     <div 
-      ref={containerRef}
-      className={`relative inline-block ${className}`}
+      className={`flex items-center justify-center ${className}`}
       style={{ 
-        width: '120px', 
-        height: '120px',
+        width: '200px', 
+        height: '200px',
         zIndex: 1000,
         position: 'relative'
       }}
     >
-      <div
-        ref={bagRef}
-        className="text-8xl select-none"
+      {/* <div
+        ref={containerRef}
+        className="relative inline-block"
         style={{ 
-          position: 'absolute',
-          top: '64%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          filter: 'drop-shadow(0 8px 16px rgba(0,0,0,0.6)) drop-shadow(0 0 20px rgba(255,215,0,0.8))',
-          zIndex: 1001,
-          textShadow: '0 0 30px rgba(255,215,0,0.9)',
-          WebkitTextStroke: '2px rgba(0,0,0,0.3)'
+          width: '200px', 
+          height: '200px',
+          zIndex: 1000,
+          position: 'relative'
         }}
       >
-        💰
-      </div>
+        <div
+          ref={bagRef}
+          className="select-none"
+          style={{ 
+            position: 'absolute',
+            top: '64%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            filter: 'drop-shadow(0 8px 16px rgba(0,0,0,0.6)) drop-shadow(0 0 20px rgba(255,215,0,0.8))',
+            zIndex: 1001,
+            textShadow: '0 0 30px rgba(255,215,0,0.9)',
+            WebkitTextStroke: '2px rgba(0,0,0,0.3)'
+          }}
+        >
+          <img 
+            src={moneyBagImage} 
+            alt="money bag" 
+            style={{ width: '150px', height: '150px' }}
+          />
+        </div>
+      </div> */}
     </div>
   );
 };

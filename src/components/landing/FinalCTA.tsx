@@ -163,7 +163,7 @@ export const FinalCTA = () => {
         <div className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={() => setShowShareModal(false)}>
           <div className="bg-card border-4 border-primary/50 rounded-3xl p-6 md:p-8 max-w-md w-full animate-scale-in" onClick={(e) => e.stopPropagation()}>
             <h3 className="text-2xl md:text-3xl font-black mb-4 text-center">
-              🔥 You're In! Now <span className="text-primary">Spread The Word</span>
+              <span className="text-red-500">🔥</span> You're In! Now <span className="text-primary">Spread The Word</span>
             </h3>
             <p className="text-sm md:text-base mb-6 text-center text-muted-foreground font-medium">
               Help us hit 1,200 LOIs faster = VCs give us $850K faster = We build this beast in 2025

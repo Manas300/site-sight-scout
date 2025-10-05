@@ -6,6 +6,8 @@ export const useSignupCount = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let isMounted = true;
+
     // Fetch initial count
     const fetchCount = async () => {
       try {
@@ -15,13 +17,15 @@ export const useSignupCount = () => {
 
         if (error) {
           console.warn('Error fetching signup count:', error);
-        } else if (count !== null) {
+        } else if (count !== null && isMounted) {
           setSignupCount(count);
         }
       } catch (error) {
         console.warn('Error fetching signup count:', error);
       } finally {
-        setLoading(false);
+        if (isMounted) {
+          setLoading(false);
+        }
       }
     };
 
@@ -37,14 +41,22 @@ export const useSignupCount = () => {
           schema: 'public',
           table: 'newsletter_signups'
         },
-        () => {
-          // Refetch count when new signup is added
-          fetchCount();
+        (payload) => {
+          console.log('New signup detected:', payload);
+          if (isMounted) {
+            // Increment count immediately for better UX
+            setSignupCount(prevCount => prevCount + 1);
+            // Also refetch to ensure accuracy
+            fetchCount();
+          }
         }
       )
-      .subscribe();
+      .subscribe((status) => {
+        console.log('Subscription status:', status);
+      });
 
     return () => {
+      isMounted = false;
       supabase.removeChannel(channel);
     };
   }, []);
