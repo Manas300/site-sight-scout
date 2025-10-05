@@ -41,7 +41,7 @@ export const WhyBagr = () => {
       title: "Go viral, not invisible.",
       desc: (
         <>
-          <span className="font-sans">BAGR</span>'s algo is built for creators, not memes.
+          <span className="font-sans">BAGЯ</span>'s algo is built for creators, not memes.
         </>
       ),
       gradient: "from-secondary/20 to-secondary/5"
