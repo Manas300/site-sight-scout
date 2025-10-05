@@ -108,6 +108,16 @@ export const WhyBagr = () => {
             ))}
           </div>
         </div>
+
+        {/* Emotional Closing */}
+        <div className="mt-8 text-center max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground font-medium">
+            Creators are done waiting for platforms that move like a dial-up modem. <span className="text-sm">(remember those? prolly not)</span>
+          </p>
+          <p className="text-xl md:text-2xl font-black mt-3 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+            BAGЯ's built for real-time moves, real-time money, and real-time growth.
+          </p>
+        </div>
       </div>
     </section>
   );
