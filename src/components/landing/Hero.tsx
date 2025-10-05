@@ -279,7 +279,7 @@ export const Hero = () => {
               />
               
               <textarea
-                placeholder="Why you need BAGЯ in your life rn (this goes on the wall!)"
+                placeholder="Why you need us in your life rn (this goes on the wall!)"
                 value={formData.whyBagr}
                 onChange={(e) => setFormData(prev => ({ ...prev, whyBagr: e.target.value }))}
                 className="w-full h-24 px-4 py-3 bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary rounded-md resize-none"

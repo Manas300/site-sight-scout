@@ -13,7 +13,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-xl border-b border-primary/20">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-4xl font-black text-white font-montserrat" style={{ letterSpacing: '0.2em', fontSize: '2.25rem', lineHeight: '1', fontFeatureSettings: '"liga" 0' }}>
+          <h1 className="text-4xl font-black text-white font-montserrat font-bold" style={{ letterSpacing: '0.2em', fontSize: '2.25rem', lineHeight: '1', fontFeatureSettings: '"liga" 0' }}>
             BAGЯ
           </h1>
           <div className="hidden md:flex gap-8 text-xl font-bold font-montserrat absolute left-1/2 transform -translate-x-1/2">
@@ -28,7 +28,7 @@ const Index = () => {
                 });
               }}
             >
-              Why BAGЯ
+              Why <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>BAGЯ</span>
             </a>
             <a 
               href="#build-public" 
@@ -143,7 +143,7 @@ const Index = () => {
       <footer className="py-12 px-4 border-t-2 border-border bg-muted/20">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-3xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <div className="text-3xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>
               BAGЯ
             </div>
             <div className="flex gap-6 text-sm font-medium text-muted-foreground">
@@ -152,7 +152,7 @@ const Index = () => {
               <a href="#" className="hover:text-primary transition-colors">Contact</a>
             </div>
             <p className="text-sm text-muted-foreground">
-              © 2025 BAGЯ. Building in public.
+              © 2025 <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>BAGЯ</span>. Building in public.
             </p>
           </div>
         </div>

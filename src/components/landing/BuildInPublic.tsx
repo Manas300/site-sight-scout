@@ -22,7 +22,7 @@ export const BuildInPublic = () => {
             </div>
             <h3 className="text-2xl font-black mb-3 text-primary">The Raise: $850K</h3>
             <p className="text-foreground/80 font-medium mb-4">
-              This gets us 18 months of runway to build, test, and scale BAGЯ with real producers.
+              This gets us 18 months of runway to build, test, and scale <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>BAGЯ</span> with real producers.
             </p>
             <ul className="space-y-2 text-sm">
               <li className="flex items-start gap-2">
