@@ -125,8 +125,11 @@ export const Hero = () => {
               <Zap className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-1 animate-pulse" />
               <div>
                 <p className="text-sm md:text-lg font-bold mb-2 text-primary font-sans">REAL TALK:</p>
-                <p className="text-sm md:text-lg text-foreground/80 font-sans">
-                  We've been bootstrapping <span style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> for 6 months, dropped $20K+ of our own money, but need investors to scale this to what it should be. Your signup = proof that producers actually want this.
+                <p className="text-sm md:text-lg text-foreground/80 font-sans mb-3">
+                  We've been bootstrapping <span style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> for 6 months, dropped $20K+ of our own money, but need investors to scale this to what it should be.
+                </p>
+                <p className="text-sm md:text-lg text-foreground/80 font-sans font-bold">
+                  Your signup = proof that producers actually want this.
                 </p>
               </div>
             </div>
