@@ -110,7 +110,7 @@ export const Hero = () => {
           </h1>
             
           <p className="text-lg md:text-3xl mb-8 text-foreground/90 font-bold max-w-3xl mx-auto flex justify-center">
-            <span className="whitespace-nowrap"><span className="text-primary">Live bidding wars</span> × <span className="text-secondary">Live shopping</span> × <span className="text-primary">Instant payouts</span></span>
+            <span className="whitespace-nowrap"><span className="text-primary">Live Beat Auctions</span> × <span className="text-secondary">Live Producer Stores</span> × <span className="text-primary">Instant Payouts</span></span>
           </p>
 
           {/* Radical Transparency Box */}
