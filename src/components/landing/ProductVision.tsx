@@ -38,7 +38,7 @@ export const ProductVision = () => {
             {
               img: mockupLiveAuction,
               title: "Live Auctions",
-               desc: "Watch prices climb while your whole crew hypes you up live.",
+               desc: "Watch prices climb while your whole crew hypes you up in real-time.",
             },
             {
               img: marketPlace,
