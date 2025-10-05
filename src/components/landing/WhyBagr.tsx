@@ -111,7 +111,7 @@ export const WhyBagr = () => {
 
         {/* Emotional Closing */}
         <div className="mt-8 text-center max-w-3xl mx-auto">
-          <p className="text-xl md:text-2xl font-black bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+          <p className="text-xl md:text-2xl font-black text-destructive">
             Why settle for dial-up when you could be building with BAGЯ at fiber-optic speed?
           </p>
         </div>
