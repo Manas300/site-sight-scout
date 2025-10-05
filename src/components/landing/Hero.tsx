@@ -9,12 +9,22 @@ import { z } from "zod";
 import { BagAnimation } from "@/components/animations/BagAnimation";
 import moneyBagImage from "@/assets/money-bag.png";
 
-const emailSchema = z.object({
+const signupSchema = z.object({
+  firstName: z.string().trim().min(1, { message: "First name required" }).max(100),
+  city: z.string().trim().min(1, { message: "City required" }).max(100),
+  state: z.string().trim().min(2, { message: "State required" }).max(2),
+  whyBagr: z.string().trim().min(10, { message: "Tell us why (at least 10 characters)" }).max(500),
   email: z.string().trim().email({ message: "Enter a valid email" }).max(255)
 });
 
 export const Hero = () => {
-  const [email, setEmail] = useState("");
+  const [formData, setFormData] = useState({
+    firstName: "",
+    city: "",
+    state: "",
+    whyBagr: "",
+    email: ""
+  });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { signupCount } = useSignupCount();
   const { toast } = useToast();
@@ -23,11 +33,11 @@ export const Hero = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Validate email
-    const validation = emailSchema.safeParse({ email });
+    // Validate all fields
+    const validation = signupSchema.safeParse(formData);
     if (!validation.success) {
       toast({
-        title: "Invalid email",
+        title: "Please complete all fields",
         description: validation.error.issues[0].message,
         variant: "destructive",
       });
@@ -37,14 +47,27 @@ export const Hero = () => {
     setIsSubmitting(true);
     
     try {
-      const result = await subscribeToNewsletter(validation.data.email, 'hero');
+      const result = await subscribeToNewsletter(
+        validation.data.email, 
+        'hero',
+        validation.data.firstName,
+        validation.data.city,
+        validation.data.state,
+        validation.data.whyBagr
+      );
       
       if (result.success) {
         toast({
           title: "YOU'RE IN 🔥",
-          description: "Check your email for founder club access.",
+          description: "Your story will appear on the wall below!",
         });
-        setEmail("");
+        setFormData({
+          firstName: "",
+          city: "",
+          state: "",
+          whyBagr: "",
+          email: ""
+        });
       } else {
         // Handle specific error cases
         if (result.error?.includes('already') || result.error?.includes('duplicate')) {
@@ -190,23 +213,61 @@ export const Hero = () => {
           </div>
 
           {/* CTA Form */}
-          <div className="max-w-lg mx-auto mb-8">
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
+          <div className="max-w-2xl mx-auto mb-8">
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Input
+                  type="text"
+                  placeholder="First Name"
+                  value={formData.firstName}
+                  onChange={(e) => setFormData(prev => ({ ...prev, firstName: e.target.value }))}
+                  className="h-12 bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
+                  required
+                />
+                <Input
+                  type="text"
+                  placeholder="City"
+                  value={formData.city}
+                  onChange={(e) => setFormData(prev => ({ ...prev, city: e.target.value }))}
+                  className="h-12 bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
+                  required
+                />
+              </div>
+              
+              <Input
+                type="text"
+                placeholder="State (e.g., NY, CA)"
+                maxLength={2}
+                value={formData.state}
+                onChange={(e) => setFormData(prev => ({ ...prev, state: e.target.value.toUpperCase() }))}
+                className="h-12 bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
+                required
+              />
+              
+              <textarea
+                placeholder="Why do you want BAGЯ to exist? (Your answer will be shown on the wall below!)"
+                value={formData.whyBagr}
+                onChange={(e) => setFormData(prev => ({ ...prev, whyBagr: e.target.value }))}
+                className="w-full h-24 px-4 py-3 bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary rounded-md resize-none"
+                required
+              />
+              
               <Input
                 type="email"
                 placeholder="your@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 h-12 md:h-14 bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-base md:text-lg font-medium focus:border-primary"
+                value={formData.email}
+                onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                className="h-12 bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
                 required
               />
+              
               <Button 
                 type="submit" 
                 size="lg"
                 disabled={isSubmitting}
-                className="h-12 md:h-14 px-8 md:px-10 bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-background font-black text-base md:text-lg animate-glow-pulse border-2 border-primary whitespace-nowrap"
+                className="w-full h-14 px-10 bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-background font-black text-lg animate-glow-pulse border-2 border-primary"
               >
-                {isSubmitting ? "⚡" : "I'M IN →"}
+                {isSubmitting ? "⚡" : "I'M IN → JOIN THE MOVEMENT"}
               </Button>
             </form>
           </div>

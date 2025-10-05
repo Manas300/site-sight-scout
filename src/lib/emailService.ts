@@ -8,14 +8,25 @@ export interface EmailResponse {
   error?: string;
 }
 
-export const subscribeToNewsletter = async (email: string, source: string = 'website'): Promise<EmailResponse> => {
+export const subscribeToNewsletter = async (
+  email: string, 
+  source: string = 'website',
+  firstName?: string,
+  city?: string,
+  state?: string,
+  whyBagr?: string
+): Promise<EmailResponse> => {
   try {
     // First, try to save to Supabase
     const { error: dbError } = await supabase
-      .from('newsletter_signups')
+      .from('waitlist_signups')
       .insert([{ 
         email: email,
-        source: source 
+        referral_source: source,
+        first_name: firstName,
+        city,
+        state,
+        why_bagr: whyBagr
       }]);
 
     // If database error (like duplicate email), handle it
