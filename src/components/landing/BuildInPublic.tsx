@@ -65,7 +65,7 @@ export const BuildInPublic = () => {
         <div className="p-8 bg-gradient-to-br from-card via-background to-card border-2 border-primary/30 rounded-2xl">
           <div className="flex items-center gap-3 mb-8">
             <Rocket className="w-8 h-8 text-primary" />
-            <h3 className="text-3xl font-black">The Roadmap</h3>
+            <h3 className="text-3xl font-black">The Race to Build BAGЯ</h3>
           </div>
 
           {/* Giant Progress Bar */}
