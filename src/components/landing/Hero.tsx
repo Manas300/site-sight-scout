@@ -160,10 +160,10 @@ export const Hero = () => {
               <div className="w-2 h-2 bg-primary rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
             </div>
             <p className="text-lg md:text-xl font-black text-primary">
-              First 1,200 = <span className="text-secondary">Founder Pricing</span>
+              First 1,200 LOIs = <span className="text-secondary">Founder Pricing</span>
             </p>
             <p className="text-2xl md:text-3xl font-black text-secondary">
-              33% OFF FOR LIFE
+              33% OFF DIAMOND PLAN FOR LIFE 💎
             </p>
           </div>
 
