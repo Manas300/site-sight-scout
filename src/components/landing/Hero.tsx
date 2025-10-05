@@ -97,23 +97,17 @@ export const Hero = () => {
               DROP A BEAT.
             </span>
             <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse" style={{ animationDelay: '0.6s', marginTop: '20px', letterSpacing: '0.1em' }}>
-              GET PAID. <BagAnimation className="inline-block relative z-50" />
-            </span>
-          </h1>
-            
-            {/* Static Bag Image */}
-            <div className="flex justify-center mb-8 -mt-48">
+              GET PAID. 
               <img 
                 src={moneyBagImage} 
                 alt="money bag" 
-                className="w-35 h-35 md:w-35 md:h-40"
+                className="inline-block w-24 h-24 md:w-32 md:h-32 ml-2 -mt-2"
                 style={{
                   filter: 'drop-shadow(0 8px 16px rgba(0,0,0,0.6)) drop-shadow(0 0 20px rgba(255,215,0,0.8))',
-                  textShadow: '0 0 30px rgba(255,215,0,0.9)',
-                  WebkitTextStroke: '2px rgba(0,0,0,0.3)'
                 }}
               />
-            </div>
+            </span>
+          </h1>
             
           <p className="text-lg md:text-3xl mb-8 text-foreground/90 font-bold max-w-3xl mx-auto flex justify-center">
             <span className="whitespace-nowrap"><span className="text-primary">Live bidding wars</span> × <span className="text-secondary">Live shopping</span> × <span className="text-primary">Instant payouts</span></span>
