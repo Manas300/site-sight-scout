@@ -30,7 +30,7 @@ export const Hero = () => {
     igHandle: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { signupCount } = useSignupCount();
+  const { signupCount, producerCount } = useSignupCount();
   const { toast } = useToast();
 
 
@@ -99,7 +99,7 @@ export const Hero = () => {
     }
   };
 
-  const spotsLeft = Math.max(0, 1200 - signupCount);
+  const spotsLeft = Math.max(0, 1200 - producerCount);
 
   return (
     <section className="relative pt-32 pb-12 md:pb-20 px-4 overflow-hidden">
@@ -208,11 +208,15 @@ export const Hero = () => {
           <div className="mb-12 flex items-center justify-center gap-4 md:gap-8 flex-wrap">
             <div className="px-6 md:px-8 py-4 bg-destructive/20 border-2 border-destructive rounded-lg">
               <p className="text-2xl md:text-3xl font-black text-destructive">{spotsLeft}</p>
-              <p className="text-xs text-destructive/80 font-bold">SPOTS LEFT</p>
+              <p className="text-xs text-destructive/80 font-bold">PRODUCER SPOTS LEFT</p>
             </div>
             <div className="px-6 md:px-8 py-4 bg-warning/20 border-2 border-warning rounded-lg">
-              <p className="text-2xl md:text-3xl font-black text-warning">{signupCount}</p>
-              <p className="text-xs text-warning/80 font-bold">ALREADY IN</p>
+              <p className="text-2xl md:text-3xl font-black text-warning">{producerCount}</p>
+              <p className="text-xs text-warning/80 font-bold">PRODUCER LOIs</p>
+            </div>
+            <div className="px-6 md:px-8 py-4 bg-primary/20 border-2 border-primary rounded-lg">
+              <p className="text-2xl md:text-3xl font-black text-primary">{signupCount}</p>
+              <p className="text-xs text-primary/80 font-bold">TOTAL SIGNUPS</p>
             </div>
             <div className="px-6 md:px-8 py-4 bg-secondary/20 border-2 border-secondary rounded-lg">
               <p className="text-2xl md:text-3xl font-black text-secondary">18</p>

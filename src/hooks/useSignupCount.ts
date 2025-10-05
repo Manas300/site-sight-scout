@@ -2,26 +2,40 @@ import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 
 export const useSignupCount = () => {
-  const [signupCount, setSignupCount] = useState(847); // Default fallback
+  const [signupCount, setSignupCount] = useState(847); // Total signups
+  const [producerCount, setProducerCount] = useState(0); // Producer LOIs only
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     let isMounted = true;
 
-    // Fetch initial count
+    // Fetch initial counts
     const fetchCount = async () => {
       try {
-        const { count, error } = await supabase
+        // Get total count
+        const { count: total, error: totalError } = await supabase
           .from('waitlist_signups')
           .select('*', { count: 'exact', head: true });
 
-        if (error) {
-          console.warn('Error fetching signup count:', error);
-        } else if (count !== null && isMounted) {
-          setSignupCount(count);
+        // Get producer count
+        const { count: producers, error: producerError } = await supabase
+          .from('waitlist_signups')
+          .select('*', { count: 'exact', head: true })
+          .eq('user_type', 'Producer');
+
+        if (totalError) {
+          console.warn('Error fetching total count:', totalError);
+        } else if (total !== null && isMounted) {
+          setSignupCount(total);
+        }
+
+        if (producerError) {
+          console.warn('Error fetching producer count:', producerError);
+        } else if (producers !== null && isMounted) {
+          setProducerCount(producers);
         }
       } catch (error) {
-        console.warn('Error fetching signup count:', error);
+        console.warn('Error fetching signup counts:', error);
       } finally {
         if (isMounted) {
           setLoading(false);
@@ -61,5 +75,5 @@ export const useSignupCount = () => {
     };
   }, []);
 
-  return { signupCount, loading };
+  return { signupCount, producerCount, loading };
 };
