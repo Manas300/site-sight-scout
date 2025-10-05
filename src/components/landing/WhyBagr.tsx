@@ -39,7 +39,11 @@ export const WhyBagr = () => {
     {
       icon: <Target className="w-7 h-7" />,
       title: "Go viral, not invisible.",
-      desc: "BAGR's algo is built for creators, not memes.",
+      desc: (
+        <>
+          <span className="font-sans">BAGR</span>'s algo is built for creators, not memes.
+        </>
+      ),
       gradient: "from-secondary/20 to-secondary/5"
     }
   ];
