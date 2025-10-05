@@ -135,13 +135,13 @@ export const Hero = () => {
                       First 1,200 LOIs get:
                     </p>
                     <p className="text-sm md:text-lg font-semibold text-destructive leading-relaxed animate-pulse">
-                      🚀 Beta access
+                      ⚡ Beta access
                     </p>
                     <p className="text-sm md:text-lg font-semibold text-destructive leading-relaxed animate-pulse">
-                      🚀 Exclusive early feature voting rights
+                      🔥 Exclusive early feature voting rights
                     </p>
                     <p className="text-sm md:text-lg font-semibold text-destructive leading-relaxed animate-pulse">
-                      🚀 33% off FOR LIFE on our premium-tier plan
+                      💎 33% off FOR LIFE on our premium-tier plan
                     </p>
                   </div>
                 </div>
