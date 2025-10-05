@@ -74,7 +74,7 @@ export const BuildInPublic = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary to-secondary rounded-full w-1/4 shadow-[0_0_20px_rgba(0,255,0,0.5)] animate-pulse"></div>
             </div>
             <p className="text-center mt-4 text-lg md:text-xl font-bold">
-              Phase I: 2 / 1,200 LOIs signed — help us hit goal and unlock BETA access.
+              Current Status: 2 / 1,200 LOIs signed — help us hit goal and unlock BETA access.
             </p>
           </div>
 
