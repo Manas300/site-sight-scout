@@ -32,7 +32,7 @@ export const BuildInPublic = () => {
               </li>
               <li className="flex items-start gap-3">
                 <CheckSquare className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <span>Create behavior-driven analytics suite with your own AI store assistant</span>
+                <span>Create a behavior-driven analytics suite with your own AI store assistant</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckSquare className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
