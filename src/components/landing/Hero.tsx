@@ -149,7 +149,7 @@ export const Hero = () => {
                     <div className="flex items-start gap-2">
                       <span className="text-sm md:text-lg w-6 flex-shrink-0">💎</span>
                       <p className="text-sm md:text-lg font-semibold text-destructive leading-relaxed animate-pulse">
-                        33% off FOR LIFE on our premium-tier producer plan
+                        33% OFF PRODUCER DIAMOND PLAN FOR LIFE
                       </p>
                     </div>
                   </div>
