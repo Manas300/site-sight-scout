@@ -175,7 +175,7 @@ export const Hero = () => {
 
           {/* FOMO Counter */}
           <div className="mb-12 flex items-center justify-center gap-4 md:gap-8 flex-wrap">
-            <div className="px-6 md:px-8 py-4 bg-destructive/20 border-2 border-destructive rounded-lg animate-pulse">
+            <div className="px-6 md:px-8 py-4 bg-destructive/20 border-2 border-destructive rounded-lg">
               <p className="text-2xl md:text-3xl font-black text-destructive">{spotsLeft}</p>
               <p className="text-xs text-destructive/80 font-bold">SPOTS LEFT</p>
             </div>
@@ -183,7 +183,7 @@ export const Hero = () => {
               <p className="text-2xl md:text-3xl font-black text-warning">{signupCount}</p>
               <p className="text-xs text-warning/80 font-bold">ALREADY IN</p>
             </div>
-            <div className="px-6 md:px-8 py-4 bg-secondary/20 border-2 border-secondary rounded-lg animate-pulse" style={{ animationDelay: '0.5s' }}>
+            <div className="px-6 md:px-8 py-4 bg-secondary/20 border-2 border-secondary rounded-lg">
               <p className="text-2xl md:text-3xl font-black text-secondary">18</p>
               <p className="text-xs text-secondary/80 font-bold">MONTHS RUNWAY</p>
             </div>
