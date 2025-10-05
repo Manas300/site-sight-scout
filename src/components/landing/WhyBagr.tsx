@@ -113,12 +113,11 @@ export const WhyBagr = () => {
         <div className="mt-8 text-center max-w-3xl mx-auto">
           <p className="text-lg md:text-xl text-muted-foreground font-medium">
             We're done waiting for platforms that move like dial-up.
+            <br />
+            <span className="text-sm text-muted-foreground/60">(remember those days? prolly not)</span>
           </p>
           <p className="text-xl md:text-2xl font-black mt-3 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
             BAGЯ's built for real-time moves, real-time money, and real-time growth.
-          </p>
-          <p className="text-sm text-muted-foreground/60 mt-2">
-            (remember those days? prolly not)
           </p>
         </div>
       </div>
