@@ -200,12 +200,11 @@ export const Hero = () => {
                 {isSubmitting ? "⚡" : "I'M IN →"}
               </Button>
             </form>
-            <p className="text-xs md:text-sm text-muted-foreground mt-4 font-medium">
-              🔒 Join the founder's club • 33% off forever • <span className="font-black text-primary animate-pulse">Limited to 1,200</span>
-            </p>
-            <p className="text-xs md:text-sm text-muted-foreground mt-2 font-medium">
-              👥 2 people already signed their LOI to use BAGR once we're funded
-            </p>
+            <div className="mt-6 px-6 py-4 bg-gradient-to-r from-destructive/20 to-primary/20 border-2 border-destructive rounded-lg animate-pulse">
+              <p className="text-base md:text-xl font-black text-destructive">
+                👥 2 people already signed their LOI to use BAGR once we're funded
+              </p>
+            </div>
           </div>
 
           {/* Social Proof Ticker */}
