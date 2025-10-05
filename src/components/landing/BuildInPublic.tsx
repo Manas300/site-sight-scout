@@ -113,7 +113,8 @@ export const BuildInPublic = () => {
                   <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
                 <div className="text-xl md:text-2xl text-muted-foreground">
-                  <span className="font-black">Phase III:</span> BAGR Goes Live and Fully Launches with Analytics Suite
+                  <div className="font-black">Phase III. The Big Drop 🎯</div>
+                  <div className="text-lg md:text-xl mt-1">BAGЯ goes live with real-time auctions + analytics.</div>
                 </div>
               </div>
             </div>
