@@ -118,13 +118,13 @@ const Index = () => {
             ].map((group, i) => (
               <div key={i} className="p-6 sm:p-8 bg-card border-2 border-border rounded-2xl hover:border-primary transition-all hover:scale-105">
                 <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 text-center">{group.emoji}</div>
-                <h3 className="text-xl sm:text-2xl font-black mb-2 sm:mb-3 text-center">{group.title}</h3>
-                <p className="text-xs sm:text-sm text-destructive font-bold mb-3 sm:mb-4 italic">"{group.pain}"</p>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black mb-3 sm:mb-4 text-center">{group.title}</h3>
+                <p className="text-sm sm:text-base md:text-lg text-destructive font-bold mb-4 sm:mb-5 italic">"{group.pain}"</p>
                 <ul className="space-y-2 sm:space-y-3">
                   {group.solution.map((item, j) => (
                     <li key={j} className="flex items-start gap-2 sm:gap-3">
-                      <Check className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="font-medium text-sm sm:text-base">{item}</span>
+                      <Check className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="font-medium text-base sm:text-lg md:text-xl">{item}</span>
                     </li>
                   ))}
                 </ul>
