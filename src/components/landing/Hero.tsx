@@ -120,9 +120,7 @@ export const Hero = () => {
               <div>
                 <p className="text-sm md:text-lg font-bold mb-2 text-primary font-sans">REAL TALK:</p>
                 <p className="text-sm md:text-lg text-foreground/80 font-sans mb-3">
-                  Your sign-up = a pledge to use <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> once we're funded and v1 is live.
-                  We're raising $850K now — and your LOI helps prove real demand to investors.
-                  The more we grow, the faster we build.
+                  We've been bootstrapping <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> for 6 months, dropped twenty-thousand dollars ($20K) of our own money on Figma designs and early-stage coding, but now seek pre-seed investors to scale <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> to what it should be: the Bloomberg Terminal of Hip Hop. Your sign-up = a pledge to use <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> once we're funded and v1 is live. We're raising $850K now — and your LOI helps prove real demand to investors. The more we grow, the faster we build.
                 </p>
                 <p className="text-sm md:text-lg text-foreground/80 font-sans font-bold">
                   First 1,200 LOIs get beta access + exclusive early feature voting rights.
