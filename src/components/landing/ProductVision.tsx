@@ -24,7 +24,6 @@ export const ProductVision = () => {
           <h2 className="text-5xl md:text-7xl font-black mb-6">
             <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-fade-in">
                What Your $850K Is Building
-              <br />
               {/* Is Building <span className="text-red-500" style={{ fontSize: '60px' }}>🔥</span> */}
             </span>
           </h2>
