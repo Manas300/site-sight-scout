@@ -89,101 +89,17 @@ export const Hero = () => {
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-8xl font-black tracking-tighter mb-6 font-montserrat" style={{ lineHeight: '0.9' }}>
+          <h1 className="text-4xl md:text-8xl font-black mb-6 font-montserrat text-center" style={{ letterSpacing: '0.05em', wordSpacing: '0.2em', lineHeight: '1.2' }}>
             <span className="block text-primary animate-pulse">
-              {['D','R','O','P',' ','B','E','A','T','S','.'].map((letter, i) => {
-                // Custom spacing for each letter position
-                const spacing = {
-                  0: '0.05em',  // After D
-                  1: '0.05em', // After R  
-                  2: '0.05em', // After O
-                  3: '0.2em',  // After P
-                  4: '-0.2em',  // After space
-                  5: '0.05em', // After B
-                  6: '0.13em', // After E
-                  7: '0.001em',  // After A
-                  8: '0.11em', // After T
-                  9: '0.05em', // After S
-                  10: '0em'    // After period (no spacing)
-                };
-                
-                return (
-                  <span key={i} style={{ 
-                    marginRight: spacing[i as keyof typeof spacing]
-                  }}>{letter}</span>
-                );
-              })}
+              DROP BEATS.
             </span>
-            <span className="block text-secondary animate-pulse tracking-normal" style={{ animationDelay: '0.3s', marginTop: '20px' }}>
-              {['S','T','A','R','T',' ','B','I','D','D','I','N','G',' '].map((letter, i) => {
-                // Custom spacing for each letter position in "START BIDDING "
-                const spacing = {
-                  0: '0.075em',  // After S
-                  1: '-0.03em',  // After T
-                  2: '0.05em', // After A
-                  3: '0.05em',  // After R
-                  4: '0.2em',   // After T
-                  5: '-0.250em',   // After space
-                  6: '0.005em',  // After B
-                  7: '0.005em',  // After I
-                  8: '0.005em',  // After D
-                  9: '0.005em',  // After D
-                  10: '0.0008em', // After I
-                  11: '0.0005em', // After N
-                  12: '0.0005em', // After G
-                  13: '0em'     // After space (no spacing)
-                };
-                
-                return (
-                  <span key={i} style={{ 
-                    marginRight: spacing[i as keyof typeof spacing]
-                  }}>{letter}</span>
-                );
-              })}
-              {['W','A','R','S','.'].map((letter, i) => {
-                // Custom spacing for each letter position in "WARS."
-                const spacing = {
-                  0: '-0.07em',  // After W
-                  1: '0.05em',  // After A
-                  2: '0.05em',  // After R
-                  3: '0em',  // After S
-                  4: '0em'      // After period (no spacing)
-                };
-                
-                return (
-                  <span key={i} style={{ 
-                    marginRight: spacing[i as keyof typeof spacing]
-                  }}>{letter}</span>
-                );
-              })}
+            <span className="block text-secondary animate-pulse" style={{ animationDelay: '0.3s', marginTop: '20px' }}>
+              START BIDDING WARS.
             </span>
-            <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse tracking-normal text-center" style={{ animationDelay: '0.6s', lineHeight: '0.8', marginTop: '30px' }}>
-              {['G','E','T',' ','T','H','E',' ','B','A','G','.'].map((letter, i) => {
-                // Custom spacing for each letter position in "GET THE BAG "
-                const spacing = {
-                  0: '0.001em',  // After G
-                  1: '0.04em',   // After E
-                  2: '0.05em',   // After T
-                  3: '-0.05em',    // After space
-                  4: '0.04em',   // After T
-                  5: '0.002em',   // After H
-                  6: '0.05em',   // After E
-                  7: '-0.15em',    // After space
-                  8: '0.03em',   // After B
-                  9: '-0.03em',   // After A
-                  10: '0.03em',  // After G
-                  11: '0em'      // After space (no spacing)
-                };
-                
-                return (
-                  <span key={i} style={{ 
-                    marginRight: spacing[i as keyof typeof spacing]
-                  }}>{letter}</span>
-                );
-              })}
-              <BagAnimation className="inline-block relative z-50" />
+            <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse" style={{ animationDelay: '0.6s', marginTop: '20px' }}>
+              GET THE BAG. <BagAnimation className="inline-block relative z-50" />
             </span>
-            </h1>
+          </h1>
             
             {/* Static Bag Image */}
             <div className="flex justify-center mb-8 -mt-48">
