@@ -8,6 +8,7 @@ interface Testimonial {
   city: string;
   state: string;
   why_bagr: string;
+  user_type: string;
   created_at: string;
 }
 
@@ -19,7 +20,7 @@ export const LiveTestimonials = () => {
     const fetchTestimonials = async () => {
       const { data } = await supabase
         .from('waitlist_signups')
-        .select('id, first_name, city, state, why_bagr, created_at')
+        .select('id, first_name, city, state, why_bagr, user_type, created_at')
         .not('why_bagr', 'is', null)
         .order('created_at', { ascending: false })
         .limit(20);
@@ -79,11 +80,18 @@ export const LiveTestimonials = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start gap-3 mb-3">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex-shrink-0 flex items-center justify-center text-background font-black">
-                  {testimonial.first_name?.[0]?.toUpperCase() || '?'}
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex-shrink-0 flex items-center justify-center text-background font-black text-lg">
+                  {testimonial.user_type === 'Producer' && '🎧'}
+                  {testimonial.user_type === 'Artist' && '🎤'}
+                  {testimonial.user_type === 'Fan' && '🙌'}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="font-bold text-foreground truncate">{testimonial.first_name}</p>
+                  <div className="flex items-center gap-2">
+                    <p className="font-bold text-foreground truncate">{testimonial.first_name}</p>
+                    <span className="text-xs px-2 py-0.5 bg-primary/20 text-primary rounded-full font-bold">
+                      {testimonial.user_type}
+                    </span>
+                  </div>
                   <p className="text-sm text-muted-foreground">
                     {testimonial.city}, {testimonial.state}
                   </p>

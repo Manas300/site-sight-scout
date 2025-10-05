@@ -24,6 +24,7 @@ export type Database = {
           referral_source: string | null
           shared_on_social: boolean | null
           state: string | null
+          user_type: string | null
           why_bagr: string | null
         }
         Insert: {
@@ -35,6 +36,7 @@ export type Database = {
           referral_source?: string | null
           shared_on_social?: boolean | null
           state?: string | null
+          user_type?: string | null
           why_bagr?: string | null
         }
         Update: {
@@ -46,6 +48,7 @@ export type Database = {
           referral_source?: string | null
           shared_on_social?: boolean | null
           state?: string | null
+          user_type?: string | null
           why_bagr?: string | null
         }
         Relationships: []

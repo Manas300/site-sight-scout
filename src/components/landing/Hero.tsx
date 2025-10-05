@@ -10,6 +10,7 @@ import { BagAnimation } from "@/components/animations/BagAnimation";
 import moneyBagImage from "@/assets/money-bag.png";
 
 const signupSchema = z.object({
+  userType: z.enum(['Producer', 'Artist', 'Fan'], { message: "Select your role" }),
   firstName: z.string().trim().min(1, { message: "First name required" }).max(100),
   city: z.string().trim().min(1, { message: "City required" }).max(100),
   state: z.string().trim().min(2, { message: "State required" }).max(2),
@@ -19,6 +20,7 @@ const signupSchema = z.object({
 
 export const Hero = () => {
   const [formData, setFormData] = useState({
+    userType: "",
     firstName: "",
     city: "",
     state: "",
@@ -53,7 +55,8 @@ export const Hero = () => {
         validation.data.firstName,
         validation.data.city,
         validation.data.state,
-        validation.data.whyBagr
+        validation.data.whyBagr,
+        validation.data.userType
       );
       
       if (result.success) {
@@ -62,6 +65,7 @@ export const Hero = () => {
           description: "Your story will appear on the wall below!",
         });
         setFormData({
+          userType: "",
           firstName: "",
           city: "",
           state: "",
@@ -215,6 +219,28 @@ export const Hero = () => {
           {/* CTA Form */}
           <div className="max-w-2xl mx-auto mb-8">
             <form onSubmit={handleSubmit} className="space-y-4">
+              {/* User Type Selection */}
+              <div className="grid grid-cols-3 gap-3">
+                {(['Producer', 'Artist', 'Fan'] as const).map((type) => (
+                  <button
+                    key={type}
+                    type="button"
+                    onClick={() => setFormData(prev => ({ ...prev, userType: type }))}
+                    className={`h-14 px-4 rounded-lg font-black text-base transition-all border-2 ${
+                      formData.userType === type
+                        ? 'bg-gradient-to-r from-primary to-secondary text-background border-primary scale-105'
+                        : 'bg-muted/50 text-foreground border-primary/30 hover:border-primary/50'
+                    }`}
+                  >
+                    {type === 'Producer' && '🎧'}
+                    {type === 'Artist' && '🎤'}
+                    {type === 'Fan' && '🙌'}
+                    <br />
+                    {type}
+                  </button>
+                ))}
+              </div>
+              
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <Input
                   type="text"
