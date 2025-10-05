@@ -37,29 +37,29 @@ export const ProductVision = () => {
           {[
             {
               img: mockupLiveAuction,
-              title: "Live Auctions 🔥",
+              title: "Live Auctions",
                desc: (
                  <>
-                   Real-time bidding creates FOMO. <br/> higher demand = higher prices
+                   Real-time bids. Real people. <br/> Watch prices climb while your whole crew hypes you up — live.
                  </>
                ),
             },
             {
               img: marketPlace,
-              title: "Live Shopping  💰",
+              title: "Live Shopping",
               desc: (
                 <>
-                  Shop beats live. <br/> Instant checkout
+                  Drop beats or sound packs live. Close sales fast. <br/> Creators cop in seconds. No waiting No gatekeepers.
                 </>
               ),
               
             },
             {
               img: producerWin,
-              title: "Producers Win💸",
+              title: "Producers Win",
               desc: (
                 <>
-                  $120 in 90 seconds. <br/> 389 people watched you WIN.
+                  $120 in 90 seconds. <br/> Hundreds saw it happen. Your success isn't posted, it's streamed.
                 </>
               ),
               
@@ -89,25 +89,29 @@ export const ProductVision = () => {
           {[
             {
               img: mockupArtistWin,
-              title: "Artists Win 🏆",
+              title: "Artists Win",
               desc: (
                 <>
-                  Artists compete for  exclusive beats. <br/> Watch the bidding wars unfold live.
+                  Outbid 'em live. <br/> Snag exclusive rights before bro does and win full creative control — in real-time.
                 </>
               ),
               
             },
             {
               img: mockupCosign,
-              title: "Co-Sign Culture 🤝",
-              desc: "Artists stamp their approval on your sound. Clout that lives forever."
+              title: "Co-Sign Culture",
+              desc: (
+                <>
+                  Co-signs are the new social currency. <br/> Stamp your approval on a producer's sound and leave your mark on the culture. <br/> We lead. We don't "follow."
+                </>
+              )
             },
             {
               img: tipping,
-              title: "Fan Tipping 💸",
+              title: "Fan Tipping 🐝",
               desc: (
                 <>
-                  Fans  tip during streams. <br/> Extra income while you cook.
+                  Fans drop tips as you cook. <br/> Stream your grind and get paid mid-flow.
                 </>
               ),
              
