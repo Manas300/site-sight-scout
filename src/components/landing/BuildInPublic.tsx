@@ -225,12 +225,6 @@ export const BuildInPublic = () => {
               </div>
             </div>
           </div>
-
-          <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl border border-primary/20">
-            <p className="text-center font-bold text-foreground/90">
-              💡 <span className="text-primary">$20K invested</span>. <span className="text-secondary">6 months deep</span>. Professional Figma designs + production code already built. <span className="text-primary">Ken</span> + <span className="text-secondary">Ebon</span> bring vision. <span className="text-primary">Manas</span> + <span className="text-secondary">Koushik</span> building Bloomberg-level infrastructure. We're not just talking—we've already proven it.
-            </p>
-          </div>
         </div>
       </div>
     </section>
