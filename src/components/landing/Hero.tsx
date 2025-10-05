@@ -128,7 +128,7 @@ export const Hero = () => {
                     Your sign-up = a pledge to use <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> once we're funded and v1 is live.
                   </p>
                   <p className="text-sm md:text-lg font-black text-secondary leading-relaxed">
-                    We're raising $850K now — and your LOI helps prove real demand to investors.
+                    We're raising $850K now for 18 months of cash burn
                   </p>
                   <div className="space-y-2 mt-4">
                     <p className="text-sm md:text-lg font-black text-destructive leading-relaxed">
