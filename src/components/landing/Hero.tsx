@@ -150,8 +150,11 @@ export const Hero = () => {
               <Zap className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-1 animate-pulse" />
               <div>
                 <p className="text-sm md:text-lg font-bold mb-2 text-primary font-montserrat">REAL TALK:</p>
-                <p className="text-sm md:text-lg text-foreground/80 font-montserrat font-normal mb-6">
-                  We've been bootstrapping <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> for 6 months, dropped twenty-thousand dollars ($20K) of our own money on Figma designs and early-stage coding, but now seek pre-seed investors to scale <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> to what it could be: the fucking Bloomberg Terminal of Hip Hop.
+                <p className="text-sm md:text-lg text-foreground/80 font-montserrat font-normal mb-3">
+                  We've been bootstrapping <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> for 6 months, dropped twenty-thousand dollars ($20K) of our own money on Figma designs and early-stage coding, but now seek pre-seed investors to scale <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> to what it could be:
+                </p>
+                <p className="text-lg md:text-2xl font-black mb-6 font-montserrat" style={{ color: '#FFD700' }}>
+                  the fucking Bloomberg Terminal of Hip Hop.
                 </p>
                 
                 <div className="space-y-3 p-4 bg-primary/10 border-l-4 border-primary rounded-r-lg">
