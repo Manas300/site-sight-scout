@@ -26,8 +26,8 @@ export const WhyBagr = () => {
     },
     {
       icon: <Users className="w-7 h-7" />,
-      title: "build your fanbase",
-      desc: "fans tip, comment, share streams.",
+      title: "Turn streams into stans.",
+      desc: "Fans can tip, react, and share your drops.",
       gradient: "from-secondary/20 to-secondary/5"
     },
     {
