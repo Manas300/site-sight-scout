@@ -92,7 +92,7 @@ export const WhyBagr = () => {
               <div className="font-black text-sm text-primary text-center">🚀 BAGЯ</div>
             </div>
             {[
-              { feature: "Live streaming", old: "Upload. Wait. Hope.", bagr: "Go live now, go viral faster." },
+              { feature: "Live streaming", old: "Upload. Wait. Pray.", bagr: "Go live now, go viral faster." },
               { feature: "Live shopping", old: "Static stores, zero hype.", bagr: "Real-time drops. Creators buy as you perform." }, 
               { feature: "Live auctions", old: "DM offers like it's 2009.", bagr: "Watch bids climb by the second." },
               { feature: "Insight-driven analytics", old: "No data, just impressions.", bagr: "Behavior-first insights — see what's working NOW." },
