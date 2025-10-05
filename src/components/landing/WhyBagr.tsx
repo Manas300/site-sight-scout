@@ -87,9 +87,9 @@ export const WhyBagr = () => {
         <div className="mt-16 max-w-3xl mx-auto">
           <div className="bg-card border-2 border-border rounded-2xl overflow-hidden">
             <div className="grid grid-cols-3 gap-4 p-6 bg-muted/30 border-b-2 border-border">
-              <div className="font-black text-sm text-muted-foreground">Feature</div>
-              <div className="font-black text-sm text-destructive text-center">😭 Old Platforms</div>
-              <div className="font-black text-sm text-primary text-center">🚀 BAGЯ</div>
+              <div className="font-black text-base md:text-lg text-muted-foreground">Feature</div>
+              <div className="font-black text-base md:text-lg text-destructive text-center">😭 Old Platforms</div>
+              <div className="font-black text-base md:text-lg text-primary text-center">🚀 BAGЯ</div>
             </div>
             {[
               { feature: "Live streaming", old: "Upload. Wait. Pray.", bagr: "Go live now, go viral faster." },
