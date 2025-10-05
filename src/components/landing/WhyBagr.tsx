@@ -97,8 +97,8 @@ export const WhyBagr = () => {
               { feature: "Live auctions", old: "DM offers like it's 2009.", bagr: "Watch bids climb by the second." },
               { feature: "Insight-driven analytics", old: "No data, just impressions.", bagr: "Behavior-first insights — see what's working NOW." },
               { feature: "Mobile-first", old: "Desktop dinosaurs only.", bagr: "Born for the phone." },
-              { feature: "Instant payouts", old: "5-7 business days 😴", bagr: "Instant bag. Cash hits before the encore." },
-              { feature: "Platform fee", old: "💸 30%+ 'tax' for nothing.", bagr: "💰 15% flat or LESS." }
+              { feature: "Instant payouts", old: "5-7 business days", bagr: "Instant bag. Cash hits before the encore." },
+              { feature: "Platform fee", old: "30%+ 'tax' for nothing.", bagr: "15% flat or LESS." }
             ].map((row, i) => (
               <div key={i} className="grid grid-cols-[1fr_auto_1fr] gap-8 p-6 border-b border-border last:border-0 hover:bg-muted/20 transition-colors items-center">
                 <div className="text-center text-muted-foreground whitespace-nowrap">{row.old}</div>
