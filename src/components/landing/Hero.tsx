@@ -151,15 +151,15 @@ export const Hero = () => {
               <div>
                 <p className="text-sm md:text-lg font-bold mb-2 text-primary font-poppins">REAL TALK:</p>
                 <p className="text-sm md:text-lg text-foreground/80 font-poppins font-normal mb-6">
-                  We've been bootstrapping <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>BAGЯ</span> for 6 months, dropped twenty-thousand dollars ($20K) of our own money on Figma designs and early-stage coding, but now seek pre-seed investors to scale <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>BAGЯ</span> to what it should be: the fucking Bloomberg Terminal of Hip Hop.
+                  We've been bootstrapping <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.35em' }}>BAGЯ</span> for 6 months, dropped twenty-thousand dollars ($20K) of our own money on Figma designs and early-stage coding, but now seek pre-seed investors to scale <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.35em' }}>BAGЯ</span> to what it should be: the fucking Bloomberg Terminal of Hip Hop.
                 </p>
                 
                 <div className="space-y-3 p-4 bg-primary/10 border-l-4 border-primary rounded-r-lg">
                   <p className="text-sm md:text-lg font-medium text-primary leading-relaxed font-poppins">
-                    Your sign-up = a Letter of Intent (LOI) to use <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>BAGЯ</span> once we're funded and v1 is live.
+                    Your sign-up = a Letter of Intent (LOI) to use <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.35em' }}>BAGЯ</span> once we're funded and v1 is live.
                   </p>
                   <p className="text-sm md:text-lg font-semibold text-foreground/80 leading-relaxed font-poppins">
-                    We're raising $850K now to fund 18 months of building. Every LOI tells investors that hip hop producers, artists, and fans are ready for <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>BAGЯ</span>.
+                    We're raising $850K now to fund 18 months of building. Every LOI tells investors that hip hop producers, artists, and fans are ready for <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.35em' }}>BAGЯ</span>.
                   </p>
                   <div className="space-y-2 mt-4">
                     <p className="text-sm md:text-lg font-black text-destructive leading-relaxed font-poppins">
@@ -180,7 +180,7 @@ export const Hero = () => {
                     <div className="flex items-start gap-2">
                       <span className="text-sm md:text-lg w-6 flex-shrink-0">💎</span>
                       <p className="text-sm md:text-lg font-semibold text-destructive leading-relaxed animate-pulse font-poppins">
-                        33% off FOR LIFE on our premium-tier <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>BAGЯ</span> producer plan
+                        33% off FOR LIFE on our premium-tier <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.35em' }}>BAGЯ</span> producer plan
                       </p>
                     </div>
                   </div>
