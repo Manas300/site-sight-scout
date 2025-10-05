@@ -8,7 +8,7 @@ import { Sparkles } from "lucide-react";
 
 export const ProductVision = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
+    <section className="py-16 px-4 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full blur-3xl animate-pulse"></div>
@@ -33,7 +33,7 @@ export const ProductVision = () => {
         </div>
 
         {/* Top Row - Main Features */}
-        <div className="grid md:grid-cols-3 gap-12 mb-20">
+        <div className="grid md:grid-cols-3 gap-10 mb-16">
           {[
             {
               img: mockupLiveAuction,
@@ -82,7 +82,7 @@ export const ProductVision = () => {
         </div>
 
         {/* Bottom Row - Additional Features */}
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid md:grid-cols-3 gap-10 mb-10">
           {[
             {
               img: mockupArtistWin,
