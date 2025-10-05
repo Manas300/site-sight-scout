@@ -200,11 +200,6 @@ export const Hero = () => {
                 {isSubmitting ? "⚡" : "I'M IN →"}
               </Button>
             </form>
-            <div className="mt-6 px-6 py-4 bg-warning/20 border-2 border-warning rounded-lg animate-pulse">
-              <p className="text-base md:text-xl font-black text-warning">
-                👥 2 people already signed their LOI to use BAGR once we're funded
-              </p>
-            </div>
           </div>
 
           {/* Social Proof Ticker */}
