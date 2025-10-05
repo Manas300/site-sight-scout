@@ -54,11 +54,11 @@ export const WhyBagr = () => {
             Why Old Platforms Are <span className="text-destructive line-through">Dead</span>
             <br/>
             <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
-              And <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>BAGЯ</span> Is The Future
+              And BAGЯ Is The Future
             </span>
           </h2>
           <p className="text-xl text-muted-foreground font-medium">
-            BeatStars = Craigslist. Airbit = eBay from 2005. <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>BAGЯ</span> = TikTok Shop meets Whatnot energy.
+            BeatStars = Craigslist. Airbit = eBay from 2005. <strong>BAGЯ</strong> = TikTok Shop meets Whatnot energy.
           </p>
         </div>
 
@@ -85,7 +85,7 @@ export const WhyBagr = () => {
             <div className="grid grid-cols-3 gap-4 p-6 bg-muted/30 border-b-2 border-border">
               <div className="font-black text-sm text-muted-foreground">Feature</div>
               <div className="font-black text-sm text-destructive text-center">Old Platforms</div>
-              <div className="font-black text-sm text-primary text-center"><span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>BAGЯ</span></div>
+              <div className="font-black text-sm text-primary text-center">BAGЯ</div>
             </div>
             {[
               { feature: "Live streaming", old: "❌", bagr: "✅" },

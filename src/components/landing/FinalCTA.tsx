@@ -41,7 +41,7 @@ export const FinalCTA = () => {
       if (result.success) {
         toast({
           title: "WELCOME TO THE MOVEMENT 🚀",
-          description: "You're officially a founder.",
+          description: "You're officially a BAGЯ founder.",
         });
         setShowShareModal(true);
         setEmail("");
@@ -69,7 +69,7 @@ export const FinalCTA = () => {
   };
 
   const shareUrl = window.location.href;
-  const shareText = "I just claimed founding member status - the live beat marketplace changing the game for producers. 847+ already in. Join us 👇";
+  const shareText = "I just claimed founding member status for BAGЯ - the live beat marketplace changing the game for producers. 847+ already in. Join us 👇";
 
   const handleShare = (platform: string) => {
     const encodedUrl = encodeURIComponent(shareUrl);
@@ -150,7 +150,7 @@ export const FinalCTA = () => {
 
         <div className="mt-8 p-6 md:p-8 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl border-2 border-primary/20">
           <p className="text-sm md:text-base text-foreground font-bold mb-4">
-            💡 Your signup = proof to VCs that producers NEED this. We can't build <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>BAGЯ</span> alone—help us will this into existence.
+            💡 Your signup = proof to VCs that producers NEED this. We can't build BAGЯ alone—help us will this into existence.
           </p>
           <p className="text-xs md:text-sm text-muted-foreground font-medium">
             Share this with your producer friends. The more LOIs we collect, the faster we close the $850K and start building.

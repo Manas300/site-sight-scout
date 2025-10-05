@@ -67,7 +67,7 @@ export const LiveTestimonials = () => {
             <span className="font-black text-primary">LIVE FROM THE COMMUNITY</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-black mb-4">
-            Why Producers Want <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.2em' }}>BAGЯ</span>
+            Why Producers Want <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span>
           </h2>
           <p className="text-lg text-muted-foreground">Real people. Real reasons. Real time.</p>
         </div>
