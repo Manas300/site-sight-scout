@@ -74,7 +74,7 @@ export const ProductVision = () => {
               />
               <div className="mt-6 text-center">
                 <h3 className="text-3xl md:text-4xl font-black text-[#00FFD1] mb-4 tracking-wide font-[Montserrat]">{mockup.title}</h3>
-                <p className="text-base md:text-lg font-medium text-foreground/90 font-[Poppins]">{mockup.desc}</p>
+                <p className="text-base md:text-lg font-medium text-foreground/90 font-[Poppins] line-clamp-2">{mockup.desc}</p>
               </div>
             </div>
           ))}
@@ -117,7 +117,7 @@ export const ProductVision = () => {
               />
               <div className="mt-6 text-center">
                 <h3 className="text-3xl md:text-4xl font-black text-[#00FFD1] mb-4 tracking-wide font-[Montserrat]">{mockup.title}</h3>
-                <p className="text-base md:text-lg font-medium text-foreground/90 font-[Poppins]">{mockup.desc}</p>
+                <p className="text-base md:text-lg font-medium text-foreground/90 font-[Poppins] line-clamp-2">{mockup.desc}</p>
               </div>
             </div>
           ))}
