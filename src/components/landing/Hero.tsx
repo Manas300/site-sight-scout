@@ -203,6 +203,9 @@ export const Hero = () => {
             <p className="text-xs md:text-sm text-muted-foreground mt-4 font-medium">
               🔒 Join the founder's club • 33% off forever • <span className="font-black text-primary animate-pulse">Limited to 1,200</span>
             </p>
+            <p className="text-xs md:text-sm text-muted-foreground mt-2 font-medium">
+              👥 2 people already signed their LOI to use BAGR once we're funded
+            </p>
           </div>
 
           {/* Social Proof Ticker */}
