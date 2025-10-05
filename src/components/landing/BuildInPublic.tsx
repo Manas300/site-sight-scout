@@ -21,21 +21,21 @@ export const BuildInPublic = () => {
             <p className="text-foreground/80 font-medium mb-4">
               We need your Co-Signs to convince VCs to back us and:
             </p>
-            <ul className="space-y-4 text-lg">
+            <ul className="space-y-4 text-xl font-medium">
               <li className="flex items-start gap-3">
-                <CheckSquare className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <CheckSquare className="w-7 h-7 text-primary flex-shrink-0 mt-1" />
                 <span>Build real-time auction pipelines</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckSquare className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <CheckSquare className="w-7 h-7 text-primary flex-shrink-0 mt-1" />
                 <span>Launch on iOS + Android</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckSquare className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <CheckSquare className="w-7 h-7 text-primary flex-shrink-0 mt-1" />
                 <span>Create a behavior-driven analytics suite with your own AI store assistant</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckSquare className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <CheckSquare className="w-7 h-7 text-primary flex-shrink-0 mt-1" />
                 <span>Raise 18 months of cash runway for a team of 6</span>
               </li>
             </ul>
@@ -49,13 +49,13 @@ export const BuildInPublic = () => {
             <p className="text-foreground/80 font-medium mb-4">
               We've already proven commitment with $20K + 6 months of sweat equity. Your LOI is living proof to VCs that our market needs to eat.
             </p>
-            <ul className="space-y-4 text-lg">
+            <ul className="space-y-4 text-xl font-medium">
               <li className="flex items-start gap-3">
-                <CheckSquare className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <CheckSquare className="w-7 h-7 text-secondary flex-shrink-0 mt-1" />
                 <span>Your LOI = market demand investors can't ignore</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckSquare className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <CheckSquare className="w-7 h-7 text-secondary flex-shrink-0 mt-1" />
                 <span>First 1,200 Producer LOIs get 33% off Diamond Plan forever + beta access</span>
               </li>
             </ul>
