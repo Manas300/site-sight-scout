@@ -130,8 +130,9 @@ export const ProductVision = () => {
             ⚠️ REAL TALK: This Doesn't Exist Yet
           </p>
           <p className="text-lg font-medium text-muted-foreground max-w-3xl mx-auto">
-            But it WILL exist if we hit our $850K goal. Your signup proves to VCs that producers want this. 
-            <span className="text-primary font-black"> Be part of building the future, not just using it.</span>
+            That's the point.<br/>
+            Your LOI = proof to investors that producers want this built.<br/>
+            <span className="text-primary font-black">Don't just wait for the next big thing. Help us build it.</span>
           </p>
         </div>
       </div>
