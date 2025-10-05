@@ -20,8 +20,8 @@ export const WhyBagr = () => {
     },
     {
       icon: <Zap className="w-7 h-7" />,
-      title: "instant payouts",
-      desc: "money hits your account ASAP.",
+      title: "Get paid while you sleep.",
+      desc: "No net-30. Just cash.",
       gradient: "from-primary/20 to-primary/5"
     },
     {
