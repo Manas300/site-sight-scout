@@ -38,11 +38,7 @@ export const ProductVision = () => {
             {
               img: mockupLiveAuction,
               title: "Live Auctions",
-               desc: (
-                 <>
-                   Real-time bids. Real people. <br/> Watch prices climb while your whole crew hypes you up — live.
-                 </>
-               ),
+               desc: "Watch prices climb while your whole crew hypes you up live.",
             },
             {
               img: marketPlace,
