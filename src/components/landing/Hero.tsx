@@ -124,17 +124,17 @@ export const Hero = () => {
                 </p>
                 
                 <div className="space-y-3 p-4 bg-primary/10 border-l-4 border-primary rounded-r-lg">
-                  <p className="text-sm md:text-lg font-black text-primary leading-relaxed">
+                  <p className="text-sm md:text-lg font-medium text-primary leading-relaxed">
                     Your sign-up = a pledge to use <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> once we're funded and v1 is live.
                   </p>
                   <p className="text-sm md:text-lg font-black text-secondary leading-relaxed">
                     We're raising $850K now — and your LOI helps prove real demand to investors.
                   </p>
-                  <p className="text-sm md:text-lg font-black text-primary leading-relaxed">
+                  <p className="text-sm md:text-lg font-medium text-primary leading-relaxed">
                     The more we grow, the faster we build.
                   </p>
                   <p className="text-sm md:text-lg font-black text-destructive leading-relaxed animate-pulse">
-                    First 1,200 LOIs get beta access + exclusive early feature voting rights.
+                    First 1,200 LOIs get beta access + exclusive early feature voting rights + 33% off for life on our pro plan
                   </p>
                 </div>
               </div>
