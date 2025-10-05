@@ -88,23 +88,22 @@ export const WhyBagr = () => {
           <div className="bg-card border-2 border-border rounded-2xl overflow-hidden">
             <div className="grid grid-cols-3 gap-4 p-6 bg-muted/30 border-b-2 border-border">
               <div className="font-black text-sm text-muted-foreground">Feature</div>
-              <div className="font-black text-sm text-destructive text-center">Old Platforms</div>
-              <div className="font-black text-sm text-primary text-center">BAGЯ</div>
+              <div className="font-black text-sm text-destructive text-center">😭 Old Platforms</div>
+              <div className="font-black text-sm text-primary text-center">🚀 BAGЯ</div>
             </div>
             {[
-              { feature: "Live streaming", old: "❌", bagr: "✅" },
-              { feature: "Live shopping", old: "❌", bagr: "✅" }, 
-              { feature: "Live auctions", old: "❌", bagr: "✅" },
-              { feature: "Insight-driven analytics", old: "❌", bagr: "✅" },
-             
-              { feature: "Mobile-first", old: "❌", bagr: "✅" },
-              { feature: "Instant payouts", old: "🐌 5-7 days", bagr: "⚡ Instant" },
-              { feature: "Platform fee", old: "30%+", bagr: "15%" }
+              { feature: "Live streaming", old: "Upload. Wait. Hope.", bagr: "Go live now, go viral faster." },
+              { feature: "Live shopping", old: "Static stores, zero hype.", bagr: "Real-time drops. Fans buy as you perform." }, 
+              { feature: "Live auctions", old: "DM offers like it's 2009.", bagr: "Watch bids climb in seconds." },
+              { feature: "Insight-driven analytics", old: "No data, just vibes (bad ones).", bagr: "Creator-first insights — see what's working instantly." },
+              { feature: "Mobile-first", old: "Desktop dinosaurs only.", bagr: "Born on your phone. Built for your thumb." },
+              { feature: "Instant payouts", old: "5-7 business days 😴", bagr: "Instant bag. Cash hits before the encore." },
+              { feature: "Platform fee", old: "💸 30%+ 'tax' for nothing.", bagr: "💰 15% flat. Keep your profits, not their pockets." }
             ].map((row, i) => (
               <div key={i} className="grid grid-cols-3 gap-4 p-6 border-b border-border last:border-0 hover:bg-muted/20 transition-colors">
                 <div className="font-medium">{row.feature}</div>
-                <div className="text-center">{row.old}</div>
-                <div className="text-center font-bold">{row.bagr}</div>
+                <div className="text-center italic text-muted-foreground">{row.old}</div>
+                <div className="text-center font-bold italic">{row.bagr}</div>
               </div>
             ))}
           </div>
