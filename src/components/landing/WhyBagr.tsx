@@ -86,8 +86,9 @@ export const WhyBagr = () => {
         {/* Comparison Table */}
         <div className="mt-16 max-w-5xl mx-auto">
           <div className="bg-card border-2 border-border rounded-2xl overflow-hidden">
-            <div className="grid grid-cols-2 gap-4 p-6 bg-muted/30 border-b-2 border-border">
+            <div className="grid grid-cols-3 gap-4 p-6 bg-muted/30 border-b-2 border-border items-center">
               <div className="font-black text-base md:text-lg text-destructive text-center">😭 Old Platforms</div>
+              <div className="font-black text-2xl md:text-3xl text-foreground text-center">VS.</div>
               <div className="font-black text-base md:text-lg text-primary text-center">🚀 BAGЯ</div>
             </div>
             {[
@@ -99,8 +100,9 @@ export const WhyBagr = () => {
               { feature: "Instant payouts", old: "5-7 business days 😴", bagr: "Instant bag. Cash hits before the encore." },
               { feature: "Platform fee", old: "💸 30%+ 'tax' for nothing.", bagr: "💰 15% flat or LESS." }
             ].map((row, i) => (
-              <div key={i} className="grid grid-cols-2 gap-4 p-6 border-b border-border last:border-0 hover:bg-muted/20 transition-colors">
+              <div key={i} className="grid grid-cols-3 gap-4 p-6 border-b border-border last:border-0 hover:bg-muted/20 transition-colors items-center">
                 <div className="text-center text-muted-foreground">{row.old}</div>
+                <div className="text-center text-muted-foreground/30 font-bold">VS</div>
                 <div className="text-center font-bold italic font-poppins">{row.bagr}</div>
               </div>
             ))}
