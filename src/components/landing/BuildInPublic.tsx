@@ -10,9 +10,6 @@ export const BuildInPublic = () => {
             <br/>
             <span className="text-secondary">Like It Should Be</span>
           </h2>
-          <p className="text-xl text-muted-foreground font-medium max-w-3xl mx-auto">
-            We've already put <span className="font-black text-primary">$20K</span> and <span className="font-black text-secondary">6 months</span> into this. Professional Figma designs. Production-ready code. Now we're raising <span className="font-black text-primary">$850K</span> to scale BAGЯ into the Bloomberg Terminal of Hip Hop.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
