@@ -40,7 +40,9 @@ export const ProductVision = () => {
               title: "Live Auctions 🔥",
                desc: (
                  <>
-                   Real-time bidding creates FOMO. <br/> higher demand = higher prices
+                   Real-time bids. Real hype.<br/>
+                   Watch prices climb while the whole scene watches you.<br/><br/>
+                   <span className="text-primary font-bold">💡 Triggers visibility + status FOMO — "everyone's watching me win."</span>
                  </>
                ),
             },
@@ -49,17 +51,21 @@ export const ProductVision = () => {
               title: "Live Shopping  💰",
               desc: (
                 <>
-                  Shop beats live. <br/> Instant checkout
+                  Drop beats. Close sales.<br/>
+                  Fans cop in seconds — no middlemen, no waiting.<br/><br/>
+                  <span className="text-primary font-bold">💡 Instant gratification, "creator-as-brand" vibe.</span>
                 </>
               ),
               
             },
             {
               img: producerWin,
-              title: "Producers Win💸",
+              title: "Producers Win 🥇",
               desc: (
                 <>
-                  $120 in 90 seconds. <br/> 389 people watched you WIN.
+                  $120 in 90 seconds.<br/>
+                  Hundreds saw it happen. You don't post success — you stream it.<br/><br/>
+                  <span className="text-primary font-bold">💡 Turns proof of success into social proof — "everyone saw me bag the win."</span>
                 </>
               ),
               
@@ -92,22 +98,32 @@ export const ProductVision = () => {
               title: "Artists Win 🏆",
               desc: (
                 <>
-                  Artists compete for  exclusive beats. <br/> Watch the bidding wars unfold live.
+                  Outbid 'em live.<br/>
+                  Snag exclusive rights before someone else does. FOMO in real time.<br/><br/>
+                  <span className="text-primary font-bold">💡 Scarcity + competition = instant urgency.</span>
                 </>
               ),
               
             },
             {
               img: mockupCosign,
-              title: "Co-Sign Culture 🤝",
-              desc: "Artists stamp their approval on your sound. Clout that lives forever."
+              title: "Co-Sign Culture 🧳",
+              desc: (
+                <>
+                  Your co-sign = currency.<br/>
+                  Stamp your approval, boost a sound, and leave your name on the culture forever.<br/><br/>
+                  <span className="text-primary font-bold">💡 Turns participation into legacy — ego + community reward.</span>
+                </>
+              ),
             },
             {
               img: tipping,
-              title: "Fan Tipping 💸",
+              title: "Fan Tipping 🐝",
               desc: (
                 <>
-                  Fans  tip during streams. <br/> Extra income while you cook.
+                  Fans drop tips as you cook.<br/>
+                  Stream your grind, get paid mid-flow. Every emoji = income.<br/><br/>
+                  <span className="text-primary font-bold">💡 Emotionally connects creator effort → instant reward.</span>
                 </>
               ),
              
