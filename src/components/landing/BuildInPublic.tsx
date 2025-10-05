@@ -62,24 +62,68 @@ export const BuildInPublic = () => {
           </div>
         </div>
 
-        {/* Timeline */}
-        <div className="p-8 bg-gradient-to-r from-card via-muted/20 to-card border-2 border-border rounded-2xl">
-          <h3 className="text-2xl font-black mb-6 text-center">The Roadmap</h3>
-          <div className="grid md:grid-cols-4 gap-6">
-            {[
-              { icon: <Users className="w-6 h-6" />, title: "Now (Q2 2025)", desc: "1,200 LOIs + Close $850K" },
-              { icon: <Code className="w-6 h-6" />, title: "Q3 2025", desc: "Beta with data infrastructure" },
-              { icon: <Rocket className="w-6 h-6" />, title: "Q4 2025", desc: "Full launch + analytics suite" },
-              { icon: <DollarSign className="w-6 h-6" />, title: "2026", desc: "Series A ready" }
-            ].map((phase, i) => (
-              <div key={i} className="text-center">
-                <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mb-3 mx-auto text-background">
-                  {phase.icon}
-                </div>
-                <p className="font-black text-primary mb-1">{phase.title}</p>
-                <p className="text-sm text-muted-foreground font-medium">{phase.desc}</p>
+        {/* Roadmap Progress */}
+        <div className="p-8 bg-gradient-to-br from-card via-background to-card border-2 border-primary/30 rounded-2xl">
+          <div className="flex items-center gap-3 mb-8">
+            <Rocket className="w-8 h-8 text-primary" />
+            <h3 className="text-3xl font-black">The Roadmap</h3>
+          </div>
+
+          {/* Progress Bar */}
+          <div className="mb-8">
+            <div className="relative h-3 bg-muted rounded-full overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary to-secondary rounded-full w-1/4 animate-pulse"></div>
+            </div>
+          </div>
+
+          {/* Table Layout */}
+          <div className="overflow-x-auto">
+            <div className="min-w-full">
+              {/* Header */}
+              <div className="grid grid-cols-3 gap-4 pb-4 mb-4 border-b-2 border-primary/20">
+                <div className="font-black text-lg text-primary">Stage</div>
+                <div className="font-black text-lg text-secondary">Focus</div>
+                <div className="font-black text-lg text-primary">Outcome</div>
               </div>
-            ))}
+
+              {/* Rows */}
+              <div className="space-y-6">
+                {/* Now (Q2 2025) - Active */}
+                <div className="grid grid-cols-3 gap-4 p-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl border-2 border-primary">
+                  <div className="font-black text-xl">Now (Q2 2025)</div>
+                  <div className="font-medium">1,200 LOIs + Close $850K</div>
+                  <div className="font-medium">Funding complete → build sprint begins</div>
+                </div>
+
+                {/* Q3 2025 */}
+                <div className="grid grid-cols-3 gap-4 p-4 bg-card/50 rounded-xl border border-border">
+                  <div className="font-black text-xl">Q3 2025</div>
+                  <div className="font-medium">Beta with data infrastructure</div>
+                  <div className="font-medium">Early testers get first look + feedback loop</div>
+                </div>
+
+                {/* Q4 2025 */}
+                <div className="grid grid-cols-3 gap-4 p-4 bg-card/50 rounded-xl border border-border">
+                  <div className="font-black text-xl">Q4 2025</div>
+                  <div className="font-medium">Full launch + analytics suite</div>
+                  <div className="font-medium">BAGЯ goes live for founding producers</div>
+                </div>
+
+                {/* 2026 */}
+                <div className="grid grid-cols-3 gap-4 p-4 bg-card/50 rounded-xl border border-border">
+                  <div className="font-black text-xl">2026</div>
+                  <div className="font-medium">Series A ready</div>
+                  <div className="font-medium">Scale globally + creator tools expansion</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Tagline */}
+          <div className="mt-8 p-6 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-xl border border-primary/20">
+            <p className="text-center font-medium text-lg">
+              💡 <span className="italic">Transparent. Tracked. Time-boxed. You can literally watch us build the future you asked for.</span>
+            </p>
           </div>
         </div>
 
