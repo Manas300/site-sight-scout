@@ -83,7 +83,7 @@ export const BuildInPublic = () => {
                 <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-[0_0_20px_rgba(0,255,0,0.6)] animate-pulse">
                   <CheckSquare className="w-6 h-6 text-background" />
                 </div>
-                <div className="font-black text-2xl">1. Now (Q2 2025)</div>
+                <div className="font-black text-2xl">1. 1,200 LOIs + Close $850K</div>
               </div>
             </div>
 
