@@ -91,11 +91,11 @@ export const BuildInPublic = () => {
 
             {/* Stage 2 - Locked */}
             <div className="relative group flex justify-center">
-              <div className="flex items-center gap-4 p-6 bg-card/30 rounded-2xl border-2 border-border/50 hover:border-primary/50 transition-all duration-300 w-fit">
+              <div className="flex items-center gap-4 p-6 bg-card/30 rounded-2xl border-2 border-border/50 hover:border-primary/50 transition-all duration-300 w-fit max-w-4xl">
                 <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
                   <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
-                <div className="text-xl md:text-2xl text-muted-foreground whitespace-nowrap">
+                <div className="text-xl md:text-2xl text-muted-foreground">
                   <span className="font-black">Phase II:</span> BAGR goes live with beta for first 1,200 founding producers
                 </div>
               </div>
