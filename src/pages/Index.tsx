@@ -91,7 +91,7 @@ const Index = () => {
               Who <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> Is <span className="text-primary">For</span>
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-medium px-4">
-              If you relate to any of these, you're in the right place
+              If you relate to any of these, you're in the right place. If not, dueces. ✌️
             </p>
           </div>
 
