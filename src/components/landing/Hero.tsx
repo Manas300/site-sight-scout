@@ -41,7 +41,7 @@ export const Hero = () => {
     const validation = signupSchema.safeParse(formData);
     if (!validation.success) {
       toast({
-        title: "Please complete all fields",
+        title: "hold up! missing some info",
         description: validation.error.issues[0].message,
         variant: "destructive",
       });
@@ -64,8 +64,8 @@ export const Hero = () => {
       
       if (result.success) {
         toast({
-          title: "YOU'RE IN 🔥",
-          description: "Your story will appear on the wall below!",
+          title: "LET'S GOOO 🔥",
+          description: "Check the wall below - you're live!",
         });
         setFormData({
           userType: "",
@@ -80,8 +80,8 @@ export const Hero = () => {
         // Handle specific error cases
         if (result.error?.includes('already') || result.error?.includes('duplicate')) {
           toast({
-            title: "Already signed up! 🎉",
-            description: "You're already on the list, founder.",
+            title: "yo you already signed up! 🎉",
+            description: "you're on the list bestie",
           });
         } else {
           throw new Error(result.error || 'Failed to subscribe');
@@ -90,8 +90,8 @@ export const Hero = () => {
     } catch (error) {
       console.error('Newsletter signup error:', error);
       toast({
-        title: "Something went wrong",
-        description: "Try again or DM us on Twitter.",
+        title: "Something broke 😭",
+        description: "Try again or hit us up on Twitter",
         variant: "destructive",
       });
     } finally {
@@ -275,7 +275,7 @@ export const Hero = () => {
               />
               
               <textarea
-                placeholder="Why do you want BAGЯ to exist? (Your answer will be shown on the wall below!)"
+                placeholder="Why you need BAGЯ in your life rn (this goes on the wall!)"
                 value={formData.whyBagr}
                 onChange={(e) => setFormData(prev => ({ ...prev, whyBagr: e.target.value }))}
                 className="w-full h-24 px-4 py-3 bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary rounded-md resize-none"
@@ -307,7 +307,7 @@ export const Hero = () => {
                 disabled={isSubmitting}
                 className="w-full h-14 px-10 bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-background font-black text-lg animate-glow-pulse border-2 border-primary"
               >
-                {isSubmitting ? "⚡" : "I'M IN → JOIN THE MOVEMENT"}
+                {isSubmitting ? "⚡" : "LET'S GO 🔥"}
               </Button>
             </form>
           </div>
