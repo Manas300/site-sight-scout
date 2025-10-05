@@ -55,7 +55,7 @@ export const ProductVision = () => {
               title: "Producers Win",
               desc: (
                 <>
-                  $120 in 90 seconds. <br/> Hundreds saw it happen and reposted.
+                  $120 in 90 seconds. <br/> Hundreds watched. Then the reposts started.
                 </>
               ),
               
