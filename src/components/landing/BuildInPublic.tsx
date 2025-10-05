@@ -19,7 +19,7 @@ export const BuildInPublic = () => {
             </div>
             <h3 className="text-2xl font-black mb-3 text-primary">The Raise: $850K</h3>
             <p className="text-foreground/80 font-medium mb-4">
-              We've bootstrapped BAGЯ with $20K of our own money — proof we're all-in. Now we need your co-signs to convince VCs to back us and:
+              We need your Co-Signs to convince VCs to back us and:
             </p>
             <ul className="space-y-4 text-lg">
               <li className="flex items-start gap-3">
