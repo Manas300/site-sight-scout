@@ -200,6 +200,9 @@ export const Hero = () => {
                 {isSubmitting ? "⚡" : "I'M IN →"}
               </Button>
             </form>
+            <p className="text-sm md:text-base text-muted-foreground mt-4 font-medium">
+              Next LOI goal: 500
+            </p>
           </div>
 
           {/* Social Proof Ticker */}
