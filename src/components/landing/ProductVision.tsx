@@ -129,7 +129,7 @@ export const ProductVision = () => {
           <p className="text-2xl font-black mb-3">
             ⚠️ REAL TALK: This Doesn't Exist Yet
           </p>
-          <p className="text-lg font-medium text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl font-medium text-muted-foreground max-w-3xl mx-auto">
             But it can with your help.<br/>
             Your LOI = proof to investors that producers want this built.<br/>
             <span className="text-primary font-black">Don't just wait for the next big thing. Help us build it.</span>
