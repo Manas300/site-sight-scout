@@ -92,11 +92,7 @@ export const ProductVision = () => {
             {
               img: mockupCosign,
               title: "Co-Sign Culture",
-              desc: (
-                <>
-                  Co-signs are the new social currency. <br/> Stamp your approval on a producer's sound and leave your mark on the culture. <br/> We lead. We don't "follow."
-                </>
-              )
+              desc: "Stamp your approval on a producer's sound and leave your mark on the culture."
             },
             {
               img: tipping,
