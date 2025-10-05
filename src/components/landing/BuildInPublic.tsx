@@ -28,19 +28,15 @@ export const BuildInPublic = () => {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">📱</span>
-                <span>Launch iOS + Android apps with pro-grade live streaming</span>
+                <span>Launch on iOS + Android</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">📊</span>
-                <span>Analytics suite: track sales, audience, and market trends in real time</span>
+                <span>Create behavior-driven analytics suite w/ AI store assistant</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">🧑‍💻</span>
-                <span>18 months of runway = 5 engineers + infrastructure that scales</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">💬</span>
-                <span>Every dollar goes straight into speed, reliability, and creator tools that actually compete with the big guys.</span>
+                <span>Raise 18 months of cash runway for 5 engineers</span>
               </li>
             </ul>
           </div>
