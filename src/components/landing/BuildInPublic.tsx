@@ -147,7 +147,7 @@ export const BuildInPublic = () => {
 
         {/* Founders & Team Section */}
         <div className="mt-16 p-8 bg-gradient-to-br from-card via-background to-card border-2 border-primary/20 rounded-2xl">
-          <h3 className="text-3xl font-black mb-2 text-center">Who's Building This? 🎯</h3>
+          <h3 className="text-3xl font-black mb-2 text-center">Who's Building This?</h3>
           <p className="text-center text-muted-foreground font-medium mb-8">
             Not some random tech bros. Real operators with skin in the game.
           </p>
