@@ -156,7 +156,7 @@ export const Hero = () => {
           <div className="mb-8 px-6 md:px-8 py-4 bg-gradient-to-r from-primary/20 to-secondary/20 border-2 border-primary rounded-lg max-w-lg mx-auto text-center animate-pulse">
             <div className="flex items-center justify-center gap-2 mb-2">
               <div className="w-2 h-2 bg-primary rounded-full animate-ping"></div>
-              <p className="text-sm font-bold text-primary">LIMITED TIME OFFER</p>
+              <p className="text-sm font-bold text-primary">LIMITED SPOTS</p>
               <div className="w-2 h-2 bg-primary rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
             </div>
             <p className="text-lg md:text-xl font-black text-primary">
