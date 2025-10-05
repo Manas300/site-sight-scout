@@ -14,8 +14,8 @@ export const WhyBagr = () => {
     },
     {
       icon: <TrendingUp className="w-7 h-7" />,
-      title: "Real-time bids = real respect. Let artists and other producers fight for your sound.",
-      desc: "",
+      title: "Real-time bids = real respect.",
+      desc: "Let artists and other producers fight for your sound.",
       gradient: "from-secondary/20 to-secondary/5"
     },
     {
