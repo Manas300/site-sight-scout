@@ -62,65 +62,65 @@ export const BuildInPublic = () => {
           </div>
         </div>
 
-        {/* Roadmap Progress */}
+        {/* Roadmap Progress Tracker */}
         <div className="p-8 bg-gradient-to-br from-card via-background to-card border-2 border-primary/30 rounded-2xl">
           <div className="flex items-center gap-3 mb-8">
             <Rocket className="w-8 h-8 text-primary" />
             <h3 className="text-3xl font-black">The Roadmap</h3>
           </div>
 
-          {/* Progress Bar */}
-          <div className="mb-8">
-            <div className="relative h-3 bg-muted rounded-full overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary to-secondary rounded-full w-1/4 animate-pulse"></div>
+          {/* Giant Progress Bar */}
+          <div className="mb-12">
+            <div className="relative h-4 bg-muted/50 rounded-full overflow-hidden backdrop-blur-sm">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary to-secondary rounded-full w-1/4 shadow-[0_0_20px_rgba(0,255,0,0.5)] animate-pulse"></div>
             </div>
           </div>
 
-          {/* Table Layout */}
-          <div className="overflow-x-auto">
-            <div className="min-w-full">
-              {/* Header */}
-              <div className="grid grid-cols-3 gap-4 pb-4 mb-4 border-b-2 border-primary/20">
-                <div className="font-black text-lg text-primary">Stage</div>
-                <div className="font-black text-lg text-secondary">Focus</div>
-                <div className="font-black text-lg text-primary">Outcome</div>
+          {/* Gamified Tracker */}
+          <div className="space-y-4 max-w-2xl mx-auto">
+            {/* Stage 1 - Active/Complete */}
+            <div className="relative group">
+              <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl border-2 border-primary shadow-[0_0_30px_rgba(0,255,0,0.3)] hover:shadow-[0_0_40px_rgba(0,255,0,0.5)] transition-all duration-300">
+                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-[0_0_20px_rgba(0,255,0,0.6)] animate-pulse">
+                  <CheckSquare className="w-6 h-6 text-background" />
+                </div>
+                <div className="font-black text-2xl">1. Now (Q2 2025)</div>
               </div>
+            </div>
 
-              {/* Rows */}
-              <div className="space-y-6">
-                {/* Now (Q2 2025) - Active */}
-                <div className="grid grid-cols-3 gap-4 p-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl border-2 border-primary">
-                  <div className="font-black text-xl">1. Now (Q2 2025)</div>
-                  <div className="font-medium">1,200 LOIs + Close $850K</div>
-                  <div className="font-medium">Funding complete → build sprint begins</div>
+            {/* Stage 2 - Locked */}
+            <div className="relative group">
+              <div className="flex items-center gap-4 p-6 bg-card/30 rounded-2xl border-2 border-border/50 hover:border-primary/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center">
+                  <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
+                <div className="font-black text-2xl text-muted-foreground">2. Q3 2025</div>
+              </div>
+            </div>
 
-                {/* Q3 2025 */}
-                <div className="grid grid-cols-3 gap-4 p-4 bg-card/50 rounded-xl border border-border">
-                  <div className="font-black text-xl">2. Q3 2025</div>
-                  <div className="font-medium">Beta with data infrastructure</div>
-                  <div className="font-medium">Early testers get first look + feedback loop</div>
+            {/* Stage 3 - Locked */}
+            <div className="relative group">
+              <div className="flex items-center gap-4 p-6 bg-card/30 rounded-2xl border-2 border-border/50 hover:border-primary/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center">
+                  <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
+                <div className="font-black text-2xl text-muted-foreground">3. Q4 2025</div>
+              </div>
+            </div>
 
-                {/* Q4 2025 */}
-                <div className="grid grid-cols-3 gap-4 p-4 bg-card/50 rounded-xl border border-border">
-                  <div className="font-black text-xl">3. Q4 2025</div>
-                  <div className="font-medium">Full launch + analytics suite</div>
-                  <div className="font-medium">BAGЯ goes live for founding producers</div>
+            {/* Stage 4 - Locked */}
+            <div className="relative group">
+              <div className="flex items-center gap-4 p-6 bg-card/30 rounded-2xl border-2 border-border/50 hover:border-primary/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center">
+                  <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
-
-                {/* 2026 */}
-                <div className="grid grid-cols-3 gap-4 p-4 bg-card/50 rounded-xl border border-border">
-                  <div className="font-black text-xl">4. 2026</div>
-                  <div className="font-medium">Series A ready</div>
-                  <div className="font-medium">Scale globally + creator tools expansion</div>
-                </div>
+                <div className="font-black text-2xl text-muted-foreground">4. 2026</div>
               </div>
             </div>
           </div>
 
           {/* Bottom Tagline */}
-          <div className="mt-8 p-6 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-xl border border-primary/20">
+          <div className="mt-12 p-6 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-xl border border-primary/20">
             <p className="text-center font-medium text-lg italic">
               Watch us build the future you asked for in real-time.
             </p>
