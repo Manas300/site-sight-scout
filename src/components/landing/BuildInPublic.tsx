@@ -47,7 +47,7 @@ export const BuildInPublic = () => {
             </div>
             <h3 className="text-2xl font-black mb-3 text-secondary">Why Your Signup Matters</h3>
             <p className="text-foreground/80 font-medium mb-4">
-              We've already proven commitment with $20K + 6 months of sweat equity. VCs notice founders who put their money where their mouth is and communities that back them. Your LOI is living proof our market's hungry.
+              We've already proven commitment with $20K + 6 months of sweat equity. Your LOI is living proof to VCs that our market needs to eat.
             </p>
             <ul className="space-y-4 text-lg">
               <li className="flex items-start gap-3">
