@@ -179,9 +179,9 @@ export const Hero = () => {
               <p className="text-2xl md:text-3xl font-black text-destructive">{spotsLeft}</p>
               <p className="text-xs text-destructive/80 font-bold">SPOTS LEFT</p>
             </div>
-            <div className="px-6 md:px-8 py-4 bg-primary/20 border-2 border-primary rounded-lg">
-              <p className="text-2xl md:text-3xl font-black text-primary">{signupCount}</p>
-              <p className="text-xs text-primary/80 font-bold">ALREADY IN</p>
+            <div className="px-6 md:px-8 py-4 bg-warning/20 border-2 border-warning rounded-lg">
+              <p className="text-2xl md:text-3xl font-black text-warning">{signupCount}</p>
+              <p className="text-xs text-warning/80 font-bold">ALREADY IN</p>
             </div>
             <div className="px-6 md:px-8 py-4 bg-secondary/20 border-2 border-secondary rounded-lg animate-pulse" style={{ animationDelay: '0.5s' }}>
               <p className="text-2xl md:text-3xl font-black text-secondary">18</p>
