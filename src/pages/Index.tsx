@@ -15,7 +15,7 @@ const Index = () => {
           <h1 className="text-4xl font-black text-white font-montserrat" style={{ letterSpacing: '0.2em', fontSize: '2.25rem', lineHeight: '1', fontFeatureSettings: '"liga" 0' }}>
             BAGЯ
           </h1>
-          <div className="hidden md:flex gap-8 text-xl font-bold font-sans absolute left-1/2 transform -translate-x-1/2">
+          <div className="hidden md:flex gap-8 text-xl font-bold font-montserrat absolute left-1/2 transform -translate-x-1/2">
             <a 
               href="#why-bagr" 
               className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
