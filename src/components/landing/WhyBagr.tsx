@@ -32,8 +32,8 @@ export const WhyBagr = () => {
     },
     {
       icon: <DollarSign className="w-7 h-7" />,
-      title: "no limits",
-      desc: "more live. more hype. more bank.",
+      title: "No gatekeepers.",
+      desc: "No caps — just you going up with consistent action.",
       gradient: "from-primary/20 to-primary/5"
     },
     {
