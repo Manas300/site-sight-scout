@@ -21,6 +21,7 @@ export type Database = {
           email: string
           first_name: string | null
           id: string
+          instagram_handle: string | null
           referral_source: string | null
           shared_on_social: boolean | null
           state: string | null
@@ -33,6 +34,7 @@ export type Database = {
           email: string
           first_name?: string | null
           id?: string
+          instagram_handle?: string | null
           referral_source?: string | null
           shared_on_social?: boolean | null
           state?: string | null
@@ -45,6 +47,7 @@ export type Database = {
           email?: string
           first_name?: string | null
           id?: string
+          instagram_handle?: string | null
           referral_source?: string | null
           shared_on_social?: boolean | null
           state?: string | null

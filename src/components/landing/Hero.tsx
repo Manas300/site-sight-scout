@@ -15,7 +15,8 @@ const signupSchema = z.object({
   city: z.string().trim().min(1, { message: "City required" }).max(100),
   state: z.string().trim().min(2, { message: "State required" }).max(2),
   whyBagr: z.string().trim().min(10, { message: "Tell us why (at least 10 characters)" }).max(500),
-  email: z.string().trim().email({ message: "Enter a valid email" }).max(255)
+  email: z.string().trim().email({ message: "Enter a valid email" }).max(255),
+  igHandle: z.string().trim().min(1, { message: "Instagram handle required" }).max(100)
 });
 
 export const Hero = () => {
@@ -25,7 +26,8 @@ export const Hero = () => {
     city: "",
     state: "",
     whyBagr: "",
-    email: ""
+    email: "",
+    igHandle: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { signupCount } = useSignupCount();
@@ -56,7 +58,8 @@ export const Hero = () => {
         validation.data.city,
         validation.data.state,
         validation.data.whyBagr,
-        validation.data.userType
+        validation.data.userType,
+        validation.data.igHandle
       );
       
       if (result.success) {
@@ -70,7 +73,8 @@ export const Hero = () => {
           city: "",
           state: "",
           whyBagr: "",
-          email: ""
+          email: "",
+          igHandle: ""
         });
       } else {
         // Handle specific error cases
@@ -278,14 +282,24 @@ export const Hero = () => {
                 required
               />
               
-              <Input
-                type="email"
-                placeholder="your@email.com"
-                value={formData.email}
-                onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                className="h-12 bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
-                required
-              />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Input
+                  type="email"
+                  placeholder="your@email.com"
+                  value={formData.email}
+                  onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                  className="h-12 bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
+                  required
+                />
+                <Input
+                  type="text"
+                  placeholder="@yourighandle"
+                  value={formData.igHandle}
+                  onChange={(e) => setFormData(prev => ({ ...prev, igHandle: e.target.value.replace(/^@/, '') }))}
+                  className="h-12 bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
+                  required
+                />
+              </div>
               
               <Button 
                 type="submit" 

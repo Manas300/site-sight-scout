@@ -15,7 +15,8 @@ export const subscribeToNewsletter = async (
   city?: string,
   state?: string,
   whyBagr?: string,
-  userType?: string
+  userType?: string,
+  igHandle?: string
 ): Promise<EmailResponse> => {
   try {
     // First, try to save to Supabase
@@ -28,7 +29,8 @@ export const subscribeToNewsletter = async (
         city,
         state,
         why_bagr: whyBagr,
-        user_type: userType
+        user_type: userType,
+        instagram_handle: igHandle
       }]);
 
     // If database error (like duplicate email), handle it
