@@ -100,10 +100,6 @@ export const Hero = () => {
               GET PAID. <BagAnimation className="inline-block relative z-50" />
             </span>
           </h1>
-          
-          <p className="text-lg md:text-2xl mb-8 text-foreground/90 font-bold max-w-3xl mx-auto text-center">
-            <span className="text-primary">Live Bidding</span> × <span className="text-secondary">Live Shopping</span> × <span className="text-primary">Instant Payouts</span>
-          </p>
             
             {/* Static Bag Image */}
             <div className="flex justify-center mb-8 -mt-48">
