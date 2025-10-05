@@ -119,7 +119,9 @@ export const BuildInPublic = () => {
                 <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
                   <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
-                <div className="font-black text-2xl text-muted-foreground">4. 2026</div>
+                <div className="text-xl md:text-2xl text-muted-foreground">
+                  <span className="font-black">Phase IV:</span> BAGR Expands Producer Tools and is Series A Ready
+                </div>
               </div>
             </div>
           </div>
