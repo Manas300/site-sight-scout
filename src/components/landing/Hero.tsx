@@ -13,7 +13,7 @@ const signupSchema = z.object({
   userType: z.enum(['Producer', 'Artist', 'Fan'], { message: "Select your role" }),
   firstName: z.string().trim().min(1, { message: "First name required" }).max(100),
   city: z.string().trim().min(1, { message: "City required" }).max(100),
-  state: z.string().trim().min(2, { message: "State required" }).max(2),
+  state: z.string().trim().max(100).optional().or(z.literal('')),
   whyBagr: z.string().trim().min(10, { message: "Tell us why (at least 10 characters)" }).max(500),
   email: z.string().trim().email({ message: "Enter a valid email" }).max(255),
   igHandle: z.string().trim().min(1, { message: "Instagram handle required" }).max(100)
@@ -270,12 +270,10 @@ export const Hero = () => {
               
               <Input
                 type="text"
-                placeholder="State (e.g., NY, CA)"
-                maxLength={2}
+                placeholder="State/Region/Province (optional)"
                 value={formData.state}
-                onChange={(e) => setFormData(prev => ({ ...prev, state: e.target.value.toUpperCase() }))}
+                onChange={(e) => setFormData(prev => ({ ...prev, state: e.target.value }))}
                 className="h-12 bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
-                required
               />
               
               <textarea
