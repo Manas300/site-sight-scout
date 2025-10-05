@@ -144,7 +144,7 @@ export const Hero = () => {
                       🚀 Exclusive early feature voting rights
                     </p>
                     <p className="text-sm md:text-lg font-semibold text-destructive leading-relaxed animate-pulse">
-                      🚀 33% off FOR LIFE on our Diamond Plan 💎
+                      🚀 33% off FOR LIFE on our Diamond Plan
                     </p>
                   </div>
                 </div>
