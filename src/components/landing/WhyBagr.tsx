@@ -7,7 +7,7 @@ export const WhyBagr = () => {
       title: "Drop heat from anywhere.",
       desc: (
         <>
-          Studio? nah. <br/> you + your phone + WAV files = all you need.
+          Studio? nah. <br/> you, your phone + WAV files = <br/> all you need.
         </>
       ),
       gradient: "from-primary/20 to-primary/5"
@@ -73,7 +73,7 @@ export const WhyBagr = () => {
                   {feature.icon}
                 </div>
                 <h3 className="font-black text-xl mb-2 text-foreground">{feature.title}</h3>
-                <p className="text-muted-foreground font-medium whitespace-nowrap">{feature.desc}</p>
+                <p className="text-muted-foreground font-medium">{feature.desc}</p>
               </div>
             </div>
           ))}
