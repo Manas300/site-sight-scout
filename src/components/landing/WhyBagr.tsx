@@ -103,7 +103,7 @@ export const WhyBagr = () => {
               <div key={i} className="grid grid-cols-3 gap-4 p-6 border-b border-border last:border-0 hover:bg-muted/20 transition-colors">
                 <div className="font-medium">{row.feature}</div>
                 <div className="text-center text-muted-foreground">{row.old}</div>
-                <div className="text-center font-bold italic">{row.bagr}</div>
+                <div className="text-center font-bold italic font-poppins">{row.bagr}</div>
               </div>
             ))}
           </div>
