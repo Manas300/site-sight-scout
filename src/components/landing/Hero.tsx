@@ -84,7 +84,7 @@ export const Hero = () => {
           <div className="inline-block mb-8 px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-primary to-secondary border-2 border-primary rounded-full text-sm md:text-lg font-black text-background animate-glow-pulse">
             <span className="flex items-center gap-2 md:gap-3">
               <Flame className="w-4 h-4 md:w-5 md:h-5 animate-pulse" />
-              WE'RE RAISING $850K • LOCK IN FOUNDER PRICING
+              LOCK IN FOUNDER PRICING NOW
               <Flame className="w-4 h-4 md:w-5 md:h-5 animate-pulse" />
             </span>
           </div>
