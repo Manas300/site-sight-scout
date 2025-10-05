@@ -62,10 +62,6 @@ export const BuildInPublic = () => {
                 <CheckSquare className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <span>Founding-member perks: Startup pricing @ 33% off FOR LIFE</span>
               </li>
-              <li className="flex items-start gap-3">
-                <CheckSquare className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
-                <span>Beta access</span>
-              </li>
             </ul>
           </div>
         </div>
