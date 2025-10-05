@@ -89,7 +89,7 @@ export const Hero = () => {
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-8xl font-black mb-6 font-montserrat text-center" style={{ letterSpacing: '0.1em', wordSpacing: '-0.05em', lineHeight: '1.2' }}>
+          <h1 className="text-4xl md:text-8xl font-black mb-6 font-space-grotesk text-center" style={{ letterSpacing: '0.1em', wordSpacing: '-0.05em', lineHeight: '1.2' }}>
             <span className="block text-primary animate-pulse" style={{ letterSpacing: '0.1em' }}>
               DROP BEATS.
             </span>

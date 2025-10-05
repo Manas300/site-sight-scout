@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+        'space-grotesk': ['Space Grotesk', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
