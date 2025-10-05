@@ -87,7 +87,8 @@ export const BuildInPublic = () => {
                   <CheckSquare className="w-6 h-6 text-background" />
                 </div>
                 <div className="text-xl md:text-2xl">
-                  <span className="font-black">Phase I:</span> Gather 1,200 LOIs + Close $850K from Pre-Seed Investors
+                  <div className="font-black">Phase I – We're Building Proof Together 🔥</div>
+                  <div className="text-lg md:text-xl mt-1">1,200 LOIs + $850K = Go Time. Every signup counts.</div>
                 </div>
               </div>
             </div>
