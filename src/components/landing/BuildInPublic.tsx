@@ -56,7 +56,7 @@ export const BuildInPublic = () => {
               </li>
               <li className="flex items-start gap-3">
                 <CheckSquare className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
-                <span>Founding-member perks: Startup pricing @ 33% off FOR LIFE</span>
+                <span>First 1,200 Producer LOIs get 33% off Diamond Plan forever</span>
               </li>
             </ul>
           </div>
