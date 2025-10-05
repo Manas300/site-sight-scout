@@ -134,7 +134,7 @@ export const BuildInPublic = () => {
           </div>
 
           {/* Bottom Tagline */}
-          <div className="mt-12 p-8 bg-gradient-to-br from-[#D4AF37]/10 via-background to-[#D4AF37]/10 rounded-2xl border-2 border-[#D4AF37] shadow-[0_0_40px_rgba(212,175,55,0.3)] hover:shadow-[0_0_60px_rgba(212,175,55,0.5)] transition-all duration-500 animate-[pulse_4s_ease-in-out_infinite]">
+          <div className="mt-12 p-8 bg-gradient-to-br from-[#D4AF37]/10 via-background to-[#D4AF37]/10 rounded-2xl border-2 border-[#D4AF37] shadow-[0_0_40px_rgba(212,175,55,0.3)] hover:shadow-[0_0_60px_rgba(212,175,55,0.5)] transition-all duration-500 animate-[pulse_8s_ease-in-out_infinite]">
             <p className="text-center font-black text-2xl md:text-4xl italic bg-gradient-to-r from-[#FFD700] via-[#D4AF37] to-[#FFD700] bg-clip-text text-transparent animate-[shimmer_3s_ease-in-out_infinite] drop-shadow-[0_0_20px_rgba(255,215,0,0.5)]">
               Watch us build the future you asked for in real-time.
             </p>
