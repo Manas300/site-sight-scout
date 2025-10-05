@@ -19,24 +19,28 @@ export const BuildInPublic = () => {
             </div>
             <h3 className="text-2xl font-black mb-3 text-primary">The Raise: $850K</h3>
             <p className="text-foreground/80 font-medium mb-4">
-              We've already built the foundation with $20K of our own money. Now we're scaling to Bloomberg-level infrastructure: real-time data, analytics, professional-grade tools for producers.
+              We've bootstrapped BAGЯ with $20K of our own money — proof we're all-in. Now we need your co-signs to convince VCs to back us and:
             </p>
             <ul className="space-y-2 text-sm">
               <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">•</span>
-                <span>Build real-time auction data pipelines (like Bloomberg's market feeds)</span>
+                <span className="text-primary font-bold">⚙️</span>
+                <span>Build real-time auction pipelines</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">•</span>
-                <span>Launch iOS + Android apps with professional-grade streaming</span>
+                <span className="text-primary font-bold">📱</span>
+                <span>Launch iOS + Android apps with pro-grade live streaming</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">•</span>
-                <span>Analytics suite: track your sales, audience, market trends</span>
+                <span className="text-primary font-bold">📊</span>
+                <span>Analytics suite: track sales, audience, and market trends in real time</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">•</span>
-                <span>18 months runway = 5 engineers + infrastructure that scales</span>
+                <span className="text-primary font-bold">🧑‍💻</span>
+                <span>18 months of runway = 5 engineers + infrastructure that scales</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">💬</span>
+                <span>Every dollar goes straight into speed, reliability, and creator tools that actually compete with the big guys.</span>
               </li>
             </ul>
           </div>
