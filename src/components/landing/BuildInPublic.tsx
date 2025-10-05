@@ -80,10 +80,12 @@ export const BuildInPublic = () => {
             {/* Stage 1 - Active/Complete */}
             <div className="relative group">
               <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl border-2 border-primary shadow-[0_0_30px_rgba(0,255,0,0.3)] hover:shadow-[0_0_40px_rgba(0,255,0,0.5)] transition-all duration-300">
-                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-[0_0_20px_rgba(0,255,0,0.6)] animate-pulse">
+                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-[0_0_20px_rgba(0,255,0,0.6)] animate-pulse flex-shrink-0">
                   <CheckSquare className="w-6 h-6 text-background" />
                 </div>
-                <div className="text-2xl">Gather 1,200 LOIs + Close $850K from Pre-Seed Investors</div>
+                <div className="text-xl md:text-2xl whitespace-nowrap">
+                  <span className="font-black">Phase I:</span> Gather 1,200 LOIs + Close $850K from Pre-Seed Investors
+                </div>
               </div>
             </div>
 
