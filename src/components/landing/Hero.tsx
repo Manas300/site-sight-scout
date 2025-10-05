@@ -159,7 +159,7 @@ export const Hero = () => {
                   </p>
                   <div className="space-y-2 mt-4">
                     <p className="text-sm md:text-lg font-black text-destructive leading-relaxed">
-                      First 1,200 LOIs get:
+                      First 1,200 Producer LOIs get:
                     </p>
                     <div className="flex items-start gap-2">
                       <span className="text-sm md:text-lg w-6 flex-shrink-0">⚡</span>
@@ -193,7 +193,7 @@ export const Hero = () => {
               <div className="w-2 h-2 bg-primary rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
             </div>
             <p className="text-lg md:text-xl font-semibold text-primary" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              First 1,200 LOIs = <span className="text-secondary">Founder Pricing</span>
+              First 1,200 Producer LOIs = <span className="text-secondary">Founder Pricing</span>
             </p>
             <p className="text-2xl md:text-3xl font-black text-secondary whitespace-nowrap">
               33% OFF DIAMOND PLAN FOR LIFE 💎
