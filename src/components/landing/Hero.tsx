@@ -81,11 +81,11 @@ export const Hero = () => {
       <div className="container mx-auto max-w-5xl text-center relative z-10">
         <div className="animate-fade-in">
           {/* Hype Badge */}
-          <div className="inline-block mb-6 px-3 md:px-4 py-2 bg-gradient-to-r from-primary to-secondary border-2 border-primary rounded-full text-xs md:text-sm font-black text-background animate-glow-pulse">
-            <span className="flex items-center gap-2">
-              <Flame className="w-3 h-3 md:w-4 md:h-4 animate-pulse" />
+          <div className="inline-block mb-8 px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-primary to-secondary border-2 border-primary rounded-full text-sm md:text-lg font-black text-background animate-glow-pulse">
+            <span className="flex items-center gap-2 md:gap-3">
+              <Flame className="w-4 h-4 md:w-5 md:h-5 animate-pulse" />
               WE'RE RAISING $850K • BE A FOUNDER
-              <Flame className="w-3 h-3 md:w-4 md:h-4 animate-pulse" />
+              <Flame className="w-4 h-4 md:w-5 md:h-5 animate-pulse" />
             </span>
           </div>
           
