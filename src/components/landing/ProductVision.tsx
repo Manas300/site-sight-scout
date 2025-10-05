@@ -115,9 +115,9 @@ export const ProductVision = () => {
                 alt={mockup.title}
                 className="w-full h-auto rounded-2xl hover:scale-105 transition-transform duration-300"
               />
-              <div className="mt-4 text-center">
-                <h3 className="text-xl font-black text-primary mb-2 tracking-wide">{mockup.title}</h3>
-                <p className="text-sm font-medium text-foreground/90">{mockup.desc}</p>
+              <div className="mt-6 text-center">
+                <h3 className="text-3xl md:text-4xl font-black text-[#00FFD1] mb-4 tracking-wide">{mockup.title}</h3>
+                <p className="text-base md:text-lg font-medium text-foreground/90 font-[Poppins]">{mockup.desc}</p>
               </div>
             </div>
           ))}
