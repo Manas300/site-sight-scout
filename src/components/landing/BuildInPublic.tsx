@@ -1,4 +1,4 @@
-import { Rocket, Code, DollarSign, Users } from "lucide-react";
+import { Rocket, Code, DollarSign, Users, CheckSquare } from "lucide-react";
 
 export const BuildInPublic = () => {
   return (
@@ -23,20 +23,20 @@ export const BuildInPublic = () => {
             </p>
             <ul className="space-y-2 text-sm">
               <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">⚙️</span>
+                <CheckSquare className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                 <span>Build real-time auction pipelines</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">📱</span>
+                <CheckSquare className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                 <span>Launch on iOS + Android</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">📊</span>
-                <span>Create behavior-driven analytics suite w/ AI store assistant</span>
+                <CheckSquare className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                <span>Create behavior-driven analytics suite with your own personal AI store assistant</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">🧑‍💻</span>
-                <span>Raise 18 months of cash runway for 5 engineers</span>
+                <CheckSquare className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                <span>Raise 18 months of cash runway for a team of 6</span>
               </li>
             </ul>
           </div>
