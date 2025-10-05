@@ -137,13 +137,13 @@ export const Hero = () => {
                     <p className="text-sm md:text-lg font-black text-destructive leading-relaxed">
                       First 1,200 LOIs get:
                     </p>
-                    <p className="text-sm md:text-lg font-black text-destructive leading-relaxed animate-pulse">
+                    <p className="text-sm md:text-lg font-semibold text-destructive leading-relaxed animate-pulse">
                       🚀 Beta access
                     </p>
-                    <p className="text-sm md:text-lg font-black text-destructive leading-relaxed animate-pulse">
+                    <p className="text-sm md:text-lg font-semibold text-destructive leading-relaxed animate-pulse">
                       🚀 Exclusive early feature voting rights
                     </p>
-                    <p className="text-sm md:text-lg font-black text-destructive leading-relaxed animate-pulse">
+                    <p className="text-sm md:text-lg font-semibold text-destructive leading-relaxed animate-pulse">
                       🚀 33% off for life on our pro plan
                     </p>
                   </div>
