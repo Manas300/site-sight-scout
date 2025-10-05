@@ -8,10 +8,10 @@ export const BuildInPublic = () => {
           <h2 className="text-5xl md:text-6xl font-black mb-6">
             <span className="text-primary">Building In Public</span>
             <br/>
-            Like It Should Be
+            <span className="text-secondary">Like It Should Be</span>
           </h2>
-          <p className="text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
-            No BS. No fake promises. Just real talk about building the platform producers actually need.
+          <p className="text-xl text-muted-foreground font-medium max-w-3xl mx-auto">
+            We've already put <span className="font-black text-primary">$20K</span> and <span className="font-black text-secondary">6 months</span> into this. Professional Figma designs. Production-ready code. Now we're raising <span className="font-black text-primary">$850K</span> to scale BAGЯ into the Bloomberg Terminal of Hip Hop.
           </p>
         </div>
 
@@ -22,20 +22,24 @@ export const BuildInPublic = () => {
             </div>
             <h3 className="text-2xl font-black mb-3 text-primary">The Raise: $850K</h3>
             <p className="text-foreground/80 font-medium mb-4">
-              This gets us 18 months of runway to build, test, and scale BAGЯ with real producers.
+              We've already built the foundation with $20K of our own money. Now we're scaling to Bloomberg-level infrastructure: real-time data, analytics, professional-grade tools for producers.
             </p>
             <ul className="space-y-2 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                <span>Hire 5 engineers who actually understand hip hop culture</span>
+                <span>Build real-time auction data pipelines (like Bloomberg's market feeds)</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                <span>Build iOS + Android apps (mobile-first or bust)</span>
+                <span>Launch iOS + Android apps with professional-grade streaming</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                <span>Launch with 100 hand-picked producers for beta</span>
+                <span>Analytics suite: track your sales, audience, market trends</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                <span>18 months runway = 5 engineers + infrastructure that scales</span>
               </li>
             </ul>
           </div>
@@ -46,20 +50,24 @@ export const BuildInPublic = () => {
             </div>
             <h3 className="text-2xl font-black mb-3 text-secondary">Why Your Signup Matters</h3>
             <p className="text-foreground/80 font-medium mb-4">
-              VCs want proof. Your email = proof that producers want this platform to exist.
+              We've already proven commitment with $20K and 6 months of work. VCs see: founders who put money where their mouth is + community validation from 1,200 producers.
             </p>
             <ul className="space-y-2 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-secondary font-bold">•</span>
-                <span>We show VCs: "1,200 producers signed up before we even built it"</span>
+                <span>We've de-risked the idea with our own capital (designs + code done)</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-secondary font-bold">•</span>
-                <span>You get founder pricing (33% off for life)</span>
+                <span>Your LOI proves market demand to investors</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-secondary font-bold">•</span>
-                <span>First access when we launch beta (Q3 2025)</span>
+                <span>You get Bloomberg-level tools at startup pricing (33% off for life)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-secondary font-bold">•</span>
+                <span>Beta access Q3 2025 with real-time analytics suite</span>
               </li>
             </ul>
           </div>
@@ -70,10 +78,10 @@ export const BuildInPublic = () => {
           <h3 className="text-2xl font-black mb-6 text-center">The Roadmap</h3>
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { icon: <Users className="w-6 h-6" />, title: "Now", desc: "Collect 1,200 LOIs" },
-              { icon: <DollarSign className="w-6 h-6" />, title: "Q2 2025", desc: "Close $850K raise" },
-              { icon: <Code className="w-6 h-6" />, title: "Q3 2025", desc: "Beta with 100 producers" },
-              { icon: <Rocket className="w-6 h-6" />, title: "Q4 2025", desc: "Public launch" }
+              { icon: <Users className="w-6 h-6" />, title: "Now (Q2 2025)", desc: "1,200 LOIs + Close $850K" },
+              { icon: <Code className="w-6 h-6" />, title: "Q3 2025", desc: "Beta with data infrastructure" },
+              { icon: <Rocket className="w-6 h-6" />, title: "Q4 2025", desc: "Full launch + analytics suite" },
+              { icon: <DollarSign className="w-6 h-6" />, title: "2026", desc: "Series A ready" }
             ].map((phase, i) => (
               <div key={i} className="text-center">
                 <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mb-3 mx-auto text-background">
@@ -169,7 +177,7 @@ export const BuildInPublic = () => {
 
           <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl border border-primary/20">
             <p className="text-center font-bold text-foreground/90">
-              💡 <span className="text-primary">Ken</span> + <span className="text-secondary">Ebon</span> bring vision & culture. <span className="text-primary">Manas</span> + <span className="text-secondary">Koushik</span> are already coding this beast. Real team, real work.
+              💡 <span className="text-primary">$20K invested</span>. <span className="text-secondary">6 months deep</span>. Professional Figma designs + production code already built. <span className="text-primary">Ken</span> + <span className="text-secondary">Ebon</span> bring vision. <span className="text-primary">Manas</span> + <span className="text-secondary">Koushik</span> building Bloomberg-level infrastructure. We're not just talking—we've already proven it.
             </p>
           </div>
         </div>

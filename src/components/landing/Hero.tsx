@@ -151,7 +151,7 @@ export const Hero = () => {
               <div>
                 <p className="text-sm md:text-lg font-bold mb-2 text-primary font-montserrat">REAL TALK:</p>
                 <p className="text-sm md:text-lg text-foreground/80 font-montserrat font-normal mb-6">
-                  We've been bootstrapping <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> for 6 months, dropped twenty-thousand dollars ($20K) of our own money on Figma designs and early-stage coding, but now seek pre-seed investors to scale <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> to what it should be: the fucking Bloomberg Terminal of Hip Hop.
+                  We've been bootstrapping <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> for 6 months, dropped twenty-thousand dollars ($20K) of our own money on Figma designs and early-stage coding, but now seek pre-seed investors to scale <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> to what it could be: the fucking Bloomberg Terminal of Hip Hop.
                 </p>
                 
                 <div className="space-y-3 p-4 bg-primary/10 border-l-4 border-primary rounded-r-lg">
