@@ -4,10 +4,10 @@ export const WhyBagr = () => {
   const features = [
     {
       icon: <Play className="w-7 h-7" />,
-      title: "go live anywhere.",
+      title: "Drop heat from anywhere.",
       desc: (
         <>
-          Drop heat from anywhere. Studio? nah. <br/> you + your phone + WAV files = all you need.
+          Studio? nah. <br/> you + your phone + WAV files = all you need.
         </>
       ),
       gradient: "from-primary/20 to-primary/5"
