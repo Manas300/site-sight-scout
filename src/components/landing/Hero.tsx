@@ -133,9 +133,20 @@ export const Hero = () => {
                   <p className="text-sm md:text-lg font-medium text-primary leading-relaxed">
                     The more we grow, the faster we build.
                   </p>
-                  <p className="text-sm md:text-lg font-black text-destructive leading-relaxed animate-pulse">
-                    First 1,200 LOIs get beta access + exclusive early feature voting rights + 33% off for life on our pro plan
-                  </p>
+                  <div className="space-y-2 mt-4">
+                    <p className="text-sm md:text-lg font-black text-destructive leading-relaxed">
+                      First 1,200 LOIs get:
+                    </p>
+                    <p className="text-sm md:text-lg font-black text-destructive leading-relaxed animate-pulse">
+                      🚀 Beta access
+                    </p>
+                    <p className="text-sm md:text-lg font-black text-destructive leading-relaxed animate-pulse">
+                      🚀 Exclusive early feature voting rights
+                    </p>
+                    <p className="text-sm md:text-lg font-black text-destructive leading-relaxed animate-pulse">
+                      🚀 33% off for life on our pro plan
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
