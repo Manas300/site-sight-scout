@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
-        montserrat: ['Montserrat', 'sans-serif'],
+        sans: ['Montserrat', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
         'space-grotesk': ['Space Grotesk', 'sans-serif'],
       },
       colors: {
