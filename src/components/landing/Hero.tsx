@@ -169,7 +169,7 @@ export const Hero = () => {
               First 1,200 LOIs = <span className="text-secondary">Founder Pricing</span>
             </p>
             <p className="text-2xl md:text-3xl font-black text-secondary whitespace-nowrap">
-              💎 33% off FOR LIFE on our premium-tier plan for producers
+              33% OFF DIAMOND PLAN FOR LIFE 💎
             </p>
           </div>
 
