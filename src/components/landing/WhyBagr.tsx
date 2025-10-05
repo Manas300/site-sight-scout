@@ -21,7 +21,7 @@ export const WhyBagr = () => {
     {
       icon: <Zap className="w-7 h-7" />,
       title: "Get paid while you sleep.",
-      desc: "Your store stays open 24/7 — even when you're catching Zzzzzs.",
+      desc: "Your store never clocks out — even when you're catching Zzzzzs.",
       gradient: "from-primary/20 to-primary/5"
     },
     {
