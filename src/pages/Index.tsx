@@ -105,7 +105,7 @@ const Index = () => {
               },
               {
                 title: "Artists",
-                emoji: <span className="text-red-500">🔥</span>,
+                emoji: "💀",
                 pain: "Done scrolling dead beat stores for hours",
                 solution: ["Join live sessions", "Bid on heat", "Lock in exclusives"]
               },
