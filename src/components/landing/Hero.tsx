@@ -209,12 +209,9 @@ export const Hero = () => {
                 {isSubmitting ? "⚡" : "I'M IN →"}
               </Button>
             </form>
-            <div className="mt-8 px-8 py-8 bg-gradient-to-r from-warning/20 via-primary/20 to-secondary/20 border-4 border-warning rounded-xl text-center animate-pulse">
-              <p className="text-3xl md:text-5xl font-black text-warning mb-4 whitespace-nowrap">
+            <div className="mt-8 px-8 py-5 bg-gradient-to-r from-warning/20 via-primary/20 to-secondary/20 border-4 border-warning rounded-xl text-center animate-pulse">
+              <p className="text-3xl md:text-5xl font-black text-warning whitespace-nowrap">
                 🎯 NEXT LOI GOAL: 500 🚀
-              </p>
-              <p className="text-sm md:text-lg font-bold text-warning animate-pulse" style={{ animationDelay: '0.5s' }}>
-                WE'RE ONLY GETTING STARTED
               </p>
             </div>
           </div>
