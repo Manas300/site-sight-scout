@@ -124,8 +124,8 @@ export const Hero = () => {
             <div className="flex items-start gap-3 text-left">
               <Zap className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-1 animate-pulse" />
               <div>
-                <p className="text-sm md:text-lg font-bold mb-2 text-primary">REAL TALK:</p>
-                <p className="text-sm md:text-lg text-foreground/80">
+                <p className="text-sm md:text-lg font-bold mb-2 text-primary font-sans">REAL TALK:</p>
+                <p className="text-sm md:text-lg text-foreground/80 font-sans">
                   We've been bootstrapping this project, investing $20K+ of our own money, but need Venture Capital to scale <span style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> and realize its full potential for the hip hop creator community. Your signup = proof to VCs that producers actually want this.
                 </p>
               </div>
