@@ -158,7 +158,7 @@ export const Hero = () => {
                 </p>
                 
                 <div className="space-y-3 p-4 bg-primary/10 border-l-4 border-primary rounded-r-lg">
-                  <p className="text-sm md:text-lg font-medium text-primary leading-relaxed font-montserrat">
+                  <p className="text-sm md:text-lg font-medium text-primary leading-relaxed font-montserrat whitespace-nowrap overflow-x-auto">
                     Your sign-up = a Letter of Intent (LOI) to use <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> once we're funded and v1 is live.
                   </p>
                   <p className="text-sm md:text-lg font-semibold text-foreground/80 leading-relaxed font-montserrat">
