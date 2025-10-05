@@ -162,7 +162,7 @@ export const Hero = () => {
             <p className="text-lg md:text-xl font-semibold text-primary" style={{ fontFamily: 'Poppins, sans-serif' }}>
               First 1,200 LOIs = <span className="text-secondary">Founder Pricing</span>
             </p>
-            <p className="text-2xl md:text-3xl font-black text-secondary">
+            <p className="text-2xl md:text-3xl font-black text-secondary whitespace-nowrap">
               33% OFF DIAMOND PLAN FOR LIFE 💎
             </p>
           </div>
