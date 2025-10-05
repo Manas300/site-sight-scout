@@ -21,21 +21,21 @@ export const BuildInPublic = () => {
             <p className="text-foreground/80 font-medium mb-4">
               We've bootstrapped BAGЯ with $20K of our own money — proof we're all-in. Now we need your co-signs to convince VCs to back us and:
             </p>
-            <ul className="space-y-3 text-base">
+            <ul className="space-y-4 text-lg">
               <li className="flex items-start gap-3">
-                <CheckSquare className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                <CheckSquare className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <span>Build real-time auction pipelines</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckSquare className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                <CheckSquare className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <span>Launch on iOS + Android</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckSquare className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                <CheckSquare className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <span>Create behavior-driven analytics suite with your own personal AI store assistant</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckSquare className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                <CheckSquare className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <span>Raise 18 months of cash runway for a team of 6</span>
               </li>
             </ul>
