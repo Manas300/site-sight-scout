@@ -111,13 +111,8 @@ export const WhyBagr = () => {
 
         {/* Emotional Closing */}
         <div className="mt-8 text-center max-w-3xl mx-auto">
-          <p className="text-lg md:text-xl text-muted-foreground font-medium">
-            We're done waiting for platforms that move like dial-up.
-            <br />
-            <span className="text-sm text-muted-foreground/60">(remember those days? prolly not)</span>
-          </p>
-          <p className="text-xl md:text-2xl font-black mt-3 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
-            BAGЯ's built for real-time moves, real-time money, and real-time growth.
+          <p className="text-xl md:text-2xl font-black bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+            Why settle for dial-up when you could be building with BAGЯ at fiber-optic speed?
           </p>
         </div>
       </div>
