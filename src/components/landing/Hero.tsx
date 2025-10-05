@@ -186,7 +186,7 @@ export const Hero = () => {
             </h1>
             
             {/* Static Bag Image */}
-            <div className="flex justify-center mb-8 -mt-40">
+            <div className="flex justify-center mb-8 -mt-48">
               <img 
                 src={moneyBagImage} 
                 alt="money bag" 
