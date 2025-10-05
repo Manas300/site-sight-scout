@@ -47,24 +47,24 @@ export const BuildInPublic = () => {
             </div>
             <h3 className="text-2xl font-black mb-3 text-secondary">Why Your Signup Matters</h3>
             <p className="text-foreground/80 font-medium mb-4">
-              We've already proven commitment with $20K and 6 months of work. VCs see: founders who put money where their mouth is + community validation from 1,200 producers.
+              We've already proven commitment with $20K + 6 months of sweat equity. VCs notice founders who put money where their mouth is and communities that back them. Your LOI is real proof this market's hungry.
             </p>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-start gap-2">
-                <span className="text-secondary font-bold">•</span>
-                <span>We've de-risked the idea with our own capital (designs + code done)</span>
+            <ul className="space-y-4 text-lg">
+              <li className="flex items-start gap-3">
+                <CheckSquare className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <span>We've de-risked the idea (designs + stress-tested business model)</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-secondary font-bold">•</span>
-                <span>Your LOI proves market demand to investors</span>
+              <li className="flex items-start gap-3">
+                <CheckSquare className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <span>Your LOI = market demand investors can't ignore</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-secondary font-bold">•</span>
-                <span>You get Bloomberg-level tools at startup pricing (33% off for life)</span>
+              <li className="flex items-start gap-3">
+                <CheckSquare className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <span>Founding-member perks: Startup pricing @ 33% off FOR LIFE</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-secondary font-bold">•</span>
-                <span>Beta access Q3 2025 with real-time analytics suite</span>
+              <li className="flex items-start gap-3">
+                <CheckSquare className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <span>Beta access</span>
               </li>
             </ul>
           </div>
