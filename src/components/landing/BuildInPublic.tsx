@@ -100,7 +100,8 @@ export const BuildInPublic = () => {
                   <CheckSquare className="w-6 h-6 text-muted-foreground" />
                 </div>
                 <div className="text-xl md:text-2xl text-muted-foreground">
-                  <span className="font-black">Phase II:</span> First 1,200 Producers Get Dibs on BAGR Beta + Feedback Loop
+                  <div className="font-black">Phase II. Early Access Unlocked 🔓</div>
+                  <div className="text-lg md:text-xl mt-1">First 1,200 Producers get BETA + direct feature input.</div>
                 </div>
               </div>
             </div>
