@@ -116,7 +116,7 @@ export const Hero = () => {
             </div>
             
             <p className="text-lg md:text-3xl mb-8 text-foreground/90 font-bold max-w-3xl mx-auto text-center">
-            TikTok Shop meets Whatnot for hip hop beats and sounds.<br/>
+            TikTok Shop meets Whatnot for hip hop beats.<br/>
               <span className="whitespace-nowrap block -ml-5"><span className="text-primary">Live streaming</span> × <span className="text-secondary">Live bidding wars</span> × <span className="text-primary">Instant payouts</span></span>
           </p>
 
