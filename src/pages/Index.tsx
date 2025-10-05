@@ -117,7 +117,7 @@ const Index = () => {
               }
             ].map((group, i) => (
               <div key={i} className="p-6 sm:p-8 bg-card border-2 border-border rounded-2xl hover:border-primary transition-all hover:scale-105">
-                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">{group.emoji}</div>
+                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 text-center">{group.emoji}</div>
                 <h3 className="text-xl sm:text-2xl font-black mb-2 sm:mb-3">{group.title}</h3>
                 <p className="text-xs sm:text-sm text-destructive font-bold mb-3 sm:mb-4 italic">"{group.pain}"</p>
                 <ul className="space-y-2 sm:space-y-3">
