@@ -150,7 +150,7 @@ export const Hero = () => {
               <Zap className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-1 animate-pulse" />
               <div>
                 <p className="text-sm md:text-lg font-bold mb-2 text-primary font-sans">REAL TALK:</p>
-                <p className="text-sm md:text-lg text-foreground/80 font-sans mb-6">
+                <p className="text-sm md:text-lg text-foreground/80 font-sans font-normal mb-6">
                   We've been bootstrapping <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> for 6 months, dropped twenty-thousand dollars ($20K) of our own money on Figma designs and early-stage coding, but now seek pre-seed investors to scale <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> to what it should be: the fucking Bloomberg Terminal of Hip Hop.
                 </p>
                 
