@@ -200,9 +200,14 @@ export const Hero = () => {
                 {isSubmitting ? "⚡" : "I'M IN →"}
               </Button>
             </form>
-            <p className="text-sm md:text-base text-muted-foreground mt-4 font-medium">
-              Next LOI goal: 500
-            </p>
+            <div className="mt-8 px-8 py-6 bg-gradient-to-r from-warning/20 via-primary/20 to-secondary/20 border-4 border-warning rounded-xl text-center animate-pulse">
+              <p className="text-3xl md:text-5xl font-black bg-gradient-to-r from-warning via-primary to-secondary bg-clip-text text-transparent">
+                🎯 NEXT LOI GOAL: 500 🚀
+              </p>
+              <p className="text-sm md:text-lg font-bold text-warning mt-2 animate-pulse" style={{ animationDelay: '0.5s' }}>
+                WE'RE ONLY GETTING STARTED
+              </p>
+            </div>
           </div>
 
           {/* Social Proof Ticker */}
