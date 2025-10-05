@@ -125,7 +125,7 @@ export const Hero = () => {
                 
                 <div className="space-y-3 p-4 bg-primary/10 border-l-4 border-primary rounded-r-lg">
                   <p className="text-sm md:text-lg font-medium text-primary leading-relaxed">
-                    Your sign-up = a pledge to use <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> once we're funded and v1 is live.
+                    Your sign-up = a Letter of Intent (LOI) to use <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span> once we're funded and v1 is live.
                   </p>
                   <p className="text-sm md:text-lg font-semibold text-foreground/80 leading-relaxed" style={{ fontFamily: 'Poppins, sans-serif' }}>
                     We're raising $850K now to fund 18 months of building. Every LOI tells investors that producers are ready for <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span>.
