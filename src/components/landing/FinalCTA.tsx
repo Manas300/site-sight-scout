@@ -248,7 +248,7 @@ export const FinalCTA = () => {
             disabled={isSubmitting}
             className="w-full h-14 sm:h-16 bg-gradient-to-r from-primary via-secondary to-primary hover:opacity-90 active:scale-95 text-background font-black text-base sm:text-lg animate-glow-pulse border-2 border-primary rounded-xl"
           >
-            {isSubmitting ? "⚡" : "SIGN YOUR LOI → Join the founding 1,200."}
+            {isSubmitting ? "⚡" : "SIGN YOUR LOI"}
           </Button>
 
           {/* Info Badges */}
