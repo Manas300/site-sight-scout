@@ -103,7 +103,7 @@ export const FinalCTA = () => {
           <Flame className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 text-primary mx-auto mb-4 sm:mb-6 animate-pulse" />
           
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 leading-tight">
-            <span className="text-primary">Don't Get</span> Left Behind
+            <span className="text-primary">Don't Get</span><br />Left Behind
           </h2>
           
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 font-bold">
