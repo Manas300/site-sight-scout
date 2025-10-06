@@ -112,7 +112,7 @@ const Index = () => {
               {
                 title: "Fans",
                 emoji: "👀",
-                pain: "Want to support producers you fw",
+                pain: "Support producers you fw",
                 solution: ["Watch live", "Tip your favorites", "See hits get made"]
               }
             ].map((group, i) => (
