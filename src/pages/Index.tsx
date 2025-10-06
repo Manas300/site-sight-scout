@@ -31,6 +31,19 @@ const Index = () => {
               Why BAGЯ
             </a>
             <a 
+              href="#the-vision" 
+              className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('the-vision')?.scrollIntoView({ 
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }}
+            >
+              The Vision
+            </a>
+            <a 
               href="#build-public" 
               className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
               onClick={(e) => {
@@ -60,8 +73,9 @@ const Index = () => {
           {/* Mobile Menu Dots */}
           <div className="lg:hidden flex gap-1">
             <a href="#why-bagr" className="w-2 h-2 rounded-full bg-primary" onClick={(e) => { e.preventDefault(); document.getElementById('why-bagr')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
-            <a href="#build-public" className="w-2 h-2 rounded-full bg-secondary" onClick={(e) => { e.preventDefault(); document.getElementById('build-public')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
-            <a href="#join" className="w-2 h-2 rounded-full bg-primary" onClick={(e) => { e.preventDefault(); document.getElementById('join')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
+            <a href="#the-vision" className="w-2 h-2 rounded-full bg-secondary" onClick={(e) => { e.preventDefault(); document.getElementById('the-vision')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
+            <a href="#build-public" className="w-2 h-2 rounded-full bg-primary" onClick={(e) => { e.preventDefault(); document.getElementById('build-public')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
+            <a href="#join" className="w-2 h-2 rounded-full bg-secondary" onClick={(e) => { e.preventDefault(); document.getElementById('join')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
           </div>
         </div>
       </nav>
@@ -75,7 +89,7 @@ const Index = () => {
         <WhyBagr />
       </div>
 
-      <div className="animate-slide-in-left">
+      <div id="the-vision" className="animate-slide-in-left">
         <ProductVision />
       </div>
 
