@@ -57,6 +57,19 @@ const Index = () => {
               The Raise
             </a>
             <a 
+              href="#the-team" 
+              className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('the-team')?.scrollIntoView({ 
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }}
+            >
+              The Team
+            </a>
+            <a 
               href="#join" 
               className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
               onClick={(e) => {
@@ -75,7 +88,8 @@ const Index = () => {
             <a href="#why-bagr" className="w-2 h-2 rounded-full bg-primary" onClick={(e) => { e.preventDefault(); document.getElementById('why-bagr')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
             <a href="#the-vision" className="w-2 h-2 rounded-full bg-secondary" onClick={(e) => { e.preventDefault(); document.getElementById('the-vision')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
             <a href="#build-public" className="w-2 h-2 rounded-full bg-primary" onClick={(e) => { e.preventDefault(); document.getElementById('build-public')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
-            <a href="#join" className="w-2 h-2 rounded-full bg-secondary" onClick={(e) => { e.preventDefault(); document.getElementById('join')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
+            <a href="#the-team" className="w-2 h-2 rounded-full bg-secondary" onClick={(e) => { e.preventDefault(); document.getElementById('the-team')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
+            <a href="#join" className="w-2 h-2 rounded-full bg-primary" onClick={(e) => { e.preventDefault(); document.getElementById('join')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
           </div>
         </div>
       </nav>
@@ -98,7 +112,7 @@ const Index = () => {
       </div>
 
       {/* Who It's For */}
-      <section className="py-12 sm:py-16 md:py-20 px-3 sm:px-4">
+      <section id="the-team" className="py-12 sm:py-16 md:py-20 px-3 sm:px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight">
