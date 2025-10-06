@@ -156,7 +156,7 @@ export const BuildInPublic = () => {
             Real producers. Real engineers. No suits.
           </p>
           
-          <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {/* Ken - Founder */}
             <div className="text-center">
               <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-105">
