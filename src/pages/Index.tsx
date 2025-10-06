@@ -146,7 +146,7 @@ const Index = () => {
               BAGЯ
             </div>
             <p className="text-xs sm:text-sm text-muted-foreground text-center">
-              © 2025 BAGЯ. Building in public.
+              © 2025 BAGЯ. Beat. Bid. Bag.
             </p>
           </div>
         </div>
