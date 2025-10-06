@@ -1,6 +1,7 @@
 import { Rocket, Code, DollarSign, Users, CheckSquare } from "lucide-react";
 import founderKen from "@/assets/founder-ken.jpg";
 import teamEbon from "@/assets/team-ebon.png";
+import teamManas from "@/assets/team-manas.png";
 
 export const BuildInPublic = () => {
   return (
@@ -195,7 +196,7 @@ export const BuildInPublic = () => {
             <div className="text-center">
               <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-105">
                 <img 
-                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop" 
+                  src={teamManas} 
                   alt="Manas - Lead Engineer"
                   className="w-full h-full object-cover"
                 />
