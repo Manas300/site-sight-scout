@@ -141,8 +141,8 @@ export const Hero = () => {
             </span>
           </h1>
             
-          <p className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl mb-6 sm:mb-8 text-foreground/90 font-normal max-w-3xl mx-auto px-2">
-            <span className="inline-block"><span className="text-primary">Live Beat Auctions</span> × <span className="text-secondary">Live Producer Stores</span> × <span className="text-primary">Instant Payouts</span></span>
+          <p className="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl mb-6 sm:mb-8 text-foreground/90 font-normal max-w-5xl mx-auto px-2 whitespace-nowrap overflow-x-auto">
+            <span className="text-primary">Live Beat Auctions</span> × <span className="text-secondary">Live Producer Stores</span> × <span className="text-primary">Instant Payouts</span>
           </p>
 
           {/* Radical Transparency Box */}
