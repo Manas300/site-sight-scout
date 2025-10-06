@@ -135,11 +135,17 @@ export const FinalCTA = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/10 animate-pulse" />
       
       <div className="container mx-auto max-w-3xl text-center relative z-10">
-        <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-8 sm:mb-12 leading-tight">
-          <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
-            Flip the system. Build with BAGЯ.
-          </span>
+        <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 leading-tight tracking-wider">
+          <span className="text-destructive">Stop Undervaluing</span> Your Music.
         </h2>
+        
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 font-bold">
+          {"It's only worth ad crumbs and stream change if you keep feeding the machine."}
+        </p>
+        
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 text-secondary font-black">
+          Flip the system. Build with BAGЯ.
+        </p>
         
         <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-4">
           {/* User Type Selection */}
