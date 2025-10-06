@@ -100,7 +100,7 @@ const Index = () => {
               {
                 title: "Producers",
                 emoji: "😤",
-                pain: "Tired of uploading to YouTube for $3 CPM",
+                pain: "I'm tired of uploading to YouTube for $3 CPM",
                 solution: ["Go live", "Watch bids climb", "Get paid instantly"]
               },
               {
