@@ -111,7 +111,7 @@ export const FinalCTA = () => {
           </p>
           
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 text-secondary font-black">
-            The first 1,200 will OWN the platform
+            Flip the system. Build with BAGЯ.
           </p>
           
           <form onSubmit={handleSubmit} className="max-w-lg mx-auto mb-4 sm:mb-6">
