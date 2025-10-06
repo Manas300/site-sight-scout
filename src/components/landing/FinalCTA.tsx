@@ -257,10 +257,10 @@ export const FinalCTA = () => {
               <span className="text-primary font-black">✓</span> 33% off forever
             </div>
             <div className="px-3 sm:px-4 py-2 bg-secondary/20 border border-secondary rounded-lg">
-              <span className="text-secondary font-black">✓</span> Beta access Q3 2025
+              <span className="text-secondary font-black">✓</span> Beta access
             </div>
             <div className="px-3 sm:px-4 py-2 bg-destructive/20 border border-destructive rounded-lg animate-pulse">
-              <span className="text-destructive font-black">{spotsLeft}</span> spots left
+              <span className="text-destructive font-black">✓</span> 1200 spots left
             </div>
           </div>
         </form>
