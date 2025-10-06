@@ -150,25 +150,25 @@ export const BuildInPublic = () => {
         </div>
 
         {/* Founders & Team Section */}
-        <div className="mt-16 p-8 bg-gradient-to-br from-card via-background to-card border-2 border-primary/20 rounded-2xl">
-          <h3 className="text-3xl font-black mb-2 text-center">Who's Building <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span>?</h3>
-          <p className="text-center text-muted-foreground font-medium mb-8">
+        <div className="mt-16 p-12 bg-gradient-to-br from-card via-background to-card border-2 border-primary/20 rounded-2xl">
+          <h3 className="text-5xl md:text-6xl font-black mb-4 text-center">Who's Building <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span>?</h3>
+          <p className="text-center text-muted-foreground font-medium mb-12 text-xl md:text-2xl">
             Real producers. Real engineers. No suits.
           </p>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
             {/* Ken - Founder */}
             <div className="text-center">
-              <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-105">
+              <div className="w-56 h-56 mx-auto mb-6 rounded-2xl overflow-hidden border-4 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-105">
                 <img 
                   src={founderKen} 
                   alt="Ken - Founder"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h4 className="text-xl font-black text-primary mb-1">Ken</h4>
-              <p className="text-sm font-bold text-secondary mb-2">Founder</p>
-              <div className="text-xs font-medium text-muted-foreground space-y-1">
+              <h4 className="text-3xl font-black text-primary mb-2">Ken</h4>
+              <p className="text-lg font-bold text-secondary mb-3">Founder</p>
+              <div className="text-base font-medium text-muted-foreground space-y-1">
                 <p>Producer/Musician</p>
                 <p>Product Vision</p>
               </div>
@@ -176,16 +176,16 @@ export const BuildInPublic = () => {
 
             {/* EbonOnTheTrack - Partner */}
             <div className="text-center">
-              <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-secondary/30 hover:border-secondary transition-all duration-300 hover:scale-105">
+              <div className="w-56 h-56 mx-auto mb-6 rounded-2xl overflow-hidden border-4 border-secondary/30 hover:border-secondary transition-all duration-300 hover:scale-105">
                 <img 
                   src={teamEbon} 
                   alt="EbonOnTheTrack - Partner"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h4 className="text-xl font-black text-secondary mb-1">EbonOnTheTrack</h4>
-              <p className="text-sm font-bold text-primary mb-2">Partner</p>
-              <div className="text-xs font-medium text-muted-foreground space-y-1">
+              <h4 className="text-3xl font-black text-secondary mb-2">EbonOnTheTrack</h4>
+              <p className="text-lg font-bold text-primary mb-3">Partner</p>
+              <div className="text-base font-medium text-muted-foreground space-y-1">
                 <p>Platinum Producer</p>
                 <p>Platform Partner</p>
               </div>
@@ -193,16 +193,16 @@ export const BuildInPublic = () => {
 
             {/* Manas - Lead Engineer */}
             <div className="text-center">
-              <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-105">
+              <div className="w-56 h-56 mx-auto mb-6 rounded-2xl overflow-hidden border-4 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-105">
                 <img 
                   src={teamManas} 
                   alt="Manas - Lead Engineer"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h4 className="text-xl font-black text-primary mb-1">Manas</h4>
-              <p className="text-sm font-bold text-secondary mb-2">Lead Engineer</p>
-              <div className="text-xs font-medium text-muted-foreground space-y-1">
+              <h4 className="text-3xl font-black text-primary mb-2">Manas</h4>
+              <p className="text-lg font-bold text-secondary mb-3">Lead Engineer</p>
+              <div className="text-base font-medium text-muted-foreground space-y-1">
                 <p>Ex-fintech engineer</p>
                 <p>Multicloud Architect</p>
               </div>
@@ -210,16 +210,16 @@ export const BuildInPublic = () => {
 
             {/* Koushik - Lead Engineer */}
             <div className="text-center">
-              <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-secondary/30 hover:border-secondary transition-all duration-300 hover:scale-105">
+              <div className="w-56 h-56 mx-auto mb-6 rounded-2xl overflow-hidden border-4 border-secondary/30 hover:border-secondary transition-all duration-300 hover:scale-105">
                 <img 
                   src={teamKoushik} 
                   alt="Koushik - Lead Engineer"
                   className="w-full h-full object-cover object-[50%_70%]"
                 />
               </div>
-              <h4 className="text-xl font-black text-secondary mb-1">Koushik</h4>
-              <p className="text-sm font-bold text-primary mb-2">Lead Engineer</p>
-              <div className="text-xs font-medium text-muted-foreground space-y-1">
+              <h4 className="text-3xl font-black text-secondary mb-2">Koushik</h4>
+              <p className="text-lg font-bold text-primary mb-3">Lead Engineer</p>
+              <div className="text-base font-medium text-muted-foreground space-y-1">
                 <p>100K+ DAU Systems</p>
                 <p>10TB Data Pipelines</p>
               </div>
