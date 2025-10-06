@@ -102,7 +102,7 @@ export const FinalCTA = () => {
         <div className="p-6 sm:p-8 md:p-12 lg:p-16 bg-gradient-to-br from-card/90 to-muted/90 backdrop-blur-xl rounded-3xl border-2 sm:border-4 border-primary/50 shadow-2xl">
           <div className="text-5xl sm:text-6xl md:text-7xl mx-auto mb-4 sm:mb-6 animate-pulse">🙈</div>
           
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 leading-tight tracking-wider">
+          <h2 className="font-poppins text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 leading-tight tracking-wider">
             <span className="text-destructive">Don't Get</span><br />Left Behind.
           </h2>
           
