@@ -103,12 +103,7 @@ export const FinalCTA = () => {
           <div className="text-5xl sm:text-6xl md:text-7xl mx-auto mb-4 sm:mb-6 animate-pulse">🙈</div>
           
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 leading-tight tracking-wider">
-            <span className="text-destructive">Don't Get</span><br />
-            <span>
-              L<span className="inline-block mr-2 sm:mr-3">e</span>
-              f<span className="inline-block mr-2 sm:mr-3">t</span>
-              {" "}Behind.
-            </span>
+            <span className="text-destructive">Don't Get</span><br />Left Behind.
           </h2>
           
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 font-bold">
