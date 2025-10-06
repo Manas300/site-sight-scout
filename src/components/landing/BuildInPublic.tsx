@@ -1,4 +1,4 @@
-import { Rocket, Code, DollarSign, Users, CheckSquare } from "lucide-react";
+import { Rocket, Code, DollarSign, Users, CheckSquare, Sparkles, Handshake } from "lucide-react";
 import founderKen from "@/assets/founder-ken.jpg";
 import teamEbon from "@/assets/team-ebon.png";
 import teamManas from "@/assets/team-manas.png";
@@ -150,78 +150,120 @@ export const BuildInPublic = () => {
         </div>
 
         {/* Founders & Team Section */}
-        <div className="mt-16 p-8 bg-gradient-to-br from-card via-background to-card border-2 border-primary/20 rounded-2xl">
-          <h3 className="text-3xl font-black mb-2 text-center">Who's Building <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span>?</h3>
-          <p className="text-center text-muted-foreground font-medium mb-8">
-            Real producers. Real engineers. No suits.
-          </p>
+        <div className="mt-16 p-8 bg-gradient-to-br from-card via-background to-card border-2 border-primary/20 rounded-2xl relative overflow-hidden">
+          {/* Subtle background pattern */}
+          <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, hsl(var(--primary)) 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {/* Ken - Founder */}
-            <div className="text-center">
-              <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-105">
-                <img 
-                  src={founderKen} 
-                  alt="Ken - Founder"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h4 className="text-xl font-black text-primary mb-1">Ken</h4>
-              <p className="text-sm font-bold text-secondary mb-2">Founder</p>
-              <div className="text-xs font-medium text-muted-foreground space-y-1">
-                <p>Producer/Musician</p>
-                <p>Product Vision</p>
-              </div>
+          <div className="relative z-10">
+            <div className="text-center mb-4">
+              <Sparkles className="w-12 h-12 mx-auto mb-4 text-primary animate-pulse" />
             </div>
+            <h3 className="text-4xl font-black mb-2 text-center bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+              Who's Building <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span>?
+            </h3>
+            <p className="text-center text-foreground/70 font-bold mb-12 text-lg">
+              Real producers. Real engineers. No suits.
+            </p>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+              {/* Ken - Founder */}
+              <div className="text-center group animate-fade-in" style={{ animationDelay: '0ms' }}>
+                <div className="relative mb-4">
+                  {/* Role badge */}
+                  <div className="absolute -top-2 -right-2 z-20 w-10 h-10 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center border-2 border-background shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Rocket className="w-5 h-5 text-background" />
+                  </div>
+                  <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden border-4 border-primary/30 hover:border-primary transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-[0_0_40px_rgba(0,255,0,0.4)] relative group-hover:brightness-110">
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                    <img 
+                      src={founderKen} 
+                      alt="Ken - Founder"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                </div>
+                <h4 className="text-xl font-black mb-1 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent group-hover:from-primary group-hover:to-secondary transition-all duration-300">Ken</h4>
+                <p className="text-sm font-bold text-secondary mb-3 uppercase tracking-wider">Founder</p>
+                <div className="text-xs font-medium text-foreground/60 space-y-1.5 group-hover:text-foreground/80 transition-colors duration-300">
+                  <p>Producer/Musician</p>
+                  <p>Product Vision</p>
+                </div>
+              </div>
 
-            {/* EbonOnTheTrack - Partner */}
-            <div className="text-center">
-              <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-secondary/30 hover:border-secondary transition-all duration-300 hover:scale-105">
-                <img 
-                  src={teamEbon} 
-                  alt="EbonOnTheTrack - Partner"
-                  className="w-full h-full object-cover"
-                />
+              {/* EbonOnTheTrack - Partner */}
+              <div className="text-center group animate-fade-in" style={{ animationDelay: '150ms' }}>
+                <div className="relative mb-4">
+                  {/* Role badge */}
+                  <div className="absolute -top-2 -right-2 z-20 w-10 h-10 bg-gradient-to-br from-secondary to-secondary/80 rounded-full flex items-center justify-center border-2 border-background shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Handshake className="w-5 h-5 text-background" />
+                  </div>
+                  <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden border-4 border-secondary/30 hover:border-secondary transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-[0_0_40px_rgba(255,0,255,0.4)] relative group-hover:brightness-110">
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                    <img 
+                      src={teamEbon} 
+                      alt="EbonOnTheTrack - Partner"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                </div>
+                <h4 className="text-xl font-black mb-1 bg-gradient-to-r from-secondary to-secondary/80 bg-clip-text text-transparent group-hover:from-secondary group-hover:to-primary transition-all duration-300">EbonOnTheTrack</h4>
+                <p className="text-sm font-bold text-primary mb-3 uppercase tracking-wider">Partner</p>
+                <div className="text-xs font-medium text-foreground/60 space-y-1.5 group-hover:text-foreground/80 transition-colors duration-300">
+                  <p>Platinum Producer</p>
+                  <p>Platform Partner</p>
+                </div>
               </div>
-              <h4 className="text-xl font-black text-secondary mb-1">EbonOnTheTrack</h4>
-              <p className="text-sm font-bold text-primary mb-2">Partner</p>
-              <div className="text-xs font-medium text-muted-foreground space-y-1">
-                <p>Platinum Producer</p>
-                <p>Platform Partner</p>
-              </div>
-            </div>
 
-            {/* Manas - Lead Engineer */}
-            <div className="text-center">
-              <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-105">
-                <img 
-                  src={teamManas} 
-                  alt="Manas - Lead Engineer"
-                  className="w-full h-full object-cover"
-                />
+              {/* Manas - Lead Engineer */}
+              <div className="text-center group animate-fade-in" style={{ animationDelay: '300ms' }}>
+                <div className="relative mb-4">
+                  {/* Role badge */}
+                  <div className="absolute -top-2 -right-2 z-20 w-10 h-10 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center border-2 border-background shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Code className="w-5 h-5 text-background" />
+                  </div>
+                  <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden border-4 border-primary/30 hover:border-primary transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-[0_0_40px_rgba(0,255,0,0.4)] relative group-hover:brightness-110">
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                    <img 
+                      src={teamManas} 
+                      alt="Manas - Lead Engineer"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                </div>
+                <h4 className="text-xl font-black mb-1 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent group-hover:from-primary group-hover:to-secondary transition-all duration-300">Manas</h4>
+                <p className="text-sm font-bold text-secondary mb-3 uppercase tracking-wider">Lead Engineer</p>
+                <div className="text-xs font-medium text-foreground/60 space-y-1.5 group-hover:text-foreground/80 transition-colors duration-300">
+                  <p>Ex-fintech engineer</p>
+                  <p>Multicloud Architect</p>
+                </div>
               </div>
-              <h4 className="text-xl font-black text-primary mb-1">Manas</h4>
-              <p className="text-sm font-bold text-secondary mb-2">Lead Engineer</p>
-              <div className="text-xs font-medium text-muted-foreground space-y-1">
-                <p>Ex-fintech engineer</p>
-                <p>Multicloud Architect</p>
-              </div>
-            </div>
 
-            {/* Koushik - Lead Engineer */}
-            <div className="text-center">
-              <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-secondary/30 hover:border-secondary transition-all duration-300 hover:scale-105">
-                <img 
-                  src={teamKoushik} 
-                  alt="Koushik - Lead Engineer"
-                  className="w-full h-full object-cover object-[50%_70%]"
-                />
-              </div>
-              <h4 className="text-xl font-black text-secondary mb-1">Koushik</h4>
-              <p className="text-sm font-bold text-primary mb-2">Lead Engineer</p>
-              <div className="text-xs font-medium text-muted-foreground space-y-1">
-                <p>100K+ DAU Systems</p>
-                <p>10TB Data Pipelines</p>
+              {/* Koushik - Lead Engineer */}
+              <div className="text-center group animate-fade-in" style={{ animationDelay: '450ms' }}>
+                <div className="relative mb-4">
+                  {/* Role badge */}
+                  <div className="absolute -top-2 -right-2 z-20 w-10 h-10 bg-gradient-to-br from-secondary to-secondary/80 rounded-full flex items-center justify-center border-2 border-background shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Code className="w-5 h-5 text-background" />
+                  </div>
+                  <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden border-4 border-secondary/30 hover:border-secondary transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-[0_0_40px_rgba(255,0,255,0.4)] relative group-hover:brightness-110">
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                    <img 
+                      src={teamKoushik} 
+                      alt="Koushik - Lead Engineer"
+                      className="w-full h-full object-cover object-[50%_70%] transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                </div>
+                <h4 className="text-xl font-black mb-1 bg-gradient-to-r from-secondary to-secondary/80 bg-clip-text text-transparent group-hover:from-secondary group-hover:to-primary transition-all duration-300">Koushik</h4>
+                <p className="text-sm font-bold text-primary mb-3 uppercase tracking-wider">Lead Engineer</p>
+                <div className="text-xs font-medium text-foreground/60 space-y-1.5 group-hover:text-foreground/80 transition-colors duration-300">
+                  <p>100K+ DAU Systems</p>
+                  <p>10TB Data Pipelines</p>
+                </div>
               </div>
             </div>
           </div>
