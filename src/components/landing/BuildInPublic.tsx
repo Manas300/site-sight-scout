@@ -205,7 +205,6 @@ export const BuildInPublic = () => {
               <div className="text-xs font-medium text-muted-foreground space-y-1">
                 <p>Ex-Elenical (Fintech Infra)</p>
                 <p>Multicloud Architect</p>
-                <p>MLOps Ready</p>
               </div>
             </div>
 
