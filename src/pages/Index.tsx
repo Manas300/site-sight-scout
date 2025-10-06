@@ -12,8 +12,8 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-xl border-b border-primary/20">
-        <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4 flex items-center justify-between">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-white font-montserrat" style={{ letterSpacing: '0.2em', fontSize: 'clamp(1.5rem, 5vw, 2.25rem)', lineHeight: '1', fontFeatureSettings: '"liga" 0' }}>
+        <div className="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white font-montserrat tracking-[0.2em]" style={{ lineHeight: '1', fontFeatureSettings: '"liga" 0' }}>
             BAGЯ
           </h1>
           <div className="hidden lg:flex gap-4 xl:gap-6 2xl:gap-8 text-base xl:text-lg 2xl:text-xl font-bold font-montserrat absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap items-center">
@@ -88,12 +88,12 @@ const Index = () => {
             </a>
           </div>
           {/* Mobile Menu Dots */}
-          <div className="lg:hidden flex gap-1">
-            <a href="#why-bagr" className="w-2 h-2 rounded-full bg-primary" onClick={(e) => { e.preventDefault(); document.getElementById('why-bagr')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
-            <a href="#the-vision" className="w-2 h-2 rounded-full bg-secondary" onClick={(e) => { e.preventDefault(); document.getElementById('the-vision')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
-            <a href="#build-public" className="w-2 h-2 rounded-full bg-primary" onClick={(e) => { e.preventDefault(); document.getElementById('build-public')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
-            <a href="#the-team" className="w-2 h-2 rounded-full bg-secondary" onClick={(e) => { e.preventDefault(); document.getElementById('the-team')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
-            <a href="#join" className="w-2 h-2 rounded-full bg-primary" onClick={(e) => { e.preventDefault(); document.getElementById('join')?.scrollIntoView({ behavior: 'smooth' }); }}></a>
+          <div className="lg:hidden flex gap-2">
+            <a href="#why-bagr" className="w-2.5 h-2.5 rounded-full bg-primary hover:scale-125 transition-transform" onClick={(e) => { e.preventDefault(); document.getElementById('why-bagr')?.scrollIntoView({ behavior: 'smooth' }); }} aria-label="Why BAGЯ"></a>
+            <a href="#the-vision" className="w-2.5 h-2.5 rounded-full bg-secondary hover:scale-125 transition-transform" onClick={(e) => { e.preventDefault(); document.getElementById('the-vision')?.scrollIntoView({ behavior: 'smooth' }); }} aria-label="The Vision"></a>
+            <a href="#build-public" className="w-2.5 h-2.5 rounded-full bg-primary hover:scale-125 transition-transform" onClick={(e) => { e.preventDefault(); document.getElementById('build-public')?.scrollIntoView({ behavior: 'smooth' }); }} aria-label="The Raise"></a>
+            <a href="#the-team" className="w-2.5 h-2.5 rounded-full bg-secondary hover:scale-125 transition-transform" onClick={(e) => { e.preventDefault(); document.getElementById('the-team')?.scrollIntoView({ behavior: 'smooth' }); }} aria-label="The Team"></a>
+            <a href="#join" className="w-2.5 h-2.5 rounded-full bg-primary hover:scale-125 transition-transform" onClick={(e) => { e.preventDefault(); document.getElementById('join')?.scrollIntoView({ behavior: 'smooth' }); }} aria-label="Build With Us"></a>
           </div>
         </div>
       </nav>
@@ -116,18 +116,18 @@ const Index = () => {
       </div>
 
       {/* Who It's For */}
-      <section className="py-12 sm:py-16 md:py-20 px-3 sm:px-4">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-10 sm:mb-12 md:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight px-2">
               Who <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> Is <span className="text-primary">For</span>
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-medium px-4">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-medium px-4 max-w-3xl mx-auto">
               If you relate to any of these, you're in the right place. If not, dueces. ✌️
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
                 title: "Producers",
@@ -149,13 +149,13 @@ const Index = () => {
               }
             ].map((group, i) => (
               <div key={i} className="p-6 sm:p-8 bg-card border-2 border-border rounded-2xl hover:border-primary transition-all hover:scale-105">
-                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 text-center">{group.emoji}</div>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black mb-3 sm:mb-4 text-center">{group.title}</h3>
-                <p className="text-sm sm:text-base md:text-lg text-destructive font-bold mb-4 sm:mb-5 italic text-center">"{group.pain}"</p>
-                <ul className="space-y-2 sm:space-y-3">
+                <div className="text-5xl sm:text-6xl mb-4 text-center">{group.emoji}</div>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 text-center">{group.title}</h3>
+                <p className="text-sm sm:text-base md:text-lg text-destructive font-bold mb-5 italic text-center leading-relaxed">"{group.pain}"</p>
+                <ul className="space-y-3">
                   {group.solution.map((item, j) => (
-                    <li key={j} className="flex items-start gap-2 sm:gap-3">
-                      <Check className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
+                    <li key={j} className="flex items-start gap-3">
+                      <Check className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-1" />
                       <span className="font-medium text-base sm:text-lg md:text-xl">{item}</span>
                     </li>
                   ))}
@@ -171,13 +171,13 @@ const Index = () => {
       </div>
 
       {/* Footer */}
-      <footer className="py-8 sm:py-10 md:py-12 px-3 sm:px-4 border-t-2 border-border bg-muted/20">
+      <footer className="py-10 sm:py-12 md:py-14 px-4 sm:px-6 border-t-2 border-border bg-muted/20">
         <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6">
-            <div className="text-2xl sm:text-3xl font-black text-white">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-8">
+            <div className="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-[0.2em]">
               BAGЯ
             </div>
-            <p className="text-xs sm:text-sm text-muted-foreground text-center">
+            <p className="text-sm sm:text-base text-muted-foreground text-center">
               © 2025 BAGЯ. Beat. Bid. Bag.
             </p>
           </div>

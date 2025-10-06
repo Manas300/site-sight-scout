@@ -130,35 +130,35 @@ export const FinalCTA = () => {
   const spotsLeft = Math.max(0, 1200 - signupCount);
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-3 sm:px-4 relative overflow-hidden">
+    <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/10 animate-pulse" />
       
       <div className="container mx-auto max-w-3xl text-center relative z-10">
-        <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 leading-tight tracking-wider">
+        <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight tracking-wide px-2">
           <span className="text-destructive">Stop Undervaluing</span>
           <br />
           Your Music.
         </h2>
         
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 font-bold">
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-3 sm:mb-4 font-bold px-2 leading-relaxed">
           {"It's only worth ad crumbs and stream change if you keep feeding the machine."}
         </p>
         
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 text-secondary font-black">
+        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 sm:mb-10 md:mb-12 text-secondary font-black px-2">
           Flip the system. Build with BAGЯ.
         </p>
         
         <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-4">
           {/* User Type Selection */}
-          <div className="grid grid-cols-3 gap-2 sm:gap-3">
+          <div className="grid grid-cols-3 gap-3">
             <button
               type="button"
               onClick={() => setUserType('producer')}
-              className={`h-12 sm:h-14 px-4 rounded-xl border-2 font-bold text-sm sm:text-base transition-all ${
+              className={`h-14 sm:h-16 px-4 rounded-xl border-2 font-bold text-sm sm:text-base transition-all touch-manipulation ${
                 userType === 'producer'
-                  ? 'bg-primary/20 border-primary text-primary'
-                  : 'bg-background/50 border-primary/30 text-foreground hover:border-primary/50'
+                  ? 'bg-primary/20 border-primary text-primary scale-105'
+                  : 'bg-background/50 border-primary/30 text-foreground hover:border-primary/50 active:scale-95'
               }`}
             >
               🎧 Producer
@@ -166,10 +166,10 @@ export const FinalCTA = () => {
             <button
               type="button"
               onClick={() => setUserType('artist')}
-              className={`h-12 sm:h-14 px-4 rounded-xl border-2 font-bold text-sm sm:text-base transition-all ${
+              className={`h-14 sm:h-16 px-4 rounded-xl border-2 font-bold text-sm sm:text-base transition-all touch-manipulation ${
                 userType === 'artist'
-                  ? 'bg-primary/20 border-primary text-primary'
-                  : 'bg-background/50 border-primary/30 text-foreground hover:border-primary/50'
+                  ? 'bg-primary/20 border-primary text-primary scale-105'
+                  : 'bg-background/50 border-primary/30 text-foreground hover:border-primary/50 active:scale-95'
               }`}
             >
               🎤 Artist
@@ -177,10 +177,10 @@ export const FinalCTA = () => {
             <button
               type="button"
               onClick={() => setUserType('fan')}
-              className={`h-12 sm:h-14 px-4 rounded-xl border-2 font-bold text-sm sm:text-base transition-all ${
+              className={`h-14 sm:h-16 px-4 rounded-xl border-2 font-bold text-sm sm:text-base transition-all touch-manipulation ${
                 userType === 'fan'
-                  ? 'bg-primary/20 border-primary text-primary'
-                  : 'bg-background/50 border-primary/30 text-foreground hover:border-primary/50'
+                  ? 'bg-primary/20 border-primary text-primary scale-105'
+                  : 'bg-background/50 border-primary/30 text-foreground hover:border-primary/50 active:scale-95'
               }`}
             >
               👏 Fan
@@ -188,20 +188,20 @@ export const FinalCTA = () => {
           </div>
 
           {/* Name and City Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             <Input
               type="text"
               placeholder="First Name"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
-              className="h-12 sm:h-14 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base font-medium focus:border-primary rounded-xl"
+              className="h-14 sm:h-16 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-base sm:text-lg font-medium focus:border-primary rounded-xl"
             />
             <Input
               type="text"
               placeholder="City"
               value={city}
               onChange={(e) => setCity(e.target.value)}
-              className="h-12 sm:h-14 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base font-medium focus:border-primary rounded-xl"
+              className="h-14 sm:h-16 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-base sm:text-lg font-medium focus:border-primary rounded-xl"
             />
           </div>
 
@@ -211,7 +211,7 @@ export const FinalCTA = () => {
             placeholder="State/Region/Province (optional)"
             value={state}
             onChange={(e) => setState(e.target.value)}
-            className="h-12 sm:h-14 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base font-medium focus:border-primary rounded-xl"
+            className="h-14 sm:h-16 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-base sm:text-lg font-medium focus:border-primary rounded-xl"
           />
 
           {/* Why BAGЯ */}
@@ -219,17 +219,17 @@ export const FinalCTA = () => {
             placeholder="Why you need BAGЯ in your life rn (this goes on the wall!)"
             value={whyBagr}
             onChange={(e) => setWhyBagr(e.target.value)}
-            className="w-full h-24 sm:h-28 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base font-medium focus:border-primary rounded-xl px-4 py-3 resize-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+            className="w-full h-28 sm:h-32 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-base sm:text-lg font-medium focus:border-primary rounded-xl px-4 py-3 resize-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
           />
 
           {/* Email and Instagram */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             <Input
               type="email"
               placeholder="your@email.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="h-12 sm:h-14 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base font-medium focus:border-primary rounded-xl"
+              className="h-14 sm:h-16 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-base sm:text-lg font-medium focus:border-primary rounded-xl"
               required
             />
             <Input
@@ -237,7 +237,7 @@ export const FinalCTA = () => {
               placeholder="@yourighandle"
               value={instagramHandle}
               onChange={(e) => setInstagramHandle(e.target.value)}
-              className="h-12 sm:h-14 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base font-medium focus:border-primary rounded-xl"
+              className="h-14 sm:h-16 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-base sm:text-lg font-medium focus:border-primary rounded-xl"
             />
           </div>
 
@@ -246,20 +246,20 @@ export const FinalCTA = () => {
             type="submit"
             size="lg"
             disabled={isSubmitting}
-            className="w-full h-14 sm:h-16 bg-gradient-to-r from-primary via-secondary to-primary hover:opacity-90 active:scale-95 text-background font-black text-base sm:text-lg animate-glow-pulse border-2 border-primary rounded-xl"
+            className="w-full h-16 sm:h-18 bg-gradient-to-r from-primary via-secondary to-primary hover:opacity-90 active:scale-95 text-background font-black text-lg sm:text-xl animate-glow-pulse border-2 border-primary rounded-xl touch-manipulation"
           >
             {isSubmitting ? "⚡" : "SIGN YOUR LOI"}
           </Button>
 
           {/* Info Badges */}
-          <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 flex-wrap text-[10px] sm:text-xs md:text-sm font-medium pt-2">
-            <div className="px-3 sm:px-4 py-2 bg-primary/20 border border-primary rounded-lg">
+          <div className="flex items-center justify-center gap-3 sm:gap-4 flex-wrap text-xs sm:text-sm md:text-base font-medium pt-3">
+            <div className="px-4 py-2.5 bg-primary/20 border border-primary rounded-lg">
               <span className="text-primary font-black">✓</span> 33% off forever
             </div>
-            <div className="px-3 sm:px-4 py-2 bg-secondary/20 border border-secondary rounded-lg">
+            <div className="px-4 py-2.5 bg-secondary/20 border border-secondary rounded-lg">
               <span className="text-secondary font-black">✓</span> Beta access
             </div>
-            <div className="px-3 sm:px-4 py-2 bg-destructive/20 border border-destructive rounded-lg animate-pulse">
+            <div className="px-4 py-2.5 bg-destructive/20 border border-destructive rounded-lg animate-pulse">
               <span className="text-destructive font-black">✓</span> 1200 spots left
             </div>
           </div>
