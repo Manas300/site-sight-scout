@@ -142,7 +142,7 @@ const Index = () => {
       <footer className="py-8 sm:py-10 md:py-12 px-3 sm:px-4 border-t-2 border-border bg-muted/20">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6">
-            <div className="text-2xl sm:text-3xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <div className="text-2xl sm:text-3xl font-black text-white">
               BAGЯ
             </div>
             <p className="text-xs sm:text-sm text-muted-foreground text-center">
