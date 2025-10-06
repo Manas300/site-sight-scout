@@ -145,11 +145,6 @@ const Index = () => {
             <div className="text-2xl sm:text-3xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               BAGЯ
             </div>
-            <div className="flex gap-4 sm:gap-6 text-xs sm:text-sm font-medium text-muted-foreground">
-              <a href="#" className="hover:text-primary transition-colors">Terms</a>
-              <a href="#" className="hover:text-primary transition-colors">Privacy</a>
-              <a href="#" className="hover:text-primary transition-colors">Contact</a>
-            </div>
             <p className="text-xs sm:text-sm text-muted-foreground text-center">
               © 2025 BAGЯ. Building in public.
             </p>
