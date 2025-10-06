@@ -80,7 +80,7 @@ const Index = () => {
                 });
               }}
             >
-              Join
+              Build With Us
             </a>
           </div>
           {/* Mobile Menu Dots */}
