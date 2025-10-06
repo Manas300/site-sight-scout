@@ -107,7 +107,7 @@ export const FinalCTA = () => {
           </h2>
           
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 font-bold">
-            While everyone else sleeps on YouTube beats for pennies...
+            You deserve more than pennies from ads and streams.
           </p>
           
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 text-secondary font-black">
