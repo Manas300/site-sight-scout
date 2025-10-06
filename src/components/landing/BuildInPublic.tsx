@@ -171,7 +171,6 @@ export const BuildInPublic = () => {
               <div className="text-xs font-medium text-muted-foreground space-y-1">
                 <p>Producer/Musician</p>
                 <p>Product Vision</p>
-                <p>GTM Execution</p>
               </div>
             </div>
 
