@@ -106,7 +106,7 @@ export const FinalCTA = () => {
             <span className="text-destructive">Don't Get</span><br />
             <span>
               L<span className="inline-block mr-2 sm:mr-3">e</span>
-              f<span className="inline-block mr-1">t</span>
+              f<span className="inline-block mr-2 sm:mr-3">t</span>
               {" "}Behind.
             </span>
           </h2>
