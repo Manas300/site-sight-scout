@@ -159,16 +159,18 @@ export const BuildInPublic = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {/* Ken - Founder */}
             <div className="text-center">
-              <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-105">
-                <img 
-                  src={founderKen} 
-                  alt="Ken - Founder"
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-40 h-40 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-transparent bg-gradient-to-br from-primary via-secondary to-primary p-1 hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(0,255,0,0.3)]">
+                <div className="w-full h-full rounded-xl overflow-hidden">
+                  <img 
+                    src={founderKen} 
+                    alt="Ken - Founder"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
               <h4 className="text-xl font-black text-primary mb-1">Ken</h4>
               <p className="text-sm font-bold text-secondary mb-2">Founder</p>
-              <div className="text-xs font-medium text-muted-foreground space-y-1">
+              <div className="text-xs font-medium text-foreground space-y-1">
                 <p>Creative-Tech Operator</p>
                 <p>Product Architect</p>
                 <p>GTM Execution</p>
