@@ -217,7 +217,7 @@ export const BuildInPublic = () => {
                 <img 
                   src={teamKoushik} 
                   alt="Koushik - Lead Engineer"
-                  className="w-full h-full object-cover object-[50%_20%]"
+                  className="w-full h-full object-cover object-[50%_80%]"
                 />
               </div>
               <h4 className="text-xl font-black text-secondary mb-1">Koushik</h4>
