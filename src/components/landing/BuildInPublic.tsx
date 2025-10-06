@@ -203,7 +203,7 @@ export const BuildInPublic = () => {
               <h4 className="text-xl font-black text-primary mb-1">Manas</h4>
               <p className="text-sm font-bold text-secondary mb-2">Lead Engineer</p>
               <div className="text-xs font-medium text-muted-foreground space-y-1">
-                <p>Ex-Elenical (Fintech Infra)</p>
+                <p>Ex-fintech engineer</p>
                 <p>Multicloud Architect</p>
               </div>
             </div>
