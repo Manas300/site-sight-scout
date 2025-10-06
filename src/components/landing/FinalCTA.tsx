@@ -264,15 +264,6 @@ export const FinalCTA = () => {
             </div>
           </div>
         </form>
-
-        <div className="mt-6 sm:mt-8 p-4 sm:p-6 md:p-8 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl border-2 border-primary/20">
-          <p className="text-xs sm:text-sm md:text-base text-foreground font-bold mb-3 sm:mb-4 leading-relaxed">
-            💡 Your signup = proof to VCs that producers NEED this. We can't build BAGЯ alone—help us will this into existence.
-          </p>
-          <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground font-medium leading-relaxed">
-            Share this with your producer friends. The more LOIs we collect, the faster we close the $850K and start building.
-          </p>
-        </div>
       </div>
 
       {/* Share Modal */}
