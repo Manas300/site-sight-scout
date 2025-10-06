@@ -136,7 +136,9 @@ export const FinalCTA = () => {
       
       <div className="container mx-auto max-w-3xl text-center relative z-10">
         <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 leading-tight tracking-wider">
-          <span className="text-destructive">Stop Undervaluing</span> Your Music.
+          <span className="text-destructive">Stop Undervaluing</span>
+          <br />
+          Your Music.
         </h2>
         
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 font-bold">
