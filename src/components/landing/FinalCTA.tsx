@@ -7,12 +7,24 @@ import { useSignupCount } from "@/hooks/useSignupCount";
 import { Flame, Share2, Twitter, Facebook, MessageCircle } from "lucide-react";
 import { z } from "zod";
 
-const emailSchema = z.object({
-  email: z.string().trim().email({ message: "Enter a valid email" }).max(255)
+const formSchema = z.object({
+  email: z.string().trim().email({ message: "Enter a valid email" }).max(255),
+  firstName: z.string().trim().max(100, { message: "First name must be less than 100 characters" }).optional(),
+  city: z.string().trim().max(100).optional(),
+  state: z.string().trim().max(100).optional(),
+  whyBagr: z.string().trim().max(500, { message: "Message must be less than 500 characters" }).optional(),
+  userType: z.string().optional(),
+  instagramHandle: z.string().trim().max(50).optional()
 });
 
 export const FinalCTA = () => {
   const [email, setEmail] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [whyBagr, setWhyBagr] = useState("");
+  const [userType, setUserType] = useState("");
+  const [instagramHandle, setInstagramHandle] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
   const { signupCount } = useSignupCount();
@@ -22,11 +34,20 @@ export const FinalCTA = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Validate email
-    const validation = emailSchema.safeParse({ email });
+    // Validate form
+    const validation = formSchema.safeParse({ 
+      email, 
+      firstName, 
+      city, 
+      state, 
+      whyBagr, 
+      userType,
+      instagramHandle 
+    });
+    
     if (!validation.success) {
       toast({
-        title: "Invalid email",
+        title: "Invalid input",
         description: validation.error.issues[0].message,
         variant: "destructive",
       });
@@ -36,7 +57,16 @@ export const FinalCTA = () => {
     setIsSubmitting(true);
     
     try {
-      const result = await subscribeToNewsletter(validation.data.email, 'final_cta');
+      const result = await subscribeToNewsletter(
+        validation.data.email, 
+        'final_cta',
+        validation.data.firstName,
+        validation.data.city,
+        validation.data.state,
+        validation.data.whyBagr,
+        validation.data.userType,
+        validation.data.instagramHandle
+      );
       
       if (result.success) {
         toast({
@@ -45,6 +75,12 @@ export const FinalCTA = () => {
         });
         setShowShareModal(true);
         setEmail("");
+        setFirstName("");
+        setCity("");
+        setState("");
+        setWhyBagr("");
+        setUserType("");
+        setInstagramHandle("");
       } else {
         // Handle specific error cases
         if (result.error?.includes('already') || result.error?.includes('duplicate')) {
@@ -98,55 +134,128 @@ export const FinalCTA = () => {
       {/* Animated background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/10 animate-pulse" />
       
-      <div className="container mx-auto max-w-4xl text-center relative z-10">
-        <div className="p-6 sm:p-8 md:p-12 lg:p-16 bg-gradient-to-br from-card/90 to-muted/90 backdrop-blur-xl rounded-3xl border-2 sm:border-4 border-primary/50 shadow-2xl">
-          <div className="text-5xl sm:text-6xl md:text-7xl mx-auto mb-4 sm:mb-6 animate-pulse">🙈</div>
-          
-          <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 leading-tight tracking-wider">
-            <span className="text-destructive">Stop Undervaluing</span> Your Music.
-          </h2>
-          
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 font-bold">
-            It's only worth ad crumbs and stream change if you keep feeding the machine.
-          </p>
-          
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 text-secondary font-black">
+      <div className="container mx-auto max-w-3xl text-center relative z-10">
+        <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-8 sm:mb-12 leading-tight">
+          <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
             Flip the system. Build with BAGЯ.
-          </p>
-          
-          <form onSubmit={handleSubmit} className="max-w-lg mx-auto mb-4 sm:mb-6">
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
-              <Input
-                type="email"
-                placeholder="your@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 h-11 sm:h-12 md:h-14 bg-background border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base md:text-lg font-medium focus:border-primary"
-                required
-              />
-              <Button 
-                type="submit"
-                size="lg"
-                disabled={isSubmitting}
-                className="h-11 sm:h-12 md:h-14 px-6 sm:px-8 md:px-10 bg-gradient-to-r from-primary via-secondary to-primary hover:opacity-90 active:scale-95 text-background font-black text-sm sm:text-base md:text-lg animate-glow-pulse border-2 border-primary whitespace-nowrap touch-manipulation"
-              >
-                {isSubmitting ? "⚡" : "CLAIM MY SPOT →"}
-              </Button>
-            </div>
-          </form>
-          
-          <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 flex-wrap text-[10px] sm:text-xs md:text-sm font-medium px-2">
-            <div className="px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 bg-primary/20 border border-primary rounded-lg">
+          </span>
+        </h2>
+        
+        <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-4">
+          {/* User Type Selection */}
+          <div className="grid grid-cols-3 gap-2 sm:gap-3">
+            <button
+              type="button"
+              onClick={() => setUserType('producer')}
+              className={`h-12 sm:h-14 px-4 rounded-xl border-2 font-bold text-sm sm:text-base transition-all ${
+                userType === 'producer'
+                  ? 'bg-primary/20 border-primary text-primary'
+                  : 'bg-background/50 border-primary/30 text-foreground hover:border-primary/50'
+              }`}
+            >
+              🎧 Producer
+            </button>
+            <button
+              type="button"
+              onClick={() => setUserType('artist')}
+              className={`h-12 sm:h-14 px-4 rounded-xl border-2 font-bold text-sm sm:text-base transition-all ${
+                userType === 'artist'
+                  ? 'bg-primary/20 border-primary text-primary'
+                  : 'bg-background/50 border-primary/30 text-foreground hover:border-primary/50'
+              }`}
+            >
+              🎤 Artist
+            </button>
+            <button
+              type="button"
+              onClick={() => setUserType('fan')}
+              className={`h-12 sm:h-14 px-4 rounded-xl border-2 font-bold text-sm sm:text-base transition-all ${
+                userType === 'fan'
+                  ? 'bg-primary/20 border-primary text-primary'
+                  : 'bg-background/50 border-primary/30 text-foreground hover:border-primary/50'
+              }`}
+            >
+              👏 Fan
+            </button>
+          </div>
+
+          {/* Name and City Row */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Input
+              type="text"
+              placeholder="First Name"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              className="h-12 sm:h-14 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base font-medium focus:border-primary rounded-xl"
+            />
+            <Input
+              type="text"
+              placeholder="City"
+              value={city}
+              onChange={(e) => setCity(e.target.value)}
+              className="h-12 sm:h-14 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base font-medium focus:border-primary rounded-xl"
+            />
+          </div>
+
+          {/* State/Region */}
+          <Input
+            type="text"
+            placeholder="State/Region/Province (optional)"
+            value={state}
+            onChange={(e) => setState(e.target.value)}
+            className="h-12 sm:h-14 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base font-medium focus:border-primary rounded-xl"
+          />
+
+          {/* Why BAGЯ */}
+          <textarea
+            placeholder="Why you need BAGЯ in your life rn (this goes on the wall!)"
+            value={whyBagr}
+            onChange={(e) => setWhyBagr(e.target.value)}
+            className="w-full h-24 sm:h-28 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base font-medium focus:border-primary rounded-xl px-4 py-3 resize-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+          />
+
+          {/* Email and Instagram */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Input
+              type="email"
+              placeholder="your@email.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="h-12 sm:h-14 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base font-medium focus:border-primary rounded-xl"
+              required
+            />
+            <Input
+              type="text"
+              placeholder="@yourighandle"
+              value={instagramHandle}
+              onChange={(e) => setInstagramHandle(e.target.value)}
+              className="h-12 sm:h-14 bg-background/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground text-sm sm:text-base font-medium focus:border-primary rounded-xl"
+            />
+          </div>
+
+          {/* Submit Button */}
+          <Button 
+            type="submit"
+            size="lg"
+            disabled={isSubmitting}
+            className="w-full h-14 sm:h-16 bg-gradient-to-r from-primary via-secondary to-primary hover:opacity-90 active:scale-95 text-background font-black text-base sm:text-lg animate-glow-pulse border-2 border-primary rounded-xl"
+          >
+            {isSubmitting ? "⚡" : "LET'S GO 🔥"}
+          </Button>
+
+          {/* Info Badges */}
+          <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 flex-wrap text-[10px] sm:text-xs md:text-sm font-medium pt-2">
+            <div className="px-3 sm:px-4 py-2 bg-primary/20 border border-primary rounded-lg">
               <span className="text-primary font-black">✓</span> 33% off forever
             </div>
-            <div className="px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 bg-secondary/20 border border-secondary rounded-lg">
+            <div className="px-3 sm:px-4 py-2 bg-secondary/20 border border-secondary rounded-lg">
               <span className="text-secondary font-black">✓</span> Beta access Q3 2025
             </div>
-            <div className="px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 bg-destructive/20 border border-destructive rounded-lg animate-pulse">
+            <div className="px-3 sm:px-4 py-2 bg-destructive/20 border border-destructive rounded-lg animate-pulse">
               <span className="text-destructive font-black">{spotsLeft}</span> spots left
             </div>
           </div>
-        </div>
+        </form>
 
         <div className="mt-6 sm:mt-8 p-4 sm:p-6 md:p-8 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl border-2 border-primary/20">
           <p className="text-xs sm:text-sm md:text-base text-foreground font-bold mb-3 sm:mb-4 leading-relaxed">
