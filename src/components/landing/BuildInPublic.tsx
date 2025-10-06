@@ -188,8 +188,7 @@ export const BuildInPublic = () => {
               <p className="text-sm font-bold text-primary mb-2">Partner</p>
               <div className="text-xs font-medium text-muted-foreground space-y-1">
                 <p>Platinum Producer</p>
-                <p>Major Artist Plug</p>
-                <p>Creator Acquisition</p>
+                <p>Platform Partner</p>
               </div>
             </div>
 
