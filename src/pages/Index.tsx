@@ -16,7 +16,7 @@ const Index = () => {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-white font-montserrat" style={{ letterSpacing: '0.2em', fontSize: 'clamp(1.5rem, 5vw, 2.25rem)', lineHeight: '1', fontFeatureSettings: '"liga" 0' }}>
             BAGЯ
           </h1>
-          <div className="hidden lg:flex gap-4 xl:gap-6 2xl:gap-8 text-base xl:text-lg 2xl:text-xl font-bold font-montserrat absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+          <div className="hidden lg:flex gap-4 xl:gap-6 2xl:gap-8 text-base xl:text-lg 2xl:text-xl font-bold font-montserrat absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap items-center">
             <a 
               href="#why-bagr" 
               className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
@@ -30,6 +30,7 @@ const Index = () => {
             >
               Why BAGЯ
             </a>
+            <span className="text-muted-foreground">|</span>
             <a 
               href="#the-vision" 
               className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
@@ -43,6 +44,7 @@ const Index = () => {
             >
               The Vision
             </a>
+            <span className="text-muted-foreground">|</span>
             <a 
               href="#build-public" 
               className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
@@ -56,6 +58,7 @@ const Index = () => {
             >
               The Raise
             </a>
+            <span className="text-muted-foreground">|</span>
             <a 
               href="#the-team" 
               className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
@@ -69,6 +72,7 @@ const Index = () => {
             >
               The Team
             </a>
+            <span className="text-muted-foreground">|</span>
             <a 
               href="#join" 
               className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
