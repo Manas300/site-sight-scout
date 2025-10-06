@@ -194,13 +194,13 @@ export const Hero = () => {
           </div>
 
           {/* Founder Pricing Highlight */}
-          <div className="mb-6 sm:mb-8 px-4 sm:px-6 md:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary/20 to-secondary/20 border-2 border-primary rounded-lg max-w-2xl mx-auto text-center">
-            <div className="flex items-center justify-center gap-1.5 sm:gap-2 mb-1.5 sm:mb-2">
-              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-primary rounded-full animate-ping"></div>
+          <div className="mb-6 sm:mb-8 px-4 sm:px-6 md:px-8 py-4 sm:py-5 bg-gradient-to-r from-primary/20 to-secondary/20 border-2 border-primary rounded-lg max-w-2xl mx-auto text-center">
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <div className="w-2 h-2 bg-primary rounded-full animate-ping"></div>
               <p className="text-xs sm:text-sm font-bold text-primary">LIMITED SPOTS</p>
-              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-primary rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+              <div className="w-2 h-2 bg-primary rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
             </div>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-primary mb-1" style={{ fontFamily: 'Poppins, sans-serif' }}>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-primary mb-1">
               First 1,200 Producer LOIs = <span className="text-secondary">Founder Pricing</span>
             </p>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-secondary">
@@ -209,22 +209,22 @@ export const Hero = () => {
           </div>
 
           {/* FOMO Counter */}
-          <div className="mb-12 flex items-center justify-center gap-4 md:gap-8 flex-wrap">
-            <div className="px-6 md:px-8 py-4 bg-destructive/20 border-2 border-destructive rounded-lg">
-              <p className="text-2xl md:text-3xl font-black text-destructive">{spotsLeft}</p>
-              <p className="text-xs text-destructive/80 font-bold">PRODUCER SPOTS LEFT</p>
+          <div className="mb-12 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-4xl mx-auto">
+            <div className="px-4 sm:px-6 md:px-8 py-4 sm:py-5 bg-destructive/20 border-2 border-destructive rounded-lg text-center">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-black text-destructive">{spotsLeft}</p>
+              <p className="text-xs sm:text-sm text-destructive/80 font-bold mt-1">PRODUCER SPOTS LEFT</p>
             </div>
-            <div className="px-6 md:px-8 py-4 bg-warning/20 border-2 border-warning rounded-lg">
-              <p className="text-2xl md:text-3xl font-black text-warning">{producerCount}</p>
-              <p className="text-xs text-warning/80 font-bold">PRODUCER LOIs</p>
+            <div className="px-4 sm:px-6 md:px-8 py-4 sm:py-5 bg-warning/20 border-2 border-warning rounded-lg text-center">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-black text-warning">{producerCount}</p>
+              <p className="text-xs sm:text-sm text-warning/80 font-bold mt-1">PRODUCER LOIs</p>
             </div>
-            <div className="px-6 md:px-8 py-4 bg-primary/20 border-2 border-primary rounded-lg">
-              <p className="text-2xl md:text-3xl font-black text-primary">{signupCount}</p>
-              <p className="text-xs text-primary/80 font-bold">TOTAL SIGNUPS</p>
+            <div className="px-4 sm:px-6 md:px-8 py-4 sm:py-5 bg-primary/20 border-2 border-primary rounded-lg text-center">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-black text-primary">{signupCount}</p>
+              <p className="text-xs sm:text-sm text-primary/80 font-bold mt-1">TOTAL SIGNUPS</p>
             </div>
-            <div className="px-6 md:px-8 py-4 bg-secondary/20 border-2 border-secondary rounded-lg">
-              <p className="text-2xl md:text-3xl font-black text-secondary">18</p>
-              <p className="text-xs text-secondary/80 font-bold">MONTHS RUNWAY</p>
+            <div className="px-4 sm:px-6 md:px-8 py-4 sm:py-5 bg-secondary/20 border-2 border-secondary rounded-lg text-center">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-black text-secondary">18</p>
+              <p className="text-xs sm:text-sm text-secondary/80 font-bold mt-1">MONTHS RUNWAY</p>
             </div>
           </div>
 

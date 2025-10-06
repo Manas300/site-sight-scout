@@ -84,28 +84,30 @@ export const WhyBagr = () => {
         </div>
 
         {/* Comparison Table */}
-        <div className="mt-10 sm:mt-12 md:mt-16 max-w-6xl mx-auto overflow-x-auto">
-          <div className="bg-card border-2 border-border rounded-2xl overflow-hidden min-w-[600px]">
-            <div className="grid grid-cols-3 gap-2 sm:gap-4 p-3 sm:p-4 md:p-6 bg-muted/30 border-b-2 border-border items-center">
-              <div className="font-black text-sm sm:text-base md:text-lg text-destructive text-center">😭 Old Platforms</div>
-              <div className="font-black text-lg sm:text-xl md:text-2xl lg:text-3xl text-foreground text-center">VS.</div>
-              <div className="font-black text-sm sm:text-base md:text-lg text-primary text-center">🚀 BAGЯ</div>
-            </div>
-            {[
-              { feature: "Live streaming", old: "Upload. Wait. Pray.", bagr: "Go live now, go viral faster." },
-              { feature: "Live shopping", old: "Static stores, zero hype.", bagr: "Real-time drops. Creators buy as you perform." }, 
-              { feature: "Live auctions", old: "DM offers like it's 2009.", bagr: "Watch bids climb by the second." },
-              { feature: "Insight-driven analytics", old: "No data, just impressions.", bagr: "Behavior-first insights — see what's working NOW." },
-              { feature: "Mobile-first", old: "Desktop dinosaurs only.", bagr: "Born for the phone." },
-              { feature: "Instant payouts", old: "5-7 business days", bagr: "Instant bag. Cash hits before the encore." },
-              { feature: "Platform fee", old: "30%+ 'tax' for nothing.", bagr: "15% flat or LESS." }
-            ].map((row, i) => (
-              <div key={i} className="grid grid-cols-[1fr_auto_1fr] gap-2 sm:gap-4 md:gap-8 p-3 sm:p-4 md:p-6 border-b border-border last:border-0 hover:bg-muted/20 transition-colors items-center">
-                <div className="text-center text-muted-foreground text-xs sm:text-sm md:text-base">{row.old}</div>
-                <div className="text-center text-muted-foreground/30 font-bold text-xs sm:text-sm">VS</div>
-                <div className="text-center font-bold italic font-poppins text-xs sm:text-sm md:text-base">{row.bagr}</div>
+        <div className="mt-10 sm:mt-12 md:mt-16 max-w-6xl mx-auto">
+          <div className="bg-card border-2 border-border rounded-2xl overflow-hidden overflow-x-auto">
+            <div className="min-w-[550px]">
+              <div className="grid grid-cols-3 gap-4 p-4 sm:p-6 bg-muted/30 border-b-2 border-border items-center">
+                <div className="font-black text-sm sm:text-base md:text-lg text-destructive text-center">😭 Old Platforms</div>
+                <div className="font-black text-lg sm:text-xl md:text-2xl lg:text-3xl text-foreground text-center">VS.</div>
+                <div className="font-black text-sm sm:text-base md:text-lg text-primary text-center">🚀 BAGЯ</div>
               </div>
-            ))}
+              {[
+                { feature: "Live streaming", old: "Upload. Wait. Pray.", bagr: "Go live now, go viral faster." },
+                { feature: "Live shopping", old: "Static stores, zero hype.", bagr: "Real-time drops. Creators buy as you perform." }, 
+                { feature: "Live auctions", old: "DM offers like it's 2009.", bagr: "Watch bids climb by the second." },
+                { feature: "Insight-driven analytics", old: "No data, just impressions.", bagr: "Behavior-first insights — see what's working NOW." },
+                { feature: "Mobile-first", old: "Desktop dinosaurs only.", bagr: "Born for the phone." },
+                { feature: "Instant payouts", old: "5-7 business days", bagr: "Instant bag. Cash hits before the encore." },
+                { feature: "Platform fee", old: "30%+ 'tax' for nothing.", bagr: "15% flat or LESS." }
+              ].map((row, i) => (
+                <div key={i} className="grid grid-cols-[1fr_auto_1fr] gap-4 sm:gap-6 md:gap-8 p-4 sm:p-5 md:p-6 border-b border-border last:border-0 hover:bg-muted/20 transition-colors items-center">
+                  <div className="text-center text-muted-foreground text-xs sm:text-sm md:text-base leading-tight">{row.old}</div>
+                  <div className="text-center text-muted-foreground/30 font-bold text-xs sm:text-sm">VS</div>
+                  <div className="text-center font-bold italic font-poppins text-xs sm:text-sm md:text-base leading-tight">{row.bagr}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
