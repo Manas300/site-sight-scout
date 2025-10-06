@@ -222,7 +222,6 @@ export const BuildInPublic = () => {
               <div className="text-xs font-medium text-muted-foreground space-y-1">
                 <p>100K+ DAU Systems</p>
                 <p>10TB Data Pipelines</p>
-                <p>Infra-Scale Builder</p>
               </div>
             </div>
           </div>
