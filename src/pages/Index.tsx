@@ -5,6 +5,7 @@ import { ProductVision } from "@/components/landing/ProductVision";
 import { BuildInPublic } from "@/components/landing/BuildInPublic";
 import { FinalCTA } from "@/components/landing/FinalCTA";
 import { LiveTestimonials } from "@/components/landing/LiveTestimonials";
+import { HowItWorks } from "@/components/landing/HowItWorks";
 import { Check } from "lucide-react";
 
 const Index = () => {
@@ -86,6 +87,25 @@ const Index = () => {
             >
               Build With Us
             </a>
+          </div>
+          
+          {/* Signup Button */}
+          <div className="hidden lg:block">
+            <Button 
+              onClick={() => {
+                const element = document.getElementById('limited-spots');
+                if (element) {
+                  const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - 100;
+                  window.scrollTo({
+                    top: elementPosition,
+                    behavior: 'smooth'
+                  });
+                }
+              }}
+              className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-black font-bold px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-primary/25"
+            >
+              Get Early Access
+            </Button>
           </div>
           {/* Mobile Menu Dots */}
           <div className="lg:hidden flex gap-2">

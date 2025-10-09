@@ -118,22 +118,41 @@ export const LiveTestimonials = () => {
     setCurrentIndex(index);
   };
 
-  if (testimonials.length === 0) return null;
+  if (testimonials.length === 0) {
+    return (
+      <section className="pt-0 pb-8 sm:pt-1 sm:pb-10 md:pt-2 md:pb-12 lg:pt-3 lg:pb-16 px-2 sm:px-3 bg-gradient-to-b from-background to-muted/20">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-4 sm:mb-6">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-primary/10 border-2 border-primary rounded-full mb-4 sm:mb-6 animate-pulse">
+              <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-primary animate-pulse" />
+              <span className="font-black text-primary text-xs sm:text-sm md:text-base animate-pulse">LIVE FROM THE COMMUNITY</span>
+            </div>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black mb-10 sm:mb-12 px-2">
+              Why Hip Hop Creators Need <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span>
+            </h2>
+          </div>
+          <div className="text-center text-muted-foreground">
+            <p>Loading testimonials...</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
-    <section className="py-10 sm:py-12 md:py-16 lg:py-20 px-3 sm:px-4 bg-gradient-to-b from-background to-muted/20">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-8 sm:mb-10 md:mb-12">
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-primary/10 border-2 border-primary rounded-full mb-3 sm:mb-4 animate-pulse">
+    <section className="pt-0 pb-8 sm:pt-1 sm:pb-10 md:pt-2 md:pb-12 lg:pt-3 lg:pb-16 px-2 sm:px-3 bg-gradient-to-b from-background to-muted/20">
+      <div className="container mx-auto max-w-5xl">
+        <div className="text-center mb-4 sm:mb-6">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-primary/10 border-2 border-primary rounded-full mb-4 sm:mb-6 animate-pulse">
             <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-primary animate-pulse" />
             <span className="font-black text-primary text-xs sm:text-sm md:text-base animate-pulse">LIVE FROM THE COMMUNITY</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 px-2">
-            Why Producers Want <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black mb-10 sm:mb-12 px-2">
+            Why Hip Hop Creators Need <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span>
           </h2>
         </div>
 
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-3xl mx-auto">
           {/* Carousel Container */}
           <div className="relative overflow-hidden rounded-lg">
             <div 
@@ -145,23 +164,23 @@ export const LiveTestimonials = () => {
                   key={testimonial.id}
                   className="w-full flex-shrink-0 px-4"
                 >
-                  <div className="relative bg-card border-2 border-primary/30 p-8 pb-16 rounded-lg shadow-2xl hover:border-primary/60 transition-all duration-300 animate-fade-in mx-auto max-w-md">
-                    <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-8 rounded-lg mb-6">
-                      <div className="text-center mb-6">
-                        <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl mb-4">
+                  <div className="relative bg-card border-2 border-primary/30 p-4 pb-10 rounded-lg shadow-2xl hover:border-primary/60 transition-all duration-300 animate-fade-in mx-auto max-w-xs">
+                    <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-4 rounded-lg mb-3">
+                      <div className="text-center mb-3">
+                        <div className="w-12 h-12 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-lg mb-2">
                           {testimonial.user_type === 'Producer' && '🎧'}
                           {testimonial.user_type === 'Artist' && '🎤'}
                           {testimonial.user_type === 'Fan' && '🙌'}
                         </div>
-                        <h3 className="text-2xl font-black text-foreground mb-2">{testimonial.first_name}</h3>
-                        <p className="text-base font-bold text-primary mb-2">{testimonial.user_type}</p>
-                        <p className="text-sm text-muted-foreground">{testimonial.city}, {testimonial.state}</p>
+                        <h3 className="text-lg font-black text-foreground mb-1">{testimonial.first_name}</h3>
+                        <p className="text-xs font-bold text-primary mb-1">{testimonial.user_type}</p>
+                        <p className="text-xs text-muted-foreground">{testimonial.city}, {testimonial.state}</p>
                       </div>
-                      <p className="text-base text-foreground/80 italic text-center leading-relaxed">
+                      <p className="text-xs text-foreground/80 italic text-center leading-relaxed">
                         "{testimonial.why_bagr}"
                       </p>
                     </div>
-                    <div className="absolute bottom-4 left-4 right-4 text-center">
+                    <div className="absolute bottom-2 left-2 right-2 text-center">
                       <div className="flex flex-col items-center gap-1 text-xs text-muted-foreground">
                         <div className="flex items-center gap-2">
                           <Clock className="w-3 h-3" />
@@ -198,14 +217,14 @@ export const LiveTestimonials = () => {
           </button>
 
           {/* Dots Indicator */}
-          <div className="flex justify-center mt-8 space-x-3">
+          <div className="flex justify-center mt-6 space-x-2">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
                 onMouseEnter={() => setIsAutoPlaying(false)}
                 onMouseLeave={() => setIsAutoPlaying(true)}
-                className={`w-4 h-4 rounded-full transition-all duration-200 ${
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-200 ${
                   index === currentIndex 
                     ? 'bg-primary scale-125' 
                     : 'bg-primary/30 hover:bg-primary/60'

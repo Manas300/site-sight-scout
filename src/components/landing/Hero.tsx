@@ -8,6 +8,7 @@ import { Zap, TrendingUp, Flame } from "lucide-react";
 import { z } from "zod";
 import { BagAnimation } from "@/components/animations/BagAnimation";
 import moneyBagImage from "@/assets/money-bag.png";
+import { HowItWorks } from "./HowItWorks";
 
 const signupSchema = z.object({
   userType: z.enum(['Producer', 'Artist', 'Fan'], { message: "Select your role" }),
@@ -193,8 +194,11 @@ export const Hero = () => {
             </div>
           </div>
 
+          {/* How It Works Section */}
+          <HowItWorks />
+
           {/* Founder Pricing Highlight */}
-          <div className="mb-6 sm:mb-8 px-4 sm:px-6 md:px-8 py-4 sm:py-5 bg-gradient-to-r from-primary/20 to-secondary/20 border-2 border-primary rounded-lg max-w-2xl mx-auto text-center">
+          <div id="limited-spots" className="mb-6 sm:mb-8 px-4 sm:px-6 md:px-8 py-4 sm:py-5 bg-gradient-to-r from-primary/20 to-secondary/20 border-2 border-primary rounded-lg max-w-2xl mx-auto text-center">
             <div className="flex items-center justify-center gap-2 mb-2">
               <div className="w-2 h-2 bg-primary rounded-full animate-ping"></div>
               <p className="text-xs sm:text-sm font-bold text-primary">LIMITED SPOTS</p>
@@ -232,26 +236,35 @@ export const Hero = () => {
           <div className="max-w-2xl mx-auto mb-6 sm:mb-8">
             <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
               {/* User Type Selection */}
-              <div className="grid grid-cols-3 gap-2 sm:gap-3">
-                {(['Producer', 'Artist', 'Fan'] as const).map((type) => (
-                  <button
-                    key={type}
-                    type="button"
-                    onClick={() => setFormData(prev => ({ ...prev, userType: type }))}
-                    className={`h-12 sm:h-14 px-2 sm:px-4 rounded-lg font-black text-xs sm:text-sm md:text-base transition-all border-2 touch-manipulation ${
-                      formData.userType === type
-                        ? 'bg-gradient-to-r from-primary to-secondary text-background border-primary scale-105'
-                        : 'bg-muted/50 text-foreground border-primary/30 hover:border-primary/50 active:scale-95'
+              <div className="relative">
+                <div className="relative">
+                  <select
+                    value={formData.userType}
+                    onChange={(e) => setFormData(prev => ({ ...prev, userType: e.target.value as 'Producer' | 'Artist' | 'Fan' }))}
+                    className={`w-full h-12 sm:h-14 px-3 sm:px-4 text-xs sm:text-sm md:text-base font-black rounded-lg border-2 transition-all appearance-none cursor-pointer ${
+                      formData.userType 
+                        ? 'bg-gradient-to-r from-primary to-secondary text-background border-primary'
+                        : 'bg-muted/50 text-foreground border-primary/30 hover:border-primary/50'
                     }`}
+                    required
+                    style={{
+                      backgroundImage: formData.userType 
+                        ? 'linear-gradient(to right, hsl(158 100% 50%), hsl(270 100% 65%))'
+                        : 'none'
+                    }}
                   >
-                    <div className="text-xl sm:text-2xl mb-0.5">
-                      {type === 'Producer' && '🎧'}
-                      {type === 'Artist' && '🎤'}
-                      {type === 'Fan' && '🙌'}
-                    </div>
-                    <div className="text-[10px] sm:text-xs md:text-sm">{type}</div>
-                  </button>
-                ))}
+                    <option value="" disabled style={{ backgroundColor: 'hsl(0 0% 15%)', color: 'hsl(0 0% 100%)' }}>Select your role</option>
+                    <option value="Producer" style={{ backgroundColor: 'hsl(0 0% 15%)', color: 'hsl(0 0% 100%)' }}>🎧 Producer</option>
+                    <option value="Artist" style={{ backgroundColor: 'hsl(0 0% 15%)', color: 'hsl(0 0% 100%)' }}>🎤 Artist</option>
+                    <option value="Fan" style={{ backgroundColor: 'hsl(0 0% 15%)', color: 'hsl(0 0% 100%)' }}>🙌 Fan</option>
+                  </select>
+                  {/* Custom dropdown arrow */}
+                  <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                    <svg className="w-4 h-4 text-current" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
