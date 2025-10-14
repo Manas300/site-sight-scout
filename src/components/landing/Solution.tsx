@@ -5,30 +5,30 @@ export const Solution = () => {
     {
       icon: Zap,
       title: "GO LIVE. AUCTION YOUR BEATS.",
-      problem: "No more $3 CPMs. No more giving away royalties forever.",
-      solution: "YOU go live. Artists WATCH. They BID in real-time. Highest bidder WINS. You get paid INSTANTLY. No YouTube pennies. No label execs stealing your future.",
-      impact: "You control the price. You create FOMO. You turn your beats into EVENTS. Your talent = your payday."
+      problem: "You're making $3 CPMs on YouTube while label execs eat your royalties forever.",
+      solution: "Go live. Artists bid. Highest bidder wins. Money hits your account INSTANTLY.",
+      impact: "You set the price. You create the hype. Your beats become events."
     },
     {
       icon: TrendingUp,
-      title: "BUILD YOUR FANBASE IN REAL-TIME.",
-      problem: "No more drowning in algorithms. No more invisible beat stores.",
-      solution: "Go LIVE. Artists and fans WATCH you cook. They engage. They tip. They share your stream. You build a community that actually SEES you and SUPPORTS you.",
-      impact: "You're not buried anymore. You're front and center. Your audience grows with every stream. You become UNMISSABLE."
+      title: "BUILD YOUR AUDIENCE LIVE.",
+      problem: "You're buried in algorithms. Nobody sees your work.",
+      solution: "Stream yourself creating. Fans watch, tip, and share in real-time. You become visible.",
+      impact: "No more shouting into the void. Your community grows with every stream."
     },
     {
       icon: Sparkles,
-      title: "SELL YOUR SOUND PACKS & LOOPS DIRECTLY.",
-      problem: "No more getting milked by Discord loop farms. No more giving away your best ideas for free.",
-      solution: "Open YOUR live producer store. Sell your sound packs, loops, and samples DIRECTLY to your audience. Set YOUR prices. Keep 100% of what you earn.",
-      impact: "You own your work. You own your income. No exploitation. No middlemen. Just YOU getting paid for YOUR talent."
+      title: "SELL PACKS & LOOPS DIRECTLY.",
+      problem: "Discord servers milk your talent for free. You give away your best work.",
+      solution: "Open your live store. Sell sound packs and loops directly. Set your prices. Keep 100%.",
+      impact: "You own your work. You own your income. No exploitation."
     },
     {
       icon: Sparkles,
       title: "ONE PLATFORM. ZERO HASSLE.",
-      problem: "No more juggling 10 platforms. No more endless marketing and chasing payments.",
-      solution: "Everything in ONE place: Live auctions. Producer stores. Tips. Instant payments. You just create. BAGЯ handles the rest.",
-      impact: "You stop grinding yourself into the ground. You focus on making fire. The platform works FOR you, not against you."
+      problem: "You're juggling 10 platforms, chasing payments, marketing 24/7.",
+      solution: "Everything lives here: auctions, stores, tips, instant payments. You just create.",
+      impact: "Stop grinding yourself into the ground. Focus on making fire."
     }
   ];
 
