@@ -125,17 +125,20 @@ export const Hero = () => {
 
 
           {/* Beta Access Highlight */}
-          <div id="limited-spots" className="mb-6 sm:mb-8 px-4 sm:px-6 md:px-8 py-4 sm:py-5 bg-gradient-to-r from-primary/20 to-secondary/20 border-2 border-primary rounded-lg max-w-2xl mx-auto text-center">
+          <div id="limited-spots" className="mb-6 sm:mb-8 px-4 sm:px-6 md:px-8 py-4 sm:py-5 bg-gradient-to-r from-primary/20 to-secondary/20 border-2 border-primary rounded-lg max-w-2xl mx-auto text-center animate-pulse">
             <div className="flex items-center justify-center gap-2 mb-2">
-              <div className="w-2 h-2 bg-primary rounded-full animate-ping"></div>
-              <p className="text-xs sm:text-sm font-bold text-primary">LIMITED SPOTS</p>
-              <div className="w-2 h-2 bg-primary rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+              <div className="w-2 h-2 bg-destructive rounded-full animate-ping"></div>
+              <p className="text-xs sm:text-sm font-black text-destructive uppercase tracking-wider">⚠️ ONLY 1,200 PRODUCER SPOTS EXIST ⚠️</p>
+              <div className="w-2 h-2 bg-destructive rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
             </div>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-primary mb-1">
-              First 1,200 Slots = <span className="text-secondary">Beta Access</span>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black text-foreground mb-1 uppercase">
+              BETA ACCESS CLOSES FOREVER AFTER THIS
             </p>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-secondary">
               33% OFF DIAMOND PLAN FOR LIFE 💎
+            </p>
+            <p className="text-xs sm:text-sm text-muted-foreground mt-2 font-bold">
+              Miss this = Pay full price forever. No second chances.
             </p>
           </div>
 
