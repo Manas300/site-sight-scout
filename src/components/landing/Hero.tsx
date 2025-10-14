@@ -9,7 +9,6 @@ import { z } from "zod";
 
 
 const signupSchema = z.object({
-  userType: z.enum(['Producer', 'Artist', 'Fan'], { message: "Select your role" }),
   firstName: z.string().trim().min(1, { message: "First name required" }).max(100),
   city: z.string().trim().min(1, { message: "City required" }).max(100),
   state: z.string().trim().max(100).optional().or(z.literal('')),
@@ -20,7 +19,6 @@ const signupSchema = z.object({
 
 export const Hero = () => {
   const [formData, setFormData] = useState({
-    userType: "",
     firstName: "",
     city: "",
     state: "",
@@ -57,7 +55,7 @@ export const Hero = () => {
         validation.data.city,
         validation.data.state,
         validation.data.whyBagr,
-        validation.data.userType,
+        undefined,
         validation.data.igHandle
       );
       
@@ -67,7 +65,6 @@ export const Hero = () => {
           description: "Check the wall below - you're live!",
         });
         setFormData({
-          userType: "",
           firstName: "",
           city: "",
           state: "",
@@ -165,38 +162,6 @@ export const Hero = () => {
           {/* CTA Form */}
           <div className="max-w-2xl mx-auto mb-6 sm:mb-8">
             <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
-              {/* User Type Selection */}
-              <div className="relative">
-                <div className="relative">
-                  <select
-                    value={formData.userType}
-                    onChange={(e) => setFormData(prev => ({ ...prev, userType: e.target.value as 'Producer' | 'Artist' | 'Fan' }))}
-                    className={`w-full h-12 sm:h-14 px-3 sm:px-4 text-xs sm:text-sm md:text-base font-black rounded-lg border-2 transition-all appearance-none cursor-pointer ${
-                      formData.userType 
-                        ? 'bg-gradient-to-r from-primary to-secondary text-background border-primary'
-                        : 'bg-muted/50 text-foreground border-primary/30 hover:border-primary/50'
-                    }`}
-                    required
-                    style={{
-                      backgroundImage: formData.userType 
-                        ? 'linear-gradient(to right, hsl(158 100% 50%), hsl(270 100% 65%))'
-                        : 'none'
-                    }}
-                  >
-                    <option value="" disabled style={{ backgroundColor: 'hsl(0 0% 15%)', color: 'hsl(0 0% 100%)' }}>Select your role</option>
-                    <option value="Producer" style={{ backgroundColor: 'hsl(0 0% 15%)', color: 'hsl(0 0% 100%)' }}>🎧 Producer</option>
-                    <option value="Artist" style={{ backgroundColor: 'hsl(0 0% 15%)', color: 'hsl(0 0% 100%)' }}>🎤 Artist</option>
-                    <option value="Fan" style={{ backgroundColor: 'hsl(0 0% 15%)', color: 'hsl(0 0% 100%)' }}>🙌 Fan</option>
-                  </select>
-                  {/* Custom dropdown arrow */}
-                  <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                    <svg className="w-4 h-4 text-current" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 <Input
                   type="text"
