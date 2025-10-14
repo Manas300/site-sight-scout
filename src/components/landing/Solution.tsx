@@ -30,7 +30,7 @@ export const Solution = () => {
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-20 animate-fade-in">
-          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-6">
+          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-foreground mb-6">
             Here's How BAGЯ Fixes Everything
           </p>
         </div>
