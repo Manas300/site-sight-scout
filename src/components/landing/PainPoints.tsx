@@ -27,7 +27,7 @@ export const PainPoints = () => {
       icon: Heart,
       emoji: "😤",
       title: "YOU'RE EXHAUSTED",
-      pain: "You're grinding 24/7. Making beats. Marketing. Posting. DMing artists. Pricing. Negotiating. Chasing payments. For what? Crickets.",
+      pain: <><span className="font-bold">You're grinding 24/7. Making beats. Marketing. Posting. DMing artists. Pricing. Negotiating. Chasing payments. For what? Crickets.</span></>,
       emotion: "You're tired of begging for your worth. Tired of the hustle not paying off. You just wanna make music and get paid what you deserve."
     }
   ];
