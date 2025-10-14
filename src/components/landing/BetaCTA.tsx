@@ -1,7 +1,24 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { Check, Flame } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import { subscribeToNewsletter } from "@/lib/emailService";
+import { z } from "zod";
+
+const signupSchema = z.object({
+  email: z.string().trim().email({ message: "Enter a valid email" }).max(255),
+  igHandle: z.string().trim().min(1, { message: "Instagram handle required" }).max(100)
+});
 
 export const BetaCTA = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+    igHandle: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
   const benefits = [
     "First 1,200 producers lock in FOUNDER PRICING (33% OFF DIAMOND PLAN FOR LIFE)",
     "Shape the platform - your feedback builds the future",
@@ -10,6 +27,64 @@ export const BetaCTA = () => {
     "Get grandfathered into every new feature we drop",
     "Join the movement BEFORE it blows up"
   ];
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const validation = signupSchema.safeParse(formData);
+    if (!validation.success) {
+      toast({
+        title: "hold up! missing some info",
+        description: validation.error.issues[0].message,
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+    
+    try {
+      const result = await subscribeToNewsletter(
+        validation.data.email, 
+        'beta-cta',
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        validation.data.igHandle
+      );
+      
+      if (result.success) {
+        toast({
+          title: "LET'S GOOO 🔥",
+          description: "You're in! Check your email.",
+        });
+        setFormData({
+          email: "",
+          igHandle: ""
+        });
+      } else {
+        if (result.error?.includes('already') || result.error?.includes('duplicate')) {
+          toast({
+            title: "yo you already signed up! 🎉",
+            description: "you're on the list bestie",
+          });
+        } else {
+          throw new Error(result.error || 'Failed to subscribe');
+        }
+      }
+    } catch (error) {
+      console.error('Newsletter signup error:', error);
+      toast({
+        title: "Something broke 😭",
+        description: "Try again or hit us up on Twitter",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section className="py-16 sm:py-20 md:py-32 px-4 sm:px-6 bg-gradient-to-b from-background via-primary/5 to-background">
@@ -69,26 +144,39 @@ export const BetaCTA = () => {
           </p>
         </div>
 
-        {/* CTA Button */}
-        <div className="text-center animate-glow-pulse">
-          <Button 
-            onClick={() => {
-              const element = document.getElementById('signup-form');
-              if (element) {
-                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - 100;
-                window.scrollTo({
-                  top: elementPosition,
-                  behavior: 'smooth'
-                });
-              }
-            }}
-            size="lg"
-            className="h-16 sm:h-20 px-12 sm:px-16 text-xl sm:text-2xl md:text-3xl font-black bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-background rounded-full shadow-2xl hover:shadow-primary/50 transition-all hover:scale-105"
-          >
-            I'M READY TO WIN 🔥
-          </Button>
+        {/* CTA Form */}
+        <div className="max-w-2xl mx-auto mb-8 animate-glow-pulse">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Input
+                type="email"
+                placeholder="your@email.com"
+                value={formData.email}
+                onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                className="h-14 text-base bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
+                required
+              />
+              <Input
+                type="text"
+                placeholder="@yourighandle"
+                value={formData.igHandle}
+                onChange={(e) => setFormData(prev => ({ ...prev, igHandle: e.target.value.replace(/^@/, '') }))}
+                className="h-14 text-base bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
+                required
+              />
+            </div>
+            
+            <Button 
+              type="submit"
+              disabled={isSubmitting}
+              size="lg"
+              className="w-full h-16 sm:h-20 px-12 sm:px-16 text-xl sm:text-2xl md:text-3xl font-black bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-background rounded-full shadow-2xl hover:shadow-primary/50 transition-all hover:scale-105"
+            >
+              {isSubmitting ? "⚡" : "I'M READY TO WIN 🔥"}
+            </Button>
+          </form>
           
-          <p className="text-sm sm:text-base text-muted-foreground mt-6">
+          <p className="text-sm sm:text-base text-muted-foreground mt-6 text-center">
             No credit card. No bullshit. Just your info and your story.
           </p>
         </div>
