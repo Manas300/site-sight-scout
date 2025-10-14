@@ -122,9 +122,6 @@ export const Hero = () => {
             <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black text-foreground mb-1 uppercase">
               BETA ACCESS CLOSES FOREVER AFTER THIS
             </p>
-            <p className="text-xs sm:text-sm text-muted-foreground mt-2 font-bold">
-              Miss this = Pay full price forever. No second chances.
-            </p>
           </div>
 
           {/* FOMO Counter */}
