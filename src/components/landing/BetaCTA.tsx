@@ -91,12 +91,6 @@ export const BetaCTA = () => {
       <div className="container mx-auto max-w-5xl">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-primary to-secondary rounded-full mb-8">
-            <Flame className="w-5 h-5 text-background animate-pulse" />
-            <span className="text-sm sm:text-base font-black text-background">BETA LAUNCH - LIMITED SPOTS</span>
-            <Flame className="w-5 h-5 text-background animate-pulse" />
-          </div>
-          
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-6 leading-tight">
             READY TO STOP BEING
           </h2>
