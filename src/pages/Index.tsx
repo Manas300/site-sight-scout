@@ -1,12 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Hero } from "@/components/landing/Hero";
-import { WhyBagr } from "@/components/landing/WhyBagr";
-import { ProductVision } from "@/components/landing/ProductVision";
-import { BuildInPublic } from "@/components/landing/BuildInPublic";
-
-import { LiveTestimonials } from "@/components/landing/LiveTestimonials";
-
-import { Check } from "lucide-react";
+import { PainPoints } from "@/components/landing/PainPoints";
+import { Solution } from "@/components/landing/Solution";
+import { BetaCTA } from "@/components/landing/BetaCTA";
 
 const Index = () => {
   return (
@@ -19,73 +15,45 @@ const Index = () => {
           </h1>
           <div className="hidden lg:flex gap-4 xl:gap-6 2xl:gap-8 text-base xl:text-lg 2xl:text-xl font-bold font-montserrat absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap items-center">
             <a 
-              href="#why-bagr" 
+              href="#the-pain" 
               className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
               onClick={(e) => {
                 e.preventDefault();
-                document.getElementById('why-bagr')?.scrollIntoView({ 
+                document.getElementById('the-pain')?.scrollIntoView({ 
                   behavior: 'smooth',
                   block: 'start'
                 });
               }}
             >
-              Why BAGЯ
+              The Pain
             </a>
             <span className="text-muted-foreground">|</span>
             <a 
-              href="#the-vision" 
+              href="#the-solution" 
               className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
               onClick={(e) => {
                 e.preventDefault();
-                document.getElementById('the-vision')?.scrollIntoView({ 
+                document.getElementById('the-solution')?.scrollIntoView({ 
                   behavior: 'smooth',
                   block: 'start'
                 });
               }}
             >
-              The Vision
+              The Solution
             </a>
             <span className="text-muted-foreground">|</span>
             <a 
-              href="#build-public" 
+              href="#join-beta" 
               className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
               onClick={(e) => {
                 e.preventDefault();
-                document.getElementById('build-public')?.scrollIntoView({ 
+                document.getElementById('join-beta')?.scrollIntoView({ 
                   behavior: 'smooth',
                   block: 'start'
                 });
               }}
             >
-              The Raise
-            </a>
-            <span className="text-muted-foreground">|</span>
-            <a 
-              href="#the-team" 
-              className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('the-team')?.scrollIntoView({ 
-                  behavior: 'smooth',
-                  block: 'start'
-                });
-              }}
-            >
-              The Team
-            </a>
-            <span className="text-muted-foreground">|</span>
-            <a 
-              href="#join" 
-              className="hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('join')?.scrollIntoView({ 
-                  behavior: 'smooth',
-                  block: 'start'
-                });
-              }}
-            >
-              Build With Us
+              Join Beta
             </a>
           </div>
           
@@ -93,7 +61,7 @@ const Index = () => {
           <div className="hidden lg:block">
             <Button 
               onClick={() => {
-                const element = document.getElementById('limited-spots');
+                const element = document.getElementById('signup-form');
                 if (element) {
                   const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - 100;
                   window.scrollTo({
@@ -104,87 +72,33 @@ const Index = () => {
               }}
               className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-black font-bold px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-primary/25"
             >
-              Get Early Access
+              Join Beta
             </Button>
           </div>
           {/* Mobile Menu Dots */}
           <div className="lg:hidden flex gap-2">
-            <a href="#why-bagr" className="w-2.5 h-2.5 rounded-full bg-primary hover:scale-125 transition-transform" onClick={(e) => { e.preventDefault(); document.getElementById('why-bagr')?.scrollIntoView({ behavior: 'smooth' }); }} aria-label="Why BAGЯ"></a>
-            <a href="#the-vision" className="w-2.5 h-2.5 rounded-full bg-secondary hover:scale-125 transition-transform" onClick={(e) => { e.preventDefault(); document.getElementById('the-vision')?.scrollIntoView({ behavior: 'smooth' }); }} aria-label="The Vision"></a>
-            <a href="#build-public" className="w-2.5 h-2.5 rounded-full bg-primary hover:scale-125 transition-transform" onClick={(e) => { e.preventDefault(); document.getElementById('build-public')?.scrollIntoView({ behavior: 'smooth' }); }} aria-label="The Raise"></a>
-            <a href="#the-team" className="w-2.5 h-2.5 rounded-full bg-secondary hover:scale-125 transition-transform" onClick={(e) => { e.preventDefault(); document.getElementById('the-team')?.scrollIntoView({ behavior: 'smooth' }); }} aria-label="The Team"></a>
-            <a href="#join" className="w-2.5 h-2.5 rounded-full bg-primary hover:scale-125 transition-transform" onClick={(e) => { e.preventDefault(); document.getElementById('join')?.scrollIntoView({ behavior: 'smooth' }); }} aria-label="Build With Us"></a>
+            <a href="#the-pain" className="w-2.5 h-2.5 rounded-full bg-destructive hover:scale-125 transition-transform" onClick={(e) => { e.preventDefault(); document.getElementById('the-pain')?.scrollIntoView({ behavior: 'smooth' }); }} aria-label="The Pain"></a>
+            <a href="#the-solution" className="w-2.5 h-2.5 rounded-full bg-primary hover:scale-125 transition-transform" onClick={(e) => { e.preventDefault(); document.getElementById('the-solution')?.scrollIntoView({ behavior: 'smooth' }); }} aria-label="The Solution"></a>
+            <a href="#join-beta" className="w-2.5 h-2.5 rounded-full bg-secondary hover:scale-125 transition-transform" onClick={(e) => { e.preventDefault(); document.getElementById('join-beta')?.scrollIntoView({ behavior: 'smooth' }); }} aria-label="Join Beta"></a>
           </div>
         </div>
       </nav>
 
-      <Hero />
+      <div id="signup-form">
+        <Hero />
+      </div>
       
-      {/* Live Testimonials Wall */}
-      <LiveTestimonials />
-      
-      <div id="why-bagr" className="animate-slide-up">
-        <WhyBagr />
+      <div id="the-pain">
+        <PainPoints />
       </div>
 
-      <div id="the-vision" className="animate-slide-in-left">
-        <ProductVision />
+      <div id="the-solution">
+        <Solution />
       </div>
 
-      <div id="build-public" className="animate-slide-in-right">
-        <BuildInPublic />
+      <div id="join-beta">
+        <BetaCTA />
       </div>
-
-      {/* Who It's For */}
-      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight px-2">
-              Who <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> Is <span className="text-primary">For</span>
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-medium px-4 max-w-3xl mx-auto">
-              If you relate to any of these, you're in the right place. If not, dueces. ✌️
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {[
-              {
-                title: "Producers",
-                emoji: "😤",
-                pain: "I'm tired of uploading to YouTube for $3 CPM",
-                solution: ["Go live", "Watch bids climb", "Get paid instantly"]
-              },
-              {
-                title: "Artists",
-                emoji: "💀",
-                pain: "I'm over scrolling dead beat stores for hours",
-                solution: ["Join live sessions", "Bid on heat", "Lock in exclusives"]
-              },
-              {
-                title: "Fans",
-                emoji: "👀",
-                pain: "I wanna provide real support to producers I fw",
-                solution: ["Watch live", "Tip your favorites", "See hits get made"]
-              }
-            ].map((group, i) => (
-              <div key={i} className="p-6 sm:p-8 bg-card border-2 border-border rounded-2xl hover:border-primary transition-all hover:scale-105">
-                <div className="text-5xl sm:text-6xl mb-4 text-center">{group.emoji}</div>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 text-center">{group.title}</h3>
-                <p className="text-sm sm:text-base md:text-lg text-destructive font-bold mb-5 italic text-center leading-relaxed">"{group.pain}"</p>
-                <ul className="space-y-3">
-                  {group.solution.map((item, j) => (
-                    <li key={j} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-1" />
-                      <span className="font-medium text-base sm:text-lg md:text-xl">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
 
       {/* Footer */}

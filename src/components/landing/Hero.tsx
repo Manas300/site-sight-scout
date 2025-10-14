@@ -121,19 +121,19 @@ export const Hero = () => {
           </div>
           
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-4 sm:mb-6 font-space-grotesk text-center" style={{ letterSpacing: '0.05em', wordSpacing: '-0.05em', lineHeight: '1.2' }}>
-            <span className="block text-primary" style={{ letterSpacing: '0.05em' }}>
-              GO LIVE.
+            <span className="block text-foreground" style={{ letterSpacing: '0.05em' }}>
+              STOP BEING
             </span>
-            <span className="block text-secondary" style={{ marginTop: 'clamp(8px, 3vw, 20px)', letterSpacing: '0.05em' }}>
-              DROP A BEAT.
+            <span className="block text-destructive" style={{ marginTop: 'clamp(8px, 3vw, 20px)', letterSpacing: '0.05em' }}>
+              BROKE, INVISIBLE & EXHAUSTED.
             </span>
-            <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent" style={{ marginTop: 'clamp(8px, 3vw, 20px)', letterSpacing: '0.05em' }}>
-              GET PAID.
+            <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent" style={{ marginTop: 'clamp(8px, 3vw, 20px)', letterSpacing: '0.05em' }}>
+              START WINNING.
             </span>
           </h1>
             
-          <p className="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl mb-8 sm:mb-10 md:mb-12 text-foreground/90 font-normal max-w-5xl mx-auto px-2 whitespace-nowrap overflow-x-auto">
-            <span className="text-primary">Live Beat Auctions</span> × <span className="text-secondary">Live Producer Stores</span> × <span className="text-primary">Instant Payouts</span>
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-10 md:mb-12 text-muted-foreground font-medium max-w-4xl mx-auto px-2">
+            The first live beat marketplace built for young producers who are tired of getting fucked by the industry.
           </p>
 
 
