@@ -30,7 +30,7 @@ export const Solution = () => {
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-20 animate-fade-in">
-          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black font-poppins text-foreground mb-6">
+          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-foreground mb-6">
             How BAGЯ Fixes<br />
             <span className="underline">Everything</span>
           </p>
@@ -52,7 +52,7 @@ export const Solution = () => {
                     <div className="p-3 bg-primary rounded-xl">
                       <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-background" />
                     </div>
-                    <h3 className="text-xl sm:text-2xl md:text-3xl font-black font-poppins text-primary flex-1">
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-primary flex-1">
                       {item.title}
                     </h3>
                   </div>
