@@ -262,13 +262,6 @@ export const Hero = () => {
             </form>
           </div>
 
-          {/* LOI Goal Box */}
-          <div className="max-w-2xl mx-auto mb-6 sm:mb-8 px-3 sm:px-4 md:px-6 py-3 sm:py-4 bg-gradient-to-r from-warning/20 via-primary/20 to-secondary/20 border-2 sm:border-4 border-warning rounded-xl text-center animate-pulse">
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-warning">
-              🎯 NEXT LOI GOAL: 500
-            </p>
-          </div>
-
           {/* Social Proof Ticker */}
           <div className="flex items-center justify-center gap-2 text-xs md:text-sm">
             {/* <div className="flex -space-x-3">
