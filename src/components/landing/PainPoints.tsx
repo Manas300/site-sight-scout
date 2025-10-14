@@ -20,7 +20,7 @@ export const PainPoints = () => {
       icon: Heart,
       emoji: "🎣",
       title: "YOU'RE GETTING EXPLOITED",
-      pain: "Those Discord servers are just loop farms — big-name producers dangle \"placements\" to milk your talent for free, calling it \"networking.\" Wake up.",
+      pain: "Those Discord servers are just loop farms — big-name producers dangle \"placements\" to milk your talent for free, calling it \"collaboration.\" Wake up.",
       emotion: "You upload thinking it's your shot. But you're still invisible, still broke, just getting used."
     },
     {
