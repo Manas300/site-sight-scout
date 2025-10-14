@@ -142,57 +142,9 @@ export const Hero = () => {
             </span>
           </h1>
             
-          <p className="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl mb-6 sm:mb-8 text-foreground/90 font-normal max-w-5xl mx-auto px-2 whitespace-nowrap overflow-x-auto">
+          <p className="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl mb-8 sm:mb-10 md:mb-12 text-foreground/90 font-normal max-w-5xl mx-auto px-2 whitespace-nowrap overflow-x-auto">
             <span className="text-primary">Live Beat Auctions</span> × <span className="text-secondary">Live Producer Stores</span> × <span className="text-primary">Instant Payouts</span>
           </p>
-
-          {/* Radical Transparency Box */}
-          <div className="mb-8 sm:mb-10 md:mb-12 p-3 sm:p-4 md:p-6 bg-card/50 backdrop-blur-sm border-2 border-primary/30 rounded-xl max-w-4xl mx-auto">
-            <div className="flex items-start gap-2 sm:gap-3 text-left">
-              <Zap className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-1 animate-pulse" />
-              <div className="flex-1 min-w-0">
-                <p className="text-xs sm:text-sm md:text-base lg:text-lg font-bold mb-2 text-primary font-montserrat">REAL TALK:</p>
-                <p className="text-xs sm:text-sm md:text-base lg:text-lg text-foreground/80 font-montserrat font-normal mb-3 leading-relaxed">
-                  We've been bootstrapping <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> for 6 months, dropped twenty-thousand dollars ($20K) of our own money on Figma designs and early-stage coding, but now seek pre-seed investors to scale <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> to what it could be...the:
-                </p>
-                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black mb-4 sm:mb-6 font-montserrat bg-gradient-to-r from-[#FFD700] via-[#FFF4B3] to-[#FFD700] bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,215,0,0.4)] text-center">
-                  Bloomberg Terminal of Hip Hop.
-                </p>
-                
-                <div className="space-y-2 sm:space-y-3 p-3 sm:p-4 bg-primary/10 border-l-2 sm:border-l-4 border-primary rounded-r-lg">
-                  <p className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-primary leading-relaxed font-montserrat">
-                    Your sign-up = a Letter of Intent (LOI) to use <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span> once we're funded and v1 is live.
-                  </p>
-                  <p className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-foreground/80 leading-relaxed font-montserrat">
-                    We're raising $850K now to fund 18 months of building. Every LOI tells investors that hip hop producers, artists, and fans are ready for <span className="font-montserrat font-bold" style={{ fontFeatureSettings: '"liga" 0' }}>BAGЯ</span>.
-                  </p>
-                  <div className="space-y-1.5 sm:space-y-2 mt-3 sm:mt-4">
-                    <p className="text-xs sm:text-sm md:text-base lg:text-lg font-black text-destructive leading-relaxed font-montserrat">
-                      First 1,200 Producer LOIs get:
-                    </p>
-                    <div className="flex items-start gap-1.5 sm:gap-2">
-                      <span className="text-xs sm:text-sm md:text-base lg:text-lg w-5 sm:w-6 flex-shrink-0">⚡</span>
-                      <p className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-destructive leading-relaxed animate-pulse font-montserrat">
-                        Beta access
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-1.5 sm:gap-2">
-                      <span className="text-xs sm:text-sm md:text-base lg:text-lg w-5 sm:w-6 flex-shrink-0">🔥</span>
-                      <p className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-destructive leading-relaxed animate-pulse font-montserrat">
-                        Exclusive early feature voting rights
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-1.5 sm:gap-2">
-                      <span className="text-xs sm:text-sm md:text-base lg:text-lg w-5 sm:w-6 flex-shrink-0">💎</span>
-                      <p className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-destructive leading-relaxed animate-pulse font-montserrat">
-                        33% off FOR LIFE on our premium-tier producer plan
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* How It Works Section */}
           <HowItWorks />
