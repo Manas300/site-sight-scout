@@ -9,20 +9,12 @@ import { z } from "zod";
 
 
 const signupSchema = z.object({
-  firstName: z.string().trim().min(1, { message: "First name required" }).max(100),
-  city: z.string().trim().min(1, { message: "City required" }).max(100),
-  state: z.string().trim().max(100).optional().or(z.literal('')),
-  whyBagr: z.string().trim().min(10, { message: "Tell us why (at least 10 characters)" }).max(500),
   email: z.string().trim().email({ message: "Enter a valid email" }).max(255),
   igHandle: z.string().trim().min(1, { message: "Instagram handle required" }).max(100)
 });
 
 export const Hero = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    city: "",
-    state: "",
-    whyBagr: "",
     email: "",
     igHandle: ""
   });
@@ -51,10 +43,10 @@ export const Hero = () => {
       const result = await subscribeToNewsletter(
         validation.data.email, 
         'hero',
-        validation.data.firstName,
-        validation.data.city,
-        validation.data.state,
-        validation.data.whyBagr,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
         undefined,
         validation.data.igHandle
       );
@@ -65,10 +57,6 @@ export const Hero = () => {
           description: "Check the wall below - you're live!",
         });
         setFormData({
-          firstName: "",
-          city: "",
-          state: "",
-          whyBagr: "",
           email: "",
           igHandle: ""
         });
@@ -134,41 +122,6 @@ export const Hero = () => {
           {/* CTA Form */}
           <div className="max-w-2xl mx-auto mb-6 sm:mb-8">
             <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                <Input
-                  type="text"
-                  placeholder="First Name"
-                  value={formData.firstName}
-                  onChange={(e) => setFormData(prev => ({ ...prev, firstName: e.target.value }))}
-                  className="h-11 sm:h-12 text-sm sm:text-base bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
-                  required
-                />
-                <Input
-                  type="text"
-                  placeholder="City"
-                  value={formData.city}
-                  onChange={(e) => setFormData(prev => ({ ...prev, city: e.target.value }))}
-                  className="h-11 sm:h-12 text-sm sm:text-base bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
-                  required
-                />
-              </div>
-              
-              <Input
-                type="text"
-                placeholder="State/Region/Province (optional)"
-                value={formData.state}
-                onChange={(e) => setFormData(prev => ({ ...prev, state: e.target.value }))}
-                className="h-11 sm:h-12 text-sm sm:text-base bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
-              />
-              
-              <textarea
-                placeholder="Why you need BAGЯ in your life rn (this goes on the wall!)"
-                value={formData.whyBagr}
-                onChange={(e) => setFormData(prev => ({ ...prev, whyBagr: e.target.value }))}
-                className="w-full h-20 sm:h-24 px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary rounded-md resize-none"
-                required
-              />
-              
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 <Input
                   type="email"
