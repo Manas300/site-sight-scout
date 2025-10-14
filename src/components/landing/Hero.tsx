@@ -107,11 +107,6 @@ export const Hero = () => {
 
       <div className="container mx-auto max-w-5xl text-center relative z-10">
         <div className="animate-fade-in">
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-10 md:mb-12 text-muted-foreground font-medium max-w-4xl mx-auto px-2">
-            The first live beat marketplace built for young producers who are tired of getting fucked by the industry.
-          </p>
-
-
           {/* Beta Access Highlight */}
           <div id="limited-spots" className="mb-6 sm:mb-8 px-4 sm:px-6 md:px-8 py-4 sm:py-5 bg-gradient-to-r from-primary/20 to-secondary/20 border-2 border-primary rounded-lg max-w-2xl mx-auto text-center animate-pulse">
             <div className="flex items-center justify-center gap-2 mb-2">
