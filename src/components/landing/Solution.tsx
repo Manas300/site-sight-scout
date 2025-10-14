@@ -21,8 +21,8 @@ export const Solution = () => {
     },
     {
       emoji: "🎯",
-      title: "ONE PLATFORM. ZERO HASSLE.",
-      solution: <><span className="font-bold">Everything lives here: auctions, stores, tips, instant payments. You just create.</span></>,
+      title: "ONE PLATFORM THAT DOES IT ALL.",
+      solution: <><span className="font-bold">Stop juggling five apps just to make pennies on the dollar. BAGR gives you an entire beat store in your back pocket.</span></>,
       impact: "Stop grinding yourself into the ground. Focus on making fire."
     }
   ];
