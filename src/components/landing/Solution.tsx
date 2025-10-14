@@ -5,7 +5,7 @@ export const Solution = () => {
       emoji: "⚡",
       title: "GO LIVE. AUCTION YOUR BEATS.",
       solution: <><span className="font-bold">Go live. Artists bid. Highest bidder wins. Money hits your account INSTANTLY.</span></>,
-      impact: "You set the price. You run the show. Your exclusive beats become competition + cash."
+      impact: "You set the price and run the show, while your exclusive beats become competition + cash."
     },
     {
       emoji: "📈",
