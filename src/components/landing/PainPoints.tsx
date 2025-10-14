@@ -20,8 +20,8 @@ export const PainPoints = () => {
       icon: Heart,
       emoji: "🎣",
       title: "YOU'RE GETTING EXPLOITED",
-      pain: "Those 'loop farms' on Discord? Bigger producers dangling placement hopes with artists they know, just to milk YOUR loops for free. You upload thinking it's your shot, but they're just piggybacking off your talent.",
-      emotion: "You're giving away your best work for empty promises. Still invisible, still broke, but now you're also getting used."
+      pain: "Discord 'loop farms' where bigger producers dangle placements to milk YOUR loops for free. You're giving away your best work while they piggyback off your talent.",
+      emotion: "You upload thinking it's your shot. But you're still invisible, still broke, just getting used."
     },
     {
       icon: Heart,
