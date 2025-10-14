@@ -6,6 +6,7 @@ import { subscribeToNewsletter } from "@/lib/emailService";
 import { useSignupCount } from "@/hooks/useSignupCount";
 import { Zap, TrendingUp } from "lucide-react";
 import { z } from "zod";
+import bagrLogo from "@/assets/bagr-logo.png";
 
 
 const signupSchema = z.object({
@@ -110,6 +111,11 @@ export const Hero = () => {
 
       <div className="container mx-auto max-w-5xl text-center relative z-10">
         <div className="animate-fade-in">
+          {/* Logo */}
+          <div className="mb-6 sm:mb-8 flex justify-center">
+            <img src={bagrLogo} alt="BAGR Logo" className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 animate-scale-in" />
+          </div>
+          
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-4 sm:mb-6 font-space-grotesk text-center" style={{ letterSpacing: '0.05em', wordSpacing: '-0.05em', lineHeight: '1.2' }}>
             <span className="block text-foreground" style={{ letterSpacing: '0.05em' }}>
               STOP BEING

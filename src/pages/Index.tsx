@@ -3,6 +3,7 @@ import { Hero } from "@/components/landing/Hero";
 import { PainPoints } from "@/components/landing/PainPoints";
 import { Solution } from "@/components/landing/Solution";
 import { BetaCTA } from "@/components/landing/BetaCTA";
+import bagrLogo from "@/assets/bagr-logo.png";
 
 const Index = () => {
   return (
@@ -10,9 +11,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-xl border-b border-primary/20">
         <div className="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white font-montserrat tracking-[0.2em]" style={{ lineHeight: '1', fontFeatureSettings: '"liga" 0' }}>
-            BAGЯ
-          </h1>
+          <img src={bagrLogo} alt="BAGR" className="h-10 w-10 sm:h-12 sm:w-12" />
           <div className="hidden lg:flex gap-4 xl:gap-6 2xl:gap-8 text-base xl:text-lg 2xl:text-xl font-bold font-montserrat absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap items-center">
             <a 
               href="#the-pain" 
@@ -105,9 +104,7 @@ const Index = () => {
       <footer className="py-10 sm:py-12 md:py-14 px-4 sm:px-6 border-t-2 border-border bg-muted/20">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-8">
-            <div className="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-[0.2em]">
-              BAGЯ
-            </div>
+            <img src={bagrLogo} alt="BAGR" className="h-12 w-12 sm:h-16 sm:w-16" />
             <p className="text-sm sm:text-base text-muted-foreground text-center">
               © 2025 BAGЯ. Beat. Bid. Bag.
             </p>
