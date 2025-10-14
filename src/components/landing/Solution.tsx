@@ -17,7 +17,11 @@ export const Solution = () => {
       emoji: "💰",
       title: "SELL PACKS & LOOPS DIRECTLY.",
       solution: <><span className="font-bold">Own a live store. Sell sound packs, loops, and non-exclusive beats directly.</span></>,
-      impact: "Drop your latest pack, loop, or non-exclusive beat live with a one-click Buy Now button."
+      impact: (
+        <>
+          Drop your latest pack, loop, or non-exclusive beat live with a one-click Buy Now button.
+        </>
+      )
     },
     {
       emoji: "🎯",
