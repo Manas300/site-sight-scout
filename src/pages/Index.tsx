@@ -88,12 +88,12 @@ const Index = () => {
         <PainPoints />
       </div>
 
-      <div id="signup-form">
-        <Hero />
-      </div>
-
       <div id="the-solution">
         <Solution />
+      </div>
+
+      <div id="signup-form">
+        <Hero />
       </div>
 
       <div id="join-beta">
