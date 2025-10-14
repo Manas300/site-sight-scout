@@ -111,7 +111,7 @@ export const Hero = () => {
           <div id="limited-spots" className="mb-6 sm:mb-8 px-4 sm:px-6 md:px-8 py-4 sm:py-5 bg-gradient-to-r from-primary/20 to-secondary/20 border-2 border-primary rounded-lg max-w-2xl mx-auto text-center animate-pulse">
             <div className="flex items-center justify-center gap-2 mb-2">
               <div className="w-2 h-2 bg-destructive rounded-full animate-ping"></div>
-              <p className="text-xs sm:text-sm font-black text-destructive uppercase tracking-wider">⚠️ ONLY 1,200 PRODUCER SPOTS EXIST ⚠️</p>
+              <p className="text-base sm:text-lg md:text-xl font-black text-destructive uppercase tracking-wider">⚠️ ONLY 1,200 PRODUCER SPOTS EXIST ⚠️</p>
               <div className="w-2 h-2 bg-destructive rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
             </div>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black text-foreground mb-1 uppercase">
