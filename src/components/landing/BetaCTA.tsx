@@ -184,7 +184,7 @@ export const BetaCTA = () => {
         {/* Final Emotional Hook */}
         <div className="mt-16 sm:mt-20 text-center max-w-3xl mx-auto animate-fade-in">
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground italic leading-relaxed">
-            You've been waiting for your shot at discovery.
+            You've been waiting years for your shot at discovery.
           </p>
           <p className="text-xl sm:text-2xl md:text-3xl font-black text-foreground mt-4 leading-tight">
             This is it.
