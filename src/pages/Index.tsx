@@ -5,7 +5,7 @@ import { ProductVision } from "@/components/landing/ProductVision";
 import { BuildInPublic } from "@/components/landing/BuildInPublic";
 import { FinalCTA } from "@/components/landing/FinalCTA";
 import { LiveTestimonials } from "@/components/landing/LiveTestimonials";
-import { HowItWorks } from "@/components/landing/HowItWorks";
+
 import { Check } from "lucide-react";
 
 const Index = () => {

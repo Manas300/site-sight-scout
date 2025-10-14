@@ -8,7 +8,7 @@ import { Zap, TrendingUp, Flame } from "lucide-react";
 import { z } from "zod";
 import { BagAnimation } from "@/components/animations/BagAnimation";
 import moneyBagImage from "@/assets/money-bag.png";
-import { HowItWorks } from "./HowItWorks";
+
 
 const signupSchema = z.object({
   userType: z.enum(['Producer', 'Artist', 'Fan'], { message: "Select your role" }),
@@ -146,8 +146,6 @@ export const Hero = () => {
             <span className="text-primary">Live Beat Auctions</span> × <span className="text-secondary">Live Producer Stores</span> × <span className="text-primary">Instant Payouts</span>
           </p>
 
-          {/* How It Works Section */}
-          <HowItWorks />
 
           {/* Founder Pricing Highlight */}
           <div id="limited-spots" className="mb-6 sm:mb-8 px-4 sm:px-6 md:px-8 py-4 sm:py-5 bg-gradient-to-r from-primary/20 to-secondary/20 border-2 border-primary rounded-lg max-w-2xl mx-auto text-center">
