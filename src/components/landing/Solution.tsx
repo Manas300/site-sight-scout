@@ -74,13 +74,6 @@ export const Solution = () => {
           ))}
         </div>
 
-        {/* Closing Statement */}
-        <div className="text-center mt-12 sm:mt-16 animate-fade-in">
-          <p className="text-base sm:text-lg md:text-xl text-yellow-400 font-bold leading-relaxed">
-            BAGR — the first live beat marketplace. When it&apos;s live, demand doesn&apos;t wait. And neither should you.
-          </p>
-        </div>
-
       </div>
     </section>
   );
