@@ -145,7 +145,7 @@ export const BetaCTA = () => {
         </div>
 
         {/* CTA Form */}
-        <div className="max-w-2xl mx-auto mb-8 animate-glow-pulse">
+        <div className="max-w-4xl mx-auto mb-8 p-8 sm:p-12 md:p-16 bg-card/50 border-2 border-primary/20 rounded-3xl animate-glow-pulse">
           <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               <Input
