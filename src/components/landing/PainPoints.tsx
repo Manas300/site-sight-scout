@@ -6,7 +6,7 @@ export const PainPoints = () => {
       icon: DollarSign,
       emoji: "💸",
       title: "YOU'RE BROKE",
-      pain: "You're uploading fire to YouTube for $3 CPMs. Or getting a one-time $500 check from a label exec with zero royalties after that.",
+      pain: "You're uploading fire to YouTube for $3 CPMs… or cashing a one-time $500 check from a label exec who'll eat off your royalties forever.",
       emotion: "You know you're worth more. You feel it every time you see the plays go up but the bank account stays the same."
     },
     {
