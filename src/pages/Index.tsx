@@ -4,8 +4,6 @@ import { WhyBagr } from "@/components/landing/WhyBagr";
 import { ProductVision } from "@/components/landing/ProductVision";
 import { BuildInPublic } from "@/components/landing/BuildInPublic";
 import { FinalCTA } from "@/components/landing/FinalCTA";
-import { LiveTestimonials } from "@/components/landing/LiveTestimonials";
-
 import { Check } from "lucide-react";
 
 const Index = () => {
@@ -120,8 +118,6 @@ const Index = () => {
 
       <Hero />
       
-      {/* Live Testimonials Wall */}
-      <LiveTestimonials />
       
       <div id="why-bagr" className="animate-slide-up">
         <WhyBagr />
