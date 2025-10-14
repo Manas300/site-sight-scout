@@ -84,12 +84,12 @@ const Index = () => {
         </div>
       </nav>
 
-      <div id="signup-form">
-        <Hero />
-      </div>
-      
       <div id="the-pain">
         <PainPoints />
+      </div>
+
+      <div id="signup-form">
+        <Hero />
       </div>
 
       <div id="the-solution">
