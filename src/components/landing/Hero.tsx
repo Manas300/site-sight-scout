@@ -6,8 +6,6 @@ import { subscribeToNewsletter } from "@/lib/emailService";
 import { useSignupCount } from "@/hooks/useSignupCount";
 import { Zap, TrendingUp, Flame } from "lucide-react";
 import { z } from "zod";
-import { BagAnimation } from "@/components/animations/BagAnimation";
-import moneyBagImage from "@/assets/money-bag.png";
 
 
 const signupSchema = z.object({
@@ -130,15 +128,7 @@ export const Hero = () => {
               DROP A BEAT.
             </span>
             <span className="block bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent" style={{ marginTop: 'clamp(8px, 3vw, 20px)', letterSpacing: '0.05em' }}>
-              GET PAID. 
-              <img 
-                src={moneyBagImage} 
-                alt="money bag" 
-                className="inline-block w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 ml-1 sm:ml-2 -mt-1 sm:-mt-2 animate-pulse"
-                style={{
-                  filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.6)) drop-shadow(0 0 12px rgba(255,215,0,0.8))',
-                }}
-              />
+              GET PAID.
             </span>
           </h1>
             
