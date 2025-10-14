@@ -31,7 +31,8 @@ export const Solution = () => {
         {/* Header */}
         <div className="text-center mb-12 sm:mb-20 animate-fade-in">
           <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-foreground mb-6">
-            Here's How BAGЯ <span className="whitespace-nowrap">Fixes Everything</span>
+            How BAGЯ Fixes<br />
+            <span className="underline">Everything</span>
           </p>
         </div>
 
