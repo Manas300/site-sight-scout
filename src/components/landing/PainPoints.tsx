@@ -13,8 +13,15 @@ export const PainPoints = () => {
       icon: Clock,
       emoji: "⏰",
       title: "YOU'RE INVISIBLE",
-      pain: "You're drowning in a sea of 10 million producers. Your beats? Lost in the algorithm. Dead beat stores. No views. No sales. No respect. And the 'loop farms'? Those Discord servers where bigger producers dangle fake placement hopes to milk YOUR loops for free? Even there, cutting through the constant noise is fucking exhausting.",
-      emotion: "You stay up all night cooking heat, but nobody's hearing it. The artists you wanna work with don't even know you exist. You're getting exploited in Discord communities, still invisible, still broke."
+      pain: "You're drowning in a sea of 10 million producers. Your beats? Lost in the algorithm. Dead beat stores. No views. No sales. No respect.",
+      emotion: "You stay up all night cooking heat, but nobody's hearing it. The artists you wanna work with don't even know you exist."
+    },
+    {
+      icon: Heart,
+      emoji: "🎣",
+      title: "YOU'RE GETTING EXPLOITED",
+      pain: "Those 'loop farms' on Discord? Bigger producers dangling fake placement hopes with artists they know, just to milk YOUR loops for free. You upload thinking it's your shot, but they're just piggybacking off your talent. Even in these smaller communities, cutting through the constant noise is fucking exhausting.",
+      emotion: "You're giving away your best work for empty promises. Still invisible, still broke, but now you're also getting used."
     },
     {
       icon: Heart,
