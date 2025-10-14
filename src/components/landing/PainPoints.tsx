@@ -74,16 +74,6 @@ export const PainPoints = () => {
             </div>
           ))}
         </div>
-
-        {/* Emotional Closer */}
-        <div className="text-center mt-16 sm:mt-20 md:mt-24 max-w-3xl mx-auto animate-fade-in">
-          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground leading-tight">
-            You didn't get into music to be broke, invisible, and exhausted.
-          </p>
-          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-primary mt-4">
-            You got into it to WIN.
-          </p>
-        </div>
       </div>
     </section>
   );
