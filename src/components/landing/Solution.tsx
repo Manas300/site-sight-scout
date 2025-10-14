@@ -88,15 +88,6 @@ export const Solution = () => {
           })}
         </div>
 
-        {/* Emotional Transition */}
-        <div className="text-center mt-16 sm:mt-20 md:mt-24 max-w-3xl mx-auto animate-fade-in">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-foreground leading-tight mb-6">
-            This is how you STOP getting fucked.
-          </p>
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-secondary leading-tight">
-            This is how you START winning.
-          </p>
-        </div>
       </div>
     </section>
   );
