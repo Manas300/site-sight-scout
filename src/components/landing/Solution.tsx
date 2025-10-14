@@ -36,54 +36,51 @@ export const Solution = () => {
     <section className="py-16 sm:py-20 md:py-32 px-4 sm:px-6">
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-20 animate-fade-in">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-foreground mb-6">
             How BAGЯ Fixes<br />
             <span className="underline">Everything</span>
           </p>
         </div>
 
-        {/* Solutions */}
-        <div className="grid gap-8 sm:gap-12 md:gap-16 max-w-4xl mx-auto">
+        {/* Solutions Grid */}
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
           {solutions.map((item, i) => {
             const Icon = item.icon;
             return (
               <div 
                 key={i} 
-                className="group relative animate-slide-up"
-                style={{ animationDelay: `${i * 0.2}s` }}
+                className="group relative animate-fade-in hover-scale"
+                style={{ animationDelay: `${i * 0.1}s` }}
               >
-                <div className="relative p-6 sm:p-8 md:p-10 bg-gradient-to-br from-primary/10 to-secondary/10 border-4 border-primary hover:border-secondary rounded-2xl transition-all duration-300 hover:scale-[1.02]">
+                <div className="relative p-6 bg-gradient-to-br from-background/50 to-background/30 backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40 rounded-xl transition-all duration-300">
                   {/* Icon & Title */}
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="p-3 bg-primary rounded-xl">
-                      <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-background" />
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2 bg-primary/10 rounded-lg">
+                      <Icon className="w-5 h-5 text-primary" />
                     </div>
-                    <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-primary flex-1">
+                    <h3 className="text-sm sm:text-base font-black text-primary uppercase tracking-tight">
                       {item.title}
                     </h3>
                   </div>
 
-                  {/* The Problem (crossed out) */}
-                  <div className="mb-6 p-4 bg-destructive/10 border-l-4 border-destructive rounded">
-                    <p className="text-sm sm:text-base md:text-lg text-destructive line-through opacity-70">
-                      OLD WAY: {item.problem}
+                  {/* The Problem */}
+                  <div className="mb-3 p-3 bg-destructive/5 border-l-2 border-destructive/30 rounded">
+                    <p className="text-xs sm:text-sm text-destructive/70 line-through">
+                      {item.problem}
                     </p>
                   </div>
 
                   {/* The Solution */}
-                  <div className="mb-6 space-y-3">
-                    <p className="text-lg sm:text-xl md:text-2xl font-bold text-secondary uppercase tracking-wide">
-                      NEW WAY:
-                    </p>
-                    <p className="text-base sm:text-lg md:text-xl text-foreground leading-relaxed">
+                  <div className="mb-3">
+                    <p className="text-sm sm:text-base text-foreground/90 leading-relaxed">
                       {item.solution}
                     </p>
                   </div>
 
                   {/* The Impact */}
-                  <div className="p-4 bg-primary/20 border-l-4 border-primary rounded">
-                    <p className="text-base sm:text-lg md:text-xl text-primary font-bold leading-relaxed">
+                  <div className="p-3 bg-primary/5 border-l-2 border-primary/40 rounded">
+                    <p className="text-xs sm:text-sm text-primary/90 font-semibold leading-relaxed">
                       💡 {item.impact}
                     </p>
                   </div>
