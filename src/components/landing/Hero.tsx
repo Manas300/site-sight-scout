@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { subscribeToNewsletter } from "@/lib/emailService";
 import { useSignupCount } from "@/hooks/useSignupCount";
-import { Zap, TrendingUp, Flame } from "lucide-react";
+import { Zap, TrendingUp } from "lucide-react";
 import { z } from "zod";
 
 
@@ -110,16 +110,6 @@ export const Hero = () => {
 
       <div className="container mx-auto max-w-5xl text-center relative z-10">
         <div className="animate-fade-in">
-          {/* Hype Badge */}
-          <div className="inline-block mb-6 sm:mb-8 px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 bg-gradient-to-r from-primary to-secondary border-2 border-primary rounded-full text-xs sm:text-sm md:text-base lg:text-lg font-black text-background animate-glow-pulse">
-            <span className="flex items-center gap-2 sm:gap-2 md:gap-3 whitespace-nowrap">
-              <Flame className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 animate-pulse flex-shrink-0" />
-              <span className="hidden sm:inline">RAISING $850K • LOCK IN FOUNDER PRICING NOW</span>
-              <span className="sm:hidden">RAISING $850K • FOUNDER PRICING</span>
-              <Flame className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 animate-pulse flex-shrink-0" />
-            </span>
-          </div>
-          
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-4 sm:mb-6 font-space-grotesk text-center" style={{ letterSpacing: '0.05em', wordSpacing: '-0.05em', lineHeight: '1.2' }}>
             <span className="block text-foreground" style={{ letterSpacing: '0.05em' }}>
               STOP BEING
