@@ -107,18 +107,6 @@ export const Hero = () => {
 
       <div className="container mx-auto max-w-5xl text-center relative z-10">
         <div className="animate-fade-in">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-4 sm:mb-6 font-space-grotesk text-center" style={{ letterSpacing: '0.05em', wordSpacing: '-0.05em', lineHeight: '1.2' }}>
-            <span className="block text-foreground" style={{ letterSpacing: '0.05em' }}>
-              STOP BEING
-            </span>
-            <span className="block text-destructive" style={{ marginTop: 'clamp(8px, 3vw, 20px)', letterSpacing: '0.05em' }}>
-              BROKE, INVISIBLE & EXHAUSTED.
-            </span>
-            <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent" style={{ marginTop: 'clamp(8px, 3vw, 20px)', letterSpacing: '0.05em' }}>
-              START WINNING.
-            </span>
-          </h1>
-            
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-10 md:mb-12 text-muted-foreground font-medium max-w-4xl mx-auto px-2">
             The first live beat marketplace built for young producers who are tired of getting fucked by the industry.
           </p>
