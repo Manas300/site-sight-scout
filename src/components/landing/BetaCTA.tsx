@@ -146,14 +146,14 @@ export const BetaCTA = () => {
 
         {/* CTA Form */}
         <div className="max-w-2xl mx-auto mb-8 animate-glow-pulse">
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               <Input
                 type="email"
                 placeholder="your@email.com"
                 value={formData.email}
                 onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                className="h-14 text-base bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
+                className="h-16 sm:h-18 text-base sm:text-lg bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary px-6"
                 required
               />
               <Input
@@ -161,7 +161,7 @@ export const BetaCTA = () => {
                 placeholder="@yourighandle"
                 value={formData.igHandle}
                 onChange={(e) => setFormData(prev => ({ ...prev, igHandle: e.target.value.replace(/^@/, '') }))}
-                className="h-14 text-base bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary"
+                className="h-16 sm:h-18 text-base sm:text-lg bg-muted/50 border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary px-6"
                 required
               />
             </div>
@@ -176,7 +176,7 @@ export const BetaCTA = () => {
             </Button>
           </form>
           
-          <p className="text-sm sm:text-base text-muted-foreground mt-6 text-center">
+          <p className="text-sm sm:text-base text-muted-foreground mt-8 text-center">
             No credit card. No bullshit. Just your info and your story.
           </p>
         </div>
