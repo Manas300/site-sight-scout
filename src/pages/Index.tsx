@@ -3,7 +3,7 @@ import { Hero } from "@/components/landing/Hero";
 import { WhyBagr } from "@/components/landing/WhyBagr";
 import { ProductVision } from "@/components/landing/ProductVision";
 import { BuildInPublic } from "@/components/landing/BuildInPublic";
-import { FinalCTA } from "@/components/landing/FinalCTA";
+
 import { LiveTestimonials } from "@/components/landing/LiveTestimonials";
 
 import { Check } from "lucide-react";
@@ -186,9 +186,6 @@ const Index = () => {
         </div>
       </section>
 
-      <div id="join" className="animate-fade-in">
-        <FinalCTA />
-      </div>
 
       {/* Footer */}
       <footer className="py-10 sm:py-12 md:py-14 px-4 sm:px-6 border-t-2 border-border bg-muted/20">
