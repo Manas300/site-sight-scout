@@ -1,33 +1,28 @@
-import { Zap, TrendingUp, Sparkles } from "lucide-react";
 
 export const Solution = () => {
   const solutions = [
     {
-      icon: Zap,
+      emoji: "⚡",
       title: "GO LIVE. AUCTION YOUR BEATS.",
-      problem: "You're making $3 CPMs on YouTube while label execs eat your royalties forever.",
-      solution: "Go live. Artists bid. Highest bidder wins. Money hits your account INSTANTLY.",
+      solution: <><span className="font-bold">Go live. Artists bid. Highest bidder wins. Money hits your account INSTANTLY.</span></>,
       impact: "You set the price. You create the hype. Your beats become events."
     },
     {
-      icon: TrendingUp,
+      emoji: "📈",
       title: "BUILD YOUR AUDIENCE LIVE.",
-      problem: "You're buried in algorithms. Nobody sees your work.",
-      solution: "Stream yourself creating. Fans watch, tip, and share in real-time. You become visible.",
+      solution: <><span className="font-bold">Stream yourself creating. Fans watch, tip, and share in real-time. You become visible.</span></>,
       impact: "No more shouting into the void. Your community grows with every stream."
     },
     {
-      icon: Sparkles,
+      emoji: "💰",
       title: "SELL PACKS & LOOPS DIRECTLY.",
-      problem: "Discord servers milk your talent for free. You give away your best work.",
-      solution: "Open your live store. Sell sound packs and loops directly. Set your prices. Keep 100%.",
+      solution: <><span className="font-bold">Open your live store. Sell sound packs and loops directly. Set your prices. Keep 100%.</span></>,
       impact: "You own your work. You own your income. No exploitation."
     },
     {
-      icon: Sparkles,
+      emoji: "🎯",
       title: "ONE PLATFORM. ZERO HASSLE.",
-      problem: "You're juggling 10 platforms, chasing payments, marketing 24/7.",
-      solution: "Everything lives here: auctions, stores, tips, instant payments. You just create.",
+      solution: <><span className="font-bold">Everything lives here: auctions, stores, tips, instant payments. You just create.</span></>,
       impact: "Stop grinding yourself into the ground. Focus on making fire."
     }
   ];
@@ -36,58 +31,47 @@ export const Solution = () => {
     <section className="py-16 sm:py-20 md:py-32 px-4 sm:px-6">
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+        <div className="text-center mb-12 sm:mb-20 animate-fade-in">
           <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-foreground mb-6">
             How BAGЯ Fixes<br />
             <span className="underline">Everything</span>
           </p>
         </div>
 
-        {/* Solutions Grid */}
-        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
-          {solutions.map((item, i) => {
-            const Icon = item.icon;
-            return (
-              <div 
-                key={i} 
-                className="group relative animate-fade-in hover-scale"
-                style={{ animationDelay: `${i * 0.1}s` }}
-              >
-                <div className="relative p-6 bg-gradient-to-br from-background/50 to-background/30 backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40 rounded-xl transition-all duration-300">
-                  {/* Icon & Title */}
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <Icon className="w-5 h-5 text-primary" />
-                    </div>
-                    <h3 className="text-sm sm:text-base font-black text-primary uppercase tracking-tight">
+        {/* Solutions */}
+        <div className="grid gap-8 sm:gap-12 md:gap-16 max-w-4xl mx-auto">
+          {solutions.map((item, i) => (
+            <div 
+              key={i} 
+              className="group relative animate-slide-up"
+              style={{ animationDelay: `${i * 0.2}s` }}
+            >
+              {/* Solution Card */}
+              <div className="relative p-6 sm:p-8 md:p-10 bg-card border-4 border-primary/50 hover:border-primary rounded-2xl transition-all duration-300 hover:scale-[1.02]">
+                {/* Emoji & Title */}
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="text-5xl sm:text-6xl md:text-7xl">
+                    {item.emoji}
+                  </div>
+                  <div>
+                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-primary mb-2">
                       {item.title}
                     </h3>
                   </div>
+                </div>
 
-                  {/* The Problem */}
-                  <div className="mb-3 p-3 bg-destructive/5 border-l-2 border-destructive/30 rounded">
-                    <p className="text-xs sm:text-sm text-destructive/70 line-through">
-                      {item.problem}
-                    </p>
-                  </div>
-
-                  {/* The Solution */}
-                  <div className="mb-3">
-                    <p className="text-sm sm:text-base text-foreground/90 leading-relaxed">
-                      {item.solution}
-                    </p>
-                  </div>
-
-                  {/* The Impact */}
-                  <div className="p-3 bg-primary/5 border-l-2 border-primary/40 rounded">
-                    <p className="text-xs sm:text-sm text-primary/90 font-semibold leading-relaxed">
-                      💡 {item.impact}
-                    </p>
-                  </div>
+                {/* The Solution */}
+                <div className="space-y-4">
+                  <p className="text-base sm:text-lg md:text-xl text-foreground leading-relaxed">
+                    {item.solution}
+                  </p>
+                  <p className="text-base sm:text-lg md:text-xl text-muted-foreground italic leading-relaxed border-l-4 border-secondary pl-4">
+                    {item.impact}
+                  </p>
                 </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
 
       </div>
