@@ -13,7 +13,7 @@ export const PainPoints = () => {
       icon: Clock,
       emoji: "⏰",
       title: "YOU'RE INVISIBLE",
-      pain: "You're drowning in a sea of 10 million producers on IG. Your beats? Buried in the algorithm. Dead beat stores. No views. No sales. No respect.",
+      pain: "You're drowning in a sea of 10 million producers on IG. Your beats? Buried in the algorithm. Zero redirects to your beat store. No views. No sales.",
       emotion: "You stay up all night cooking heat, but nobody's hearing it. The artists you wanna work with don't even know you exist."
     },
     {
