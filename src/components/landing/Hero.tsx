@@ -86,7 +86,7 @@ export const Hero = () => {
   const spotsLeft = Math.max(0, 1200 - producerCount);
 
   return (
-    <section className="relative pt-20 sm:pt-24 md:pt-32 pb-8 sm:pb-12 md:pb-20 px-3 sm:px-4 overflow-hidden">
+    <section className="relative px-3 sm:px-4 overflow-hidden">
       <div className="container mx-auto max-w-5xl text-center relative z-10">
         <div className="animate-fade-in">
         </div>
