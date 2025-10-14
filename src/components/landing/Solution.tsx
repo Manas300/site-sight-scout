@@ -16,7 +16,7 @@ export const Solution = () => {
     {
       emoji: "💰",
       title: "SELL PACKS & LOOPS DIRECTLY.",
-      solution: <><span className="font-bold">Own a live store. Sell sound packs and loops directly. Set your prices. Keep 100%.</span></>,
+      solution: <><span className="font-bold">Own a live store. Sell sound packs, loops, and non-exclusive leases directly.</span></>,
       impact: "You own your work. You own your income. No exploitation."
     },
     {
