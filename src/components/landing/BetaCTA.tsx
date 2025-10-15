@@ -5,7 +5,6 @@ import { Check, Flame } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { subscribeToNewsletter } from "@/lib/emailService";
 import { z } from "zod";
-import goldenTicket from "@/assets/golden-ticket.png";
 
 const signupSchema = z.object({
   email: z.string().trim().email({ message: "Enter a valid email" }).max(255),
@@ -178,13 +177,6 @@ export const BetaCTA = () => {
           <p className="text-xl sm:text-2xl md:text-3xl font-black text-foreground mt-4 leading-tight">
             Now is the time. Trust yourself. You're ready.
           </p>
-          <div className="mt-8 flex justify-center">
-            <img 
-              src={goldenTicket} 
-              alt="Golden Ticket" 
-              className="w-full max-w-md rounded-lg shadow-2xl animate-fade-in"
-            />
-          </div>
         </div>
       </div>
     </section>
