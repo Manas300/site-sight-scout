@@ -20,12 +20,12 @@ export const BetaCTA = () => {
   const { toast } = useToast();
 
   const benefits = [
-    "Lock in FOUNDER PRICING before we raise prices - miss this and you'll pay 33% MORE. Forever.",
-    "While others beg for attention, YOU call the shots and shape the platform",
-    "Get EVERYTHING first - or watch from the sidelines while early adopters dominate",
-    "Skip the line - text the founders directly while everyone else waits months for support",
-    "Every new feature we drop? FREE for you. Latecomers? They pay full price.",
-    "Become a founding insider or be just another producer who 'heard about it too late'"
+    "First 1,200 producers lock in FOUNDER PRICING (33% OFF DIAMOND PLAN FOR LIFE)",
+    "Shape the platform - your feedback builds the future",
+    "Early access to ALL features before public launch",
+    "Direct line to the founders - we're building this WITH you",
+    "Get grandfathered into every new feature we drop",
+    "Join the movement BEFORE it blows up"
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
