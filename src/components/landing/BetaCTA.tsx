@@ -160,7 +160,7 @@ export const BetaCTA = () => {
               size="lg"
               className="w-full h-16 sm:h-20 px-12 sm:px-16 text-xl sm:text-2xl md:text-3xl font-black bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-background rounded-full shadow-2xl hover:shadow-primary/50 transition-all hover:scale-105"
             >
-              {isSubmitting ? "⚡" : "I'M READY TO WIN 🔥"}
+              {isSubmitting ? "⚡" : "I'm in 🔥"}
             </Button>
           </form>
           
