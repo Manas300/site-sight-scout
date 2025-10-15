@@ -25,7 +25,7 @@ export const BetaCTA = () => {
     "Builder access to ALL features",
     "Direct line to the Founders",
     "Grandfathered into every new feature",
-    "Black Card benefits for being part of the Founder's Circle"
+    "Head-of-line privileges as part of the Founding Circle"
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
