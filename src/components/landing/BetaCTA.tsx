@@ -20,7 +20,7 @@ export const BetaCTA = () => {
   const { toast } = useToast();
 
   const benefits = [
-    "Lock in FOUNDER PRICING for life",
+    "Lock in Founder Pricing for LIFE",
     "Shape the platform - your feedback builds our future, not corporate suits",
     "Early access to ALL features - be the first to dominate, while others wait",
     "Direct line to the founders - your voice matters, theirs won't",
