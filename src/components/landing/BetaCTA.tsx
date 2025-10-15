@@ -176,7 +176,7 @@ export const BetaCTA = () => {
             You've been grinding in the dark for your shot at discovery.
           </p>
           <p className="text-xl sm:text-2xl md:text-3xl font-black text-foreground mt-4 leading-tight">
-            This is your Golden Ticket.
+            Now is the time. Trust yourself. You're ready.
           </p>
           <div className="mt-8 flex justify-center">
             <img 
@@ -185,9 +185,6 @@ export const BetaCTA = () => {
               className="w-full max-w-md rounded-lg shadow-2xl animate-fade-in"
             />
           </div>
-          <p className="text-xl sm:text-2xl md:text-3xl font-black text-primary mt-2 leading-tight">
-            Cash that fucker in.
-          </p>
         </div>
       </div>
     </section>
