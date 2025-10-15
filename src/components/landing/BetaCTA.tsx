@@ -164,7 +164,7 @@ export const BetaCTA = () => {
             </Button>
           </form>
           
-          <p className="text-sm sm:text-base text-muted-foreground mt-8 text-center">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground mt-8 text-center font-medium">
             No credit card. No bullshit. Just your info.
           </p>
         </div>
