@@ -26,7 +26,7 @@ export const BetaCTA = () => {
   const slotsLeft = totalSlots - slotsTaken;
 
   const benefits = [
-    "Lock in Founder pricing before we 10x it",
+    "Lock in Founder Pricing before we 10x it",
     "Your ideas literally become features (fr fr)",
     "Get the sauce before your competition does",
     "DM the founders on demand (no gatekeeping)",
