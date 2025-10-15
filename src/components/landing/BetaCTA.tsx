@@ -131,7 +131,7 @@ export const BetaCTA = () => {
         {/* The Ask */}
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <p className="text-xl sm:text-2xl md:text-3xl text-destructive font-black mb-6 max-w-3xl mx-auto">
-            ONLY 1,200 SPOTS. NO CAP.
+            ONLY 1,200 SPOTS.
           </p>
           <p className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground">
             Once they're gone, you'll be put in the que.
