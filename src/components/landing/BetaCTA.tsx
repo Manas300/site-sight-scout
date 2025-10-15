@@ -179,7 +179,7 @@ export const BetaCTA = () => {
         <div className="mb-12 sm:mb-16 flex justify-center animate-fade-in">
           <div className="inline-flex items-center gap-6 px-8 py-6 bg-primary/10 border-2 border-primary rounded-2xl">
             <div className="text-center">
-              <div className="text-4xl sm:text-5xl font-black text-primary">
+              <div className="text-4xl sm:text-5xl font-black text-destructive">
                 {slotsLeft}
               </div>
               <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
