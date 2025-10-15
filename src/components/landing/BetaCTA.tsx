@@ -27,7 +27,7 @@ export const BetaCTA = () => {
 
   const benefits = [
     "Lock in Founder Pricing before we 10x it",
-    "Your ideas literally become features (fr fr)",
+    "Your ideas can literally become features",
     "Get the sauce before your competition does",
     "DM the founders on demand (no gatekeeping)",
     "Every future feature = FREE forever",
