@@ -47,6 +47,7 @@ All colors MUST be HSL.
     
     --gradient-hero: linear-gradient(135deg, hsl(158 100% 50% / 0.2), hsl(270 100% 65% / 0.2));
     --gradient-cta: linear-gradient(90deg, hsl(158 100% 50%), hsl(270 100% 65%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 100% 60%), hsl(38 100% 50%), hsl(45 100% 70%));
     --shadow-glow: 0 0 80px hsl(158 100% 50% / 0.5);
 
     --sidebar-background: 0 0% 98%;
@@ -147,6 +148,13 @@ All colors MUST be HSL.
 
   .animate-slide-in-right {
     animation: slideInRight 0.8s ease-out;
+  }
+
+  .text-gold-metallic {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
 
