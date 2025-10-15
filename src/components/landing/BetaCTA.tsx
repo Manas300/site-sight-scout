@@ -26,12 +26,12 @@ export const BetaCTA = () => {
   const slotsLeft = totalSlots - slotsTaken;
 
   const benefits = [
-    "Lock in pricing before we 10x it",
-    "Your ideas become features",
-    "Get everything before everyone else",
-    "DM the founders directly",
-    "Every future feature = FREE",
-    "Front-row access while others wait"
+    "Lock in $20/month before we 10x it to $200+",
+    "Your ideas literally become features (fr fr)",
+    "Get the sauce before your competition does",
+    "DM the founders on demand (no gatekeeping)",
+    "Every future feature = FREE forever",
+    "VIP access while everyone else gets left on read"
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -98,10 +98,10 @@ export const BetaCTA = () => {
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-6 leading-tight">
-            NO MORE BEING <span className="text-destructive">BROKE, IGNORED, OR EXPLOITED</span>
+            STOP GETTING <span className="text-destructive">EXPLOITED</span> BY THE INDUSTRY
           </h2>
-          <p className="text-xl sm:text-2xl md:text-3xl text-foreground max-w-3xl mx-auto">
-            Join the waitlist. Get in early.
+          <p className="text-xl sm:text-2xl md:text-3xl text-foreground max-w-3xl mx-auto font-bold">
+            This is your shot. Don't fumble it.
           </p>
         </div>
 
@@ -130,11 +130,11 @@ export const BetaCTA = () => {
 
         {/* The Ask */}
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
-          <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-6 max-w-3xl mx-auto">
-            Only 1,200 spots. First come, first served.
+          <p className="text-xl sm:text-2xl md:text-3xl text-destructive font-black mb-6 max-w-3xl mx-auto">
+            ONLY 1,200 SPOTS. NO CAP.
           </p>
-          <p className="text-2xl sm:text-3xl md:text-4xl font-black text-primary">
-            If that's you? Sign up now.
+          <p className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground">
+            Once they're gone, you're waiting months with everyone else. Your move.
           </p>
         </div>
 
@@ -194,7 +194,7 @@ export const BetaCTA = () => {
           </form>
           
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mt-8 text-center font-medium">
-            No credit card. No bullshit. Just your info.
+            No credit card. No spam. Just the invite when we're ready.
           </p>
         </div>
 
@@ -202,10 +202,10 @@ export const BetaCTA = () => {
         {/* Final Emotional Hook */}
         <div className="mt-16 sm:mt-20 text-center max-w-3xl mx-auto animate-fade-in">
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground italic leading-relaxed">
-            You've been grinding in the dark for your shot at discovery.
+            You've been creating in the dark, hoping someone notices.
           </p>
-          <p className="text-xl sm:text-2xl md:text-3xl font-black text-foreground mt-4 leading-tight">
-            Now is the time. Trust yourself. You're ready.
+          <p className="text-xl sm:text-2xl md:text-3xl font-black text-destructive mt-4 leading-tight">
+            This is your moment. Don't let it pass. You'll regret it.
           </p>
         </div>
       </div>
