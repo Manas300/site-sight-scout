@@ -20,12 +20,12 @@ export const BetaCTA = () => {
   const { toast } = useToast();
 
   const benefits = [
-    "Lock in Founder Pricing for LIFE",
-    "Shape the platform with your feedback",
-    "Builder access to ALL features",
-    "Direct line to the Founders",
-    "Grandfathered into every new feature",
-    "Head-of-line privileges as part of the Founding Circle"
+    "Lock in pricing before we 10x it",
+    "Your ideas become features",
+    "Get everything before everyone else",
+    "DM the founders directly",
+    "Every future feature = FREE",
+    "Front-row access while others wait"
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
