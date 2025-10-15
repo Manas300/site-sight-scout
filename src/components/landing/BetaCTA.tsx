@@ -205,7 +205,7 @@ export const BetaCTA = () => {
             You've been creating in the dark, hoping someone notices.
           </p>
           <p className="text-xl sm:text-2xl md:text-3xl font-black text-destructive mt-4 leading-tight">
-            This is your moment. Don't let it pass. You'll regret it.
+            This is your moment. Don't let it pass.
           </p>
         </div>
       </div>
