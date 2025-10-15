@@ -138,6 +138,29 @@ export const BetaCTA = () => {
           </p>
         </div>
 
+        {/* Live Counter Box - MOVED HERE for maximum FOMO */}
+        <div className="mb-8 flex justify-center animate-fade-in">
+          <div className="inline-flex items-center gap-6 px-8 py-6 bg-destructive/10 border-2 border-destructive rounded-2xl shadow-lg">
+            <div className="text-center">
+              <div className="text-4xl sm:text-5xl font-black text-destructive animate-pulse">
+                {slotsLeft}
+              </div>
+              <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
+                Spots Left
+              </div>
+            </div>
+            <div className="h-12 w-px bg-destructive/30"></div>
+            <div className="text-center">
+              <div className="text-4xl sm:text-5xl font-black text-foreground">
+                {totalSlots}
+              </div>
+              <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
+                Total Slots
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* CTA Form */}
         <div className="max-w-4xl mx-auto mb-8 p-8 sm:p-12 md:p-16 bg-card/50 border-2 border-primary/20 rounded-3xl animate-glow-pulse">
           <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
@@ -175,28 +198,6 @@ export const BetaCTA = () => {
           </p>
         </div>
 
-        {/* Live Counter Box */}
-        <div className="mb-12 sm:mb-16 flex justify-center animate-fade-in">
-          <div className="inline-flex items-center gap-6 px-8 py-6 bg-primary/10 border-2 border-primary rounded-2xl">
-            <div className="text-center">
-              <div className="text-4xl sm:text-5xl font-black text-destructive">
-                {slotsLeft}
-              </div>
-              <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
-                Spots Left
-              </div>
-            </div>
-            <div className="h-12 w-px bg-primary/30"></div>
-            <div className="text-center">
-              <div className="text-4xl sm:text-5xl font-black text-foreground">
-                {totalSlots}
-              </div>
-              <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
-                Total Slots
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Final Emotional Hook */}
         <div className="mt-16 sm:mt-20 text-center max-w-3xl mx-auto animate-fade-in">
