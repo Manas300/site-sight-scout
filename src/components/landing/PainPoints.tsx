@@ -7,28 +7,28 @@ export const PainPoints = () => {
       emoji: "💸",
       title: "YOU'RE BROKE",
       pain: <><span className="font-bold">You're uploading fire to YouTube for $3 CPMs… or cashing a one-time $500 check from a label exec who'll eat off your royalties forever.</span></>,
-      emotion: "You know you're worth more. You feel it every time you see the plays go up but the bank account stays the same."
+      emotion: "Plays up. Bank account flat. You know what that means."
     },
     {
       icon: Clock,
       emoji: "⏰",
       title: "YOU'RE INVISIBLE",
       pain: <><span className="font-bold">You're drowning in a sea of 10 million producers on IG. Your beats? Buried in the algorithm. Zero redirects to your beat store. No views. No sales.</span></>,
-      emotion: "You stay up all night cooking heat, but nobody's hearing it. The artists you wanna work with don't even know you exist."
+      emotion: "Up all night cooking heat. Zero people hearing it. The artists you want? They don't know you exist."
     },
     {
       icon: Heart,
       emoji: "🎣",
       title: "YOU'RE GETTING EXPLOITED",
       pain: <><span className="font-bold">Those Discord servers are just loop farms — big-name producers dangle "placements" to milk your talent for free, draining your best ideas. Wake up.</span></>,
-      emotion: "You upload thinking it's your shot. But you're still invisible, still broke, just getting used."
+      emotion: "You upload thinking it's your shot. Still invisible. Still broke. Just getting used."
     },
     {
       icon: Heart,
       emoji: "😤",
       title: "YOU'RE EXHAUSTED",
       pain: <><span className="font-bold">You're grinding 24/7. Making beats. Marketing. Posting. DMing artists. Pricing. Negotiating. Chasing payments. For what? Crickets.</span></>,
-      emotion: "You're tired of begging for your worth. Tired of the hustle not paying off. You just wanna make music and get paid what you deserve."
+      emotion: "Tired of begging. Tired of the hustle going nowhere. You just wanna make music and get paid."
     }
   ];
 
