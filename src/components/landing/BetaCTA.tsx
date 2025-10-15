@@ -30,7 +30,7 @@ export const BetaCTA = () => {
     "Your ideas can literally become features",
     "Get the sauce before your competition does",
     "DM the founders on demand (no gatekeeping)",
-    "Every future feature = FREE for you + VIP access while everyone else waits",
+    "Every future feature = FREE for you",
     "VIP access while everyone else gets left on read"
   ];
 
