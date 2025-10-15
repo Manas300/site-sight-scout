@@ -23,7 +23,7 @@ export const BetaCTA = () => {
     "Lock in Founder Pricing for LIFE",
     "Shape the platform with your feedback",
     "Builder access to ALL features",
-    "Direct line to the founders - your voice matters, theirs won't",
+    "Direct line to the Founders",
     "Grandfathered into every new feature - pay once, win forever",
     "Join the elite founding circle - or watch from the sidelines as others blow up"
   ];
