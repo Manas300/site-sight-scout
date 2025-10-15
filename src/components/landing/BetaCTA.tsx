@@ -125,13 +125,10 @@ export const BetaCTA = () => {
         {/* The Ask */}
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-6 max-w-3xl mx-auto">
-            We're only taking the first 1,200 producers who are SERIOUS about changing the game.
-          </p>
-          <p className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-4">
-            If that's you?
+            Only 1,200 spots. First come, first served.
           </p>
           <p className="text-2xl sm:text-3xl md:text-4xl font-black text-primary">
-            Sign up below. Right now.
+            If that's you? Sign up now.
           </p>
         </div>
 
