@@ -91,12 +91,9 @@ export const BetaCTA = () => {
       <div className="container mx-auto max-w-5xl">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-6 leading-tight">
-            NO MORE BEING
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-6 leading-tight text-destructive">
+            NO MORE BEING BROKE, IGNORED, OR EXPLOITED
           </h2>
-          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-destructive mb-6">
-            BROKE, IGNORED & BURNED
-          </p>
           <p className="text-xl sm:text-2xl md:text-3xl text-foreground max-w-3xl mx-auto">
             Join the waitlist. Get in early.
           </p>
