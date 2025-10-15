@@ -8,19 +8,19 @@ export const Solution = () => {
       impact: "You set the price and run the show, while your exclusive beats generate competition + cash."
     },
     {
-      emoji: "📈",
+      emoji: "⚡",
       title: "BUILD YOUR AUDIENCE IN REAL TIME.",
       solution: <><span className="font-bold">Fans watch, tip, and share your cook-ups in real-time. Be seen. Heard. Valued.</span></>,
       impact: "No more shouting into the void. Your family grows with every livestream."
     },
     {
-      emoji: "💰",
+      emoji: "⚡",
       title: "SELL PACKS & LOOPS DIRECTLY.",
       solution: <><span className="font-bold">Own a live store. Sell sound packs, loops, and non-exclusive beats directly.</span></>,
       impact: "Drop your latest pack, loop, or non-exclusive beat live with a one-click Buy Now button."
     },
     {
-      emoji: "🎯",
+      emoji: "⚡",
       title: "ONE PLATFORM THAT DOES IT ALL.",
       solution: <><span className="font-bold">BAGR gives you a beat business you can run from your back pocket.</span></>,
       impact: <>Stop juggling five apps just to make pennies. Go live on BAGR — where the demand = right <em>now</em>.</>
