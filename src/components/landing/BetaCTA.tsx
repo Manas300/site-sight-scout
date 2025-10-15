@@ -165,7 +165,7 @@ export const BetaCTA = () => {
           </form>
           
           <p className="text-sm sm:text-base text-muted-foreground mt-8 text-center">
-            No credit card. No bullshit. Just your info and your story.
+            No credit card. No bullshit. Just your info.
           </p>
         </div>
 
