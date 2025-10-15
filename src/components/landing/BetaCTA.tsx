@@ -95,7 +95,40 @@ export const BetaCTA = () => {
   return (
     <section className="py-16 sm:py-20 md:py-32 px-4 sm:px-6 bg-gradient-to-b from-background via-primary/5 to-background">
       <div className="container mx-auto max-w-5xl">
-        {/* Header */}
+        {/* FOMO FIRST - Live Counter for immediate urgency */}
+        <div className="mb-8 flex justify-center animate-fade-in">
+          <div className="inline-flex items-center gap-6 px-8 py-6 bg-destructive/10 border-2 border-destructive rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+            <div className="text-center">
+              <div className="text-5xl sm:text-6xl font-black text-destructive animate-pulse">
+                {slotsLeft}
+              </div>
+              <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
+                Spots Left
+              </div>
+            </div>
+            <div className="h-12 w-px bg-destructive/30"></div>
+            <div className="text-center">
+              <div className="text-5xl sm:text-6xl font-black text-foreground">
+                {totalSlots}
+              </div>
+              <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
+                Total Slots
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Urgency Message - Right after counter */}
+        <div className="text-center mb-12 animate-fade-in">
+          <p className="text-2xl sm:text-3xl md:text-4xl text-destructive font-black mb-4 max-w-3xl mx-auto">
+            ONLY 1,200 SPOTS. THEY'RE GOING FAST.
+          </p>
+          <p className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground">
+            Once they're gone, you're stuck in the queue while others eat.
+          </p>
+        </div>
+
+        {/* Hook - Emotional trigger */}
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-6 leading-tight">
             STOP GETTING <span className="text-destructive">EXPLOITED</span> BY THE INDUSTRY
@@ -105,7 +138,7 @@ export const BetaCTA = () => {
           </p>
         </div>
 
-        {/* What You Get */}
+        {/* What You Get - Value proposition */}
         <div className="mb-12 sm:mb-16 p-6 sm:p-8 md:p-10 bg-card border-4 border-primary rounded-2xl animate-slide-up">
           <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-gold-metallic mb-8 text-center">
             WHAT YOU GET AS A BETA TESTER:
@@ -128,41 +161,17 @@ export const BetaCTA = () => {
           </div>
         </div>
 
-        {/* The Ask */}
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
-          <p className="text-xl sm:text-2xl md:text-3xl text-destructive font-black mb-6 max-w-3xl mx-auto">
-            ONLY 1,200 SPOTS.
-          </p>
-          <p className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground">
-            Once they're gone, you'll be put in the que.
-          </p>
-        </div>
-
-        {/* Live Counter Box - MOVED HERE for maximum FOMO */}
-        <div className="mb-8 flex justify-center animate-fade-in">
-          <div className="inline-flex items-center gap-6 px-8 py-6 bg-destructive/10 border-2 border-destructive rounded-2xl shadow-lg">
-            <div className="text-center">
-              <div className="text-4xl sm:text-5xl font-black text-destructive animate-pulse">
-                {slotsLeft}
-              </div>
-              <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
-                Spots Left
-              </div>
-            </div>
-            <div className="h-12 w-px bg-destructive/30"></div>
-            <div className="text-center">
-              <div className="text-4xl sm:text-5xl font-black text-foreground">
-                {totalSlots}
-              </div>
-              <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
-                Total Slots
-              </div>
-            </div>
+        {/* CTA Form - Strike while hot */}
+        <div className="max-w-4xl mx-auto mb-12 p-8 sm:p-12 md:p-16 bg-card/50 border-2 border-primary/20 rounded-3xl animate-glow-pulse">
+          <div className="text-center mb-8">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-black text-primary mb-2">
+              CLAIM YOUR SPOT NOW 🔥
+            </p>
+            <p className="text-lg sm:text-xl text-muted-foreground">
+              Before your competition does
+            </p>
           </div>
-        </div>
-
-        {/* CTA Form */}
-        <div className="max-w-4xl mx-auto mb-8 p-8 sm:p-12 md:p-16 bg-card/50 border-2 border-primary/20 rounded-3xl animate-glow-pulse">
+          
           <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               <Input
@@ -189,7 +198,7 @@ export const BetaCTA = () => {
               size="lg"
               className="w-full h-16 sm:h-20 px-12 sm:px-16 text-xl sm:text-2xl md:text-3xl font-black bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-background rounded-full shadow-2xl hover:shadow-primary/50 transition-all hover:scale-105"
             >
-              {isSubmitting ? "⚡" : "I'm in 🔥"}
+              {isSubmitting ? "⚡ SECURING YOUR SPOT..." : "I'M IN 🔥 LOCK ME IN"}
             </Button>
           </form>
           
@@ -198,14 +207,16 @@ export const BetaCTA = () => {
           </p>
         </div>
 
-
-        {/* Final Emotional Hook */}
+        {/* Final Emotional Push - Last chance messaging */}
         <div className="mt-16 sm:mt-20 text-center max-w-3xl mx-auto animate-fade-in">
-          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground italic leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground italic leading-relaxed mb-4">
             You've been creating in the dark, hoping someone notices.
           </p>
-          <p className="text-xl sm:text-2xl md:text-3xl font-black text-destructive mt-4 leading-tight">
+          <p className="text-xl sm:text-2xl md:text-3xl font-black text-destructive leading-tight mb-6">
             This is your moment. Don't let it pass.
+          </p>
+          <p className="text-base sm:text-lg text-muted-foreground/80">
+            Your competition is already signing up. Will you be left behind?
           </p>
         </div>
       </div>
