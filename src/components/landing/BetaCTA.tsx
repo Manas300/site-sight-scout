@@ -95,7 +95,7 @@ export const BetaCTA = () => {
             NO MORE BEING
           </h2>
           <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-destructive mb-6">
-            BROKE, IGNORED & BURNT OUT?
+            BROKE, IGNORED & BURNED
           </p>
           <p className="text-xl sm:text-2xl md:text-3xl text-foreground max-w-3xl mx-auto">
             Join the waitlist. Get in early.
