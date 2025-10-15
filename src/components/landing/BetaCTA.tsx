@@ -175,7 +175,7 @@ export const BetaCTA = () => {
             You've been grinding in the dark for your shot at discovery.
           </p>
           <p className="text-xl sm:text-2xl md:text-3xl font-black text-foreground mt-4 leading-tight">
-            Think of this as your Golden Ticket.
+            This is your Golden Ticket.
           </p>
           <p className="text-xl sm:text-2xl md:text-3xl font-black text-primary mt-2 leading-tight">
             Cash that fucker in.
