@@ -92,7 +92,7 @@ export const BetaCTA = () => {
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-6 leading-tight">
-            TIRED OF BEING
+            NO MORE BEING
           </h2>
           <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-destructive mb-6">
             BROKE, IGNORED & BURNT OUT?
