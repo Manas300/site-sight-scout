@@ -180,10 +180,10 @@ export const BetaCTA = () => {
           <div className="inline-flex items-center gap-6 px-8 py-6 bg-primary/10 border-2 border-primary rounded-2xl">
             <div className="text-center">
               <div className="text-4xl sm:text-5xl font-black text-primary">
-                {slotsTaken}
+                {slotsLeft}
               </div>
               <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
-                Slots Taken
+                Spots Left
               </div>
             </div>
             <div className="h-12 w-px bg-primary/30"></div>
