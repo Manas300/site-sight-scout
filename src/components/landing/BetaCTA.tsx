@@ -134,7 +134,7 @@ export const BetaCTA = () => {
             ONLY 1,200 SPOTS. NO CAP.
           </p>
           <p className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground">
-            Once they're gone, you'll be put in a que.
+            Once they're gone, you'll be put in the que.
           </p>
         </div>
 
