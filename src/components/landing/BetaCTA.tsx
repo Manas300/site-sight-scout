@@ -5,6 +5,7 @@ import { Check, Flame } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { subscribeToNewsletter } from "@/lib/emailService";
 import { z } from "zod";
+import { useSignupCount } from "@/hooks/useSignupCount";
 
 const signupSchema = z.object({
   email: z.string().trim().email({ message: "Enter a valid email" }).max(255),
@@ -18,6 +19,11 @@ export const BetaCTA = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  const { producerCount } = useSignupCount();
+
+  const totalSlots = 1200;
+  const slotsTaken = producerCount || 0;
+  const slotsLeft = totalSlots - slotsTaken;
 
   const benefits = [
     "Lock in pricing before we 10x it",
@@ -167,6 +173,29 @@ export const BetaCTA = () => {
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mt-8 text-center font-medium">
             No credit card. No bullshit. Just your info.
           </p>
+        </div>
+
+        {/* Live Counter Box */}
+        <div className="mb-12 sm:mb-16 flex justify-center animate-fade-in">
+          <div className="inline-flex items-center gap-6 px-8 py-6 bg-primary/10 border-2 border-primary rounded-2xl">
+            <div className="text-center">
+              <div className="text-4xl sm:text-5xl font-black text-primary">
+                {slotsTaken}
+              </div>
+              <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
+                Slots Taken
+              </div>
+            </div>
+            <div className="h-12 w-px bg-primary/30"></div>
+            <div className="text-center">
+              <div className="text-4xl sm:text-5xl font-black text-foreground">
+                {totalSlots}
+              </div>
+              <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
+                Total Slots
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Final Emotional Hook */}
