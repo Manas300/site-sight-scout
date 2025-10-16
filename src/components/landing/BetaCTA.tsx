@@ -22,7 +22,7 @@ export const BetaCTA = () => {
   const { toast } = useToast();
   const { producerCount } = useSignupCount();
 
-  const totalSlots = 300;
+  const totalSlots = 1200;
   const slotsTaken = producerCount || 0;
   const slotsLeft = totalSlots - slotsTaken;
 
@@ -112,7 +112,7 @@ export const BetaCTA = () => {
             BETA AND BEYOND
           </h2>
           <p className="text-xl sm:text-2xl md:text-3xl text-white leading-relaxed max-w-4xl mx-auto border-l-4 border-primary pl-6">
-            We&apos;re looking for 300 hungry producers making trap, drill, and other fire beats to beta test BAGR. If you love cooking up live, making money, and are constantly challenging the status-quo, <span className="font-black">sign up below for your seat at the table.</span>
+            We&apos;re looking for 1,200 hungry producers making trap, drill, and other fire beats to beta test BAGR. If you love cooking up live, making money, and are constantly challenging the status-quo, <span className="font-black">sign up below for your seat at the table.</span>
           </p>
         </div>
 
@@ -142,7 +142,7 @@ export const BetaCTA = () => {
         {/* Urgency Message - Right after counter */}
         <div className="text-center mb-12 animate-fade-in">
           <p className="text-2xl sm:text-3xl md:text-4xl text-destructive font-black mb-4 max-w-3xl mx-auto">
-            ONLY 300 SPOTS.
+            ONLY 1,200 SPOTS.
           </p>
           <p className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground">
             Once they&apos;re gone, you&apos;re stuck in the queue.
@@ -162,7 +162,7 @@ export const BetaCTA = () => {
         {/* What You Get - Value proposition */}
         <div className="mb-12 sm:mb-16 p-6 sm:p-8 md:p-10 bg-card border-4 border-primary rounded-2xl animate-slide-up">
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-black mb-8 text-center bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-400 bg-clip-text text-transparent">
-            First 300 producers lock in:
+            First 1,200 producers lock in:
           </h3>
           <div className="grid gap-4 sm:gap-6">
             {benefits.map((benefit, i) => (
