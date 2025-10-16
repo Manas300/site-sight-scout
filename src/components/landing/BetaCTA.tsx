@@ -102,7 +102,7 @@ export const BetaCTA = () => {
             BETA AND BEYOND
           </h2>
           <p className="text-xl sm:text-2xl md:text-3xl text-white leading-relaxed max-w-4xl mx-auto border-l-4 border-primary pl-6">
-            We&apos;re looking for 1,200 hungry, hip hop producers who&apos;ve got trap, drill, or other popular subgenres on lock, and who aren&apos;t camera shy, to beta test BAGR and get in before everyone else.
+            We&apos;re looking for 1,200 hungry producers making trap, drill, and other fire beats to beta test BAGR. If you love cooking up live, making money, and are constantly challenging the status-quo, then sign up below before your seat at the table&apos;s filled by dude next door.
           </p>
         </div>
 
