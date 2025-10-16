@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { HeroHook } from "@/components/landing/HeroHook";
 import { Hero } from "@/components/landing/Hero";
 import { PainPoints } from "@/components/landing/PainPoints";
 import { Solution } from "@/components/landing/Solution";
@@ -8,7 +9,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-xl border-b border-primary/20">
+      <nav className="fixed top-0 w-full z-50 glass border-b border-primary/20">
         <div className="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white font-montserrat tracking-[0.2em]" style={{ lineHeight: '1', fontFeatureSettings: '"liga" 0' }}>
             BAGЯ
@@ -84,18 +85,25 @@ const Index = () => {
         </div>
       </nav>
 
+      {/* Hero Hook - Immediate attention grabber */}
+      <HeroHook />
+
+      {/* Pain Points - Agitate the problem */}
       <div id="the-pain">
         <PainPoints />
       </div>
 
+      {/* Solution - Show how BAGR solves it */}
       <div id="the-solution">
         <Solution />
       </div>
 
+      {/* First signup opportunity - Strike while hot */}
       <div id="signup-form">
         <Hero />
       </div>
 
+      {/* Final CTA - Last chance urgency */}
       <div id="join-beta">
         <BetaCTA />
       </div>

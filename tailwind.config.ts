@@ -129,6 +129,13 @@ export default {
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
         "gradient-cta": "var(--gradient-cta)",
+        "gradient-glow": "var(--gradient-glow)",
+        "gradient-mesh": "var(--gradient-mesh)",
+      },
+      boxShadow: {
+        "glow-primary": "var(--glow-primary)",
+        "glow-secondary": "var(--glow-secondary)",
+        "glow-destructive": "var(--glow-destructive)",
       },
     },
   },
