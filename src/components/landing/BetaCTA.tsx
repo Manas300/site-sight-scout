@@ -27,7 +27,7 @@ export const BetaCTA = () => {
   const slotsLeft = 200;
 
   const benefits = [
-    "founder pricing before we 10x it (literally forever)",
+    "founder pricing before we 10x it",
     "direct line to founders no gatekeepers, no BS",
     "feature-shaping with your feedback",
     "skipping the line while everyone else waits",
