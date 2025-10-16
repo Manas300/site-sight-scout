@@ -26,7 +26,7 @@ export const HeroHook = () => {
         </div>
 
         {/* Main headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-8 leading-[0.95] animate-fade-in font-poppins">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mb-8 leading-[0.95] animate-fade-in font-poppins">
           <span className="block mb-4 font-semibold">The First Live Platform</span>
           <span className="block mb-4 font-semibold">Where Hip Hop Producers</span>
           <span className="block font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_auto] animate-shimmer">
@@ -35,7 +35,7 @@ export const HeroHook = () => {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-muted-foreground max-w-4xl mx-auto mb-12 leading-relaxed animate-fade-in font-medium">
+        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-muted-foreground max-w-4xl mx-auto mb-12 leading-relaxed animate-fade-in font-medium">
           Live beat sales. Real money. No bullshit.
         </p>
 

@@ -39,13 +39,13 @@ export const PainPoints = () => {
       
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-12 sm:mb-20 animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-4 sm:mb-6 leading-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black mb-4 sm:mb-6 leading-tight">
             IF YOU'RE A YOUNG PRODUCER,
           </h2>
-          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-destructive mb-6">
+          <p className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-destructive mb-6">
             YOU'RE GETTING FUCKED.
           </p>
-          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground max-w-3xl mx-auto">
             And you already know it. Here's why:
           </p>
         </div>
@@ -64,17 +64,17 @@ export const PainPoints = () => {
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl sm:text-3xl font-black text-destructive mb-4">
+              <h3 className="text-3xl sm:text-4xl font-black text-destructive mb-4">
                 {item.title}
               </h3>
 
               {/* The Pain */}
-              <p className="text-base sm:text-lg text-foreground leading-relaxed mb-4">
+              <p className="text-lg sm:text-xl md:text-2xl text-foreground leading-relaxed mb-4">
                 {item.pain}
               </p>
               
               {/* Emotion */}
-              <p className="text-base sm:text-lg text-muted-foreground italic leading-relaxed border-l-4 border-primary pl-4">
+              <p className="text-lg sm:text-xl text-muted-foreground italic leading-relaxed border-l-4 border-primary pl-4">
                 {item.emotion}
               </p>
             </div>

@@ -112,11 +112,11 @@ export const BetaCTA = () => {
               />
             </div>
             
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-center leading-tight">
+            <h2 className="text-5xl sm:text-6xl md:text-7xl font-black mb-6 text-center leading-tight">
               LAST <span className="text-destructive">200</span> SPOTS
             </h2>
             
-            <p className="text-lg sm:text-xl text-muted-foreground mb-8 text-center">
+            <p className="text-xl sm:text-2xl text-muted-foreground mb-8 text-center">
               Join 1,000+ producers building the future of beat sales
             </p>
 
@@ -157,26 +157,26 @@ export const BetaCTA = () => {
           {/* Benefits Cards - Right column */}
           <div className="glass rounded-2xl p-6 border-2 border-primary/20 hover:scale-105 transition-all">
             <div className="text-4xl mb-3">⚡</div>
-            <h3 className="text-xl sm:text-2xl font-black mb-2">Founder Pricing</h3>
-            <p className="text-muted-foreground">Lock in pricing before we 10x it</p>
+            <h3 className="text-2xl sm:text-3xl font-black mb-2">Founder Pricing</h3>
+            <p className="text-base sm:text-lg text-muted-foreground">Lock in pricing before we 10x it</p>
           </div>
 
           <div className="glass rounded-2xl p-6 border-2 border-secondary/20 hover:scale-105 transition-all">
             <div className="text-4xl mb-3">🎯</div>
-            <h3 className="text-xl sm:text-2xl font-black mb-2">Direct Line</h3>
-            <p className="text-muted-foreground">Chat with founders, no gatekeepers</p>
+            <h3 className="text-2xl sm:text-3xl font-black mb-2">Direct Line</h3>
+            <p className="text-base sm:text-lg text-muted-foreground">Chat with founders, no gatekeepers</p>
           </div>
 
           <div className="glass rounded-2xl p-6 border-2 border-primary/20 hover:scale-105 transition-all">
             <div className="text-4xl mb-3">🚀</div>
-            <h3 className="text-xl sm:text-2xl font-black mb-2">Shape Features</h3>
-            <p className="text-muted-foreground">Your feedback builds the platform</p>
+            <h3 className="text-2xl sm:text-3xl font-black mb-2">Shape Features</h3>
+            <p className="text-base sm:text-lg text-muted-foreground">Your feedback builds the platform</p>
           </div>
 
           <div className="glass rounded-2xl p-6 border-2 border-destructive/20 hover:scale-105 transition-all">
             <div className="text-4xl mb-3">🔥</div>
-            <h3 className="text-xl sm:text-2xl font-black mb-2">Skip The Line</h3>
-            <p className="text-muted-foreground">Beta access while others wait</p>
+            <h3 className="text-2xl sm:text-3xl font-black mb-2">Skip The Line</h3>
+            <p className="text-base sm:text-lg text-muted-foreground">Beta access while others wait</p>
           </div>
         </div>
 
@@ -197,10 +197,10 @@ export const BetaCTA = () => {
 
         {/* Urgency Footer */}
         <div className="mt-12 text-center">
-          <p className="text-2xl sm:text-3xl md:text-4xl font-black text-destructive mb-2 animate-pulse">
+          <p className="text-3xl sm:text-4xl md:text-5xl font-black text-destructive mb-2 animate-pulse">
             ⚠️ ONLY 200 SPOTS LEFT
           </p>
-          <p className="text-lg sm:text-xl text-muted-foreground">
+          <p className="text-xl sm:text-2xl text-muted-foreground">
             miss this = back of the line
           </p>
         </div>
