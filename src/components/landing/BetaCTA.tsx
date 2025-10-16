@@ -30,7 +30,7 @@ export const BetaCTA = () => {
     "founder pricing before we 10x it (literally forever)",
     "direct line to founders no gatekeepers, no BS",
     "feature-shaping with your feedback",
-    "skip the line while everyone else waits",
+    "skipping the line while everyone else waits",
     "free feature updates for life",
     "early access to everything we drop"
   ];
