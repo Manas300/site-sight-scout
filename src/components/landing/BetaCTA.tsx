@@ -140,7 +140,7 @@ export const BetaCTA = () => {
             STOP GETTING <span className="text-destructive">EXPLOITED</span> BY THE INDUSTRY
           </h2>
           <p className="text-xl sm:text-2xl md:text-3xl text-foreground max-w-3xl mx-auto font-bold">
-            Stop playing small. Trust Yourself.
+            Stop playing small. Trust yourself. You&apos;re ready.
           </p>
         </div>
 
