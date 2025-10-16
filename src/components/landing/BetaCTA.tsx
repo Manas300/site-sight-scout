@@ -161,7 +161,7 @@ export const BetaCTA = () => {
             </h3>
             
             <div className="glass rounded-2xl p-4 border-2 border-primary/20 hover:scale-105 transition-all h-[140px] flex flex-col">
-              <Lock className="w-10 h-10 mb-2 text-primary" strokeWidth={2.5} />
+              <div className="text-4xl mb-2">🔒</div>
               <h3 className="text-2xl font-black mb-1">Founder Pricing for Life</h3>
               <p className="text-base text-muted-foreground font-semibold">Lock in the lowest rate forever</p>
             </div>
