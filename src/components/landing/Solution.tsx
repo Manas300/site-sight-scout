@@ -28,44 +28,44 @@ export const Solution = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 md:py-32 px-4 sm:px-6 relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 relative overflow-hidden">
       {/* Background gradient blob */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] sm:w-[800px] sm:h-[800px] bg-primary/5 rounded-full blur-[120px]" />
       
       <div className="container mx-auto max-w-7xl relative z-10">
         {/* Header */}
-        <div className="text-center mb-16 sm:mb-20 animate-fade-in">
-          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-foreground mb-6">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 animate-fade-in px-2">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-black text-foreground mb-4 sm:mb-6 leading-tight">
             HOW BAGЯ FIXES<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">EVERYTHING</span>
           </p>
         </div>
 
         {/* Bento Grid Solutions */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:grid-rows-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 md:grid-rows-2">
           {solutions.map((item, i) => (
             <div 
               key={i} 
-              className="group glass rounded-3xl p-8 sm:p-10 border-2 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-[1.02] animate-fade-in flex flex-col"
+              className="group glass rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 lg:p-10 border-2 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] animate-fade-in flex flex-col touch-manipulation"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               {/* Emoji */}
-              <div className="text-6xl sm:text-7xl mb-6 group-hover:scale-110 transition-transform">
+              <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
                 {item.emoji}
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl sm:text-3xl font-black text-primary mb-4">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-primary mb-3 sm:mb-4 leading-tight">
                 {item.title}
               </h3>
 
               {/* The Solution */}
-              <p className="text-lg sm:text-xl md:text-2xl text-foreground leading-relaxed mb-4">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground leading-relaxed mb-3 sm:mb-4">
                 {item.solution}
               </p>
               
               {/* Impact */}
-              <p className="text-base sm:text-lg text-muted-foreground italic leading-relaxed border-l-4 border-secondary pl-4">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground italic leading-relaxed border-l-4 border-secondary pl-3 sm:pl-4">
                 {item.impact}
               </p>
             </div>

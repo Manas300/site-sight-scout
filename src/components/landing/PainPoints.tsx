@@ -33,43 +33,43 @@ export const PainPoints = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 md:py-32 px-4 sm:px-6 relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 relative overflow-hidden">
       {/* Angry red gradient blob */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-destructive/10 rounded-full blur-[120px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] bg-destructive/10 rounded-full blur-[120px]" />
       
       <div className="container mx-auto max-w-7xl relative z-10">
-        <div className="text-center mb-12 sm:mb-20 animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-4 sm:mb-6 leading-tight">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 animate-fade-in px-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-black mb-3 sm:mb-4 md:mb-6 leading-tight">
             IF YOU'RE A YOUNG PRODUCER,
           </h2>
-          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-destructive mb-6">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-black text-destructive mb-4 sm:mb-6 leading-tight">
             YOU'RE GETTING FUCKED.
           </p>
-          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             And you already know it. Here's why:
           </p>
         </div>
 
         {/* Bento Grid for Pain Points */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
           {pains.map((item, i) => (
             <div 
               key={i} 
-              className="group glass rounded-3xl p-8 sm:p-10 border-2 border-destructive/30 hover:border-destructive transition-all duration-300 hover:scale-[1.02] animate-fade-in"
+              className="group glass rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 lg:p-10 border-2 border-destructive/30 hover:border-destructive transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] animate-fade-in touch-manipulation"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               {/* Emoji */}
-              <div className="text-6xl sm:text-7xl mb-6 group-hover:scale-110 transition-transform">
+              <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
                 {item.emoji}
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl sm:text-3xl font-black text-destructive mb-4">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-destructive mb-3 sm:mb-4 leading-tight">
                 {item.title}
               </h3>
 
               {/* The Pain */}
-              <p className="text-lg sm:text-xl md:text-2xl text-foreground leading-relaxed font-poppins font-light">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground leading-relaxed font-poppins font-light">
                 {item.pain}
               </p>
             </div>

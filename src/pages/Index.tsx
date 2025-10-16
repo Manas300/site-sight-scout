@@ -96,7 +96,7 @@ const Index = () => {
       <HeroHook />
 
       {/* Section Divider */}
-      <div className="h-32 bg-gradient-to-b from-background via-destructive/10 to-background" />
+      <div className="h-16 sm:h-24 md:h-32 bg-gradient-to-b from-background via-destructive/10 to-background" />
 
       {/* Pain Points - Agitate the problem */}
       <div id="the-pain" className="relative">
@@ -104,7 +104,7 @@ const Index = () => {
       </div>
 
       {/* Section Divider */}
-      <div className="h-32 bg-gradient-to-b from-background via-primary/10 to-background" />
+      <div className="h-16 sm:h-24 md:h-32 bg-gradient-to-b from-background via-primary/10 to-background" />
 
       {/* Solution - Show how BAGR solves it */}
       <div id="the-solution" className="relative">
@@ -112,28 +112,28 @@ const Index = () => {
       </div>
 
       {/* Section Divider */}
-      <div className="h-32 bg-gradient-to-b from-background via-secondary/10 to-background" />
+      <div className="h-16 sm:h-24 md:h-32 bg-gradient-to-b from-background via-secondary/10 to-background" />
 
       {/* Final CTA - Last chance urgency */}
       <div id="join-beta" className="relative">
         <BetaCTA />
       </div>
 
-      {/* Sticky Floating CTA Bar */}
+      {/* Sticky Floating CTA Bar - Mobile Optimized */}
       <div 
         className={`fixed bottom-0 left-0 right-0 z-50 transition-transform duration-500 ${
           showFloatingCTA ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
-        <div className="bg-gradient-to-r from-primary via-secondary to-primary p-4 shadow-2xl backdrop-blur-sm border-t-4 border-primary/50">
-          <div className="container mx-auto max-w-6xl flex items-center justify-between gap-4 flex-wrap">
-            <div className="flex items-center gap-3">
-              <Rocket className="w-6 h-6 text-background animate-bounce" />
-              <div>
-                <p className="text-background font-black text-sm sm:text-base">
+        <div className="bg-gradient-to-r from-primary via-secondary to-primary p-3 sm:p-4 shadow-2xl backdrop-blur-sm border-t-2 sm:border-t-4 border-primary/50">
+          <div className="container mx-auto max-w-6xl flex items-center justify-between gap-2 sm:gap-4">
+            <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
+              <Rocket className="w-5 h-5 sm:w-6 sm:h-6 text-background animate-bounce flex-shrink-0" />
+              <div className="min-w-0">
+                <p className="text-background font-black text-xs sm:text-sm md:text-base truncate">
                   200 SPOTS LEFT
                 </p>
-                <p className="text-background/80 text-xs sm:text-sm font-medium">
+                <p className="text-background/80 text-[10px] sm:text-xs md:text-sm font-medium hidden xs:block">
                   Join before it's too late
                 </p>
               </div>
@@ -145,10 +145,10 @@ const Index = () => {
                   block: 'center'
                 });
               }}
-              size="lg"
-              className="bg-background text-primary hover:bg-background/90 font-black rounded-full shadow-xl hover:scale-105 transition-all"
+              className="bg-background text-primary hover:bg-background/90 font-black rounded-full shadow-xl hover:scale-105 active:scale-95 transition-all text-xs sm:text-sm md:text-base h-10 sm:h-11 px-4 sm:px-6 flex-shrink-0 touch-manipulation"
             >
-              CLAIM YOUR SPOT 🔥
+              <span className="hidden xs:inline">CLAIM YOUR SPOT 🔥</span>
+              <span className="xs:hidden">CLAIM 🔥</span>
             </Button>
           </div>
         </div>
@@ -156,10 +156,10 @@ const Index = () => {
 
 
       {/* Footer */}
-      <footer className="py-10 sm:py-12 md:py-14 px-4 sm:px-6 border-t-2 border-border bg-muted/20">
+      <footer className="py-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6 border-t-2 border-border bg-muted/20">
         <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col md:flex-row justify-center items-center gap-6 sm:gap-8">
-            <div className="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-[0.2em]">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-8">
+            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white tracking-[0.2em]">
               BAGЯ
             </div>
           </div>
