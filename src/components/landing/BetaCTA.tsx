@@ -117,7 +117,7 @@ export const BetaCTA = () => {
             </h2>
             
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 text-center">
-              Join 1K+ producers building the future beat economy
+              Join 1K+ producers building the<br />future beat economy
             </p>
 
             {/* Simplified Form */}
