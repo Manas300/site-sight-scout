@@ -154,7 +154,7 @@ export const BetaCTA = () => {
         {/* What You Get - Value proposition */}
         <div className="mb-12 sm:mb-16 p-6 sm:p-8 md:p-10 bg-card border-4 border-primary rounded-2xl animate-slide-up">
           <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-gold-metallic mb-8 text-center">
-            BETA AND BEYOND
+            WHAT YOU GET AS A BETA TESTER:
           </h3>
           
           <div className="grid gap-4 sm:gap-6">
