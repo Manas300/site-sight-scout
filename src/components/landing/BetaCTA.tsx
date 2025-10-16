@@ -155,28 +155,28 @@ export const BetaCTA = () => {
           </div>
 
           {/* Benefits Cards - Right column */}
-          <div className="glass rounded-2xl p-6 border-2 border-primary/20 hover:scale-105 transition-all">
-            <div className="text-4xl mb-3">⚡</div>
-            <h3 className="text-xl sm:text-2xl font-black mb-2">Founder Pricing</h3>
-            <p className="text-muted-foreground">Lock in pricing before we 10x it</p>
+          <div className="glass rounded-2xl p-4 border-2 border-primary/20 hover:scale-105 transition-all">
+            <div className="text-3xl mb-2">⚡</div>
+            <h3 className="text-xl font-black mb-1">Founder Pricing</h3>
+            <p className="text-sm text-muted-foreground">Lock in pricing before we 10x it</p>
           </div>
 
-          <div className="glass rounded-2xl p-6 border-2 border-secondary/20 hover:scale-105 transition-all">
-            <div className="text-4xl mb-3">🎯</div>
-            <h3 className="text-xl sm:text-2xl font-black mb-2">Direct Line</h3>
-            <p className="text-muted-foreground">Chat with founders, no gatekeepers</p>
+          <div className="glass rounded-2xl p-4 border-2 border-secondary/20 hover:scale-105 transition-all">
+            <div className="text-3xl mb-2">🎯</div>
+            <h3 className="text-xl font-black mb-1">Direct Line</h3>
+            <p className="text-sm text-muted-foreground">Chat with founders, no gatekeepers</p>
           </div>
 
-          <div className="glass rounded-2xl p-6 border-2 border-primary/20 hover:scale-105 transition-all">
-            <div className="text-4xl mb-3">🚀</div>
-            <h3 className="text-xl sm:text-2xl font-black mb-2">Shape Features</h3>
-            <p className="text-muted-foreground">Your feedback builds the platform</p>
+          <div className="glass rounded-2xl p-4 border-2 border-primary/20 hover:scale-105 transition-all">
+            <div className="text-3xl mb-2">🚀</div>
+            <h3 className="text-xl font-black mb-1">Shape Features</h3>
+            <p className="text-sm text-muted-foreground">Your feedback builds the platform</p>
           </div>
 
-          <div className="glass rounded-2xl p-6 border-2 border-destructive/20 hover:scale-105 transition-all">
-            <div className="text-4xl mb-3">🔥</div>
-            <h3 className="text-xl sm:text-2xl font-black mb-2">Skip The Line</h3>
-            <p className="text-muted-foreground">Beta access while others wait</p>
+          <div className="glass rounded-2xl p-4 border-2 border-destructive/20 hover:scale-105 transition-all">
+            <div className="text-3xl mb-2">🔥</div>
+            <h3 className="text-xl font-black mb-1">Skip The Line</h3>
+            <p className="text-sm text-muted-foreground">Beta access while others wait</p>
           </div>
         </div>
 
