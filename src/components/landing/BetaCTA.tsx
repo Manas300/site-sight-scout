@@ -157,7 +157,7 @@ export const BetaCTA = () => {
           {/* Benefits Cards - Single column on the right */}
           <div className="flex flex-col gap-6">
             <div className="flex flex-col items-center gap-2">
-              <div className="text-6xl animate-[spin_1s_linear_infinite] drop-shadow-[0_0_30px_rgba(255,215,0,0.8)]">
+              <div className="text-6xl animate-[spin-y_2s_linear_infinite] drop-shadow-[0_0_30px_rgba(255,215,0,0.8)] [transform-style:preserve-3d]" style={{ animation: 'spin-y 2s linear infinite' }}>
                 💎
               </div>
               <h3 className="text-2xl sm:text-3xl font-black text-center bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FFD700] bg-clip-text text-transparent animate-pulse">
