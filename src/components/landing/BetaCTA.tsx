@@ -27,10 +27,10 @@ export const BetaCTA = () => {
   const slotsLeft = 200;
 
   const benefits = [
-    "Founder pricing forever before it's 10x-ed",
-    "Direct line to founders - zero gatekeeping",
+    "lock in founder pricing before we 10x it (literally forever)",
+    "direct line to founders. no gatekeepers, no BS.",
     "Feature-shaping with your feedback",
-    "VIP status while late arrivals wait in line",
+    "skip the line while everyone else waits",
     "Free feature updates for life",
     "Early access to everything we drop"
   ];
@@ -109,7 +109,7 @@ export const BetaCTA = () => {
             />
           </div>
           <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight">
-            BETA AND BEYOND
+            GET IN EARLY OR GET LEFT BEHIND
           </h2>
           <p className="text-xl sm:text-2xl md:text-3xl text-white leading-relaxed max-w-4xl mx-auto border-l-4 border-primary pl-6">
             We&apos;re looking for 1,200 hungry producers making trap, drill, and other fire beats to beta test BAGR. If you love cooking up live, making money, and are constantly challenging the status-quo, <span className="font-black">sign up below for your seat at the table.</span>
@@ -124,7 +124,7 @@ export const BetaCTA = () => {
                 {slotsLeft}
               </div>
               <div className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-bold mt-2">
-                Spots Left
+                SPOTS LEFT RN
               </div>
             </div>
             <div className="h-24 sm:h-32 md:h-40 w-1 bg-destructive/30"></div>
@@ -142,10 +142,10 @@ export const BetaCTA = () => {
         {/* Urgency Message - Right after counter */}
         <div className="text-center mb-12 animate-fade-in">
           <p className="text-2xl sm:text-3xl md:text-4xl text-destructive font-black mb-4 max-w-3xl mx-auto">
-            ONLY 1,200 SPOTS.
+            ONLY 1.2K SPOTS. THAT&apos;S IT.
           </p>
           <p className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground">
-            Once they&apos;re gone, you&apos;re stuck in the queue.
+            miss this = back of the line fr
           </p>
         </div>
 
@@ -185,7 +185,7 @@ export const BetaCTA = () => {
         <div className="max-w-4xl mx-auto mb-12 p-8 sm:p-12 md:p-16 bg-card/50 border-2 border-primary/20 rounded-3xl animate-glow-pulse">
           <div className="text-center mb-8">
             <p className="text-2xl sm:text-3xl md:text-4xl font-black text-primary mb-2">
-              LOCK IN YOUR SPOT NOW 🔒
+              LOCK IN RN 🔒
             </p>
           </div>
           
@@ -220,7 +220,7 @@ export const BetaCTA = () => {
           </form>
           
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mt-8 text-center font-medium">
-            No credit card. No spam. Just the invite when we're ready.
+            no cc. no spam. just vibes + the invite.
           </p>
         </div>
 
