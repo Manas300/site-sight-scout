@@ -98,8 +98,15 @@ export const BetaCTA = () => {
       <div className="container mx-auto max-w-5xl">
         {/* Opening Message */}
         <div className="mb-12 text-center animate-fade-in">
-          <div className="flex justify-center mb-8">
-            <Rocket className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 text-primary animate-pulse" strokeWidth={2} />
+          <div className="flex justify-center mb-8 relative">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+            </div>
+            <Rocket 
+              className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 text-primary drop-shadow-[0_0_30px_rgba(168,85,247,0.8)] relative z-10 animate-[bounce_2s_ease-in-out_infinite]" 
+              strokeWidth={2.5} 
+              fill="currentColor"
+            />
           </div>
           <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight">
             BETA AND BEYOND
