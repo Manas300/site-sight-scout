@@ -145,7 +145,7 @@ export const BetaCTA = () => {
             ONLY 1.2K SPOTS. THAT&apos;S IT.
           </p>
           <p className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground">
-            miss this = back of the line fr
+            miss this = back of the line
           </p>
         </div>
 
