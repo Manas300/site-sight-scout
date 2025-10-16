@@ -27,12 +27,12 @@ export const BetaCTA = () => {
   const slotsLeft = totalSlots - slotsTaken;
 
   const benefits = [
-    "Lock in Founder Pricing before we 10x it",
-    "Your ideas can literally become features",
-    "Get the sauce before your competition does",
-    "DM the founders on demand (no gatekeeping)",
-    "Every future feature = FREE for you",
-    "VIP access while everyone else waits"
+    "Founder pricing locked forever (before we 10x it)",
+    "Direct line to founders - zero gatekeeping",
+    "Shape features with your feedback (we actually listen)",
+    "Permanent VIP status while late arrivals wait in line",
+    "Every future update = free for life",
+    "Early access to everything we drop"
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -162,7 +162,7 @@ export const BetaCTA = () => {
         {/* What You Get - Value proposition */}
         <div className="mb-12 sm:mb-16 p-6 sm:p-8 md:p-10 bg-card border-4 border-primary rounded-2xl animate-slide-up">
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-black mb-8 text-center bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-400 bg-clip-text text-transparent">
-            As a beta tester you get
+            First 1,200 producers lock in:
           </h3>
           <div className="grid gap-4 sm:gap-6">
             {benefits.map((benefit, i) => (
