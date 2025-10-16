@@ -36,7 +36,7 @@ export const HeroHook = () => {
 
         {/* Subheadline */}
         <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-muted-foreground max-w-4xl mx-auto mb-12 leading-relaxed animate-fade-in font-medium">
-          Live beat sales. Real money. No middlemen.
+          Live beat sales. Real money. No bullshit.
         </p>
 
         {/* Social proof stats */}
