@@ -106,11 +106,6 @@ export const BetaCTA = () => {
           </p>
         </div>
 
-        {/* 24-Hour Countdown Timer */}
-        <div className="mb-16 sm:mb-20">
-          <CountdownTimer />
-        </div>
-
         {/* FOMO FIRST - MASSIVE Live Counter for immediate urgency */}
         <div className="mb-12 flex justify-center animate-fade-in">
           <div className="inline-flex items-center gap-8 sm:gap-12 px-12 sm:px-16 md:px-20 py-12 sm:py-16 md:py-20 bg-destructive/10 border-4 border-destructive rounded-3xl shadow-2xl hover:shadow-destructive/30 transition-all hover:scale-105">
