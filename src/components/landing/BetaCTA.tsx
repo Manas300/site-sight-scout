@@ -161,6 +161,9 @@ export const BetaCTA = () => {
 
         {/* What You Get - Value proposition */}
         <div className="mb-12 sm:mb-16 p-6 sm:p-8 md:p-10 bg-card border-4 border-primary rounded-2xl animate-slide-up">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black mb-8 text-center bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-400 bg-clip-text text-transparent">
+            As a beta tester you get
+          </h3>
           <div className="grid gap-4 sm:gap-6">
             {benefits.map((benefit, i) => (
               <div 
