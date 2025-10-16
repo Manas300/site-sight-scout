@@ -185,10 +185,7 @@ export const BetaCTA = () => {
         <div className="max-w-4xl mx-auto mb-12 p-8 sm:p-12 md:p-16 bg-card/50 border-2 border-primary/20 rounded-3xl animate-glow-pulse">
           <div className="text-center mb-8">
             <p className="text-2xl sm:text-3xl md:text-4xl font-black text-primary mb-2">
-              CLAIM YOUR SPOT NOW
-            </p>
-            <p className="text-lg sm:text-xl text-muted-foreground">
-              Before your competition does
+              LOCK IN YOUR SPOT NOW 🔒
             </p>
           </div>
           
