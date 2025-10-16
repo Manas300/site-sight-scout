@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Check, Flame } from "lucide-react";
+import { Check, Flame, Rocket } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { subscribeToNewsletter } from "@/lib/emailService";
 import { z } from "zod";
@@ -98,6 +98,9 @@ export const BetaCTA = () => {
       <div className="container mx-auto max-w-5xl">
         {/* Opening Message */}
         <div className="mb-12 text-center animate-fade-in">
+          <div className="flex justify-center mb-8">
+            <Rocket className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 text-primary animate-pulse" strokeWidth={2} />
+          </div>
           <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight">
             BETA AND BEYOND
           </h2>
