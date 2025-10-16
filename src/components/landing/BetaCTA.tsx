@@ -160,31 +160,31 @@ export const BetaCTA = () => {
               Beta Testers Get:
             </h3>
             
-            <div className="glass rounded-2xl p-4 border-2 border-primary/20 hover:scale-105 hover:shadow-glow-primary transition-all h-[140px] flex flex-col">
+            <div className="glass rounded-2xl p-4 border-2 border-primary/20 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,215,0,0.5)] transition-all h-[140px] flex flex-col">
               <div className="text-4xl mb-2">🔒</div>
               <h3 className="text-2xl font-black mb-1">Founder Pricing for Life</h3>
               <p className="text-base text-muted-foreground font-normal">Lock in the lowest rate ever</p>
             </div>
 
-            <div className="glass rounded-2xl p-4 border-2 border-primary/20 hover:scale-105 hover:shadow-glow-primary transition-all h-[140px] flex flex-col">
+            <div className="glass rounded-2xl p-4 border-2 border-primary/20 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,215,0,0.5)] transition-all h-[140px] flex flex-col">
               <div className="text-4xl mb-2">🚀</div>
               <h3 className="text-2xl font-black mb-1">Shape v1 of BAGR</h3>
               <p className="text-base text-muted-foreground font-normal">Your feedback builds the platform</p>
             </div>
 
-            <div className="glass rounded-2xl p-4 border-2 border-secondary/20 hover:scale-105 hover:shadow-glow-secondary transition-all h-[140px] flex flex-col">
+            <div className="glass rounded-2xl p-4 border-2 border-secondary/20 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,215,0,0.5)] transition-all h-[140px] flex flex-col">
               <div className="text-4xl mb-2">🎯</div>
               <h3 className="text-2xl font-black mb-1">Direct Link to Founders</h3>
               <p className="text-base text-muted-foreground font-normal">No gatekeeping</p>
             </div>
 
-            <div className="glass rounded-2xl p-4 border-2 border-primary/20 hover:scale-105 hover:shadow-glow-primary transition-all h-[140px] flex flex-col">
+            <div className="glass rounded-2xl p-4 border-2 border-primary/20 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,215,0,0.5)] transition-all h-[140px] flex flex-col">
               <div className="text-4xl mb-2">🎁</div>
               <h3 className="text-2xl font-black mb-1">Free Feature Upgrades for Life</h3>
               <p className="text-base text-muted-foreground font-normal">Never pay for new features</p>
             </div>
 
-            <div className="glass rounded-2xl p-4 border-2 border-destructive/20 hover:scale-105 hover:shadow-glow-destructive transition-all h-[140px] flex flex-col">
+            <div className="glass rounded-2xl p-4 border-2 border-destructive/20 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,215,0,0.5)] transition-all h-[140px] flex flex-col">
               <div className="text-4xl mb-2">👑</div>
               <h3 className="text-2xl font-black mb-1">Irrevocable VIP Status</h3>
               <p className="text-base text-muted-foreground font-normal">Elite status that never expires</p>
