@@ -33,8 +33,11 @@ export const PainPoints = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-20 md:py-32 px-4 sm:px-6 bg-muted/30">
-      <div className="container mx-auto max-w-6xl">
+    <section className="py-16 sm:py-20 md:py-32 px-4 sm:px-6 relative overflow-hidden">
+      {/* Angry red gradient blob */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-destructive/10 rounded-full blur-[120px]" />
+      
+      <div className="container mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-12 sm:mb-20 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-4 sm:mb-6 leading-tight">
             IF YOU'RE A YOUNG PRODUCER,
@@ -47,37 +50,33 @@ export const PainPoints = () => {
           </p>
         </div>
 
-        <div className="grid gap-8 sm:gap-12 md:gap-16 max-w-4xl mx-auto">
+        {/* Bento Grid for Pain Points */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {pains.map((item, i) => (
             <div 
               key={i} 
-              className="group relative animate-slide-up"
-              style={{ animationDelay: `${i * 0.2}s` }}
+              className="group glass rounded-3xl p-8 sm:p-10 border-2 border-destructive/30 hover:border-destructive transition-all duration-300 hover:scale-[1.02] animate-fade-in"
+              style={{ animationDelay: `${i * 0.1}s` }}
             >
-              {/* Pain Card */}
-              <div className="relative p-6 sm:p-8 md:p-10 bg-card border-4 border-destructive/50 hover:border-destructive rounded-2xl transition-all duration-300 hover:scale-[1.02]">
-                {/* Icon & Title */}
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="text-5xl sm:text-6xl md:text-7xl">
-                    {item.emoji}
-                  </div>
-                  <div>
-                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-destructive mb-2">
-                      {item.title}
-                    </h3>
-                  </div>
-                </div>
-
-                {/* The Pain */}
-                <div className="space-y-4">
-                  <p className="text-base sm:text-lg md:text-xl text-foreground leading-relaxed">
-                    {item.pain}
-                  </p>
-                  <p className="text-base sm:text-lg md:text-xl text-muted-foreground italic leading-relaxed border-l-4 border-primary pl-4">
-                    {item.emotion}
-                  </p>
-                </div>
+              {/* Emoji */}
+              <div className="text-6xl sm:text-7xl mb-6 group-hover:scale-110 transition-transform">
+                {item.emoji}
               </div>
+
+              {/* Title */}
+              <h3 className="text-2xl sm:text-3xl font-black text-destructive mb-4">
+                {item.title}
+              </h3>
+
+              {/* The Pain */}
+              <p className="text-base sm:text-lg text-foreground leading-relaxed mb-4">
+                {item.pain}
+              </p>
+              
+              {/* Emotion */}
+              <p className="text-base sm:text-lg text-muted-foreground italic leading-relaxed border-l-4 border-primary pl-4">
+                {item.emotion}
+              </p>
             </div>
           ))}
         </div>
