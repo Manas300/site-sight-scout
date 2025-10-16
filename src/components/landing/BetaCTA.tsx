@@ -102,7 +102,7 @@ export const BetaCTA = () => {
             BETA AND BEYOND
           </h2>
           <p className="text-xl sm:text-2xl md:text-3xl text-white leading-relaxed max-w-4xl mx-auto border-l-4 border-primary pl-6">
-            We&apos;re looking for 1,200 hungry producers making trap, drill, and other fire beats to beta test BAGR. If you love cooking up live, making money, and are constantly challenging the status-quo, then sign up below for your seat at the table.
+            We&apos;re looking for 1,200 hungry producers making trap, drill, and other fire beats to beta test BAGR. If you love cooking up live, making money, and are constantly challenging the status-quo, sign up below for your seat at the table.
           </p>
         </div>
 
