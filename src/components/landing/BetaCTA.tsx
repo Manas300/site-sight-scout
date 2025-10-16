@@ -133,7 +133,7 @@ export const BetaCTA = () => {
                 {totalSlots}
               </div>
               <div className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-bold mt-2">
-                Total Slots
+                TOTAL SPOTS
               </div>
             </div>
           </div>
