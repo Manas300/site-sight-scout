@@ -44,11 +44,8 @@ export const CountdownTimer = () => {
   return (
     <div className="flex flex-col items-center gap-6 animate-fade-in">
       <div className="text-center">
-        <p className="text-2xl sm:text-3xl md:text-4xl font-black text-destructive mb-2 animate-pulse">
+        <p className="text-2xl sm:text-3xl md:text-4xl font-black text-destructive mb-4 animate-pulse">
           ⏰ OFFER EXPIRES IN ⏰
-        </p>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-semibold">
-          Price goes up at midnight. Don't miss out.
         </p>
       </div>
       
