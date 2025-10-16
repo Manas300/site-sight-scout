@@ -27,10 +27,10 @@ export const HeroHook = () => {
 
         {/* Main headline */}
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black mb-8 leading-[0.95] animate-fade-in">
-          <span className="block mb-4">THE FIRST PLATFORM</span>
-          <span className="block mb-4">WHERE PRODUCERS</span>
+          <span className="block mb-4">The First Live Platform</span>
+          <span className="block mb-4">Where Hip Hop Producers</span>
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_auto] animate-shimmer">
-            ACTUALLY WIN
+            Actually Win
           </span>
         </h1>
 
