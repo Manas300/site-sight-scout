@@ -161,33 +161,33 @@ export const BetaCTA = () => {
             </h3>
             
             <div className="glass rounded-2xl p-4 border-2 border-primary/20 hover:scale-105 transition-all h-[140px] flex flex-col">
-              <div className="text-3xl mb-2">⚡</div>
-              <h3 className="text-xl font-black mb-1">Founder Pricing for Life</h3>
+              <div className="text-4xl mb-2">⚡</div>
+              <h3 className="text-2xl font-black mb-1">Founder Pricing for Life</h3>
               <p className="text-base text-muted-foreground font-semibold">Lock in the lowest rate forever</p>
             </div>
 
             <div className="glass rounded-2xl p-4 border-2 border-primary/20 hover:scale-105 transition-all h-[140px] flex flex-col">
-              <div className="text-3xl mb-2">🚀</div>
-              <h3 className="text-xl font-black mb-1">Shape v1 of BAGR</h3>
-              <p className="text-sm text-muted-foreground">Your feedback builds the platform</p>
+              <div className="text-4xl mb-2">🚀</div>
+              <h3 className="text-2xl font-black mb-1">Shape v1 of BAGR</h3>
+              <p className="text-base text-muted-foreground font-semibold">Your feedback builds the platform</p>
             </div>
 
             <div className="glass rounded-2xl p-4 border-2 border-secondary/20 hover:scale-105 transition-all h-[140px] flex flex-col">
-              <div className="text-3xl mb-2">🎯</div>
-              <h3 className="text-xl font-black mb-1">Direct Link to Founders</h3>
-              <p className="text-sm text-muted-foreground">No middlemen, no gatekeepers</p>
+              <div className="text-4xl mb-2">🎯</div>
+              <h3 className="text-2xl font-black mb-1">Direct Link to Founders</h3>
+              <p className="text-base text-muted-foreground font-semibold">No middlemen, no gatekeepers</p>
             </div>
 
             <div className="glass rounded-2xl p-4 border-2 border-primary/20 hover:scale-105 transition-all h-[140px] flex flex-col">
-              <div className="text-3xl mb-2">🎁</div>
-              <h3 className="text-xl font-black mb-1">Free Feature Upgrades for Life</h3>
-              <p className="text-sm text-muted-foreground">Never pay for new features</p>
+              <div className="text-4xl mb-2">🎁</div>
+              <h3 className="text-2xl font-black mb-1">Free Feature Upgrades for Life</h3>
+              <p className="text-base text-muted-foreground font-semibold">Never pay for new features</p>
             </div>
 
             <div className="glass rounded-2xl p-4 border-2 border-destructive/20 hover:scale-105 transition-all h-[140px] flex flex-col">
-              <div className="text-3xl mb-2">👑</div>
-              <h3 className="text-xl font-black mb-1">Irrevocable VIP Status</h3>
-              <p className="text-sm text-muted-foreground">Elite status that never expires</p>
+              <div className="text-4xl mb-2">👑</div>
+              <h3 className="text-2xl font-black mb-1">Irrevocable VIP Status</h3>
+              <p className="text-base text-muted-foreground font-semibold">Elite status that never expires</p>
             </div>
           </div>
         </div>
