@@ -4,7 +4,7 @@ import { HeroHook } from "@/components/landing/HeroHook";
 import { PainPoints } from "@/components/landing/PainPoints";
 import { Solution } from "@/components/landing/Solution";
 import { BetaCTA } from "@/components/landing/BetaCTA";
-import { Rocket } from "lucide-react";
+import { Rocket, Zap, Target, Flame } from "lucide-react";
 
 const Index = () => {
   const [showFloatingCTA, setShowFloatingCTA] = useState(false);
@@ -126,18 +126,29 @@ const Index = () => {
         }`}
       >
         <div className="bg-gradient-to-r from-primary via-secondary to-primary p-4 shadow-2xl backdrop-blur-sm border-t-4 border-primary/50">
-          <div className="container mx-auto max-w-6xl flex items-center justify-between gap-4 flex-wrap">
-            <div className="flex items-center gap-3">
-              <Rocket className="w-6 h-6 text-background animate-bounce" />
-              <div>
-                <p className="text-background font-black text-sm sm:text-base">
-                  200 SPOTS LEFT
-                </p>
-                <p className="text-background/80 text-xs sm:text-sm font-medium">
-                  Join before it's too late
-                </p>
+          <div className="container mx-auto max-w-6xl flex items-center justify-between gap-3 flex-wrap">
+            <Rocket className="w-12 h-12 text-background animate-bounce" />
+            
+            <div className="flex items-center gap-3 flex-wrap">
+              <div className="glass border border-primary/20 rounded-lg p-3 min-w-[140px]">
+                <Zap className="w-6 h-6 text-primary mb-1" />
+                <p className="text-background font-black text-sm">Founder Pricing</p>
+                <p className="text-background/70 text-xs">Lock in before 10x</p>
+              </div>
+              
+              <div className="glass border border-primary/20 rounded-lg p-3 min-w-[140px]">
+                <Target className="w-6 h-6 text-primary mb-1" />
+                <p className="text-background font-black text-sm">Direct Line</p>
+                <p className="text-background/70 text-xs">Chat with founders</p>
+              </div>
+              
+              <div className="glass border border-primary/20 rounded-lg p-3 min-w-[140px]">
+                <Flame className="w-6 h-6 text-secondary mb-1" />
+                <p className="text-background font-black text-sm">Skip The Line</p>
+                <p className="text-background/70 text-xs">Beta access now</p>
               </div>
             </div>
+            
             <Button
               onClick={() => {
                 document.getElementById('join-beta')?.scrollIntoView({ 
