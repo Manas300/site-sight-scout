@@ -124,7 +124,7 @@ export const BetaCTA = () => {
                 {slotsLeft}
               </div>
               <div className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-bold mt-2">
-                SPOTS LEFT RN
+                SPOTS LEFT
               </div>
             </div>
             <div className="h-24 sm:h-32 md:h-40 w-1 bg-destructive/30"></div>
