@@ -220,7 +220,7 @@ export const BetaCTA = () => {
           </form>
           
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mt-8 text-center font-medium">
-            No credit card. No spam. Just an invite when we're ready.
+            No credit card. No spam. Just the invite when we're ready.
           </p>
         </div>
 
