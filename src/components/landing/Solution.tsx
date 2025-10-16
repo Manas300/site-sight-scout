@@ -23,7 +23,7 @@ export const Solution = () => {
       emoji: "⚡",
       title: "ONE PLATFORM THAT DOES IT ALL.",
       solution: <><span className="font-bold">BAGR gives you a beat business you can run from your back pocket.</span></>,
-      impact: <>Stop juggling five apps just to make pennies. Build on BAGR: where (going) live increases demand.</>
+      impact: <>Stop juggling five apps just to make pennies. Build with BAGR: where (going) live increases demand.</>
     }
   ];
 
