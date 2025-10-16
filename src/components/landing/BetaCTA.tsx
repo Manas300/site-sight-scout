@@ -156,7 +156,7 @@ export const BetaCTA = () => {
 
           {/* Benefits Cards - Single column on the right */}
           <div className="flex flex-col gap-6">
-            <h3 className="text-2xl sm:text-3xl font-black text-center bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FFD700] bg-clip-text text-transparent mb-2">
+            <h3 className="text-2xl sm:text-3xl font-black text-center bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FFD700] bg-clip-text text-transparent mb-2 animate-pulse">
               Beta Testers Get:
             </h3>
             
