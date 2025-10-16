@@ -121,7 +121,7 @@ export const BetaCTA = () => {
         {/* Urgency Message - Right after counter */}
         <div className="text-center mb-12 animate-fade-in">
           <p className="text-2xl sm:text-3xl md:text-4xl text-destructive font-black mb-4 max-w-3xl mx-auto">
-            ONLY 1,200 SPOTS. THEY'RE GOING FAST.
+            ONLY 1,200 SPOTS.
           </p>
           <p className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground">
             Once they're gone, you're stuck in the queue while others eat.
