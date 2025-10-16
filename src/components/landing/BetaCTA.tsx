@@ -95,23 +95,23 @@ export const BetaCTA = () => {
   return (
     <section className="py-16 sm:py-20 md:py-32 px-4 sm:px-6 bg-gradient-to-b from-background via-primary/5 to-background">
       <div className="container mx-auto max-w-5xl">
-        {/* FOMO FIRST - Live Counter for immediate urgency */}
-        <div className="mb-8 flex justify-center animate-fade-in">
-          <div className="inline-flex items-center gap-6 px-8 py-6 bg-destructive/10 border-2 border-destructive rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+        {/* FOMO FIRST - MASSIVE Live Counter for immediate urgency */}
+        <div className="mb-12 flex justify-center animate-fade-in">
+          <div className="inline-flex items-center gap-8 sm:gap-12 px-12 sm:px-16 md:px-20 py-12 sm:py-16 md:py-20 bg-destructive/10 border-4 border-destructive rounded-3xl shadow-2xl hover:shadow-destructive/30 transition-all hover:scale-105">
             <div className="text-center">
-              <div className="text-5xl sm:text-6xl font-black text-destructive animate-pulse">
+              <div className="text-7xl sm:text-8xl md:text-9xl font-black text-destructive animate-pulse mb-2">
                 {slotsLeft}
               </div>
-              <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
+              <div className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-bold mt-2">
                 Spots Left
               </div>
             </div>
-            <div className="h-12 w-px bg-destructive/30"></div>
+            <div className="h-24 sm:h-32 md:h-40 w-1 bg-destructive/30"></div>
             <div className="text-center">
-              <div className="text-5xl sm:text-6xl font-black text-foreground">
+              <div className="text-7xl sm:text-8xl md:text-9xl font-black text-foreground mb-2">
                 {totalSlots}
               </div>
-              <div className="text-sm sm:text-base text-muted-foreground font-medium mt-1">
+              <div className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-bold mt-2">
                 Total Slots
               </div>
             </div>
