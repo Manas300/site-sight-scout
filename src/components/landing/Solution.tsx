@@ -36,8 +36,8 @@ export const Solution = () => {
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20 animate-fade-in">
           <p className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-foreground mb-6">
-            How BAGЯ Fixes<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Everything</span>
+            HOW BAGЯ FIXES<br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">EVERYTHING</span>
           </p>
         </div>
 
