@@ -6,6 +6,7 @@ import { useToast } from "@/hooks/use-toast";
 import { subscribeToNewsletter } from "@/lib/emailService";
 import { z } from "zod";
 import { useSignupCount } from "@/hooks/useSignupCount";
+import { CountdownTimer } from "./CountdownTimer";
 
 const signupSchema = z.object({
   email: z.string().trim().email({ message: "Enter a valid email" }).max(255),
@@ -95,6 +96,11 @@ export const BetaCTA = () => {
   return (
     <section className="py-16 sm:py-20 md:py-32 px-4 sm:px-6 bg-gradient-to-b from-background via-primary/5 to-background">
       <div className="container mx-auto max-w-5xl">
+        {/* 24-Hour Countdown Timer */}
+        <div className="mb-16 sm:mb-20">
+          <CountdownTimer />
+        </div>
+
         {/* FOMO FIRST - MASSIVE Live Counter for immediate urgency */}
         <div className="mb-12 flex justify-center animate-fade-in">
           <div className="inline-flex items-center gap-8 sm:gap-12 px-12 sm:px-16 md:px-20 py-12 sm:py-16 md:py-20 bg-destructive/10 border-4 border-destructive rounded-3xl shadow-2xl hover:shadow-destructive/30 transition-all hover:scale-105">
