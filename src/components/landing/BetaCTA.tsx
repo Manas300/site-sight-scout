@@ -98,6 +98,9 @@ export const BetaCTA = () => {
       <div className="container mx-auto max-w-5xl">
         {/* Opening Message */}
         <div className="mb-12 text-center animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-6">
+            BETA AND BEYOND
+          </h2>
           <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground italic leading-relaxed max-w-4xl mx-auto border-l-4 border-primary pl-6">
             We&apos;re looking for 1,200 hungry, hip hop producers who&apos;ve got trap, drill, or other popular subgenres on lock, and who aren&apos;t camera shy, to help us launch BAGR and become the next billion-dollar app.
           </p>
@@ -153,10 +156,6 @@ export const BetaCTA = () => {
 
         {/* What You Get - Value proposition */}
         <div className="mb-12 sm:mb-16 p-6 sm:p-8 md:p-10 bg-card border-4 border-primary rounded-2xl animate-slide-up">
-          <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-gold-metallic mb-8 text-center">
-            WHAT YOU GET AS A BETA TESTER:
-          </h3>
-          
           <div className="grid gap-4 sm:gap-6">
             {benefits.map((benefit, i) => (
               <div 
