@@ -125,19 +125,41 @@ const Index = () => {
           showFloatingCTA ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
-        <div className="bg-gradient-to-r from-primary via-secondary to-primary p-4 shadow-2xl backdrop-blur-sm border-t-4 border-primary/50">
-          <div className="container mx-auto max-w-6xl flex items-center justify-between gap-4 flex-wrap">
-            <div className="flex items-center gap-3">
-              <Rocket className="w-6 h-6 text-background animate-bounce" />
-              <div>
-                <p className="text-background font-black text-sm sm:text-base">
-                  200 SPOTS LEFT
-                </p>
-                <p className="text-background/80 text-xs sm:text-sm font-medium">
-                  Join before it's too late
-                </p>
+        <div className="bg-gradient-to-r from-primary via-secondary to-primary p-6 shadow-2xl backdrop-blur-sm border-t-4 border-primary/50">
+          <div className="container mx-auto max-w-7xl flex items-center justify-between gap-6">
+            <div className="flex items-center gap-6">
+              <Rocket className="w-16 h-16 text-background animate-bounce flex-shrink-0" />
+              
+              <div className="flex gap-4">
+                <div className="glass border border-primary/30 rounded-2xl p-4 min-w-[200px]">
+                  <p className="text-background font-black text-base mb-1">
+                    Founder Pricing
+                  </p>
+                  <p className="text-background/80 text-sm font-medium">
+                    Lock in best rates forever
+                  </p>
+                </div>
+                
+                <div className="glass border border-primary/30 rounded-2xl p-4 min-w-[200px]">
+                  <p className="text-background font-black text-base mb-1">
+                    Direct Line
+                  </p>
+                  <p className="text-background/80 text-sm font-medium">
+                    Shape features with us
+                  </p>
+                </div>
+                
+                <div className="glass border border-primary/30 rounded-2xl p-4 min-w-[200px]">
+                  <p className="text-background font-black text-base mb-1">
+                    Skip The Line
+                  </p>
+                  <p className="text-background/80 text-sm font-medium">
+                    Beta access while others wait
+                  </p>
+                </div>
               </div>
             </div>
+            
             <Button
               onClick={() => {
                 document.getElementById('join-beta')?.scrollIntoView({ 
@@ -146,7 +168,7 @@ const Index = () => {
                 });
               }}
               size="lg"
-              className="bg-background text-primary hover:bg-background/90 font-black rounded-full shadow-xl hover:scale-105 transition-all"
+              className="bg-background text-primary hover:bg-background/90 font-black rounded-full shadow-xl hover:scale-105 transition-all flex-shrink-0"
             >
               CLAIM YOUR SPOT 🔥
             </Button>
