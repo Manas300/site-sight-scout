@@ -4,7 +4,7 @@ import { HeroHook } from "@/components/landing/HeroHook";
 import { PainPoints } from "@/components/landing/PainPoints";
 import { Solution } from "@/components/landing/Solution";
 import { BetaCTA } from "@/components/landing/BetaCTA";
-import { Rocket, Zap, Target, Flame } from "lucide-react";
+import { Rocket } from "lucide-react";
 
 const Index = () => {
   const [showFloatingCTA, setShowFloatingCTA] = useState(false);
@@ -125,35 +125,37 @@ const Index = () => {
           showFloatingCTA ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
-        <div className="bg-background/95 backdrop-blur-sm p-6 shadow-2xl border-t border-border">
-          <div className="container mx-auto max-w-6xl flex items-center justify-between gap-6">
-            {/* Large Rocket Icon */}
-            <Rocket className="w-16 h-16 text-primary animate-bounce hidden md:block flex-shrink-0" />
+        <div className="bg-gradient-to-r from-primary via-secondary to-primary p-6 shadow-2xl backdrop-blur-sm border-t-4 border-primary/50">
+          <div className="container mx-auto max-w-7xl flex items-center gap-6">
+            {/* Rocket Icon */}
+            <div className="flex-shrink-0">
+              <Rocket className="w-16 h-16 sm:w-20 sm:h-20 text-background animate-bounce" />
+            </div>
             
-            {/* Perk Boxes */}
-            <div className="flex gap-3 flex-1 justify-center flex-wrap sm:flex-nowrap">
-              {/* Founder Pricing */}
-              <div className="glass border border-primary/20 rounded-lg p-4 flex flex-col items-center text-center min-w-[140px] max-w-[180px]">
-                <Zap className="w-8 h-8 text-secondary mb-2" />
-                <h3 className="font-black text-sm text-foreground mb-1">Founder Pricing</h3>
-                <p className="text-xs text-muted-foreground">Lock in pricing before we 10x it</p>
+            {/* Benefits Grid */}
+            <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+              {/* Benefit 1 */}
+              <div className="glass rounded-xl p-3 sm:p-4 border border-background/20 hover:scale-105 transition-transform">
+                <div className="text-2xl sm:text-3xl mb-1">🎯</div>
+                <h3 className="text-background font-black text-sm sm:text-base mb-1">Direct Line</h3>
+                <p className="text-background/80 text-xs sm:text-sm">Chat with founders, no gatekeepers</p>
               </div>
-
-              {/* Direct Line */}
-              <div className="glass border border-primary/20 rounded-lg p-4 flex flex-col items-center text-center min-w-[140px] max-w-[180px]">
-                <Target className="w-8 h-8 text-primary mb-2" />
-                <h3 className="font-black text-sm text-foreground mb-1">Direct Line</h3>
-                <p className="text-xs text-muted-foreground">Chat with founders, no gatekeepers</p>
+              
+              {/* Benefit 2 */}
+              <div className="glass rounded-xl p-3 sm:p-4 border border-background/20 hover:scale-105 transition-transform">
+                <div className="text-2xl sm:text-3xl mb-1">⚡</div>
+                <h3 className="text-background font-black text-sm sm:text-base mb-1">Real Money</h3>
+                <p className="text-background/80 text-xs sm:text-sm">Instant payouts, no waiting</p>
               </div>
-
-              {/* Skip The Line */}
-              <div className="glass border border-primary/20 rounded-lg p-4 flex flex-col items-center text-center min-w-[140px] max-w-[180px]">
-                <Flame className="w-8 h-8 text-destructive mb-2" />
-                <h3 className="font-black text-sm text-foreground mb-1">Skip The Line</h3>
-                <p className="text-xs text-muted-foreground">Beta access while others wait</p>
+              
+              {/* Benefit 3 */}
+              <div className="glass rounded-xl p-3 sm:p-4 border border-background/20 hover:scale-105 transition-transform">
+                <div className="text-2xl sm:text-3xl mb-1">🔥</div>
+                <h3 className="text-background font-black text-sm sm:text-base mb-1">200 Spots Left</h3>
+                <p className="text-background/80 text-xs sm:text-sm">Join before it's too late</p>
               </div>
             </div>
-
+            
             {/* CTA Button */}
             <Button
               onClick={() => {
@@ -163,7 +165,7 @@ const Index = () => {
                 });
               }}
               size="lg"
-              className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-black font-black rounded-full shadow-xl hover:scale-105 transition-all flex-shrink-0"
+              className="flex-shrink-0 bg-background text-primary hover:bg-background/90 font-black rounded-full shadow-xl hover:scale-105 transition-all px-6 sm:px-8"
             >
               CLAIM YOUR SPOT 🔥
             </Button>
