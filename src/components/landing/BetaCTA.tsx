@@ -23,8 +23,8 @@ export const BetaCTA = () => {
   const { producerCount } = useSignupCount();
 
   const totalSlots = 1200;
-  const slotsTaken = producerCount || 0;
-  const slotsLeft = totalSlots - slotsTaken;
+  const slotsTaken = 1000; // Fixed to show 200 remaining
+  const slotsLeft = 200;
 
   const benefits = [
     "Founder pricing forever before it's 10x-ed",
