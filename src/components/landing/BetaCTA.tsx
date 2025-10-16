@@ -96,6 +96,13 @@ export const BetaCTA = () => {
   return (
     <section className="py-16 sm:py-20 md:py-32 px-4 sm:px-6 bg-gradient-to-b from-background via-primary/5 to-background">
       <div className="container mx-auto max-w-5xl">
+        {/* Opening Message */}
+        <div className="mb-12 text-center animate-fade-in">
+          <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground italic leading-relaxed max-w-4xl mx-auto border-l-4 border-primary pl-6">
+            We&apos;re only taking 1,200 producers who are DONE playing small and ready to build a real brand.
+          </p>
+        </div>
+
         {/* 24-Hour Countdown Timer */}
         <div className="mb-16 sm:mb-20">
           <CountdownTimer />
@@ -213,12 +220,6 @@ export const BetaCTA = () => {
           </p>
         </div>
 
-        {/* Final Emotional Push - Last chance messaging */}
-        <div className="mt-16 sm:mt-20 text-center max-w-3xl mx-auto animate-fade-in">
-          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground italic leading-relaxed mb-4">
-            We&apos;re only taking 1,200 producers who are DONE playing small and ready to build a real brand.
-          </p>
-        </div>
       </div>
     </section>
   );
