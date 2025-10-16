@@ -125,38 +125,19 @@ const Index = () => {
           showFloatingCTA ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
-        <div className="bg-gradient-to-r from-primary via-secondary to-primary p-6 shadow-2xl backdrop-blur-sm border-t-4 border-primary/50">
-          <div className="container mx-auto max-w-7xl flex items-center gap-6">
-            {/* Rocket Icon */}
-            <div className="flex-shrink-0">
-              <Rocket className="w-16 h-16 sm:w-20 sm:h-20 text-background animate-bounce" />
-            </div>
-            
-            {/* Benefits Grid */}
-            <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
-              {/* Benefit 1 */}
-              <div className="glass rounded-xl p-3 sm:p-4 border border-background/20 hover:scale-105 transition-transform">
-                <div className="text-2xl sm:text-3xl mb-1">🎯</div>
-                <h3 className="text-background font-black text-sm sm:text-base mb-1">Direct Line</h3>
-                <p className="text-background/80 text-xs sm:text-sm">Chat with founders, no gatekeepers</p>
-              </div>
-              
-              {/* Benefit 2 */}
-              <div className="glass rounded-xl p-3 sm:p-4 border border-background/20 hover:scale-105 transition-transform">
-                <div className="text-2xl sm:text-3xl mb-1">⚡</div>
-                <h3 className="text-background font-black text-sm sm:text-base mb-1">Real Money</h3>
-                <p className="text-background/80 text-xs sm:text-sm">Instant payouts, no waiting</p>
-              </div>
-              
-              {/* Benefit 3 */}
-              <div className="glass rounded-xl p-3 sm:p-4 border border-background/20 hover:scale-105 transition-transform">
-                <div className="text-2xl sm:text-3xl mb-1">🔥</div>
-                <h3 className="text-background font-black text-sm sm:text-base mb-1">200 Spots Left</h3>
-                <p className="text-background/80 text-xs sm:text-sm">Join before it's too late</p>
+        <div className="bg-gradient-to-r from-primary via-secondary to-primary p-4 shadow-2xl backdrop-blur-sm border-t-4 border-primary/50">
+          <div className="container mx-auto max-w-6xl flex items-center justify-between gap-4 flex-wrap">
+            <div className="flex items-center gap-3">
+              <Rocket className="w-6 h-6 text-background animate-bounce" />
+              <div>
+                <p className="text-background font-black text-sm sm:text-base">
+                  200 SPOTS LEFT
+                </p>
+                <p className="text-background/80 text-xs sm:text-sm font-medium">
+                  Join before it's too late
+                </p>
               </div>
             </div>
-            
-            {/* CTA Button */}
             <Button
               onClick={() => {
                 document.getElementById('join-beta')?.scrollIntoView({ 
@@ -165,7 +146,7 @@ const Index = () => {
                 });
               }}
               size="lg"
-              className="flex-shrink-0 bg-background text-primary hover:bg-background/90 font-black rounded-full shadow-xl hover:scale-105 transition-all px-6 sm:px-8"
+              className="bg-background text-primary hover:bg-background/90 font-black rounded-full shadow-xl hover:scale-105 transition-all"
             >
               CLAIM YOUR SPOT 🔥
             </Button>
