@@ -130,7 +130,7 @@ export const BetaCTA = () => {
             ONLY 1,200 SPOTS.
           </p>
           <p className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground">
-            Once they're gone, you're stuck in the queue while others eat.
+            Once they&apos;re gone, you&apos;re stuck in the queue.
           </p>
         </div>
 
