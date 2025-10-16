@@ -31,7 +31,7 @@ export const BetaCTA = () => {
     "Direct line to founders - zero gatekeeping",
     "Feature-shaping with your feedback",
     "Permanent VIP status while late arrivals wait in line",
-    "Every future update = free for life",
+    "Free feature updates for life",
     "Early access to everything we drop"
   ];
 
