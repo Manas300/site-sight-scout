@@ -98,18 +98,21 @@ export const BetaCTA = () => {
       <div className="container mx-auto max-w-5xl">
         {/* Opening Message */}
         <div className="mb-12 text-center animate-fade-in">
-          <div className="flex justify-center mb-8 relative">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight flex flex-col items-center gap-4">
+            <span>BETA AND</span>
+            <div className="relative inline-block">
+              <div className="absolute -top-20 sm:-top-24 md:-top-28 left-1/2 -translate-x-1/2 flex justify-center">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+                </div>
+                <Rocket 
+                  className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 text-primary drop-shadow-[0_0_30px_rgba(168,85,247,0.8)] relative z-10 animate-[bounce_2s_ease-in-out_infinite]" 
+                  strokeWidth={2.5} 
+                  fill="currentColor"
+                />
+              </div>
+              <span>BEYOND</span>
             </div>
-            <Rocket 
-              className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 text-primary drop-shadow-[0_0_30px_rgba(168,85,247,0.8)] relative z-10 animate-[bounce_2s_ease-in-out_infinite]" 
-              strokeWidth={2.5} 
-              fill="currentColor"
-            />
-          </div>
-          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight">
-            BETA AND BEYOND
           </h2>
           <p className="text-xl sm:text-2xl md:text-3xl text-white leading-relaxed max-w-4xl mx-auto border-l-4 border-primary pl-6">
             We&apos;re looking for 1,200 hungry producers making trap, drill, and other fire beats to beta test BAGR. If you love cooking up live, making money, and are constantly challenging the status-quo, <span className="font-black">sign up below for your seat at the table.</span>
