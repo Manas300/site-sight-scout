@@ -42,13 +42,11 @@ export const Solution = () => {
         </div>
 
         {/* Bento Grid Solutions */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:grid-rows-2">
           {solutions.map((item, i) => (
             <div 
               key={i} 
-              className={`group glass rounded-3xl p-8 sm:p-10 border-2 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-[1.02] animate-fade-in ${
-                i === 0 ? 'md:col-span-2' : ''
-              }`}
+              className="group glass rounded-3xl p-8 sm:p-10 border-2 border-primary/30 hover:border-primary transition-all duration-300 hover:scale-[1.02] animate-fade-in flex flex-col"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               {/* Emoji */}
