@@ -69,7 +69,7 @@ export const PainPoints = () => {
               </h3>
 
               {/* The Pain */}
-              <p className="text-base sm:text-lg text-foreground leading-relaxed mb-4">
+              <p className="text-lg sm:text-xl md:text-2xl text-foreground leading-relaxed mb-4">
                 {item.pain}
               </p>
               

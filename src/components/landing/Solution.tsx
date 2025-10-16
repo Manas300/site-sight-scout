@@ -62,7 +62,7 @@ export const Solution = () => {
               </h3>
 
               {/* The Solution */}
-              <p className="text-base sm:text-lg text-foreground leading-relaxed mb-4">
+              <p className="text-lg sm:text-xl md:text-2xl text-foreground leading-relaxed mb-4">
                 {item.solution}
               </p>
               
