@@ -4,7 +4,8 @@ import { useSignupCount } from "@/hooks/useSignupCount";
 
 export const HeroHook = () => {
   const { signupCount, producerCount } = useSignupCount();
-  const spotsLeft = Math.max(0, 1200 - producerCount);
+  const spotsLeft = 200;
+  const producersSignedUp = "1K";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
@@ -42,7 +43,7 @@ export const HeroHook = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto mb-12 animate-fade-in">
           <div className="glass rounded-2xl p-6 hover:scale-105 transition-transform">
             <div className="text-4xl sm:text-5xl font-black text-primary mb-2">
-              {producerCount}+
+              {producersSignedUp}
             </div>
             <div className="text-sm sm:text-base text-muted-foreground font-medium">
               Producers Signed Up
