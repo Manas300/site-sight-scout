@@ -216,13 +216,7 @@ export const BetaCTA = () => {
         {/* Final Emotional Push - Last chance messaging */}
         <div className="mt-16 sm:mt-20 text-center max-w-3xl mx-auto animate-fade-in">
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground italic leading-relaxed mb-4">
-            You've been creating in the dark, hoping someone notices.
-          </p>
-          <p className="text-xl sm:text-2xl md:text-3xl font-black text-destructive leading-tight mb-6">
-            This is your moment. Don't let it pass.
-          </p>
-          <p className="text-base sm:text-lg text-muted-foreground/80">
-            Your competition is already signing up. Will you be left behind?
+            We&apos;re only taking 1,200 producers who are DONE playing small and ready to build a real brand.
           </p>
         </div>
       </div>
