@@ -9,7 +9,7 @@ export const Solution = () => {
     },
     {
       emoji: "⚡",
-      title: "BUILD YOUR AUDIENCE IN REAL TIME.",
+      title: "GROW YOUR FANS IN REAL TIME.",
       solution: <><span className="font-bold">Fans watch, tip, and share your cook-ups in real-time. Be seen. Heard. Valued.</span></>,
       impact: "No more shouting into the void. Your family grows with every livestream."
     },
