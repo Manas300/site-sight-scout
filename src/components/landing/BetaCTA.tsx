@@ -98,7 +98,7 @@ export const BetaCTA = () => {
       <div className="container mx-auto max-w-5xl">
         {/* Opening Message */}
         <div className="mb-12 text-center animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-6">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight">
             BETA AND BEYOND
           </h2>
           <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground italic leading-relaxed max-w-4xl mx-auto border-l-4 border-primary pl-6">
