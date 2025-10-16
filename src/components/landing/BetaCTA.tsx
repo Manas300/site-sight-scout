@@ -28,11 +28,11 @@ export const BetaCTA = () => {
 
   const benefits = [
     "lock in founder pricing before we 10x it (literally forever)",
-    "direct line to founders. no gatekeepers, no BS.",
-    "Feature-shaping with your feedback",
+    "direct line to founders no gatekeepers, no BS",
+    "feature-shaping with your feedback",
     "skip the line while everyone else waits",
-    "Free feature updates for life",
-    "Early access to everything we drop"
+    "free feature updates for life",
+    "early access to everything we drop"
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
