@@ -175,7 +175,7 @@ export const BetaCTA = () => {
             <div className="glass rounded-2xl p-4 border-2 border-secondary/20 hover:scale-105 transition-all h-[140px] flex flex-col">
               <div className="text-4xl mb-2">🎯</div>
               <h3 className="text-2xl font-black mb-1">Direct Link to Founders</h3>
-              <p className="text-base text-muted-foreground font-normal">no gatekeeping</p>
+              <p className="text-base text-muted-foreground font-normal">No gatekeeping</p>
             </div>
 
             <div className="glass rounded-2xl p-4 border-2 border-primary/20 hover:scale-105 transition-all h-[140px] flex flex-col">
