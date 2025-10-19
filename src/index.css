@@ -11,6 +11,9 @@ All colors MUST be HSL.
     scroll-behavior: smooth;
   }
   
+  /* Import Google Fonts with Cyrillic support */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
+  
   :root {
     --background: 0 0% 3%;
     --foreground: 0 0% 100%;
@@ -163,6 +166,27 @@ All colors MUST be HSL.
       min-height: 44px;
       min-width: 44px;
     }
+    
+    /* Prevent zoom on input focus */
+    input, textarea, select {
+      font-size: 16px;
+    }
+    
+    /* Better scrolling on mobile */
+    html {
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+    }
+    
+    /* Prevent horizontal scroll */
+    body {
+      overflow-x: hidden;
+    }
+    
+    /* Better tap highlights */
+    * {
+      -webkit-tap-highlight-color: hsl(var(--primary) / 0.1);
+    }
   }
 }
 
@@ -222,6 +246,116 @@ All colors MUST be HSL.
   .text-glow-destructive {
     text-shadow: 0 0 20px hsl(var(--destructive) / 0.5),
                  0 0 40px hsl(var(--destructive) / 0.3);
+  }
+  
+  /* Mobile-specific utilities */
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+  
+  .safe-area-inset {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  
+  /* Responsive text sizing */
+  .text-responsive-xs {
+    @apply text-xs sm:text-sm md:text-base;
+  }
+  
+  .text-responsive-sm {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+  
+  .text-responsive-base {
+    @apply text-base sm:text-lg md:text-xl;
+  }
+  
+  .text-responsive-lg {
+    @apply text-lg sm:text-xl md:text-2xl;
+  }
+  
+  .text-responsive-xl {
+    @apply text-xl sm:text-2xl md:text-3xl;
+  }
+  
+  .text-responsive-2xl {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+  
+  .text-responsive-3xl {
+    @apply text-3xl sm:text-4xl md:text-5xl;
+  }
+  
+  /* Mobile-specific animations */
+  .animate-slide-in-right {
+    animation: slideInRight 0.4s ease-out;
+  }
+  
+  .animate-slide-in-left {
+    animation: slideInLeft 0.4s ease-out;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-out;
+  }
+  
+  .animate-bounce-gentle {
+    animation: bounceGentle 2s ease-in-out infinite;
+  }
+  
+  /* Mobile touch feedback */
+  .touch-feedback {
+    transition: all 0.1s ease-out;
+  }
+  
+  .touch-feedback:active {
+    transform: scale(0.98);
+    opacity: 0.8;
+  }
+  
+  /* Mobile-specific gradients */
+  .gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+  
+  /* Enhanced mobile shadows */
+  .shadow-mobile {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-mobile-lg {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* BAGЯ text styling with proper font support */
+  .bagr-text {
+    font-family: 'Montserrat', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-feature-settings: 'liga' 0, 'kern' 1;
+    font-variant-ligatures: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Fallback for devices that don't support Cyrillic Я */
+  .bagr-text-fallback {
+    font-family: 'Montserrat', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-feature-settings: 'liga' 0, 'kern' 1;
+    font-variant-ligatures: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .bagr-text-fallback::after {
+    content: 'R';
+    position: relative;
+    left: -0.1em;
+    transform: scaleX(-1);
+    display: inline-block;
   }
   
   @keyframes goldShine {
@@ -300,5 +434,25 @@ All colors MUST be HSL.
   }
   to {
     transform: rotateY(360deg);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceGentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
   }
 }

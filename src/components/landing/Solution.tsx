@@ -22,8 +22,8 @@ export const Solution = () => {
     {
       emoji: "⚡",
       title: "ONE PLATFORM THAT DOES IT ALL.",
-      solution: <><span className="font-bold">BAGR gives you a beat business you can run from your back pocket.</span></>,
-      impact: <>Stop juggling five apps just to make pennies. Build with BAGR: where going live increases demand.</>
+      solution: <><span className="font-bold"><span className="bagr-text">BAGЯ</span> gives you a beat business you can run from your back pocket.</span></>,
+      impact: <>Stop juggling five apps just to make pennies. Build with <span className="bagr-text">BAGЯ</span>: where going live increases demand.</>
     }
   ];
 
@@ -36,7 +36,7 @@ export const Solution = () => {
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 animate-fade-in px-2">
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-black text-foreground mb-4 sm:mb-6 leading-tight">
-            HOW BAGЯ FIXES<br />
+            HOW <span className="bagr-text">BAGЯ</span> FIXES<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">EVERYTHING</span>
           </p>
         </div>

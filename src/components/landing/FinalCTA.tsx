@@ -60,18 +60,14 @@ export const FinalCTA = () => {
       const result = await subscribeToNewsletter(
         validation.data.email, 
         'final_cta',
-        validation.data.firstName,
-        validation.data.city,
-        validation.data.state,
-        validation.data.whyBagr,
-        validation.data.userType,
         validation.data.instagramHandle
       );
       
       if (result.success) {
         toast({
           title: "WELCOME TO THE MOVEMENT 🚀",
-          description: "You're officially a BAGЯ founder.",
+          description: "You're officially a <span className='bagr-text'>BAGЯ</span> founder.",
+          variant: "success",
         });
         setShowShareModal(true);
         setEmail("");
@@ -105,7 +101,7 @@ export const FinalCTA = () => {
   };
 
   const shareUrl = window.location.href;
-  const shareText = "I just claimed founding member status for BAGЯ - the live beat marketplace changing the game for producers. 847+ already in. Join us 👇";
+  const shareText = "I just claimed founding member status for <span className='bagr-text'>BAGЯ</span> - the live beat marketplace changing the game for producers. 847+ already in. Join us 👇";
 
   const handleShare = (platform: string) => {
     const encodedUrl = encodeURIComponent(shareUrl);
@@ -146,7 +142,7 @@ export const FinalCTA = () => {
         </p>
         
         <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 sm:mb-10 md:mb-12 text-secondary font-black px-2">
-          Flip the system. Build with BAGЯ.
+          Flip the system. Build with <span className="bagr-text">BAGЯ</span>.
         </p>
         
         <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-4">

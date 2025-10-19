@@ -19,7 +19,7 @@ export const PainPoints = () => {
     {
       icon: Heart,
       emoji: "🎣",
-      title: "YOU'RE GETTING EXPLOITED.",
+      title: "YOU'RE BEING USED.",
       pain: <><span className="font-bold">Those Discord servers are just loop farms. Big-name producers dangle placements to milk your talent for free.</span></>,
       emotion: "You upload thinking it's your shot. Still invisible. Still broke. Just getting used."
     },
@@ -45,7 +45,7 @@ export const PainPoints = () => {
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-black text-destructive mb-4 sm:mb-6 leading-tight">
             YOU'RE GETTING FUCKED.
           </p>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed whitespace-nowrap sm:whitespace-normal">
             And you already know it. Here's why:
           </p>
         </div>

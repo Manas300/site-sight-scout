@@ -7,7 +7,7 @@ export const HowItWorks = () => {
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight">
-            How <span className="text-primary">BAGЯ</span> Works
+            How <span className="text-primary bagr-text">BAGЯ</span> Works
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-medium px-4 max-w-3xl mx-auto">
             From beat upload to instant payout in 3 simple steps
@@ -44,7 +44,7 @@ export const HowItWorks = () => {
               <iframe 
                 className="w-full h-full rounded-2xl relative z-10"
                 src="https://www.youtube.com/embed/K8a8aLrVgk4"
-                title="BAGЯ Demo Video"
+                title="<span className='bagr-text'>BAGЯ</span> Demo Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

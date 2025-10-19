@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 
 export const useSignupCount = () => {
-  const [signupCount, setSignupCount] = useState(847); // Total signups
+  const [signupCount, setSignupCount] = useState(0); // Total signups
   const [producerCount, setProducerCount] = useState(0); // Producer LOIs only
   const [loading, setLoading] = useState(true);
 
@@ -17,11 +17,10 @@ export const useSignupCount = () => {
           .from('waitlist_signups')
           .select('*', { count: 'exact', head: true });
 
-        // Get producer count
+        // Get producer count (since we're not collecting user_type, count all signups as producers)
         const { count: producers, error: producerError } = await supabase
           .from('waitlist_signups')
-          .select('*', { count: 'exact', head: true })
-          .eq('user_type', 'Producer');
+          .select('*', { count: 'exact', head: true });
 
         if (totalError) {
           console.warn('Error fetching total count:', totalError);
@@ -60,6 +59,7 @@ export const useSignupCount = () => {
           if (isMounted) {
             // Increment count immediately for better UX
             setSignupCount(prevCount => prevCount + 1);
+            setProducerCount(prevCount => prevCount + 1); // Also increment producer count
             // Also refetch to ensure accuracy
             fetchCount();
           }

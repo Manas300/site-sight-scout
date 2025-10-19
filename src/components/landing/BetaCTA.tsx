@@ -24,8 +24,7 @@ export const BetaCTA = () => {
   const { producerCount } = useSignupCount();
 
   const totalSlots = 1200;
-  const slotsTaken = 1000; // Fixed to show 200 remaining
-  const slotsLeft = 200;
+  const slotsLeft = Math.max(0, totalSlots - producerCount);
 
   const benefits = [
     "founder pricing before we 10x it",
@@ -55,11 +54,6 @@ export const BetaCTA = () => {
       const result = await subscribeToNewsletter(
         validation.data.email, 
         'beta-cta',
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
         validation.data.igHandle
       );
       
@@ -67,6 +61,7 @@ export const BetaCTA = () => {
         toast({
           title: "LET'S GOOO 🔥",
           description: "You're in! Check your email.",
+          variant: "success",
         });
         setFormData({
           email: "",
@@ -95,59 +90,85 @@ export const BetaCTA = () => {
   };
 
   return (
-    <section id="signup-form" className="py-12 sm:py-16 md:py-24 lg:py-32 px-4 sm:px-6 relative overflow-hidden">
-      {/* Animated background blobs */}
-      <div className="absolute top-0 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-primary/10 rounded-full blur-[128px] animate-pulse" />
-      <div className="absolute bottom-0 right-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-secondary/10 rounded-full blur-[128px] animate-pulse" style={{ animationDelay: '1s' }} />
+    <section id="signup-form" className="py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 px-3 sm:px-4 md:px-6 relative overflow-hidden">
+      {/* Animated background blobs - Optimized for mobile */}
+      <div className="absolute top-0 left-1/4 w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 bg-primary/10 rounded-full blur-[64px] sm:blur-[96px] md:blur-[128px] animate-pulse" />
+      <div className="absolute bottom-0 right-1/4 w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 bg-secondary/10 rounded-full blur-[64px] sm:blur-[96px] md:blur-[128px] animate-pulse" style={{ animationDelay: '1s' }} />
       
       <div className="container mx-auto max-w-6xl relative z-10">
-        {/* Bento Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 mb-8 sm:mb-12">
+        {/* Bento Grid Layout - Mobile Optimized */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 md:gap-6 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
           {/* Main CTA Card - Takes full width on mobile, left column on desktop */}
-          <div className="lg:row-span-2 glass rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 border-2 border-primary/30 hover:border-primary/50 transition-all group">
-            <div className="flex justify-center mb-4 sm:mb-6">
+          <div className="lg:row-span-2 glass rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 border-2 border-primary/30 hover:border-primary/50 transition-all group">
+            <div className="flex justify-center mb-3 sm:mb-4 md:mb-6">
               <Rocket 
-                className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 text-primary drop-shadow-[0_0_30px_rgba(168,85,247,0.6)] animate-[bounce_2s_ease-in-out_infinite]" 
+                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 text-primary drop-shadow-[0_0_30px_rgba(168,85,247,0.6)] animate-[bounce_2s_ease-in-out_infinite]" 
                 strokeWidth={2.5} 
                 fill="currentColor"
               />
             </div>
             
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 text-center leading-tight">
-              LAST <span className="text-destructive">200</span> SPOTS
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-3 sm:mb-4 md:mb-6 text-center leading-tight px-2">
+              LAST <span className="text-destructive">{slotsLeft}</span> SPOTS
             </h2>
             
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 text-center leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-4 sm:mb-6 md:mb-8 text-center leading-relaxed px-2">
               Join 1K+ producers building<br className="hidden sm:block" />
               <span className="sm:hidden"> </span>the future beat economy
             </p>
 
-            {/* Simplified Form */}
-            <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
-              <Input
-                type="email"
-                placeholder="your@email.com"
-                value={formData.email}
-                onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                className="h-12 sm:h-14 md:h-16 text-base sm:text-lg glass border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary touch-manipulation"
-                required
-              />
-              <Input
-                type="text"
-                placeholder="@yourighandle"
-                value={formData.igHandle}
-                onChange={(e) => setFormData(prev => ({ ...prev, igHandle: e.target.value.replace(/^@/, '') }))}
-                className="h-12 sm:h-14 md:h-16 text-base sm:text-lg glass border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary touch-manipulation"
-                required
-              />
+            {/* Enhanced Form - Mobile Optimized */}
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+              <div className="group relative">
+                <Input
+                  type="email"
+                  placeholder="your@email.com"
+                  value={formData.email}
+                  onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                  className="h-12 sm:h-14 md:h-16 text-sm sm:text-base md:text-lg glass border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary hover:border-primary/50 touch-manipulation rounded-2xl transition-all duration-300 group-hover:shadow-lg group-hover:shadow-primary/20"
+                  required
+                />
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+              </div>
+              
+              <div className="group relative">
+                <Input
+                  type="text"
+                  placeholder="@yourighandle"
+                  value={formData.igHandle}
+                  onChange={(e) => setFormData(prev => ({ ...prev, igHandle: e.target.value.replace(/^@/, '') }))}
+                  className="h-12 sm:h-14 md:h-16 text-sm sm:text-base md:text-lg glass border-2 border-primary/30 text-foreground placeholder:text-muted-foreground font-medium focus:border-primary hover:border-primary/50 touch-manipulation rounded-2xl transition-all duration-300 group-hover:shadow-lg group-hover:shadow-primary/20"
+                  required
+                />
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+              </div>
               
               <Button 
                 type="submit"
                 disabled={isSubmitting}
                 size="lg"
-                className="w-full h-12 sm:h-14 md:h-16 text-base sm:text-lg md:text-xl font-black bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-background rounded-full shadow-glow-primary transition-all hover:scale-105 active:scale-95 touch-manipulation"
+                className="group relative w-full h-12 sm:h-14 md:h-16 text-sm sm:text-base md:text-lg lg:text-xl font-black bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] hover:bg-[length:100%_100%] text-background rounded-2xl shadow-2xl hover:shadow-primary/30 transition-all duration-500 hover:scale-105 active:scale-95 touch-manipulation overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? "⚡ LOCKING IN..." : "CLAIM YOUR SPOT 🔥"}
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  {isSubmitting ? (
+                    <>
+                      <span className="animate-spin">⚡</span>
+                      LOCKING IN...
+                    </>
+                  ) : (
+                    <>
+                      <span className="group-hover:animate-bounce">🔥</span>
+                      CLAIM YOUR SPOT
+                      <span className="group-hover:animate-bounce" style={{ animationDelay: '0.1s' }}>🔥</span>
+                    </>
+                  )}
+                </span>
+                {!isSubmitting && (
+                  <>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </>
+                )}
               </Button>
             </form>
             
@@ -178,7 +199,7 @@ export const BetaCTA = () => {
 
             <div className="glass rounded-xl sm:rounded-2xl p-3 sm:p-4 border-2 border-primary/20 hover:scale-[1.02] lg:hover:scale-105 hover:shadow-[0_0_30px_rgba(255,215,0,0.5)] transition-all min-h-[100px] sm:min-h-[120px] lg:h-[140px] flex flex-col active:scale-95 touch-manipulation">
               <div className="text-3xl sm:text-4xl mb-1 sm:mb-2">🚀</div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-black mb-0.5 sm:mb-1 leading-tight">Shape v1 of BAGR</h3>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-black mb-0.5 sm:mb-1 leading-tight">Shape v1 of <span className="bagr-text">BAGЯ</span></h3>
               <p className="text-sm sm:text-base text-muted-foreground font-normal leading-snug">Your feedback builds the platform</p>
             </div>
 
@@ -190,7 +211,7 @@ export const BetaCTA = () => {
 
             <div className="glass rounded-xl sm:rounded-2xl p-3 sm:p-4 border-2 border-primary/20 hover:scale-[1.02] lg:hover:scale-105 hover:shadow-[0_0_30px_rgba(255,215,0,0.5)] transition-all min-h-[100px] sm:min-h-[120px] lg:h-[140px] flex flex-col active:scale-95 touch-manipulation">
               <div className="text-3xl sm:text-4xl mb-1 sm:mb-2">🎁</div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-black mb-0.5 sm:mb-1 leading-tight">Free Feature Upgrades for Life</h3>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-black mb-0.5 sm:mb-1 leading-tight">Feature Upgrades for Life</h3>
               <p className="text-sm sm:text-base text-muted-foreground font-normal leading-snug">Never pay for new features</p>
             </div>
 
@@ -202,25 +223,11 @@ export const BetaCTA = () => {
           </div>
         </div>
 
-        {/* Social Proof Ticker */}
-        <div className="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 border-2 border-primary/20 text-center">
-          <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3">
-            <span className="text-primary font-black text-sm sm:text-base md:text-lg">1,000+</span> producers already locked in from
-          </p>
-          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 text-xs sm:text-sm font-bold">
-            <span className="px-2 sm:px-3 py-1 bg-primary/20 rounded-full">🇺🇸 USA</span>
-            <span className="px-2 sm:px-3 py-1 bg-primary/20 rounded-full">🇬🇧 UK</span>
-            <span className="px-2 sm:px-3 py-1 bg-primary/20 rounded-full">🇨🇦 Canada</span>
-            <span className="px-2 sm:px-3 py-1 bg-primary/20 rounded-full">🇫🇷 France</span>
-            <span className="px-2 sm:px-3 py-1 bg-primary/20 rounded-full">🇩🇪 Germany</span>
-            <span className="px-2 sm:px-3 py-1 bg-primary/20 rounded-full">+ 30 more</span>
-          </div>
-        </div>
 
         {/* Urgency Footer */}
         <div className="mt-8 sm:mt-12 text-center">
           <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-destructive mb-2 animate-pulse leading-tight">
-            ⚠️ ONLY 200 SPOTS LEFT
+            ⚠️ ONLY {slotsLeft} SPOTS LEFT
           </p>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
             miss this = back of the line

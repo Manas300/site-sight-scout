@@ -128,7 +128,7 @@ export const LiveTestimonials = () => {
               <span className="font-black text-primary text-xs sm:text-sm md:text-base animate-pulse">LIVE FROM THE COMMUNITY</span>
             </div>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black mb-10 sm:mb-12 px-2">
-              Why Hip Hop Creators Need <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span>
+              Why Hip Hop Creators Need <span className="bagr-text">BAGЯ</span>
             </h2>
           </div>
           <div className="text-center text-muted-foreground">
@@ -148,7 +148,7 @@ export const LiveTestimonials = () => {
             <span className="font-black text-primary text-xs sm:text-sm md:text-base animate-pulse">LIVE FROM THE COMMUNITY</span>
           </div>
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black mb-10 sm:mb-12 px-2">
-            Why Hip Hop Creators Need <span className="font-montserrat" style={{ fontFeatureSettings: '"liga" 0', letterSpacing: '0.05em' }}>BAGЯ</span>
+            Why Hip Hop Creators Need <span className="bagr-text">BAGЯ</span>
           </h2>
         </div>
 

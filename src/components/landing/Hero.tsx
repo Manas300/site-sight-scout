@@ -43,11 +43,6 @@ export const Hero = () => {
       const result = await subscribeToNewsletter(
         validation.data.email, 
         'hero',
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
         validation.data.igHandle
       );
       
@@ -55,6 +50,7 @@ export const Hero = () => {
         toast({
           title: "LET'S GOOO 🔥",
           description: "Check the wall below - you're live!",
+          variant: "success",
         });
         setFormData({
           email: "",

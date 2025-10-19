@@ -41,7 +41,7 @@ export const WhyBagr = () => {
       title: "Go viral, not invisible.",
       desc: (
         <>
-          <span className="font-sans">BAGЯ</span>'s algo is built for creators, not memes.
+          <span className="font-sans bagr-text">BAGЯ</span>'s algo is built for creators, not memes.
         </>
       ),
       gradient: "from-secondary/20 to-secondary/5"
@@ -57,12 +57,12 @@ export const WhyBagr = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight px-2">
             Why Old Platforms Are <span className="text-destructive line-through">Dead</span>
             <br/>
-            <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent bagr-text">
               And BAGЯ Is The Future
             </span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground font-medium px-4">
-            BeatStars = Craigslist. Airbit = eBay from 2005. <strong>BAGЯ</strong> = TikTok Shop meets Whatnot energy.
+            BeatStars = Craigslist. Airbit = eBay from 2005. <strong className="bagr-text">BAGЯ</strong> = TikTok Shop meets Whatnot energy.
           </p>
         </div>
 
@@ -90,7 +90,7 @@ export const WhyBagr = () => {
               <div className="grid grid-cols-3 gap-4 p-4 sm:p-6 bg-muted/30 border-b-2 border-border items-center">
                 <div className="font-black text-sm sm:text-base md:text-lg text-destructive text-center">😭 Old Platforms</div>
                 <div className="font-black text-lg sm:text-xl md:text-2xl lg:text-3xl text-foreground text-center">VS.</div>
-                <div className="font-black text-sm sm:text-base md:text-lg text-primary text-center">🚀 BAGЯ</div>
+                <div className="font-black text-sm sm:text-base md:text-lg text-primary text-center">🚀 <span className="bagr-text">BAGЯ</span></div>
               </div>
               {[
                 { feature: "Live streaming", old: "Upload. Wait. Pray.", bagr: "Go live now, go viral faster." },
@@ -114,7 +114,7 @@ export const WhyBagr = () => {
         {/* Emotional Closing */}
         <div className="mt-6 sm:mt-8 text-center max-w-3xl mx-auto px-4">
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-black text-destructive leading-tight">
-            Why settle for dial-up when you could build with BAGЯ at fiber-optic speed?
+            Why settle for dial-up when you could build with <span className="bagr-text">BAGЯ</span> at fiber-optic speed?
           </p>
         </div>
       </div>
