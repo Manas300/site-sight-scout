@@ -4,6 +4,7 @@ import { HeroHook } from "@/components/landing/HeroHook";
 import { PainPoints } from "@/components/landing/PainPoints";
 import { Solution } from "@/components/landing/Solution";
 import { BetaCTA } from "@/components/landing/BetaCTA";
+import { ProducerLocations } from "@/components/landing/ProducerLocations";
 import { MobileNav } from "@/components/ui/mobile-nav";
 import { Rocket } from "lucide-react";
 import { useSignupCount } from "@/hooks/useSignupCount";
@@ -168,6 +169,8 @@ const Index = () => {
         </div>
       </div>
 
+      {/* Producer Locations - At the very bottom */}
+      <ProducerLocations />
 
       {/* Footer */}
       <footer className="py-8 sm:py-10 md:py-12 lg:py-14 px-4 sm:px-6 border-t-2 border-border bg-muted/20">
